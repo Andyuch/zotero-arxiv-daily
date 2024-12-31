@@ -137,6 +137,7 @@ if __name__ == '__main__':
     )
     parser.add_argument('--debug', action='store_true', help='Debug mode')
     args = parser.parse_args()
+    print(f"Query: {args.arxiv_query!r}")
     assert (
         not args.use_llm_api or args.openai_api_key is not None
     )  # If use_llm_api is True, openai_api_key must be provided
