@@ -135,6 +135,9 @@ def render_email(papers:list[ArxivPaper]):
         else:
             affiliations = 'Unknown Affiliation'
         parts.append(get_block_html(p.title, authors,rate,p.arxiv_id ,p.tldr, p.pdf_url, p.code_url, affiliations))
+        
+        # Add the delay *after* the API call (inside the get_block_html or p.tldr, where llm.generate is called):
+        time.sleep(0.6)  # Start with 0.6 seconds, adjust as needed.
 
     content = '<br>' + '</br><br>'.join(parts) + '</br>'
     return framework.replace('__CONTENT__', content)
