@@ -55,6 +55,7 @@ def get_empty_html():
         No Papers Today. Take a Rest!
     </td>
   </tr>
+  </table>
   """
   return block_template
 
