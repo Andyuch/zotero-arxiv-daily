@@ -51,7 +51,6 @@ def filter_corpus(corpus:list[dict], pattern:str) -> list[dict]:
     os.remove(filename)
     return new_corpus
 
-"""
 def get_arxiv_paper(query:str, debug:bool=False) -> list[ArxivPaper]:
     client = arxiv.Client(num_retries=10,delay_seconds=10)
     feed = feedparser.parse(f"https://rss.arxiv.org/atom/{query}")
@@ -61,8 +60,8 @@ def get_arxiv_paper(query:str, debug:bool=False) -> list[ArxivPaper]:
         papers = []
         all_paper_ids = [i.id.removeprefix("oai:arXiv.org:") for i in feed.entries if i.arxiv_announce_type == 'new']
         bar = tqdm(total=len(all_paper_ids),desc="Retrieving Arxiv papers")
-        for i in range(0,len(all_paper_ids),50):
-            search = arxiv.Search(id_list=all_paper_ids[i:i+50])
+        for i in range(0,len(all_paper_ids),35):
+            search = arxiv.Search(id_list=all_paper_ids[i:i+35])
             batch = [ArxivPaper(p) for p in client.results(search)]
             bar.update(len(batch))
             papers.extend(batch)
@@ -78,8 +77,9 @@ def get_arxiv_paper(query:str, debug:bool=False) -> list[ArxivPaper]:
                 break
 
     return papers
-"""
 
+
+"""
 def _parse_retry_after(value):
     """Return seconds to wait from a Retry-After header (int or HTTP-date)."""
     if not value:
@@ -242,7 +242,7 @@ def get_arxiv_paper(query: str, debug: bool = False) -> list[ArxivPaper]:
                 break
 
     return papers
-
+"""
 
 parser = argparse.ArgumentParser(description='Recommender system for academic papers')
 
