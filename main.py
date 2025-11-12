@@ -1,3 +1,9 @@
+import time
+import random
+from http import HTTPStatus
+import feedparser
+
+
 import arxiv
 import argparse
 import os
@@ -45,7 +51,7 @@ def filter_corpus(corpus:list[dict], pattern:str) -> list[dict]:
     os.remove(filename)
     return new_corpus
 
-
+"""
 def get_arxiv_paper(query:str, debug:bool=False) -> list[ArxivPaper]:
     client = arxiv.Client(num_retries=10,delay_seconds=10)
     feed = feedparser.parse(f"https://rss.arxiv.org/atom/{query}")
@@ -62,6 +68,100 @@ def get_arxiv_paper(query:str, debug:bool=False) -> list[ArxivPaper]:
             papers.extend(batch)
         bar.close()
 
+    else:
+        logger.debug("Retrieve 5 arxiv papers regardless of the date.")
+        search = arxiv.Search(query='cat:cs.AI', sort_by=arxiv.SortCriterion.SubmittedDate)
+        papers = []
+        for i in client.results(search):
+            papers.append(ArxivPaper(i))
+            if len(papers) == 5:
+                break
+
+    return papers
+"""
+
+def get_arxiv_paper(query: str, debug: bool = False) -> list[ArxivPaper]:
+    # Use the client but avoid letting the library do many automatic retries
+    client = arxiv.Client(num_retries=0, delay_seconds=0, timeout=30)
+
+    # Ensure a polite user agent / contact so arXiv can identify you
+    try:
+        # many arxiv client implementations expose a session or headers attribute
+        if hasattr(client, "session"):
+            client.session.headers.update({
+                "User-Agent": "zotero-arxiv-daily/1.0 (mailto:your-email@example.com)"
+            })
+    except Exception:
+        # best-effort only
+        pass
+
+    feed = feedparser.parse(f"https://rss.arxiv.org/atom/{query}")
+    if 'Feed error for query' in getattr(feed.feed, "title", ""):
+        raise Exception(f"Invalid ARXIV_QUERY: {query}.")
+
+    if not debug:
+        papers = []
+        all_paper_ids = [i.id.removeprefix("oai:arXiv.org:") for i in feed.entries if i.arxiv_announce_type == 'new']
+        bar = tqdm(total=len(all_paper_ids), desc="Retrieving Arxiv papers")
+
+        batch_size = 10                   # smaller batches reduce chance of rate-limit
+        pause_between_batches = 3         # seconds to sleep after each successful batch
+        max_attempts_per_batch = 6
+        base_backoff = 2                  # base seconds for exponential backoff
+
+        for start in range(0, len(all_paper_ids), batch_size):
+            ids = all_paper_ids[start:start + batch_size]
+            attempts = 0
+            while True:
+                try:
+                    search = arxiv.Search(id_list=ids)
+                    batch = [ArxivPaper(p) for p in client.results(search)]
+                    papers.extend(batch)
+                    bar.update(len(batch))
+                    # polite pause between successful batches
+                    time.sleep(pause_between_batches)
+                    break  # batch succeeded => continue to next batch
+
+                except arxiv.HTTPError as e:
+                    attempts += 1
+                    status = getattr(e, "status_code", None)
+                    # If the server provided Retry-After, try to use it.
+                    retry_after = None
+                    try:
+                        resp = getattr(e, "response", None)
+                        if resp is not None:
+                            retry_after = resp.headers.get("Retry-After")
+                    except Exception:
+                        retry_after = None
+
+                    if attempts >= max_attempts_per_batch:
+                        # Give up after N attempts (you might prefer to continue with next batch)
+                        bar.close()
+                        raise
+
+                    # Prefer server-specified retry time when present
+                    if retry_after:
+                        try:
+                            wait = int(retry_after)
+                        except ValueError:
+                            # could be a date - fallback to exponential
+                            wait = base_backoff * (2 ** (attempts - 1))
+                    else:
+                        # exponential backoff with jitter for 429/503 and other 5xx
+                        if status in (HTTPStatus.TOO_MANY_REQUESTS, HTTPStatus.SERVICE_UNAVAILABLE) or (status and 500 <= int(status) < 600):
+                            wait = base_backoff * (2 ** (attempts - 1))
+                        else:
+                            # for other errors, small backoff
+                            wait = base_backoff
+
+                        # add jitter
+                        wait = wait + random.uniform(0, 1.0)
+
+                    # log and sleep
+                    print(f"arXiv HTTP error (status={status}) for batch starting at {start}. Attempt {attempts}/{max_attempts_per_batch}. Sleeping {wait:.1f}s and retrying.")
+                    time.sleep(wait)
+
+        bar.close()
     else:
         logger.debug("Retrieve 5 arxiv papers regardless of the date.")
         search = arxiv.Search(query='cat:cs.AI', sort_by=arxiv.SortCriterion.SubmittedDate)
