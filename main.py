@@ -14,6 +14,9 @@ def _get_pdf_url_patch(links) -> str:
 arxiv.Result._get_pdf_url = _get_pdf_url_patch
 
 import argparse
+import time
+import random
+import logging
 import os
 import sys
 from dotenv import load_dotenv
@@ -59,32 +62,87 @@ def filter_corpus(corpus:list[dict], pattern:str) -> list[dict]:
     os.remove(filename)
     return new_corpus
 
+logger = logging.getLogger(__name__)
 
-def get_arxiv_paper(query:str, debug:bool=False) -> list[ArxivPaper]:
-    client = arxiv.Client(num_retries=10,delay_seconds=10)
+def get_arxiv_paper(query: str, debug: bool = False) -> list["ArxivPaper"]:
+    # arXiv asks: <= 1 request every 3 seconds, single connection. :contentReference[oaicite:1]{index=1}
+    MIN_INTERVAL_S = 3.2  # give yourself margin
+    MAX_BACKOFF_S = 120.0
+
+    # IMPORTANT:
+    # - num_retries=0 so *we* control retry/backoff, avoiding rapid replays on 429.
+    # - page_size: irrelevant for id_list chunks (usually < page_size), but keep sane.
+    client = arxiv.Client(num_retries=0, delay_seconds=0, page_size=100)
+
     feed = feedparser.parse(f"https://rss.arxiv.org/atom/{query}")
-    if 'Feed error for query' in feed.feed.title:
+    if getattr(feed, "bozo", 0):
+        raise Exception(f"Failed to parse arXiv RSS/ATOM feed for query={query}: {feed.bozo_exception}")
+    if hasattr(feed, "feed") and hasattr(feed.feed, "title") and "Feed error for query" in feed.feed.title:
         raise Exception(f"Invalid ARXIV_QUERY: {query}.")
-    if not debug:
-        papers = []
-        all_paper_ids = [i.id.removeprefix("oai:arXiv.org:") for i in feed.entries if i.arxiv_announce_type == 'new']
-        bar = tqdm(total=len(all_paper_ids),desc="Retrieving Arxiv papers")
-        for i in range(0,len(all_paper_ids),20):
-            search = arxiv.Search(id_list=all_paper_ids[i:i+20])
-            batch = [ArxivPaper(p) for p in client.results(search)]
-            bar.update(len(batch))
-            papers.extend(batch)
-        bar.close()
 
-    else:
+    if debug:
         logger.debug("Retrieve 5 arxiv papers regardless of the date.")
-        search = arxiv.Search(query='cat:cs.AI', sort_by=arxiv.SortCriterion.SubmittedDate)
+        search = arxiv.Search(query="cat:cs.AI", sort_by=arxiv.SortCriterion.SubmittedDate)
         papers = []
-        for i in client.results(search):
-            papers.append(ArxivPaper(i))
+        for r in client.results(search):
+            papers.append(ArxivPaper(r))
             if len(papers) == 5:
                 break
+        return papers
 
+    # RSS spec includes announce type; you already filter "new". :contentReference[oaicite:2]{index=2}
+    all_paper_ids = [
+        e.id.removeprefix("oai:arXiv.org:")
+        for e in feed.entries
+        if getattr(e, "arxiv_announce_type", None) == "new"
+    ]
+
+    papers: list[ArxivPaper] = []
+    bar = tqdm(total=len(all_paper_ids), desc="Retrieving Arxiv papers")
+
+    last_request_t = 0.0
+
+    def _sleep_to_respect_rate_limit():
+        nonlocal last_request_t
+        now = time.monotonic()
+        dt = now - last_request_t
+        if dt < MIN_INTERVAL_S:
+            time.sleep(MIN_INTERVAL_S - dt + random.uniform(0.0, 0.25))  # small jitter
+        last_request_t = time.monotonic()
+
+    def _fetch_batch(id_batch: list[str]) -> list["ArxivPaper"]:
+        # exponential backoff on 429/503
+        backoff = MIN_INTERVAL_S
+        while True:
+            _sleep_to_respect_rate_limit()
+            try:
+                search = arxiv.Search(id_list=id_batch)
+                return [ArxivPaper(r) for r in client.results(search)]
+            except arxiv.HTTPError as e:
+                code = getattr(e, "status", None) or getattr(e, "status_code", None)
+
+                # arXiv will often throw 429 (rate limited) or 503 (temporary). Your log shows both.
+                if code in (429, 503):
+                    sleep_s = min(MAX_BACKOFF_S, backoff) + random.uniform(0.0, 1.0)
+                    logger.warning("arXiv API %s for batch size=%d; sleeping %.1fs then retrying.",
+                                   code, len(id_batch), sleep_s)
+                    time.sleep(sleep_s)
+                    backoff = min(MAX_BACKOFF_S, backoff * 2.0)
+                    continue
+
+                # other HTTP errors: fail fast
+                raise
+
+    # Smaller chunks reduce server load; 10–20 is usually fine.
+    CHUNK = 10
+
+    for i in range(0, len(all_paper_ids), CHUNK):
+        batch_ids = all_paper_ids[i:i + CHUNK]
+        batch = _fetch_batch(batch_ids)
+        papers.extend(batch)
+        bar.update(len(batch_ids))
+
+    bar.close()
     return papers
 
 
