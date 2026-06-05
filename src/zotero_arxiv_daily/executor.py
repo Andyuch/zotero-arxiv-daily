@@ -6,6 +6,7 @@ from .retriever import get_retriever_cls
 from .protocol import CorpusPaper
 import random
 from datetime import datetime
+import time
 from .reranker import get_reranker_cls
 from .construct_email import render_email
 from .utils import send_email
