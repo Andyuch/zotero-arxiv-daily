@@ -10,6 +10,8 @@ import multiprocessing
 import os
 from queue import Empty
 from time import sleep
+import time
+import random  # Added for jitter
 from typing import Any, Callable, TypeVar
 from loguru import logger
 import requests
@@ -114,7 +116,9 @@ class ArxivRetriever(BaseRetriever):
             raise ValueError("category must be specified for arxiv.")
 
     def _retrieve_raw_papers(self) -> list[ArxivResult]:
-        client = arxiv.Client(num_retries=10, delay_seconds=10)
+        # Reduced internal retries to avoid waiting 100s on a completely blocked IP.
+        # Kept delay at 5s to respect the 3s rule safely.
+        client = arxiv.Client(num_retries=3, delay_seconds=5.0)
         query = '+'.join(self.config.source.arxiv.category)
         include_cross_list = self.config.source.arxiv.get("include_cross_list", False)
         # Get the latest paper from arxiv rss feed
@@ -134,19 +138,24 @@ class ArxivRetriever(BaseRetriever):
         # Get full information of each paper from arxiv api
         bar = tqdm(total=len(all_paper_ids))
         max_batch_retries = 5
-        batch_retry_delay = 30
+        batch_retry_delay = 60  # Increased base delay to 60s
+        
         for i in range(0, len(all_paper_ids), 20):
             search = arxiv.Search(id_list=all_paper_ids[i:i + 20])
             for attempt in range(max_batch_retries):
                 try:
+                    # Add a small random jitter before each batch to evade bot detection
+                    time.sleep(random.uniform(1.0, 3.0))
                     batch = list(client.results(search))
                     bar.update(len(batch))
                     raw_papers.extend(batch)
                     break
                 except arxiv.HTTPError as exc:
-                    if exc.status == 429 and attempt < max_batch_retries - 1:
-                        wait = batch_retry_delay * (attempt + 1)
-                        logger.warning(f"arXiv API 429 on batch {i // 20}, retry {attempt + 1}/{max_batch_retries} in {wait}s")
+                    # Catch BOTH 429 (Too Many Requests) and 503 (Service Unavailable)
+                    if exc.status in (429, 503) and attempt < max_batch_retries - 1:
+                        # Exponential backoff: 60s, 120s, 240s, 480s...
+                        wait = batch_retry_delay * (2 ** attempt) + random.uniform(0, 15)
+                        logger.warning(f"arXiv API {exc.status} on batch {i // 20}, retry {attempt + 1}/{max_batch_retries} in {wait:.1f}s")
                         sleep(wait)
                     else:
                         raise
