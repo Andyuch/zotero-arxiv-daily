@@ -4,7 +4,6 @@ from tempfile import TemporaryDirectory
 import arxiv
 import tarfile
 import re
-import time
 from llm import get_llm
 import requests
 from requests.adapters import HTTPAdapter, Retry
@@ -12,7 +11,6 @@ from loguru import logger
 import tiktoken
 from contextlib import ExitStack
 from urllib.error import HTTPError
-
 
 
 class ArxivPaper:
@@ -78,22 +76,33 @@ class ArxivPaper:
     def tex(self) -> dict[str,str]:
         with ExitStack() as stack:
             tmpdirname = stack.enter_context(TemporaryDirectory())
-            # file = self._paper.download_source(dirpath=tmpdirname)
             try:
-                # 尝试下载源文件
                 file = self._paper.download_source(dirpath=tmpdirname)
             except HTTPError as e:
-                # 捕获 HTTP 错误
+                # Full source is enrichment only. A transient arXiv throttle or
+                # outage must not abort the daily digest; TLDR generation can
+                # safely fall back to the title + abstract already in the feed.
                 if e.code == 404:
-                    # 如果是 404 Not Found，说明源文件不存在，这是正常情况
-                    logger.warning(f"Source for {self.arxiv_id} not found (404). Skipping source analysis.")
-                    return None # 直接返回 None，后续依赖 tex 的代码会安全地处理
+                    logger.warning(
+                        f"Source for {self.arxiv_id} not found (404). "
+                        "Falling back to abstract-only TLDR."
+                    )
+                elif e.code in (429, 503):
+                    logger.warning(
+                        f"Source for {self.arxiv_id} unavailable (HTTP {e.code}). "
+                        "Falling back to abstract-only TLDR."
+                    )
                 else:
-                    # 如果是其他 HTTP 错误 (如 503)，这可能是临时性问题，值得记录下来
-                    logger.error(f"HTTP Error {e.code} when downloading source for {self.arxiv_id}: {e.reason}")
-                    raise # 重新抛出异常，因为这可能是个需要关注的严重问题
+                    logger.warning(
+                        f"Source download for {self.arxiv_id} failed "
+                        f"(HTTP {e.code}: {e.reason}). Falling back to abstract-only TLDR."
+                    )
+                return None
             except Exception as e:
-                logger.error(f"Error when downloading source for {self.arxiv_id}: {e}")
+                logger.warning(
+                    f"Error when downloading source for {self.arxiv_id}: {e}. "
+                    "Falling back to abstract-only TLDR."
+                )
                 return None
             try:
                 tar = stack.enter_context(tarfile.open(file))
