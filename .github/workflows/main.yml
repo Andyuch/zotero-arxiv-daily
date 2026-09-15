@@ -1,6 +1,9 @@
 name: Send emails daily
 on:
   workflow_dispatch:
+  push:
+    branches:
+      - own_branch
   schedule:
     - cron: '0 22 * * *'
 
