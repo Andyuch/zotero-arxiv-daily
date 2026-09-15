@@ -4,6 +4,7 @@ import random
 import re
 import shutil
 import sys
+import tarfile
 import time
 from types import SimpleNamespace
 from urllib.error import HTTPError
@@ -155,17 +156,100 @@ class _RSSArxivResult:
         return self._short_id
 
     def download_source(self, dirpath: str) -> str:
-        """Download source only for papers that survive ranking/email truncation."""
+        """Download and validate source for a selected paper.
+
+        Source is optional enrichment. GitHub-hosted runners occasionally get
+        a truncated gzip/tar response from arXiv; validate the full archive and
+        retry once. If both attempts fail, raise so ArxivPaper.tex can degrade
+        to an abstract-only TLDR instead of crashing during tar parsing.
+        """
         base_id = re.sub(r"v\d+$", "", self._short_id)
         safe_name = base_id.replace("/", "_")
         destination = os.path.join(dirpath, f"{safe_name}.tar")
-        request = Request(
-            f"https://arxiv.org/e-print/{base_id}",
-            headers={"User-Agent": ARXIV_USER_AGENT},
-        )
-        with urlopen(request, timeout=90) as response, open(destination, "wb") as file:
-            shutil.copyfileobj(response, file)
-        return destination
+        partial = destination + ".part"
+        source_url = f"https://arxiv.org/e-print/{base_id}"
+        max_attempts = 2
+
+        for attempt in range(max_attempts):
+            try:
+                if os.path.exists(partial):
+                    os.remove(partial)
+
+                request = Request(
+                    source_url,
+                    headers={"User-Agent": ARXIV_USER_AGENT},
+                )
+                with urlopen(request, timeout=90) as response, open(partial, "wb") as file:
+                    expected_length = response.headers.get("Content-Length")
+                    shutil.copyfileobj(response, file)
+
+                if expected_length is not None:
+                    try:
+                        expected_bytes = int(expected_length)
+                    except ValueError:
+                        expected_bytes = None
+                    if expected_bytes is not None:
+                        actual_bytes = os.path.getsize(partial)
+                        if actual_bytes != expected_bytes:
+                            raise OSError(
+                                f"incomplete source download: expected {expected_bytes} bytes, "
+                                f"received {actual_bytes} bytes"
+                            )
+
+                # Force a complete archive scan here. tarfile.open() alone can
+                # succeed on a truncated gzip and only raise EOFError later in
+                # getnames()/getmembers(), which used to abort the whole digest.
+                with tarfile.open(partial, mode="r:*") as archive:
+                    archive.getmembers()
+
+                os.replace(partial, destination)
+                return destination
+
+            except HTTPError as exc:
+                if os.path.exists(partial):
+                    os.remove(partial)
+                if exc.code in (429, 503) and attempt < max_attempts - 1:
+                    retry_after = _retry_after_seconds(exc)
+                    wait = (
+                        retry_after
+                        if retry_after is not None
+                        else 10.0 + random.uniform(0.0, 3.0)
+                    )
+                    logger.warning(
+                        "arXiv source HTTP {} for {} (attempt {}/{}); "
+                        "retrying in {:.1f}s.",
+                        exc.code,
+                        base_id,
+                        attempt + 1,
+                        max_attempts,
+                        wait,
+                    )
+                    time.sleep(wait)
+                    continue
+                raise
+
+            except (EOFError, tarfile.ReadError, OSError) as exc:
+                if os.path.exists(partial):
+                    os.remove(partial)
+                if attempt < max_attempts - 1:
+                    wait = 3.0 + random.uniform(0.0, 2.0)
+                    logger.warning(
+                        "Incomplete/corrupt arXiv source for {} (attempt {}/{}): {}. "
+                        "Retrying in {:.1f}s.",
+                        base_id,
+                        attempt + 1,
+                        max_attempts,
+                        exc,
+                        wait,
+                    )
+                    time.sleep(wait)
+                    continue
+                raise OSError(
+                    f"arXiv source archive for {base_id} remained invalid after "
+                    f"{max_attempts} attempts"
+                ) from exc
+
+        raise RuntimeError(f"Failed to download arXiv source for {base_id}")
 
 
 def get_arxiv_paper(query: str, debug: bool = False) -> list["ArxivPaper"]:
