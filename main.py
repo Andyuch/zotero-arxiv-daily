@@ -158,16 +158,15 @@ class _RSSArxivResult:
     def download_source(self, dirpath: str) -> str:
         """Download and validate source for a selected paper.
 
-        Source is optional enrichment. GitHub-hosted runners occasionally get
-        a truncated gzip/tar response from arXiv; validate the full archive and
-        retry once. If both attempts fail, raise so ArxivPaper.tex can degrade
-        to an abstract-only TLDR instead of crashing during tar parsing.
+        Source is optional enrichment. Use the same /src/ endpoint as the
+        original arxiv.py 2.1.3 Result.download_source() implementation, while
+        keeping our completeness validation, retry, and graceful fallback.
         """
         base_id = re.sub(r"v\d+$", "", self._short_id)
         safe_name = base_id.replace("/", "_")
         destination = os.path.join(dirpath, f"{safe_name}.tar")
         partial = destination + ".part"
-        source_url = f"https://arxiv.org/e-print/{base_id}"
+        source_url = self.pdf_url.replace("/pdf/", "/src/")
         max_attempts = 2
 
         for attempt in range(max_attempts):
