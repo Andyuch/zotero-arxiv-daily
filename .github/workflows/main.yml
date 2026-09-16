@@ -1,6 +1,9 @@
 name: Send emails daily
 on:
   workflow_dispatch:
+  push:
+    branches:
+      - own_branch
   schedule:
     - cron: '0 22 * * *'
 
@@ -12,7 +15,7 @@ jobs:
         uses: actions/checkout@v4
         with:
           repository: ${{ vars.REPOSITORY }}
-          ref: ${{ vars.REF }}
+          ref: recommender-v2-zero-token
 
       - name: Setup uv
         uses: astral-sh/setup-uv@v7
