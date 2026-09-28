@@ -22,6 +22,7 @@ from construct_email import render_email, send_email
 from llm import set_global_llm
 from paper import ArxivPaper
 from recommender import rerank_paper
+from sources import deduplicate_papers, fetch_crossref_papers
 
 load_dotenv(override=True)
 os.environ["TOKENIZERS_PARALLELISM"] = "false"
@@ -328,6 +329,36 @@ if __name__ == "__main__":
         default=100,
     )
     add_argument("--arxiv_query", type=str, help="Arxiv search query")
+    add_argument(
+        "--enable_crossref",
+        type=bool,
+        help="Retrieve journal papers from Crossref in addition to arXiv",
+        default=True,
+    )
+    add_argument(
+        "--journal_groups",
+        type=str,
+        help="Comma-separated journal groups from journal_sources.json",
+        default="nature,science,acs,materials",
+    )
+    add_argument(
+        "--crossref_lookback_days",
+        type=int,
+        help="Crossref created-date lookback window in days",
+        default=1,
+    )
+    add_argument(
+        "--crossref_rows_per_journal",
+        type=int,
+        help="Maximum Crossref records retrieved per configured journal",
+        default=100,
+    )
+    add_argument(
+        "--crossref_mailto",
+        type=str,
+        help="Optional contact email for Crossref polite-pool requests",
+        default=None,
+    )
     add_argument("--smtp_server", type=str, help="SMTP server")
     add_argument("--smtp_port", type=int, help="SMTP port")
     add_argument("--sender", type=str, help="Sender email address")
@@ -384,15 +415,45 @@ if __name__ == "__main__":
 
     logger.info("Retrieving arXiv papers...")
     papers = get_arxiv_paper(args.arxiv_query, args.debug)
+    logger.info("arXiv candidates: {}", len(papers))
+
+    if args.enable_crossref:
+        logger.info(
+            "Retrieving journal papers from Crossref groups: {}...",
+            args.journal_groups,
+        )
+        try:
+            journal_papers = fetch_crossref_papers(
+                groups=args.journal_groups,
+                lookback_days=args.crossref_lookback_days,
+                rows_per_journal=args.crossref_rows_per_journal,
+                mailto=args.crossref_mailto,
+            )
+            logger.info("Journal candidates from Crossref: {}", len(journal_papers))
+            papers.extend(journal_papers)
+        except Exception as exc:
+            logger.warning(
+                "Crossref retrieval failed; continuing with arXiv candidates only: {}",
+                exc,
+            )
+
+    before_dedup = len(papers)
+    papers = deduplicate_papers(papers)
+    logger.info(
+        "Unified candidate pool: {} papers after deduplication (removed {}).",
+        len(papers),
+        before_dedup - len(papers),
+    )
+
     if len(papers) == 0:
         logger.info(
-            "No new papers found. Yesterday may have been a holiday/weekend; "
-            "otherwise check ARXIV_QUERY."
+            "No new papers found from the configured sources. "
+            "Check ARXIV_QUERY and journal source configuration."
         )
         if not args.send_empty:
             exit(0)
     else:
-        logger.info("Reranking papers...")
+        logger.info("Reranking unified paper pool...")
         papers = rerank_paper(papers, corpus)
         if args.max_paper_num != -1:
             papers = papers[: args.max_paper_num]
