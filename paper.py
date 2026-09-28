@@ -11,12 +11,99 @@ from loguru import logger
 import tiktoken
 from contextlib import ExitStack
 from urllib.error import HTTPError
+from types import SimpleNamespace
+
+
+class JournalPaper:
+    """Unified paper object for publisher/journal metadata sources."""
+
+    def __init__(
+        self,
+        title: str,
+        summary: str,
+        authors: list[str],
+        journal: str,
+        source: str,
+        doi: str | None,
+        paper_url: str,
+        pdf_url: str | None = None,
+        affiliations: list[str] | None = None,
+        published_at: str | None = None,
+    ):
+        self._title = title
+        self._summary = summary or ""
+        self._authors = [SimpleNamespace(name=name) for name in authors if name]
+        self.journal = journal or source
+        self.source = source
+        self.doi = doi
+        self.paper_url = paper_url or (f"https://doi.org/{doi}" if doi else "")
+        self._pdf_url = pdf_url
+        self._affiliations = affiliations or []
+        self.published_at = published_at
+        self.score = None
+
+    @property
+    def title(self) -> str:
+        return self._title
+
+    @property
+    def summary(self) -> str:
+        return self._summary
+
+    @property
+    def authors(self):
+        return self._authors
+
+    @property
+    def arxiv_id(self):
+        return None
+
+    @property
+    def pdf_url(self) -> str | None:
+        return self._pdf_url
+
+    @property
+    def code_url(self):
+        return None
+
+    @property
+    def affiliations(self) -> Optional[list[str]]:
+        return self._affiliations or None
+
+    @cached_property
+    def tldr(self) -> str:
+        llm = get_llm()
+        prompt = """Given the title and abstract of a scientific paper, generate a one-sentence TLDR summary in __LANG__:
+
+Title: __TITLE__
+Abstract: __ABSTRACT__
+"""
+        prompt = prompt.replace("__LANG__", llm.lang)
+        prompt = prompt.replace("__TITLE__", self.title)
+        prompt = prompt.replace("__ABSTRACT__", self.summary)
+
+        enc = tiktoken.encoding_for_model("gpt-4o")
+        prompt = enc.decode(enc.encode(prompt)[:4000])
+
+        return llm.generate(
+            messages=[
+                {
+                    "role": "system",
+                    "content": "You are an assistant who accurately summarizes scientific papers and gives the core idea to the user.",
+                },
+                {"role": "user", "content": prompt},
+            ]
+        )
 
 
 class ArxivPaper:
     def __init__(self,paper:arxiv.Result):
         self._paper = paper
         self.score = None
+        self.journal = "arXiv"
+        self.source = "arXiv"
+        self.doi = None
+        self.published_at = None
     
     @property
     def title(self) -> str:
@@ -34,6 +121,10 @@ class ArxivPaper:
     def arxiv_id(self) -> str:
         return re.sub(r'v\d+$', '', self._paper.get_short_id())
     
+    @property
+    def paper_url(self) -> str:
+        return f"https://arxiv.org/abs/{self.arxiv_id}"
+
     @property
     def pdf_url(self) -> str:
         if self._paper.pdf_url is not None:
