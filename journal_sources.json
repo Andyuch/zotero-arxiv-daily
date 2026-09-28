@@ -1,0 +1,38 @@
+{
+  "nature": [
+    {"journal": "Nature", "issn": "0028-0836"},
+    {"journal": "Nature Materials", "issn": "1476-1122"},
+    {"journal": "Nature Energy", "issn": "2058-7546"},
+    {"journal": "Nature Nanotechnology", "issn": "1748-3387"},
+    {"journal": "Nature Photonics", "issn": "1749-4885"},
+    {"journal": "Nature Electronics", "issn": "2520-1131"},
+    {"journal": "Nature Chemistry", "issn": "1755-4330"},
+    {"journal": "Nature Physics", "issn": "1745-2473"},
+    {"journal": "Nature Communications", "issn": "2041-1723"}
+  ],
+  "science": [
+    {"journal": "Science", "issn": "0036-8075"},
+    {"journal": "Science Advances", "issn": "2375-2548"},
+    {"journal": "Science Robotics", "issn": "2470-9476"},
+    {"journal": "Science Translational Medicine", "issn": "1946-6234"}
+  ],
+  "acs": [
+    {"journal": "Journal of the American Chemical Society", "issn": "0002-7863"},
+    {"journal": "ACS Nano", "issn": "1936-0851"},
+    {"journal": "Nano Letters", "issn": "1530-6984"},
+    {"journal": "ACS Energy Letters", "issn": "2380-8195"},
+    {"journal": "Chemistry of Materials", "issn": "0897-4756"},
+    {"journal": "The Journal of Physical Chemistry Letters", "issn": "1948-7185"},
+    {"journal": "ACS Applied Materials & Interfaces", "issn": "1944-8244"},
+    {"journal": "ACS Photonics", "issn": "2330-4022"}
+  ],
+  "materials": [
+    {"journal": "Advanced Materials", "issn": "0935-9648"},
+    {"journal": "Advanced Energy Materials", "issn": "1614-6840"},
+    {"journal": "Energy & Environmental Science", "issn": "1754-5706"},
+    {"journal": "Joule", "issn": "2542-4351"},
+    {"journal": "Physical Review Letters", "issn": "0031-9007"},
+    {"journal": "Applied Physics Letters", "issn": "0003-6951"},
+    {"journal": "APL Materials", "issn": "2166-532X"}
+  ]
+}
