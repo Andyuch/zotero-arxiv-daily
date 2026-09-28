@@ -5,7 +5,6 @@ from loguru import logger
 from sentence_transformers import SentenceTransformer
 from sklearn.cluster import KMeans
 
-from paper import ArxivPaper
 
 
 DEFAULT_MODEL = "avsolatorio/GIST-small-Embedding-v0"
@@ -127,10 +126,10 @@ def _mmr_order(
 
 
 def rerank_paper(
-    candidate: list[ArxivPaper],
+    candidate: list,
     corpus: list[dict],
     model: str = DEFAULT_MODEL,
-) -> list[ArxivPaper]:
+) -> list:
     """Rank arXiv candidates using only local embeddings (zero API tokens).
 
     The score combines:
