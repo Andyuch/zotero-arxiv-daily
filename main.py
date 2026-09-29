@@ -23,6 +23,7 @@ from llm import set_global_llm
 from paper import ArxivPaper
 from recommender import rerank_paper
 from sources import deduplicate_papers, fetch_crossref_papers
+from site_builder import update_site_archive
 
 load_dotenv(override=True)
 os.environ["TOKENIZERS_PARALLELISM"] = "false"
@@ -394,6 +395,18 @@ if __name__ == "__main__":
         help="Language of TLDR",
         default="English",
     )
+    add_argument(
+        "--publish_site",
+        type=bool,
+        help="Write the selected recommendations into the static research archive",
+        default=True,
+    )
+    add_argument(
+        "--site_output_dir",
+        type=str,
+        help="Static research archive output directory",
+        default="site",
+    )
     parser.add_argument("--debug", action="store_true", help="Debug mode")
     args = parser.parse_args()
 
@@ -470,6 +483,17 @@ if __name__ == "__main__":
             set_global_llm(lang=args.language)
 
     html = render_email(papers)
+
+    if args.publish_site:
+        try:
+            archive_path = update_site_archive(papers, args.site_output_dir)
+            logger.info("Updated research archive at {}.", archive_path)
+        except Exception as exc:
+            logger.warning(
+                "Failed to update the research archive; continuing with email delivery: {}",
+                exc,
+            )
+
     logger.info("Sending email...")
     send_email(
         args.sender,
