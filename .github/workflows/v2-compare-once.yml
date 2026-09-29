@@ -1,0 +1,53 @@
+name: V2 arXiv-only comparison (one time)
+
+on:
+  schedule:
+    - cron: '0 22 29 9 *'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  compare-v2:
+    runs-on: ubuntu-latest
+    steps:
+      - name: One-time date guard
+        id: guard
+        run: |
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ] || [ "$(date -u +%Y-%m-%d)" = "2026-09-29" ]; then
+            echo "run=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "run=false" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Checkout frozen V2 arXiv-only engine
+        if: steps.guard.outputs.run == 'true'
+        uses: actions/checkout@v6
+        with:
+          ref: v2-arxiv-only-compare
+
+      - name: Setup uv
+        if: steps.guard.outputs.run == 'true'
+        uses: astral-sh/setup-uv@v7
+
+      - name: Send V2 arXiv-only comparison email
+        if: steps.guard.outputs.run == 'true'
+        env:
+          ZOTERO_ID: ${{ secrets.ZOTERO_ID }}
+          ZOTERO_KEY: ${{ secrets.ZOTERO_KEY }}
+          ZOTERO_IGNORE: ${{ vars.ZOTERO_IGNORE }}
+          SEND_EMPTY: ${{ vars.SEND_EMPTY }}
+          ARXIV_QUERY: ${{ secrets.ARXIV_QUERY }}
+          SMTP_SERVER: ${{ secrets.SMTP_SERVER }}
+          SMTP_PORT: ${{ secrets.SMTP_PORT }}
+          SENDER: ${{ secrets.SENDER }}
+          RECEIVER: ${{ secrets.RECEIVER }}
+          SENDER_PASSWORD: ${{ secrets.SENDER_PASSWORD }}
+          MAX_PAPER_NUM: ${{ secrets.MAX_PAPER_NUM }}
+          USE_LLM_API: ${{ secrets.USE_LLM_API }}
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          OPENAI_API_BASE: ${{ secrets.OPENAI_API_BASE }}
+          MODEL_NAME: ${{ secrets.MODEL_NAME }}
+          LANGUAGE: ${{ vars.LANGUAGE }}
+        run: uv run main.py
