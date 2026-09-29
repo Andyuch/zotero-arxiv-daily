@@ -1,12 +1,11 @@
 name: Deploy research archive to GitHub Pages
 
 on:
-  push:
-    branches:
-      - v3-pages-ui
-    paths:
-      - 'site/**'
-      - '.github/workflows/pages.yml'
+  workflow_run:
+    workflows:
+      - Send emails daily
+    types:
+      - completed
   workflow_dispatch:
 
 permissions:
@@ -20,20 +19,19 @@ concurrency:
 
 jobs:
   deploy:
+    if: ${{ github.event_name == 'workflow_dispatch' || github.event.workflow_run.conclusion == 'success' }}
     runs-on: ubuntu-latest
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
-      - name: Checkout V3 Pages site
+      - name: Checkout latest V3 Pages archive
         uses: actions/checkout@v6
         with:
           ref: v3-pages-ui
 
       - name: Configure GitHub Pages
         uses: actions/configure-pages@v5
-        with:
-          enablement: true
 
       - name: Upload site artifact
         uses: actions/upload-pages-artifact@v4
