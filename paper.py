@@ -72,6 +72,8 @@ class JournalPaper:
 
     @cached_property
     def tldr(self) -> str:
+        if not self.summary.strip():
+            return "Abstract unavailable from publisher metadata; open the article for details."
         llm = get_llm()
         prompt = """Given the title and abstract of a scientific paper, generate a one-sentence TLDR summary in __LANG__:
 
