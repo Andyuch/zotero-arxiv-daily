@@ -6,7 +6,7 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: read
+  contents: write
 
 jobs:
   compare-v2:
@@ -51,3 +51,14 @@ jobs:
           MODEL_NAME: ${{ secrets.MODEL_NAME }}
           LANGUAGE: ${{ vars.LANGUAGE }}
         run: uv run main.py
+
+      - name: Remove one-time comparison workflow
+        if: always() && steps.guard.outputs.run == 'true' && github.event_name == 'schedule'
+        run: |
+          git fetch origin recommender-v2-zero-token
+          git checkout -B cleanup origin/recommender-v2-zero-token
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git rm .github/workflows/v2-compare-once.yml
+          git commit -m "Remove completed one-time V2 comparison workflow"
+          git push origin HEAD:recommender-v2-zero-token
