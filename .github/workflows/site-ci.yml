@@ -1,0 +1,40 @@
+name: V3 Pages smoke test
+
+on:
+  push:
+    branches:
+      - v3-pages-ui
+    paths:
+      - '*.py'
+      - 'site/**'
+      - '.github/workflows/site-ci.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  smoke:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+        with:
+          ref: v3-pages-ui
+
+      - name: Check Python syntax
+        run: |
+          python -m py_compile             main.py site_builder.py recommender.py construct_email.py paper.py sources.py
+
+      - name: Check browser JavaScript syntax
+        run: node --check site/assets/app.js
+
+      - name: Check archive JSON
+        run: python -m json.tool site/data/index.json >/dev/null
+
+      - name: Check required web assets
+        run: |
+          test -f site/index.html
+          test -f site/assets/style.css
+          test -f site/assets/app.js
+          test -f site/.nojekyll
