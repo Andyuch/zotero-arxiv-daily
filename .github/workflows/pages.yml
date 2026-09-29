@@ -1,6 +1,11 @@
 name: Deploy research archive to GitHub Pages
 
 on:
+  push:
+    branches:
+      - recommender-v2-zero-token
+    paths:
+      - '.github/workflows/pages.yml'
   workflow_run:
     workflows:
       - Send emails daily
@@ -19,7 +24,7 @@ concurrency:
 
 jobs:
   deploy:
-    if: ${{ github.event_name == 'workflow_dispatch' || github.event.workflow_run.conclusion == 'success' }}
+    if: ${{ github.event_name == 'workflow_dispatch' || github.event_name == 'push' || github.event.workflow_run.conclusion == 'success' }}
     runs-on: ubuntu-latest
     environment:
       name: github-pages
