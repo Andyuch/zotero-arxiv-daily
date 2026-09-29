@@ -159,15 +159,15 @@ class _RSSArxivResult:
     def download_source(self, dirpath: str) -> str:
         """Download and validate source for a selected paper.
 
-        Source is optional enrichment. Use the same /src/ endpoint as the
-        original arxiv.py 2.1.3 Result.download_source() implementation, while
-        keeping our completeness validation, retry, and graceful fallback.
+        Source is optional enrichment. Use export.arxiv.org for source
+        tarballs, while keeping completeness validation, retry, and graceful
+        fallback for transient or malformed responses.
         """
         base_id = re.sub(r"v\d+$", "", self._short_id)
         safe_name = base_id.replace("/", "_")
         destination = os.path.join(dirpath, f"{safe_name}.tar")
         partial = destination + ".part"
-        source_url = self.pdf_url.replace("/pdf/", "/src/")
+        source_url = f"https://export.arxiv.org/src/{base_id}"
         max_attempts = 2
 
         for attempt in range(max_attempts):
