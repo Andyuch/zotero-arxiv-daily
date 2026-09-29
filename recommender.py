@@ -194,8 +194,23 @@ def rerank_paper(
 
     # Keep the familiar ~0-10 score scale used by the original recommender.
     scaled_score = base_score * 10.0
+
+    # Percentile is calculated over the entire daily candidate pool, before
+    # truncation to MAX_PAPER_NUM. This preserves useful display resolution even
+    # when the shortlisted papers all have high raw cosine scores.
+    n_candidates = len(base_score)
+    if n_candidates <= 1:
+        relevance_percentile = np.full(n_candidates, 100.0, dtype=np.float32)
+    else:
+        ascending = np.argsort(base_score)
+        relevance_percentile = np.empty(n_candidates, dtype=np.float32)
+        relevance_percentile[ascending] = np.linspace(
+            0.0, 100.0, n_candidates, dtype=np.float32
+        )
+
     for i, paper in enumerate(candidate):
         paper.score = float(scaled_score[i])
+        paper.relevance_percentile = float(relevance_percentile[i])
         # Useful for future debugging/explainability; no LLM or API is involved.
         paper.score_components = {
             "top_k": float(top_k_score[i]),
