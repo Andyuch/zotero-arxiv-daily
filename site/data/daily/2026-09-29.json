@@ -1,37 +1,7 @@
 {
-  "generated_at": "2026-09-29T06:33:38.852162+00:00",
-  "paper_count": 30,
-  "days": [
-    {
-      "date": "2026-09-29",
-      "count": 30
-    }
-  ],
-  "journals": [
-    "ACS Applied Materials &amp; Interfaces",
-    "ACS Energy Letters",
-    "ACS Nano",
-    "ACS Photonics",
-    "Applied Physics Letters",
-    "Journal of the American Chemical Society",
-    "Nano Letters",
-    "The Journal of Physical Chemistry Letters",
-    "arXiv"
-  ],
-  "sources": [
-    "Crossref",
-    "arXiv"
-  ],
-  "topics": [
-    "AI & Computation",
-    "Battery",
-    "Electrochemistry",
-    "Materials",
-    "Microscopy",
-    "Other",
-    "Semiconductors",
-    "Spectroscopy"
-  ],
+  "date": "2026-09-29",
+  "generated_at": "2026-09-29T06:33:38.850174+00:00",
+  "count": 30,
   "papers": [
     {
       "title": "(Sub)nanoscale Visualization of Reconstruction-Driven Moir\\'e Exciton Localization and Delocalization",
@@ -61,12 +31,7 @@
         "AI & Computation"
       ],
       "seen_date": "2026-09-29",
-      "key": "arxiv:2609.34104",
-      "first_seen": "2026-09-29",
-      "last_seen": "2026-09-29",
-      "seen_dates": [
-        "2026-09-29"
-      ]
+      "key": "arxiv:2609.34104"
     },
     {
       "title": "Magneto-optical Kerr spectroscopy of exciton Rydberg states in a magnetic van der Waals heterostructure",
@@ -106,12 +71,7 @@
         "AI & Computation"
       ],
       "seen_date": "2026-09-29",
-      "key": "arxiv:2609.34536",
-      "first_seen": "2026-09-29",
-      "last_seen": "2026-09-29",
-      "seen_dates": [
-        "2026-09-29"
-      ]
+      "key": "arxiv:2609.34536"
     },
     {
       "title": "Electrically switchable one-dimensional quadrupolar excitons in lateral double heterojunctions",
@@ -140,12 +100,7 @@
         "Semiconductors"
       ],
       "seen_date": "2026-09-29",
-      "key": "arxiv:2609.32392",
-      "first_seen": "2026-09-29",
-      "last_seen": "2026-09-29",
-      "seen_dates": [
-        "2026-09-29"
-      ]
+      "key": "arxiv:2609.32392"
     },
     {
       "title": "Mitigating Chemomechanical Degradation in All-Solid-State Batteries via Combined Porous Silicon and Hard-Carbon Architectures",
@@ -189,12 +144,7 @@
         "Materials"
       ],
       "seen_date": "2026-09-29",
-      "key": "doi:10.1021/acsami.6c14371",
-      "first_seen": "2026-09-29",
-      "last_seen": "2026-09-29",
-      "seen_dates": [
-        "2026-09-29"
-      ]
+      "key": "doi:10.1021/acsami.6c14371"
     },
     {
       "title": "Unveiling Plasmon-Enhanced Localized Fields of Titanium Nitride via Complementary Electron Microscopy Techniques",
@@ -239,12 +189,7 @@
         "Materials"
       ],
       "seen_date": "2026-09-29",
-      "key": "doi:10.1021/acs.nanolett.6c03589",
-      "first_seen": "2026-09-29",
-      "last_seen": "2026-09-29",
-      "seen_dates": [
-        "2026-09-29"
-      ]
+      "key": "doi:10.1021/acs.nanolett.6c03589"
     },
     {
       "title": "Polyhedral-Cluster Machine Learning Potential for Efficient and Accurate Modeling of Complex Li-Ion Cathodes",
@@ -288,12 +233,7 @@
         "AI & Computation"
       ],
       "seen_date": "2026-09-29",
-      "key": "doi:10.1021/acs.jpclett.6c02477",
-      "first_seen": "2026-09-29",
-      "last_seen": "2026-09-29",
-      "seen_dates": [
-        "2026-09-29"
-      ]
+      "key": "doi:10.1021/acs.jpclett.6c02477"
     },
     {
       "title": "Unifying Magnetic, Electrical, and Thermoelectric Responses in a Non-Collinear Antiferromagnet",
@@ -322,12 +262,7 @@
         "Other"
       ],
       "seen_date": "2026-09-29",
-      "key": "arxiv:2609.33046",
-      "first_seen": "2026-09-29",
-      "last_seen": "2026-09-29",
-      "seen_dates": [
-        "2026-09-29"
-      ]
+      "key": "arxiv:2609.33046"
     },
     {
       "title": "Electrochemical Structural Dynamics of Transparent Capacitive Ion Storage Electrodes for Electrochromic Polymer Displays",
@@ -373,12 +308,7 @@
         "Materials"
       ],
       "seen_date": "2026-09-29",
-      "key": "doi:10.1021/acsami.6c14648",
-      "first_seen": "2026-09-29",
-      "last_seen": "2026-09-29",
-      "seen_dates": [
-        "2026-09-29"
-      ]
+      "key": "doi:10.1021/acsami.6c14648"
     },
     {
       "title": "Impact of Phonon-Magnon Scattering on Thermal Transport across Antiferromagnetic and Ferromagnetic Oxides",
@@ -410,12 +340,7 @@
         "AI & Computation"
       ],
       "seen_date": "2026-09-29",
-      "key": "arxiv:2609.32954",
-      "first_seen": "2026-09-29",
-      "last_seen": "2026-09-29",
-      "seen_dates": [
-        "2026-09-29"
-      ]
+      "key": "arxiv:2609.32954"
     },
     {
       "title": "Termination-Dependent Surface States and Magnetic Fingerprints of Chiral Helimagnet Cr1/3TaS2",
@@ -497,12 +422,7 @@
         "AI & Computation"
       ],
       "seen_date": "2026-09-29",
-      "key": "doi:10.1021/acsnano.6c08594",
-      "first_seen": "2026-09-29",
-      "last_seen": "2026-09-29",
-      "seen_dates": [
-        "2026-09-29"
-      ]
+      "key": "doi:10.1021/acsnano.6c08594"
     },
     {
       "title": "Geometry-Controlled Polarization Photocurrents in Scalable PtSe2 Infrared Pixels",
@@ -538,12 +458,7 @@
         "AI & Computation"
       ],
       "seen_date": "2026-09-29",
-      "key": "arxiv:2609.32136",
-      "first_seen": "2026-09-29",
-      "last_seen": "2026-09-29",
-      "seen_dates": [
-        "2026-09-29"
-      ]
+      "key": "arxiv:2609.32136"
     },
     {
       "title": "First Principles Magnetic Initialisation Made Simple",
@@ -575,12 +490,7 @@
         "Materials"
       ],
       "seen_date": "2026-09-29",
-      "key": "arxiv:2609.35081",
-      "first_seen": "2026-09-29",
-      "last_seen": "2026-09-29",
-      "seen_dates": [
-        "2026-09-29"
-      ]
+      "key": "arxiv:2609.35081"
     },
     {
       "title": "Surface-Periodicity-Guided Structure Mapping for Automated Scanning Tunneling Microscopy",
@@ -621,12 +531,7 @@
         "Materials"
       ],
       "seen_date": "2026-09-29",
-      "key": "doi:10.1021/acs.nanolett.6c03145",
-      "first_seen": "2026-09-29",
-      "last_seen": "2026-09-29",
-      "seen_dates": [
-        "2026-09-29"
-      ]
+      "key": "doi:10.1021/acs.nanolett.6c03145"
     },
     {
       "title": "Temperature Dependent Evolution of the Electronic Structure in EuZn2As2 across the Neel Transition",
@@ -663,12 +568,7 @@
         "AI & Computation"
       ],
       "seen_date": "2026-09-29",
-      "key": "arxiv:2609.32121",
-      "first_seen": "2026-09-29",
-      "last_seen": "2026-09-29",
-      "seen_dates": [
-        "2026-09-29"
-      ]
+      "key": "arxiv:2609.32121"
     },
     {
       "title": "Spin current modulation of the magnetically non-resonant acoustic voltage",
@@ -708,12 +608,40 @@
         "Materials"
       ],
       "seen_date": "2026-09-29",
-      "key": "doi:10.1063/5.0350781",
-      "first_seen": "2026-09-29",
-      "last_seen": "2026-09-29",
-      "seen_dates": [
-        "2026-09-29"
-      ]
+      "key": "doi:10.1063/5.0350781"
+    },
+    {
+      "title": "Sub-20 nm spin textures with arbitrary topological charge stabilized by higher-order interactions",
+      "authors": [
+        "Zhen Sun, Shiwei Zhu, Moritz A. Goerzen, Megha Arya, Changsheng Song, Dongzhe Li"
+      ],
+      "journal": "arXiv",
+      "source": "arXiv",
+      "doi": null,
+      "arxiv_id": "2609.34706",
+      "published_at": null,
+      "article_url": "https://arxiv.org/abs/2609.34706",
+      "pdf_url": "https://arxiv.org/pdf/2609.34706.pdf",
+      "code_url": null,
+      "abstract": "Topological magnetization textures play a central role in modern magnetism. For many applications, spin textures with different topological charges $Q$ in the same system are particularly attractive. Although the coexistence of skyrmions and antiskyrmions ($|Q| = 1$) has been reported in inversion-symmetric magnets, extending this to high-$Q$ ($|Q| > 1$) textures with arbitrary charge remains elusive. Here, using an atomistic spin model parameterized from first-principles calculations, we predict the emergence of sub-20 nm high-$Q$ textures in Janus monolayers, van der Waals magnets of growing interest. We explore skyrmion and antiskyrmion rings as well as skyrmion bags with $|Q|$ up to 5, and characterize their nucleation mechanisms, thermal stability, and collapse pathways. We find that higher-order spin interactions (HOI), which extend the conventional bilinear-exchange Hamiltonian, are essential for stabilizing these high-$Q$ spin textures. The rings remain thermally stable at zero magnetic field. HOI substantially enhance their energy barriers while leaving their size nearly unchanged and stabilize them even in the absence of Dzyaloshinskii-Moriya interaction. Skyrmion bags, in contrast, nucleate only in the presence of HOI. In particular, the four-spin three-site interaction is the key ingredient preventing high-$Q$ textures from collapsing into the ferromagnetic state. Finally, we identify previously unreported parity-dependent collapse mechanisms for high-$Q$ textures. Our results establish HOI as an overlooked mechanism for high-$Q$ nucleation.",
+      "tldr": "Higher-order spin interactions are predicted to stabilize sub-20 nm high-topological-charge spin textures, including skyrmion/antiskyrmion rings and skyrmion bags with \\(|Q|\\) up to 5, in Janus van der Waals monolayers, even without Dzyaloshinskii-Moriya interaction.",
+      "affiliations": [
+        "Université de Toulouse",
+        "Zhejiang Sci-Tech University"
+      ],
+      "score": 8.2533,
+      "relevance_percentile": 99.21,
+      "score_components": {
+        "top_k": 0.8478,
+        "cluster": 0.8633,
+        "recent": 0.7122
+      },
+      "topics": [
+        "Electrochemistry",
+        "AI & Computation"
+      ],
+      "seen_date": "2026-09-29",
+      "key": "arxiv:2609.34706"
     },
     {
       "title": "Phonon angular momentum transfer torque",
@@ -747,50 +675,7 @@
         "Materials"
       ],
       "seen_date": "2026-09-29",
-      "key": "arxiv:2609.32575",
-      "first_seen": "2026-09-29",
-      "last_seen": "2026-09-29",
-      "seen_dates": [
-        "2026-09-29"
-      ]
-    },
-    {
-      "title": "Sub-20 nm spin textures with arbitrary topological charge stabilized by higher-order interactions",
-      "authors": [
-        "Zhen Sun, Shiwei Zhu, Moritz A. Goerzen, Megha Arya, Changsheng Song, Dongzhe Li"
-      ],
-      "journal": "arXiv",
-      "source": "arXiv",
-      "doi": null,
-      "arxiv_id": "2609.34706",
-      "published_at": null,
-      "article_url": "https://arxiv.org/abs/2609.34706",
-      "pdf_url": "https://arxiv.org/pdf/2609.34706.pdf",
-      "code_url": null,
-      "abstract": "Topological magnetization textures play a central role in modern magnetism. For many applications, spin textures with different topological charges $Q$ in the same system are particularly attractive. Although the coexistence of skyrmions and antiskyrmions ($|Q| = 1$) has been reported in inversion-symmetric magnets, extending this to high-$Q$ ($|Q| > 1$) textures with arbitrary charge remains elusive. Here, using an atomistic spin model parameterized from first-principles calculations, we predict the emergence of sub-20 nm high-$Q$ textures in Janus monolayers, van der Waals magnets of growing interest. We explore skyrmion and antiskyrmion rings as well as skyrmion bags with $|Q|$ up to 5, and characterize their nucleation mechanisms, thermal stability, and collapse pathways. We find that higher-order spin interactions (HOI), which extend the conventional bilinear-exchange Hamiltonian, are essential for stabilizing these high-$Q$ spin textures. The rings remain thermally stable at zero magnetic field. HOI substantially enhance their energy barriers while leaving their size nearly unchanged and stabilize them even in the absence of Dzyaloshinskii-Moriya interaction. Skyrmion bags, in contrast, nucleate only in the presence of HOI. In particular, the four-spin three-site interaction is the key ingredient preventing high-$Q$ textures from collapsing into the ferromagnetic state. Finally, we identify previously unreported parity-dependent collapse mechanisms for high-$Q$ textures. Our results establish HOI as an overlooked mechanism for high-$Q$ nucleation.",
-      "tldr": "Higher-order spin interactions are predicted to stabilize sub-20 nm high-topological-charge spin textures, including skyrmion/antiskyrmion rings and skyrmion bags with \\(|Q|\\) up to 5, in Janus van der Waals monolayers, even without Dzyaloshinskii-Moriya interaction.",
-      "affiliations": [
-        "Université de Toulouse",
-        "Zhejiang Sci-Tech University"
-      ],
-      "score": 8.2533,
-      "relevance_percentile": 99.21,
-      "score_components": {
-        "top_k": 0.8478,
-        "cluster": 0.8633,
-        "recent": 0.7122
-      },
-      "topics": [
-        "Electrochemistry",
-        "AI & Computation"
-      ],
-      "seen_date": "2026-09-29",
-      "key": "arxiv:2609.34706",
-      "first_seen": "2026-09-29",
-      "last_seen": "2026-09-29",
-      "seen_dates": [
-        "2026-09-29"
-      ]
+      "key": "arxiv:2609.32575"
     },
     {
       "title": "Tensor-Engineered Van der Waals NbOCl2 Resonant Metasurface for Polarization-entangled Bell State Generation",
@@ -819,82 +704,7 @@
         "Materials"
       ],
       "seen_date": "2026-09-29",
-      "key": "arxiv:2609.34095",
-      "first_seen": "2026-09-29",
-      "last_seen": "2026-09-29",
-      "seen_dates": [
-        "2026-09-29"
-      ]
-    },
-    {
-      "title": "Helicity-Controlled Hall Transport in Hybrid Topological Magnetic Textures",
-      "authors": [
-        "Anton V. Hlushchenko, Julia Kharlan, Mykhailo I. Bratchenko, Aleksei V. Chechkin, Jaros{\\l}aw W. K{\\l}os, Oleg A. Tretiakov"
-      ],
-      "journal": "arXiv",
-      "source": "arXiv",
-      "doi": null,
-      "arxiv_id": "2609.32372",
-      "published_at": null,
-      "article_url": "https://arxiv.org/abs/2609.32372",
-      "pdf_url": "https://arxiv.org/pdf/2609.32372.pdf",
-      "code_url": null,
-      "abstract": "Topological magnetic textures can serve as information carriers driven by spin currents. However, their motion is generally accompanied by a Hall effect that deflects them from the current direction, limiting transport efficiency and controllability. We develop a unified spin-space transformation framework enabling a systematic study of hybrid spin textures with different helicities, such as skyrmions, antiskyrmions, bimerons, and antibimerons. Combining analytical theory with micromagnetic simulations, we establish the relation between helicity and current-driven transport. An analytical solution of the generalized Thiele equation identifies helicity as a geometric control parameter and yields a simple expression for the Hall angle, enabling its continuous tuning, complete suppression, and deterministic steering along arbitrary in-plane directions. Micromagnetic simulations confirm that the generated spin textures remain stable under Landau--Lifshitz--Gilbert dynamics and validate the analytical predictions. These results establish helicity as a versatile control parameter for programmable transport of topological magnetic textures.",
-      "tldr": "TLDR: The paper develops a unified spin-space transformation framework for hybrid topological magnetic textures and shows analytically and numerically that helicity acts as a geometric control parameter to tune, completely suppress, or deterministically steer their current-driven Hall transport.",
-      "affiliations": [],
-      "score": 8.2239,
-      "relevance_percentile": 99.12,
-      "score_components": {
-        "top_k": 0.8444,
-        "cluster": 0.866,
-        "recent": 0.7021
-      },
-      "topics": [
-        "Semiconductors",
-        "Materials",
-        "AI & Computation"
-      ],
-      "seen_date": "2026-09-29",
-      "key": "arxiv:2609.32372",
-      "first_seen": "2026-09-29",
-      "last_seen": "2026-09-29",
-      "seen_dates": [
-        "2026-09-29"
-      ]
-    },
-    {
-      "title": "Nanodiamond Sensing of Stray Fields during Domain Reversal",
-      "authors": [
-        "Kin On Ho, Hamza Abudayyeh, Andrew Perez, Hui-Ping Chang, Liang Juan Chang, Junwei Tong, Can Cui, Jean Anne C. Incorvia, Xiaoqin Li"
-      ],
-      "journal": "arXiv",
-      "source": "arXiv",
-      "doi": null,
-      "arxiv_id": "2609.31950",
-      "published_at": null,
-      "article_url": "https://arxiv.org/abs/2609.31950",
-      "pdf_url": "https://arxiv.org/pdf/2609.31950.pdf",
-      "code_url": null,
-      "abstract": "Quantitative measurement of nanoscale stray magnetic fields during domain reversal is important for understanding and optimizing magnetic memory and logic devices. Yet, achieving high spatial resolution with minimally invasive probes remains challenging. Here we demonstrate nanodiamonds (NDs) hosting an ensemble nitrogen vacancy (NV) centers as local quantum sensors of domain-reversal stray fields in a CoFeB strip. During magnetic-field-driven reversal, the ND sensors resolve three distinct local responses depending on their positions relative to the strip: a positive frequency jump at the edge, an unexpected negative jump just outside the strip, and a negligible change near the center. These contrasting signals are quantitatively explained by magnetostatic boundary fields from micromagnetic simulations. We further implement a fully constrained fitting procedure for optically detected magnetic resonance spectra, enabling robust field extraction even when resonances are partially resolved. Together, these results establish NV-ND magnetometry as a simple, transferable, and quantitative approach for characterizing spatially heterogeneous magnetic fields in thin-films and spintronic devices.",
-      "tldr": "Nanodiamonds with nitrogen-vacancy centers enable quantitative, spatially resolved sensing of stray magnetic fields during domain reversal in a CoFeB strip, revealing position-dependent field jumps explained by micromagnetic simulations.",
-      "affiliations": [],
-      "score": 8.2177,
-      "relevance_percentile": 99.07,
-      "score_components": {
-        "top_k": 0.8217,
-        "cluster": 0.8658,
-        "recent": 0.756
-      },
-      "topics": [
-        "AI & Computation"
-      ],
-      "seen_date": "2026-09-29",
-      "key": "arxiv:2609.31950",
-      "first_seen": "2026-09-29",
-      "last_seen": "2026-09-29",
-      "seen_dates": [
-        "2026-09-29"
-      ]
+      "key": "arxiv:2609.34095"
     },
     {
       "title": "Capacitance sensing in bilayer graphene with gate reflectometry",
@@ -930,12 +740,7 @@
         "Materials"
       ],
       "seen_date": "2026-09-29",
-      "key": "arxiv:2609.35125",
-      "first_seen": "2026-09-29",
-      "last_seen": "2026-09-29",
-      "seen_dates": [
-        "2026-09-29"
-      ]
+      "key": "arxiv:2609.35125"
     },
     {
       "title": "Strain Minimization via Dimyristoylphosphatidylcholine Modification for Perovskite Solar Cells",
@@ -975,55 +780,67 @@
         "Materials"
       ],
       "seen_date": "2026-09-29",
-      "key": "doi:10.1021/acsenergylett.6c02307",
-      "first_seen": "2026-09-29",
-      "last_seen": "2026-09-29",
-      "seen_dates": [
-        "2026-09-29"
-      ]
+      "key": "doi:10.1021/acsenergylett.6c02307"
     },
     {
-      "title": "Chemical Design Rule for Ultraviolet-Emitting Color Centers: The Role of Host Ionicity",
+      "title": "Nanodiamond Sensing of Stray Fields during Domain Reversal",
       "authors": [
-        "Chen Qiu",
-        "Xiao-Lan Yan",
-        "Cai-Xin Zhang",
-        "Yu Song",
-        "Su-Huai Wei"
+        "Kin On Ho, Hamza Abudayyeh, Andrew Perez, Hui-Ping Chang, Liang Juan Chang, Junwei Tong, Can Cui, Jean Anne C. Incorvia, Xiaoqin Li"
       ],
-      "journal": "Journal of the American Chemical Society",
-      "source": "Crossref",
-      "doi": "10.1021/jacs.6c10140",
-      "arxiv_id": null,
-      "published_at": "2026-09-29",
-      "article_url": "https://doi.org/10.1021/jacs.6c10140",
-      "pdf_url": "https://pubs.acs.org/jacsat/article-pdf/doi/10.1021/jacs.6c10140/68684328/jacs.6c10140.pdf",
+      "journal": "arXiv",
+      "source": "arXiv",
+      "doi": null,
+      "arxiv_id": "2609.31950",
+      "published_at": null,
+      "article_url": "https://arxiv.org/abs/2609.31950",
+      "pdf_url": "https://arxiv.org/pdf/2609.31950.pdf",
       "code_url": null,
-      "abstract": "Abstract Solid-state ultraviolet (UV) single-photon emitters (SPEs) are highly desirable for solar-blind free-space quantum communication, ion-compatible quantum networking, and label-free spectroscopy, yet robust and well-understood UV color centers remain scarce even in wide-gap hosts such as diamond. Here we show that the energy of zero-phonon lines (ZPLs) is not controlled by the bandgap alone, but is governed by the host bonding character (covalent versus ionic) through the bonding–antibonding splitting of lattice divacancy-derived defect states. In covalent diamond, the divacancy yields only a 0.79 eV separation within the optical two-level manifold, so that most established centers exhibit ZPLs predominantly in the near-infrared or visible. By contrast, in ionic cubic boron nitride (c-BN), the corresponding divacancy splitting can reach 5.61 eV, naturally pushing the analogous transitions into the UV band. Building on this basic understanding, we establish a unified rule, combining impurity-associated atomic potential, lattice strain, and orbital hybridization, to predict ZPL trends of vacancy-impurity-vacancy (XV) centers in c-BN. Guided by this framework, we identify a chemically rich set of UV-emitting XV centers and reveal a roughly, though not strictly, monotonic redshift tendency of the ZPL for heavier impurities, with local deviations arising from competing strain, orbital hybridization, the Jahn–Teller effect, and spin–orbit coupling. These results provide a chemically transparent design rule for engineering UV SPEs in wide-gap hosts and help rationalize the scarcity of UV centers across materials, highlighting c-BN as a particularly fertile platform for solid-state quantum photonics.",
-      "tldr": "Host ionicity, not bandgap alone, governs the zero-phonon-line energy of divacancy-derived color centers, providing a predictive chemical design rule for ultraviolet single-photon emitters in wide-gap ionic hosts such as cubic boron nitride.",
-      "affiliations": [
-        "Eastern Institute of Technology , , ,",
-        "Xinjiang Technical Institute of Physics and Chemistry, Chinese Academy of Sciences , , ,"
-      ],
-      "score": 8.2097,
-      "relevance_percentile": 98.92,
+      "abstract": "Quantitative measurement of nanoscale stray magnetic fields during domain reversal is important for understanding and optimizing magnetic memory and logic devices. Yet, achieving high spatial resolution with minimally invasive probes remains challenging. Here we demonstrate nanodiamonds (NDs) hosting an ensemble nitrogen vacancy (NV) centers as local quantum sensors of domain-reversal stray fields in a CoFeB strip. During magnetic-field-driven reversal, the ND sensors resolve three distinct local responses depending on their positions relative to the strip: a positive frequency jump at the edge, an unexpected negative jump just outside the strip, and a negligible change near the center. These contrasting signals are quantitatively explained by magnetostatic boundary fields from micromagnetic simulations. We further implement a fully constrained fitting procedure for optically detected magnetic resonance spectra, enabling robust field extraction even when resonances are partially resolved. Together, these results establish NV-ND magnetometry as a simple, transferable, and quantitative approach for characterizing spatially heterogeneous magnetic fields in thin-films and spintronic devices.",
+      "tldr": "Nanodiamonds with nitrogen-vacancy centers enable quantitative, spatially resolved sensing of stray magnetic fields during domain reversal in a CoFeB strip, revealing position-dependent field jumps explained by micromagnetic simulations.",
+      "affiliations": [],
+      "score": 8.2177,
+      "relevance_percentile": 99.07,
       "score_components": {
-        "top_k": 0.8083,
-        "cluster": 0.8691,
-        "recent": 0.7805
+        "top_k": 0.8217,
+        "cluster": 0.8658,
+        "recent": 0.756
       },
       "topics": [
-        "Battery",
-        "Spectroscopy",
-        "Materials"
+        "AI & Computation"
       ],
       "seen_date": "2026-09-29",
-      "key": "doi:10.1021/jacs.6c10140",
-      "first_seen": "2026-09-29",
-      "last_seen": "2026-09-29",
-      "seen_dates": [
-        "2026-09-29"
-      ]
+      "key": "arxiv:2609.31950"
+    },
+    {
+      "title": "Helicity-Controlled Hall Transport in Hybrid Topological Magnetic Textures",
+      "authors": [
+        "Anton V. Hlushchenko, Julia Kharlan, Mykhailo I. Bratchenko, Aleksei V. Chechkin, Jaros{\\l}aw W. K{\\l}os, Oleg A. Tretiakov"
+      ],
+      "journal": "arXiv",
+      "source": "arXiv",
+      "doi": null,
+      "arxiv_id": "2609.32372",
+      "published_at": null,
+      "article_url": "https://arxiv.org/abs/2609.32372",
+      "pdf_url": "https://arxiv.org/pdf/2609.32372.pdf",
+      "code_url": null,
+      "abstract": "Topological magnetic textures can serve as information carriers driven by spin currents. However, their motion is generally accompanied by a Hall effect that deflects them from the current direction, limiting transport efficiency and controllability. We develop a unified spin-space transformation framework enabling a systematic study of hybrid spin textures with different helicities, such as skyrmions, antiskyrmions, bimerons, and antibimerons. Combining analytical theory with micromagnetic simulations, we establish the relation between helicity and current-driven transport. An analytical solution of the generalized Thiele equation identifies helicity as a geometric control parameter and yields a simple expression for the Hall angle, enabling its continuous tuning, complete suppression, and deterministic steering along arbitrary in-plane directions. Micromagnetic simulations confirm that the generated spin textures remain stable under Landau--Lifshitz--Gilbert dynamics and validate the analytical predictions. These results establish helicity as a versatile control parameter for programmable transport of topological magnetic textures.",
+      "tldr": "TLDR: The paper develops a unified spin-space transformation framework for hybrid topological magnetic textures and shows analytically and numerically that helicity acts as a geometric control parameter to tune, completely suppress, or deterministically steer their current-driven Hall transport.",
+      "affiliations": [],
+      "score": 8.2239,
+      "relevance_percentile": 99.12,
+      "score_components": {
+        "top_k": 0.8444,
+        "cluster": 0.866,
+        "recent": 0.7021
+      },
+      "topics": [
+        "Semiconductors",
+        "Materials",
+        "AI & Computation"
+      ],
+      "seen_date": "2026-09-29",
+      "key": "arxiv:2609.32372"
     },
     {
       "title": "Deep-Red to Near-Infrared Vertical Cavity Surface-Emitting Lasers from Bipyramidal Weakly Confined Quantum Dots",
@@ -1063,12 +880,76 @@
         "Semiconductors"
       ],
       "seen_date": "2026-09-29",
-      "key": "doi:10.1021/acsphotonics.6c01692",
-      "first_seen": "2026-09-29",
-      "last_seen": "2026-09-29",
-      "seen_dates": [
-        "2026-09-29"
-      ]
+      "key": "doi:10.1021/acsphotonics.6c01692"
+    },
+    {
+      "title": "Chemical Design Rule for Ultraviolet-Emitting Color Centers: The Role of Host Ionicity",
+      "authors": [
+        "Chen Qiu",
+        "Xiao-Lan Yan",
+        "Cai-Xin Zhang",
+        "Yu Song",
+        "Su-Huai Wei"
+      ],
+      "journal": "Journal of the American Chemical Society",
+      "source": "Crossref",
+      "doi": "10.1021/jacs.6c10140",
+      "arxiv_id": null,
+      "published_at": "2026-09-29",
+      "article_url": "https://doi.org/10.1021/jacs.6c10140",
+      "pdf_url": "https://pubs.acs.org/jacsat/article-pdf/doi/10.1021/jacs.6c10140/68684328/jacs.6c10140.pdf",
+      "code_url": null,
+      "abstract": "Abstract Solid-state ultraviolet (UV) single-photon emitters (SPEs) are highly desirable for solar-blind free-space quantum communication, ion-compatible quantum networking, and label-free spectroscopy, yet robust and well-understood UV color centers remain scarce even in wide-gap hosts such as diamond. Here we show that the energy of zero-phonon lines (ZPLs) is not controlled by the bandgap alone, but is governed by the host bonding character (covalent versus ionic) through the bonding–antibonding splitting of lattice divacancy-derived defect states. In covalent diamond, the divacancy yields only a 0.79 eV separation within the optical two-level manifold, so that most established centers exhibit ZPLs predominantly in the near-infrared or visible. By contrast, in ionic cubic boron nitride (c-BN), the corresponding divacancy splitting can reach 5.61 eV, naturally pushing the analogous transitions into the UV band. Building on this basic understanding, we establish a unified rule, combining impurity-associated atomic potential, lattice strain, and orbital hybridization, to predict ZPL trends of vacancy-impurity-vacancy (XV) centers in c-BN. Guided by this framework, we identify a chemically rich set of UV-emitting XV centers and reveal a roughly, though not strictly, monotonic redshift tendency of the ZPL for heavier impurities, with local deviations arising from competing strain, orbital hybridization, the Jahn–Teller effect, and spin–orbit coupling. These results provide a chemically transparent design rule for engineering UV SPEs in wide-gap hosts and help rationalize the scarcity of UV centers across materials, highlighting c-BN as a particularly fertile platform for solid-state quantum photonics.",
+      "tldr": "Host ionicity, not bandgap alone, governs the zero-phonon-line energy of divacancy-derived color centers, providing a predictive chemical design rule for ultraviolet single-photon emitters in wide-gap ionic hosts such as cubic boron nitride.",
+      "affiliations": [
+        "Eastern Institute of Technology , , ,",
+        "Xinjiang Technical Institute of Physics and Chemistry, Chinese Academy of Sciences , , ,"
+      ],
+      "score": 8.2097,
+      "relevance_percentile": 98.92,
+      "score_components": {
+        "top_k": 0.8083,
+        "cluster": 0.8691,
+        "recent": 0.7805
+      },
+      "topics": [
+        "Battery",
+        "Spectroscopy",
+        "Materials"
+      ],
+      "seen_date": "2026-09-29",
+      "key": "doi:10.1021/jacs.6c10140"
+    },
+    {
+      "title": "Tailored multipolar optical trapping with higher-order structured light",
+      "authors": [
+        "Nabendu Mishra, Nick Vamivakas, Eileen Otte"
+      ],
+      "journal": "arXiv",
+      "source": "arXiv",
+      "doi": null,
+      "arxiv_id": "2609.33294",
+      "published_at": null,
+      "article_url": "https://arxiv.org/abs/2609.33294",
+      "pdf_url": "https://arxiv.org/pdf/2609.33294.pdf",
+      "code_url": null,
+      "abstract": "Dipolar optical forces can confine Rayleigh-sized dielectric particles towards or away from intensity maxima, commonly known as bright and dark trapping. Structured light illumination opens up opportunities for customized trapping landscapes, unveiling the possibility of gray trapping, especially for larger Mie particles that can excite a higher-order multipolar response. While previous studies have primarily focused on calculations of the gradient force for some exemplary, focused scalar beams, we not only extend these analyses by combining vectorial focusing with generalized Lorenz-Mie theory, but also consider more complex trapping fields. Motivated by their unique tight focusing behavior, shaping strong transverse intensity gradients and three-dimensional electric field components, we explore higher-order cylindrical scalar and vector beams. We theoretically investigate multipolar trapping of Mie-regime silicon nanospheres in water, calculating the three-dimensional net radiation force and assess local trapping stability through the force Jacobian. Near an octupolar Mie resonance, we predict stable gray trapping with enhanced efficiency for vector beams. Further, we find field geometries enabling configurable, particle-size-dependent gray/dark trapping with subwavelength inter-particle spacing. These results establish polarization, illumination structure and particle parameters as complementary controls for radius-dependent multipolar trapping, providing a basis for potential applications in sub-wavelength particle sorting, trapping-assisted nanopatterning and optical binding investigations.",
+      "tldr": "This paper theoretically demonstrates that higher-order structured scalar and vector beams, combined with multipolar Mie resonances in silicon nanospheres, enable customizable gray/dark optical trapping landscapes—including stable, size-dependent, subwavelength-spaced equilibria—beyond conventional bright trapping.",
+      "affiliations": [
+        "University of Rochester"
+      ],
+      "score": 8.1815,
+      "relevance_percentile": 98.68,
+      "score_components": {
+        "top_k": 0.8076,
+        "cluster": 0.8473,
+        "recent": 0.8008
+      },
+      "topics": [
+        "Other"
+      ],
+      "seen_date": "2026-09-29",
+      "key": "arxiv:2609.33294"
     },
     {
       "title": "Symmetry-guided Design Principles for Spin Splitting and Hall Transport in Orthorhombic Altermagnetic Perovskites",
@@ -1101,50 +982,7 @@
         "AI & Computation"
       ],
       "seen_date": "2026-09-29",
-      "key": "arxiv:2609.33130",
-      "first_seen": "2026-09-29",
-      "last_seen": "2026-09-29",
-      "seen_dates": [
-        "2026-09-29"
-      ]
-    },
-    {
-      "title": "Computational symmetry hierarchy of time-reversal-even and -odd spin Hall conductivity tensors in altermagnets",
-      "authors": [
-        "Dameul Jeong, Seoung-Hun Kang, Young-Kyun Kwon"
-      ],
-      "journal": "arXiv",
-      "source": "arXiv",
-      "doi": null,
-      "arxiv_id": "2609.33631",
-      "published_at": null,
-      "article_url": "https://arxiv.org/abs/2609.33631",
-      "pdf_url": "https://arxiv.org/pdf/2609.33631.pdf",
-      "code_url": null,
-      "abstract": "Predicting the full spin Hall conductivity tensor of a magnetic crystal is difficult because crystallographic and magnetic symmetries do not constrain all parts of the response in the same way. Here, we separate the spin Hall conductivity of altermagnets into time-reversal-even and time-reversal-odd channels and combine symmetry analysis with first-principles calculations for six representative compounds spanning distinct crystallographic classes. The even channel follows crystallographic selection rules consistent with its Berry-curvature Fermi-sea origin. The odd channel is set by magnetic symmetry and can be reshaped by antiunitary operations whose spatial parts originate from screw or glide symmetries. Momentum-resolved analysis further links the even response to spin-orbit-driven avoided crossings and the odd response to anisotropic near-Fermi-level spin-current response textures. By converting crystallographic and magnetic symmetry operations into linear constraints on the full 27-component SHC tensor, this framework provides a computational prescreening route for identifying symmetry-allowed spin Hall channels before dense first-principles transport calculations. Extending the same analysis to 62 spin-split collinear antiferromagnets yields a magnetic-point-group tensor atlas, identifying design limits such as the complete 13/14tensor partition in CuF2 and the one-parameter time-odd tensor compression in MnSe.",
-      "tldr": "The paper establishes a symmetry hierarchy in altermagnets where crystallographic symmetry controls the time-reversal-even spin Hall conductivity tensor while magnetic, often antiunitary nonsymmorphic symmetry controls the time-reversal-odd tensor, enabling computational prescreening of all 27 tensor components across representative and 62 additional collinear antiferromagnets.",
-      "affiliations": [
-        "Kyung Hee University",
-        "Korea Institute of Science and Technology Information (KISTI)"
-      ],
-      "score": 8.1872,
-      "relevance_percentile": 98.77,
-      "score_components": {
-        "top_k": 0.8292,
-        "cluster": 0.8737,
-        "recent": 0.7101
-      },
-      "topics": [
-        "Materials",
-        "AI & Computation"
-      ],
-      "seen_date": "2026-09-29",
-      "key": "arxiv:2609.33631",
-      "first_seen": "2026-09-29",
-      "last_seen": "2026-09-29",
-      "seen_dates": [
-        "2026-09-29"
-      ]
+      "key": "arxiv:2609.33130"
     },
     {
       "title": "Revealing the Proton Slingshot Mechanism in Solid Acid Electrolytes through Machine-Learning Molecular Dynamics",
@@ -1190,48 +1028,40 @@
         "AI & Computation"
       ],
       "seen_date": "2026-09-29",
-      "key": "doi:10.1021/jacs.5c21965",
-      "first_seen": "2026-09-29",
-      "last_seen": "2026-09-29",
-      "seen_dates": [
-        "2026-09-29"
-      ]
+      "key": "doi:10.1021/jacs.5c21965"
     },
     {
-      "title": "Tailored multipolar optical trapping with higher-order structured light",
+      "title": "Computational symmetry hierarchy of time-reversal-even and -odd spin Hall conductivity tensors in altermagnets",
       "authors": [
-        "Nabendu Mishra, Nick Vamivakas, Eileen Otte"
+        "Dameul Jeong, Seoung-Hun Kang, Young-Kyun Kwon"
       ],
       "journal": "arXiv",
       "source": "arXiv",
       "doi": null,
-      "arxiv_id": "2609.33294",
+      "arxiv_id": "2609.33631",
       "published_at": null,
-      "article_url": "https://arxiv.org/abs/2609.33294",
-      "pdf_url": "https://arxiv.org/pdf/2609.33294.pdf",
+      "article_url": "https://arxiv.org/abs/2609.33631",
+      "pdf_url": "https://arxiv.org/pdf/2609.33631.pdf",
       "code_url": null,
-      "abstract": "Dipolar optical forces can confine Rayleigh-sized dielectric particles towards or away from intensity maxima, commonly known as bright and dark trapping. Structured light illumination opens up opportunities for customized trapping landscapes, unveiling the possibility of gray trapping, especially for larger Mie particles that can excite a higher-order multipolar response. While previous studies have primarily focused on calculations of the gradient force for some exemplary, focused scalar beams, we not only extend these analyses by combining vectorial focusing with generalized Lorenz-Mie theory, but also consider more complex trapping fields. Motivated by their unique tight focusing behavior, shaping strong transverse intensity gradients and three-dimensional electric field components, we explore higher-order cylindrical scalar and vector beams. We theoretically investigate multipolar trapping of Mie-regime silicon nanospheres in water, calculating the three-dimensional net radiation force and assess local trapping stability through the force Jacobian. Near an octupolar Mie resonance, we predict stable gray trapping with enhanced efficiency for vector beams. Further, we find field geometries enabling configurable, particle-size-dependent gray/dark trapping with subwavelength inter-particle spacing. These results establish polarization, illumination structure and particle parameters as complementary controls for radius-dependent multipolar trapping, providing a basis for potential applications in sub-wavelength particle sorting, trapping-assisted nanopatterning and optical binding investigations.",
-      "tldr": "This paper theoretically demonstrates that higher-order structured scalar and vector beams, combined with multipolar Mie resonances in silicon nanospheres, enable customizable gray/dark optical trapping landscapes—including stable, size-dependent, subwavelength-spaced equilibria—beyond conventional bright trapping.",
+      "abstract": "Predicting the full spin Hall conductivity tensor of a magnetic crystal is difficult because crystallographic and magnetic symmetries do not constrain all parts of the response in the same way. Here, we separate the spin Hall conductivity of altermagnets into time-reversal-even and time-reversal-odd channels and combine symmetry analysis with first-principles calculations for six representative compounds spanning distinct crystallographic classes. The even channel follows crystallographic selection rules consistent with its Berry-curvature Fermi-sea origin. The odd channel is set by magnetic symmetry and can be reshaped by antiunitary operations whose spatial parts originate from screw or glide symmetries. Momentum-resolved analysis further links the even response to spin-orbit-driven avoided crossings and the odd response to anisotropic near-Fermi-level spin-current response textures. By converting crystallographic and magnetic symmetry operations into linear constraints on the full 27-component SHC tensor, this framework provides a computational prescreening route for identifying symmetry-allowed spin Hall channels before dense first-principles transport calculations. Extending the same analysis to 62 spin-split collinear antiferromagnets yields a magnetic-point-group tensor atlas, identifying design limits such as the complete 13/14tensor partition in CuF2 and the one-parameter time-odd tensor compression in MnSe.",
+      "tldr": "The paper establishes a symmetry hierarchy in altermagnets where crystallographic symmetry controls the time-reversal-even spin Hall conductivity tensor while magnetic, often antiunitary nonsymmorphic symmetry controls the time-reversal-odd tensor, enabling computational prescreening of all 27 tensor components across representative and 62 additional collinear antiferromagnets.",
       "affiliations": [
-        "University of Rochester"
+        "Kyung Hee University",
+        "Korea Institute of Science and Technology Information (KISTI)"
       ],
-      "score": 8.1815,
-      "relevance_percentile": 98.68,
+      "score": 8.1872,
+      "relevance_percentile": 98.77,
       "score_components": {
-        "top_k": 0.8076,
-        "cluster": 0.8473,
-        "recent": 0.8008
+        "top_k": 0.8292,
+        "cluster": 0.8737,
+        "recent": 0.7101
       },
       "topics": [
-        "Other"
+        "Materials",
+        "AI & Computation"
       ],
       "seen_date": "2026-09-29",
-      "key": "arxiv:2609.33294",
-      "first_seen": "2026-09-29",
-      "last_seen": "2026-09-29",
-      "seen_dates": [
-        "2026-09-29"
-      ]
+      "key": "arxiv:2609.33631"
     },
     {
       "title": "Electrolyte density, diffusivity and conductivity in graphene nanoconfinement predicted by separating interfacial from genuine confinement effects",
@@ -1262,12 +1092,7 @@
         "AI & Computation"
       ],
       "seen_date": "2026-09-29",
-      "key": "arxiv:2609.35068",
-      "first_seen": "2026-09-29",
-      "last_seen": "2026-09-29",
-      "seen_dates": [
-        "2026-09-29"
-      ]
+      "key": "arxiv:2609.35068"
     },
     {
       "title": "Parity-selected Bethe-Salpeter equation: symmetry-adapted regularization of the exciton-phonon self-energy in polar semiconductors",
@@ -1299,12 +1124,7 @@
         "Materials"
       ],
       "seen_date": "2026-09-29",
-      "key": "arxiv:2609.32909",
-      "first_seen": "2026-09-29",
-      "last_seen": "2026-09-29",
-      "seen_dates": [
-        "2026-09-29"
-      ]
+      "key": "arxiv:2609.32909"
     }
   ]
 }
