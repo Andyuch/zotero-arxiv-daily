@@ -146,22 +146,43 @@ def get_block_html(
     </table>
     """
 
-def get_stars(score:float):
+def get_stars(percentile: float):
     full_star = '<span class="full-star">⭐</span>'
     half_star = '<span class="half-star">⭐</span>'
-    low = 6
-    high = 8
-    if score <= low:
-        return ''
-    elif score >= high:
-        return full_star * 5
+    p = float(percentile or 0.0)
+    if p >= 95:
+        stars = 5.0
+    elif p >= 85:
+        stars = 4.5
+    elif p >= 70:
+        stars = 4.0
+    elif p >= 50:
+        stars = 3.5
+    elif p >= 30:
+        stars = 3.0
+    elif p >= 15:
+        stars = 2.5
     else:
-        interval = (high-low) / 10
-        star_num = math.ceil((score-low) / interval)
-        full_star_num = int(star_num/2)
-        half_star_num = star_num - full_star_num * 2
-        return '<div class="star-wrapper">'+full_star * full_star_num + half_star * half_star_num + '</div>'
+        stars = 2.0
 
+    full_star_num = int(stars)
+    half_star_num = 1 if stars % 1 else 0
+    return (
+        '<div class="star-wrapper">'
+        + full_star * full_star_num
+        + half_star * half_star_num
+        + '</div>'
+    )
+
+
+def get_relevance_html(score: float, percentile: float) -> str:
+    top_pct = max(1, round(100.0 - float(percentile or 0.0)))
+    return (
+        f"{get_stars(percentile)}"
+        f'<span style="margin-left:8px;color:#777;font-size:12px;">'
+        f"{float(score or 0.0):.2f} · top {top_pct}%"
+        f"</span>"
+    )
 
 def render_email(papers:list):
     parts = []
@@ -169,7 +190,10 @@ def render_email(papers:list):
         return framework.replace('__CONTENT__', get_empty_html())
 
     for p in tqdm(papers,desc='Rendering Email'):
-        rate = get_stars(p.score)
+        rate = get_relevance_html(
+            p.score,
+            getattr(p, "relevance_percentile", 0.0),
+        )
         author_list = [a.name for a in p.authors]
         num_authors = len(author_list)
 
