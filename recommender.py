@@ -14,9 +14,6 @@ RECENT_TOP_K = 5
 MAX_CLUSTERS = 8
 MMR_LAMBDA = 0.85
 MMR_POOL_SIZE = 200
-PENDING_COLLECTION_NAME = "pending library"
-PENDING_WEIGHT = 0.35
-PENDING_TOP_K = 3
 
 # Zero-token local ranking weights. These sum to 1.0.
 TOP_K_WEIGHT = 0.50
@@ -45,15 +42,6 @@ def _date_added(paper: dict) -> datetime:
         return datetime.strptime(value, "%Y-%m-%dT%H:%M:%SZ")
     except (TypeError, ValueError):
         return datetime.min
-
-
-def _is_pending_paper(paper: dict) -> bool:
-    """Return True when a Zotero item belongs to the Pending Library collection."""
-    for path in paper.get("paths", []) or []:
-        leaf = str(path).strip().rstrip("/").split("/")[-1].casefold()
-        if leaf == PENDING_COLLECTION_NAME:
-            return True
-    return False
 
 
 def _top_k_mean(similarity: np.ndarray, k: int) -> np.ndarray:
@@ -198,33 +186,11 @@ def rerank_paper(
     recent_similarity = candidate_feature @ corpus_feature[:recent_size].T
     recent_score = _top_k_mean(recent_similarity, RECENT_TOP_K)
 
-    profile_score = (
+    base_score = (
         TOP_K_WEIGHT * top_k_score
         + CLUSTER_WEIGHT * cluster_score
         + RECENT_WEIGHT * recent_score
     )
-
-    pending_indices = [
-        index for index, paper in enumerate(corpus)
-        if _is_pending_paper(paper)
-    ]
-    pending_score = np.zeros(len(candidate), dtype=np.float32)
-    if pending_indices:
-        pending_feature = corpus_feature[pending_indices]
-        pending_similarity = candidate_feature @ pending_feature.T
-        pending_score = _top_k_mean(
-            pending_similarity,
-            min(PENDING_TOP_K, len(pending_indices)),
-        )
-        # Pending Library is an explicit user signal, so it receives a strong
-        # 35% profile share while preserving the existing V2 profile for the
-        # remaining 65%. With no pending items, ranking is exactly unchanged.
-        base_score = (
-            (1.0 - PENDING_WEIGHT) * profile_score
-            + PENDING_WEIGHT * pending_score
-        )
-    else:
-        base_score = profile_score
 
     # Keep the familiar ~0-10 score scale used by the original recommender.
     scaled_score = base_score * 10.0
@@ -250,18 +216,16 @@ def rerank_paper(
             "top_k": float(top_k_score[i]),
             "cluster": float(cluster_score[i]),
             "recent": float(recent_score[i]),
-            "pending": float(pending_score[i]),
         }
 
     order = _mmr_order(base_score, candidate_feature)
 
     logger.info(
         "Recommender V2: zero-token local ranking; {} candidates, {} Zotero papers, "
-        "{} interest clusters, {} Pending Library papers, top-k={}, recent-corpus={}, MMR pool={}",
+        "{} interest clusters, top-k={}, recent-corpus={}, MMR pool={}",
         len(candidate),
         len(corpus),
         n_clusters,
-        len(pending_indices),
         min(TOP_K, len(corpus)),
         recent_size,
         min(MMR_POOL_SIZE, len(candidate)),
