@@ -2,6 +2,10 @@ name: Send emails daily
 
 on:
   workflow_dispatch:
+  # Temporary, single approved V3 refresh; remove after this run completes.
+  push:
+    branches: [v3-pages-ui]
+    paths: ['.github/v3-refresh-20260930-0707']
   schedule:
     - cron: '0 22 * * *'
 
