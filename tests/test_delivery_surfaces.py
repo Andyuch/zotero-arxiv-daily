@@ -162,14 +162,6 @@ class EmailTests(unittest.TestCase):
         self.assertIn('shortfall', rendered)
 
 
-class FrozenDatetime(datetime):
-    @classmethod
-    def now(cls, tz=None):
-        # A UTC boundary catches accidental use of a local calendar date.
-        assert tz is timezone.utc
-        return cls(2026, 9, 30, 0, 5, tzinfo=timezone.utc)
-
-
 class SourceWindowTests(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
@@ -183,34 +175,53 @@ class SourceWindowTests(unittest.TestCase):
             'paper': simple_module('paper', JournalPaper=SimpleNamespace),
         })
 
-    def fetch(self, **kwargs):
+    def fetch(self, now, **kwargs):
         session = MagicMock()
         session.get.return_value.json.return_value = {'message': {'items': [], 'total-results': 0}}
-        with patch.object(self.sources, 'datetime', FrozenDatetime), \
-             patch.object(self.sources, 'load_journal_catalog', return_value=[{'issn': '1234-5678', 'journal': 'Nature'}]), \
+        with patch.object(self.sources, 'load_journal_catalog',
+                          return_value=[{'issn': '1234-5678', 'journal': 'Nature'}]), \
              patch.object(self.sources, '_crossref_session', return_value=session):
-            self.sources.fetch_crossref_papers(**kwargs)
+            self.sources.fetch_crossref_papers(now=now, **kwargs)
         return session.get.call_args.kwargs['params']
 
-    def test_default_three_calendar_days_includes_september_28(self):
-        params = self.fetch()
-        self.assertIn('from-created-date:2026-09-28', params['filter'])
-        self.assertIn('until-created-date:2026-09-30', params['filter'])
+    def test_morning_run_uses_previous_completed_arxiv_clock_day(self):
+        # 22:00 UTC on Sep 30 is 18:00 EDT: the Sep 30 20:00 ET boundary
+        # has not happened yet, so the stable literature day ends at Sep 30 00:00 UTC.
+        params = self.fetch(datetime(2026, 9, 30, 22, 0, tzinfo=timezone.utc))
+        self.assertIn('from-created-date:2026-09-29T00:00:00', params['filter'])
+        self.assertIn('until-created-date:2026-09-30T00:00:00', params['filter'])
         self.assertEqual(params['sort'], 'created')
         self.assertEqual(params['order'], 'desc')
 
-    def test_explicit_one_day_preserves_same_day_window(self):
-        params = self.fetch(lookback_days=1)
-        self.assertIn('from-created-date:2026-09-30', params['filter'])
+    def test_same_arxiv_day_is_stable_across_reruns(self):
+        morning = self.fetch(datetime(2026, 9, 30, 22, 0, tzinfo=timezone.utc))
+        later = self.fetch(datetime(2026, 10, 1, 0, 0, tzinfo=timezone.utc))
+        self.assertEqual(morning['filter'], later['filter'])
 
-    def test_long_window_and_rows_override_remain_configurable(self):
-        params = self.fetch(lookback_days=7, rows_per_journal=17)
-        self.assertIn('from-created-date:2026-09-24', params['filter'])
+    def test_after_20_et_rolls_to_next_completed_day(self):
+        params = self.fetch(datetime(2026, 10, 1, 1, 0, tzinfo=timezone.utc))
+        self.assertIn('from-created-date:2026-09-30T00:00:00', params['filter'])
+        self.assertIn('until-created-date:2026-10-01T00:00:00', params['filter'])
+
+    def test_winter_boundary_tracks_eastern_time_not_fixed_utc(self):
+        # 23:00 UTC is 18:00 EST, so the latest completed 20:00 ET boundary
+        # was 01:00 UTC on the same date.
+        params = self.fetch(datetime(2026, 1, 15, 23, 0, tzinfo=timezone.utc))
+        self.assertIn('from-created-date:2026-01-14T01:00:00', params['filter'])
+        self.assertIn('until-created-date:2026-01-15T01:00:00', params['filter'])
+
+    def test_old_lookback_override_is_ignored_but_rows_remain_configurable(self):
+        params = self.fetch(
+            datetime(2026, 9, 30, 22, 0, tzinfo=timezone.utc),
+            lookback_days=7,
+            rows_per_journal=17,
+        )
+        self.assertIn('from-created-date:2026-09-29T00:00:00', params['filter'])
         self.assertLessEqual(params['rows'], 17)
 
-    def test_invalid_low_lookback_still_has_one_calendar_day(self):
-        params = self.fetch(lookback_days=0)
-        self.assertIn('from-created-date:2026-09-30', params['filter'])
+    def test_naive_clock_input_is_rejected(self):
+        with self.assertRaises(ValueError):
+            self.sources.latest_completed_arxiv_clock_window(datetime(2026, 9, 30, 22, 0))
 
 
 if __name__ == '__main__':
