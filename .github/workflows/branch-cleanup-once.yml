@@ -1,0 +1,51 @@
+name: Archive obsolete branches once
+on:
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  cleanup:
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Preserve exact history and remove obsolete branches
+        shell: bash
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          test "$(gh api repos/$GITHUB_REPOSITORY --jq .default_branch)" = main
+          git fetch origin '+refs/heads/*:refs/remotes/origin/*'
+          while read -r branch expected; do
+            test "$(git rev-parse "refs/remotes/origin/$branch")" = "$expected"
+          done <<'REFS'
+          Andyuch-patch-1 017983b06ccbb705ec2838e007a9be9337c532ca
+          Andyuch-patch-Optimize-arxiv-API-request-handling 2fda52920bd2dcb769d6a6aa766412798fdbc03f
+          fix/v3-journal-lookback-cooldown 9bf084c1ad2526c12ee93a3b9895a78b62b67ef5
+          multi-source-journal-v3 2fd29736af8dc53c5e38091b2fc58ac55f52f9db
+          recommender-v2-zero-token 5dd3403307ea9bd03f43f61fe24f54408e9ca45e
+          v2-arxiv-only-compare ee9d0f425c6d99386a928d416a2a6fda4ac42d40
+          v3-pages-ui 72b4fb2361cd879b49f98423595c46cc72570c1c
+          zotero-library-audit 386fe195b141b395bd05eb5eb94877986ce784ff
+          own_branch 2b80671294dc566c0fc3262f310af2a5180d0e05
+          upstream 1752039ad2ec41a97ea8f5e65b0838e995b8c461
+          v2-backup 5dd3403307ea9bd03f43f61fe24f54408e9ca45e
+          REFS
+          git merge-base --is-ancestor origin/Andyuch-patch-1 origin/Andyuch-patch-Optimize-arxiv-API-request-handling
+          for branch in fix/v3-journal-lookback-cooldown multi-source-journal-v3 v3-pages-ui; do
+            git merge-base --is-ancestor "origin/$branch" origin/main
+          done
+          while read -r tag sha; do
+            git tag "$tag" "$sha"
+            git push origin "refs/tags/$tag"
+            test "$(git ls-remote origin "refs/tags/$tag" | cut -f1)" = "$sha"
+          done <<'TAGS'
+          archive/2026-09-30/arxiv-api-patches 2fda52920bd2dcb769d6a6aa766412798fdbc03f
+          archive/2026-09-30/v2-comparison ee9d0f425c6d99386a928d416a2a6fda4ac42d40
+          archive/2026-09-30/zotero-library-audit 386fe195b141b395bd05eb5eb94877986ce784ff
+          TAGS
+          git push --atomic origin --delete Andyuch-patch-1 Andyuch-patch-Optimize-arxiv-API-request-handling fix/v3-journal-lookback-cooldown multi-source-journal-v3 recommender-v2-zero-token v2-arxiv-only-compare v3-pages-ui zotero-library-audit
+          git ls-remote --heads origin
