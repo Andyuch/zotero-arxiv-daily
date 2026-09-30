@@ -146,21 +146,30 @@ If you find this project helpful, welcome to sponsor me via WeChat or via [ko-fi
 ## V3 daily freshness and repeat recommendations
 
 V3 aligns journal intake to the same **daily clock as arXiv** instead of using
-an overlapping 3-day Crossref pool. Crossref is queried by stable
-`created-date` timestamps for the most recent completed **20:00 ET → 20:00 ET**
-literature day. The production job intentionally remains at 22:00 UTC: at that
-time it is still before the next 20:00 Eastern arXiv announcement, so the arXiv
-feed represents the previous completed announcement day and Crossref is cut to
-the matching completed interval. Morning and later reruns within the same arXiv
-day therefore see the same journal window.
+an overlapping 3-day Crossref pool. The logical literature day remains
+**20:00 ET → 20:00 ET**, but the Crossref `created-date` retrieval window is
+widened by two hours on each side: **18:00 ET → 22:00 ET**. Consecutive runs
+therefore overlap for only four hours around the arXiv boundary.
 
-This keeps the journal safety property without allowing two or three previous
-days of journal papers to overwhelm the candidate pool. A publisher record
-deposited late is not lost: because Crossref `created-date` is the first metadata
-deposit time, it naturally enters the next completed literature-day window.
-The per-journal result cap remains `CROSSREF_ROWS_PER_JOURNAL=100`; raise it
-(up to 1000) if a single busy journal exceeds that cap. Source outages are still
-logged and do not stop arXiv recommendations. No fixed journal quota is imposed.
+The overlap is retrieval-only. Every Crossref DOI/normalized-title identity that
+has been successfully processed is persisted in
+`SITE_OUTPUT_DIR/data/crossref-ingestion-history.json`. Records already present
+in that ingestion ledger are removed **before ranking**, so the four-hour safety
+margin does not make journal papers accumulate or overwhelm the arXiv pool.
+Existing daily archives bootstrap the ledger conservatively on the first run.
+The separate `recommendation-history.json` still controls the 7-day delivered
+recommendation cooldown; ingestion history and recommendation history serve
+different purposes.
+
+The production job remains at 22:00 UTC. At that time it is before the next
+20:00 Eastern arXiv announcement, so the visible arXiv feed and the completed
+Crossref literature day stay aligned. The ±2 h overlap catches ordinary
+boundary/visibility jitter near 20:00 ET without reverting to a multi-day journal
+candidate pool. It is a practical safety margin rather than a guarantee against
+arbitrarily long Crossref indexing delays. The per-journal result cap remains
+`CROSSREF_ROWS_PER_JOURNAL=100`; raise it (up to 1000) if a single busy journal
+exceeds that cap. Source outages are still logged and do not stop arXiv
+recommendations. No fixed journal quota is imposed.
 
 After the unchanged embedding/MMR ranking, V3 prefers candidates outside a
 **7-day recommendation cooldown** (`RECOMMENDATION_COOLDOWN_DAYS=7`). A paper
@@ -191,7 +200,7 @@ still leave delivered papers unrecorded; inspect delivery before retrying such a
 run. This is not an exactly-once email guarantee.
 
 `CROSSREF_LOOKBACK_DAYS` is no longer used by the production workflow; the
-arXiv-clock window is deliberately fixed to one completed literature day.
+Crossref window is fixed to one completed arXiv-clock day plus a ±2 h boundary overlap.
 `RECOMMENDATION_COOLDOWN_DAYS` remains configurable and defaults to 7 days.
 V2 comparison code/configuration is unaffected.
 
@@ -212,8 +221,9 @@ node --check site/assets/app.js
 
 The daily workflow on the default branch runs at 22:00 UTC, checks out `main`,
 and commits archive updates back to `main`. GitHub Pages deploys that archive
-after a successful daily run. Crossref follows the completed arXiv-clock day;
-the 7-day recommendation cooldown remains configurable.
+after a successful daily run. Crossref follows the completed arXiv-clock day
+with a ±2 h boundary overlap filtered by the ingestion ledger; the 7-day
+recommendation cooldown remains configurable.
 
 `upstream` was synced on 2026-09-30 to commit
 `1752039ad2ec41a97ea8f5e65b0838e995b8c461`. It is a clean reference for reviewing
