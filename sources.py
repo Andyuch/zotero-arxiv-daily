@@ -7,6 +7,7 @@ import time
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
 from typing import Iterable
+from zoneinfo import ZoneInfo
 
 import requests
 from loguru import logger
@@ -18,6 +19,8 @@ from paper import JournalPaper
 
 CATALOG_PATH = Path(__file__).with_name("journal_sources.json")
 CROSSREF_API = "https://api.crossref.org"
+ARXIV_CLOCK_TZ = ZoneInfo("America/New_York")
+ARXIV_ANNOUNCEMENT_HOUR = 20
 
 
 def _clean_text(value: str | None) -> str:
@@ -153,18 +156,55 @@ def _paper_from_crossref(item: dict, configured_journal: str) -> JournalPaper | 
     )
 
 
+def latest_completed_arxiv_clock_window(
+    now: datetime | None = None,
+) -> tuple[datetime, datetime]:
+    """Return the most recent completed 20:00 ET -> 20:00 ET literature day.
+
+    The arXiv daily feed changes on the arXiv announcement clock rather than at
+    UTC midnight. Anchoring Crossref to the same clock keeps a morning digest
+    stable: rerunning it later in the same arXiv day queries the exact same
+    Crossref interval instead of an incomplete moving calendar day.
+    """
+    current = now or datetime.now(timezone.utc)
+    if current.tzinfo is None:
+        raise ValueError("now must be timezone-aware")
+
+    current_et = current.astimezone(ARXIV_CLOCK_TZ)
+    end_et = current_et.replace(
+        hour=ARXIV_ANNOUNCEMENT_HOUR,
+        minute=0,
+        second=0,
+        microsecond=0,
+    )
+    if current_et < end_et:
+        end_et -= timedelta(days=1)
+
+    start_et = end_et - timedelta(days=1)
+    return start_et.astimezone(timezone.utc), end_et.astimezone(timezone.utc)
+
+
+def _crossref_timestamp(value: datetime) -> str:
+    """Crossref accepts ISO timestamps to second precision; send them in UTC."""
+    return value.astimezone(timezone.utc).strftime("%Y-%m-%dT%H:%M:%S")
+
+
 def fetch_crossref_papers(
     groups: str = "nature,science,acs,materials",
-    lookback_days: int = 3,
     rows_per_journal: int = 100,
     mailto: str | None = None,
+    *,
+    now: datetime | None = None,
+    lookback_days: int | None = None,
 ) -> list[JournalPaper]:
-    """Retrieve newly deposited journal articles from configured journal families.
+    """Retrieve one completed arXiv-clock day of newly deposited journal records.
 
-    Uses Crossref's created-date window, so a daily run picks up a paper when
-    its Crossref metadata first appears even if the publisher publication date
-    is earlier. The default covers today plus two preceding UTC dates,
-    providing overlap for early/moving daily runs; this is not a rolling 24h window.
+    Crossref is filtered by created date (first metadata deposit), using the
+    same 20:00 America/New_York boundary that defines the daily arXiv rhythm.
+    This is a non-overlapping ingestion window: a paper deposited late simply
+    appears in the next completed window instead of forcing a 3-day candidate
+    overlap. lookback_days is accepted only for backwards compatibility and
+    intentionally no longer expands the ranking pool.
     """
     journals = load_journal_catalog(groups)
     if not journals:
@@ -173,10 +213,23 @@ def fetch_crossref_papers(
     user_agent = "zotero-arxiv-daily/0.3.5 (https://github.com/Andyuch/zotero-arxiv-daily)"
     session = _crossref_session(user_agent)
 
-    today = datetime.now(timezone.utc).date()
-    lookback_days = max(1, int(lookback_days))
-    start = today - timedelta(days=lookback_days - 1)
-    date_filter = f"from-created-date:{start.isoformat()},until-created-date:{today.isoformat()}"
+    if lookback_days not in (None, 1):
+        logger.warning(
+            "CROSSREF_LOOKBACK_DAYS={} is deprecated and ignored; "
+            "Crossref now follows one completed arXiv-clock day.",
+            lookback_days,
+        )
+
+    start, end = latest_completed_arxiv_clock_window(now)
+    date_filter = (
+        f"from-created-date:{_crossref_timestamp(start)},"
+        f"until-created-date:{_crossref_timestamp(end)}"
+    )
+    logger.info(
+        "Crossref arXiv-clock window: {} -> {} UTC (20:00 ET boundaries).",
+        _crossref_timestamp(start),
+        _crossref_timestamp(end),
+    )
 
     papers: list[JournalPaper] = []
     for index, spec in enumerate(journals):
