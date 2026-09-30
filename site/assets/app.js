@@ -1,3 +1,5 @@
+const READING_STATE_KEY = "research-frontier-reading-state-v1";
+
 const state = {
   data: { papers: [], journals: [], topics: [], days: [] },
   query: "",
@@ -5,9 +7,74 @@ const state = {
   date: "",
   topic: "All topics",
   sort: "recent",
+  readingFilter: "active",
+  reading: {},
 };
 
 const $ = (id) => document.getElementById(id);
+
+function paperKey(paper) {
+  if (paper?.key) return String(paper.key);
+  if (paper?.doi) return `doi:${String(paper.doi).trim().toLowerCase()}`;
+  if (paper?.arxiv_id) return `arxiv:${String(paper.arxiv_id).trim().toLowerCase()}`;
+  const normalized = String(paper?.title || "")
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, "");
+  return `title:${normalized}`;
+}
+
+function loadReadingState() {
+  try {
+    const raw = localStorage.getItem(READING_STATE_KEY);
+    if (!raw) return {};
+    const parsed = JSON.parse(raw);
+    return parsed && typeof parsed === "object" && !Array.isArray(parsed) ? parsed : {};
+  } catch (error) {
+    console.warn("Could not load reading state:", error);
+    return {};
+  }
+}
+
+function saveReadingState() {
+  try {
+    localStorage.setItem(READING_STATE_KEY, JSON.stringify(state.reading));
+  } catch (error) {
+    console.warn("Could not persist reading state:", error);
+  }
+}
+
+function readingState(paper) {
+  const saved = state.reading[paperKey(paper)] || {};
+  return {
+    read: Boolean(saved.read),
+    archived: Boolean(saved.archived),
+  };
+}
+
+function setReadingState(paper, patch) {
+  const key = paperKey(paper);
+  const current = readingState(paper);
+  const next = { ...current, ...patch, updated_at: new Date().toISOString() };
+
+  if (!next.read && !next.archived) {
+    delete state.reading[key];
+  } else {
+    state.reading[key] = next;
+  }
+
+  saveReadingState();
+  updateStats();
+  render();
+}
+
+function readingMatchesFilter(paper) {
+  const value = readingState(paper);
+  if (state.readingFilter === "all") return true;
+  if (state.readingFilter === "archived") return value.archived;
+  if (state.readingFilter === "read") return value.read && !value.archived;
+  if (state.readingFilter === "unread") return !value.read && !value.archived;
+  return !value.archived;
+}
 
 function safeUrl(value) {
   if (!value) return "";
@@ -105,6 +172,7 @@ function filteredPapers() {
     if (state.journal && paper.journal !== state.journal) return false;
     if (state.date && !(paper.seen_dates || [paper.seen_date]).includes(state.date)) return false;
     if (state.topic !== "All topics" && !(paper.topics || []).includes(state.topic)) return false;
+    if (!readingMatchesFilter(paper)) return false;
     return true;
   });
 
@@ -136,12 +204,33 @@ function actionLink(label, href, primary = false) {
   return a;
 }
 
+function stateButton(label, className, onClick) {
+  const button = document.createElement("button");
+  button.type = "button";
+  button.className = `state-action ${className}`.trim();
+  button.textContent = label;
+  button.addEventListener("click", onClick);
+  return button;
+}
+
 function renderCard(paper) {
   const tpl = $("paper-template");
   const node = tpl.content.cloneNode(true);
 
   node.querySelector(".journal-pill").textContent = paper.journal || paper.source || "Unknown source";
   node.querySelector(".date-pill").textContent = paper.published_at || paper.last_seen || paper.seen_date || "";
+
+  const localState = readingState(paper);
+  const readingPill = node.querySelector(".reading-pill");
+  if (localState.archived) {
+    readingPill.hidden = false;
+    readingPill.textContent = "Archived";
+    readingPill.classList.add("archived");
+  } else if (localState.read) {
+    readingPill.hidden = false;
+    readingPill.textContent = "Read";
+    readingPill.classList.add("read");
+  }
   node.querySelector(".paper-title").textContent = paper.title || "Untitled";
   node.querySelector(".paper-authors").textContent = textOr(paper.authors, "Unknown authors");
   node.querySelector(".stars").textContent = relevanceStars(paper.relevance_percentile);
@@ -185,6 +274,37 @@ function renderCard(paper) {
     actionLink("Code", paper.code_url),
   ].filter(Boolean).forEach((link) => actions.appendChild(link));
 
+  const stateActions = document.createElement("div");
+  stateActions.className = "reading-actions";
+
+  stateActions.appendChild(
+    stateButton(
+      localState.read ? "Unread" : "✓ Mark read",
+      localState.read ? "is-active" : "",
+      () => setReadingState(paper, {
+        read: !localState.read,
+        archived: localState.archived && !localState.read ? false : localState.archived,
+      })
+    )
+  );
+
+  stateActions.appendChild(
+    stateButton(
+      localState.archived ? "Restore" : "Archive",
+      localState.archived ? "is-active" : "",
+      () => setReadingState(paper, {
+        archived: !localState.archived,
+        read: localState.archived ? localState.read : true,
+      })
+    )
+  );
+
+  actions.appendChild(stateActions);
+
+  const card = node.querySelector(".paper-card");
+  if (localState.read) card.classList.add("is-read");
+  if (localState.archived) card.classList.add("is-archived");
+
   return node;
 }
 
@@ -203,11 +323,15 @@ function updateStats() {
   const todayCount = (state.data.days || [])[0]?.count || 0;
   const journalCount = new Set(papers.map((p) => p.journal || p.source).filter(Boolean)).size;
   const topCount = papers.filter((p) => Number(p.relevance_percentile || 0) >= 90).length;
+  const readCount = papers.filter((p) => readingState(p).read).length;
+  const archivedCount = papers.filter((p) => readingState(p).archived).length;
 
   $("stat-total").textContent = papers.length;
   $("stat-today").textContent = todayCount;
   $("stat-journals").textContent = journalCount;
   $("stat-top").textContent = topCount;
+  $("reading-summary").textContent =
+    ` · ${readCount} read · ${archivedCount} archived`;
 
   if (state.data.generated_at) {
     const dt = new Date(state.data.generated_at);
@@ -234,10 +358,15 @@ function wireControls() {
     state.sort = e.target.value;
     render();
   });
+  $("reading-filter").addEventListener("change", (e) => {
+    state.readingFilter = e.target.value;
+    render();
+  });
 }
 
 async function boot() {
   $("year-label").textContent = new Date().getFullYear();
+  state.reading = loadReadingState();
   wireControls();
 
   try {
