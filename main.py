@@ -25,6 +25,11 @@ from recommender import rerank_paper
 from sources import deduplicate_papers, fetch_crossref_papers
 from site_builder import update_site_archive
 from recommendation_history import load_history, select_recommendations, save_history
+from crossref_ingestion import (
+    load_ingestion_history,
+    partition_unseen_crossref,
+    save_ingestion_history,
+)
 
 load_dotenv(override=True)
 os.environ["TOKENIZERS_PARALLELISM"] = "false"
@@ -435,6 +440,13 @@ if __name__ == "__main__":
     papers = get_arxiv_paper(args.arxiv_query, args.debug)
     logger.info("arXiv candidates: {}", len(papers))
 
+    observed_journal_papers = []
+    crossref_ingestion_history = (
+        load_ingestion_history(args.site_output_dir)
+        if args.enable_crossref
+        else {}
+    )
+
     if args.enable_crossref:
         logger.info(
             "Retrieving journal papers from Crossref groups: {}...",
@@ -446,7 +458,16 @@ if __name__ == "__main__":
                 rows_per_journal=args.crossref_rows_per_journal,
                 mailto=args.crossref_mailto,
             )
-            logger.info("Journal candidates from Crossref: {}", len(journal_papers))
+            observed_journal_papers = list(journal_papers)
+            journal_papers, overlap_repeats = partition_unseen_crossref(
+                journal_papers,
+                crossref_ingestion_history,
+            )
+            logger.info(
+                "Journal candidates from Crossref: {} unseen, {} overlap records suppressed.",
+                len(journal_papers),
+                len(overlap_repeats),
+            )
             papers.extend(journal_papers)
         except Exception as exc:
             logger.warning(
@@ -505,7 +526,14 @@ if __name__ == "__main__":
         "please check the configuration and the junk box."
     )
 
-    # Only successful delivery consumes cooldown; never record fetched/unselected papers.
+    # Only successful delivery consumes state. Record every observed Crossref
+    # paper (not only selected papers) so the ±2 h retrieval overlap cannot
+    # re-enter ranking on the next daily run.
+    if observed_journal_papers:
+        save_ingestion_history(observed_journal_papers, args.site_output_dir)
+
+    # Recommendation cooldown is separate: only successfully delivered selected
+    # papers are recorded here.
     save_history(papers, args.site_output_dir)
     if args.publish_site:
         try:
