@@ -45,7 +45,7 @@ class MainDeliveryTests(unittest.TestCase):
         parser = MagicMock()
         parser.parse_args.return_value = args
         def record(name, result=None):
-            def method(*values):
+            def method(*values, **kwargs):
                 calls.append((name, values))
                 if name == 'send' and send_error:
                     raise send_error
