@@ -3,7 +3,7 @@ name: V3 Pages smoke test
 on:
   push:
     branches:
-      - v3-pages-ui
+      - main
     paths:
       - '*.py'
       - 'tests/**'
@@ -11,7 +11,7 @@ on:
       - '.github/workflows/site-ci.yml'
   pull_request:
     branches:
-      - v3-pages-ui
+      - main
   workflow_dispatch:
 
 permissions:

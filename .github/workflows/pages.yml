@@ -28,7 +28,7 @@ jobs:
       - name: Checkout latest V3 Pages archive
         uses: actions/checkout@v6
         with:
-          ref: v3-pages-ui
+          ref: main
 
       - name: Configure GitHub Pages
         uses: actions/configure-pages@v5

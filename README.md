@@ -194,14 +194,23 @@ python -m py_compile *.py
 node --check site/assets/app.js
 ```
 
-### Activation for this fork
+### Branch layout for this fork
 
-This PR targets `v3-pages-ui` only. The fork's scheduled workflow is currently
-read from its default branch, `recommender-v2-zero-token`, even though that
-workflow checks out V3 application code. Merging V3 code enables the code defaults
-(unless repository variables override them); it does **not** activate workflow
-changes stored only on V3. Separately review/sync the updated daily workflow to
-the default branch to enable its cooldown variable mapping, serialized runs and
-stage-before-diff persistence (important when only the new ledger changed after
-an archive failure). Do not change V2 recommender code. That workflow sync and
-any merge/deployment are separate actions, not performed by this fix.
+- `main`: production V3, including the research archive and recommendation ledger.
+- `v2-backup`: preserved V2 snapshot; not a production or scheduled-run branch.
+- `own_branch`: personal work, preserved unchanged.
+- `upstream`: unmodified snapshot of `TideDra/zotero-arxiv-daily`'s `main`.
+
+The daily workflow on the default branch runs at 22:00 UTC, checks out `main`,
+and commits archive updates back to `main`. GitHub Pages deploys that archive
+after a successful daily run. The 3-day journal lookback and 7-day recommendation
+cooldown remain in effect unless repository variables override them.
+
+`upstream` was synced on 2026-09-30 to commit
+`1752039ad2ec41a97ea8f5e65b0838e995b8c461`. It is a clean reference for reviewing
+upstream changes, not an automatic merge into production. Future syncs should
+move only `upstream`; review and test selected changes before applying to `main`.
+
+Keep `v2-backup`, `own_branch`, and `upstream` non-default. Their historical or
+upstream workflows are retained faithfully but should not be manually dispatched
+for production. No extra email run is required for branch housekeeping.
