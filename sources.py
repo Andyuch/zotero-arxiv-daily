@@ -155,7 +155,7 @@ def _paper_from_crossref(item: dict, configured_journal: str) -> JournalPaper | 
 
 def fetch_crossref_papers(
     groups: str = "nature,science,acs,materials",
-    lookback_days: int = 1,
+    lookback_days: int = 3,
     rows_per_journal: int = 100,
     mailto: str | None = None,
 ) -> list[JournalPaper]:
@@ -163,7 +163,8 @@ def fetch_crossref_papers(
 
     Uses Crossref's created-date window, so a daily run picks up a paper when
     its Crossref metadata first appears even if the publisher publication date
-    is earlier.
+    is earlier. The default covers today plus two preceding UTC dates,
+    providing overlap for early/moving daily runs; this is not a rolling 24h window.
     """
     journals = load_journal_catalog(groups)
     if not journals:
@@ -192,7 +193,14 @@ def fetch_crossref_papers(
         try:
             response = session.get(url, params=params, timeout=30)
             response.raise_for_status()
-            items = response.json().get("message", {}).get("items", [])
+            message = response.json().get("message", {})
+            items = message.get("items", [])
+            if message.get("total-results", len(items)) > len(items):
+                logger.warning(
+                    "Crossref window for {} contains more records than the configured cap {}; "
+                    "increase CROSSREF_ROWS_PER_JOURNAL if needed.",
+                    spec["journal"], params["rows"],
+                )
         except Exception as exc:
             logger.warning(
                 "Crossref retrieval failed for {} ({}): {}",

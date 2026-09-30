@@ -24,6 +24,7 @@ from paper import ArxivPaper
 from recommender import rerank_paper
 from sources import deduplicate_papers, fetch_crossref_papers
 from site_builder import update_site_archive
+from recommendation_history import load_history, select_recommendations, save_history
 
 load_dotenv(override=True)
 os.environ["TOKENIZERS_PARALLELISM"] = "false"
@@ -345,8 +346,14 @@ if __name__ == "__main__":
     add_argument(
         "--crossref_lookback_days",
         type=int,
-        help="Crossref created-date lookback window in days",
-        default=1,
+        help="Crossref UTC calendar-date window including today (default: 3 days)",
+        default=3,
+    )
+    add_argument(
+        "--recommendation_cooldown_days",
+        type=int,
+        help="Prefer papers not recommended in the last N UTC days; 0 disables cooldown",
+        default=7,
     )
     add_argument(
         "--crossref_rows_per_journal",
@@ -410,6 +417,10 @@ if __name__ == "__main__":
     parser.add_argument("--debug", action="store_true", help="Debug mode")
     args = parser.parse_args()
 
+    if args.recommendation_cooldown_days < 0 or args.max_paper_num < -1:
+        parser.error("cooldown must be nonnegative; max_paper_num must be -1 or nonnegative")
+    history = load_history(args.site_output_dir)
+
     assert not args.use_llm_api or args.openai_api_key is not None
 
     # Remove Loguru's default stderr sink before adding exactly one stdout sink.
@@ -468,8 +479,11 @@ if __name__ == "__main__":
     else:
         logger.info("Reranking unified paper pool...")
         papers = rerank_paper(papers, corpus)
-        if args.max_paper_num != -1:
-            papers = papers[: args.max_paper_num]
+        papers = select_recommendations(
+            papers, history, args.max_paper_num, args.recommendation_cooldown_days
+        )
+        logger.info("Selected {} papers ({} repeat highlights).", len(papers),
+                    sum(p.recommendation_status == "repeat_highlight" for p in papers))
         if args.use_llm_api:
             logger.info("Using OpenAI-compatible API as global LLM.")
             set_global_llm(
@@ -484,16 +498,6 @@ if __name__ == "__main__":
 
     html = render_email(papers)
 
-    if args.publish_site:
-        try:
-            archive_path = update_site_archive(papers, args.site_output_dir)
-            logger.info("Updated research archive at {}.", archive_path)
-        except Exception as exc:
-            logger.warning(
-                "Failed to update the research archive; continuing with email delivery: {}",
-                exc,
-            )
-
     logger.info("Sending email...")
     send_email(
         args.sender,
@@ -507,3 +511,15 @@ if __name__ == "__main__":
         "Email sent successfully! If you don't receive the email, "
         "please check the configuration and the junk box."
     )
+
+    # Only successful delivery consumes cooldown; never record fetched/unselected papers.
+    save_history(papers, args.site_output_dir)
+    if args.publish_site:
+        try:
+            archive_path = update_site_archive(papers, args.site_output_dir)
+            logger.info("Updated research archive at {}.", archive_path)
+        except Exception as exc:
+            logger.warning(
+                "Failed to update the research archive after email delivery; history was saved: {}",
+                exc,
+            )

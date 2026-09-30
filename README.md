@@ -141,3 +141,67 @@ If you find this project helpful, welcome to sponsor me via WeChat or via [ko-fi
 ## 🌟 Star History
 
 [![Star History Chart](https://api.star-history.com/svg?repos=TideDra/zotero-arxiv-daily&type=Date)](https://star-history.com/#TideDra/zotero-arxiv-daily&Date)
+
+
+## V3 daily freshness and repeat recommendations
+
+V3 uses an overlapping Crossref **created-date** window: today and the two
+preceding UTC calendar dates by default (`CROSSREF_LOOKBACK_DAYS=3`). This avoids
+an early-UTC run seeing only the first hour of today's deposits. It is not a
+rolling 24-hour window and does not mean every journal publishes daily. The
+existing per-journal result cap remains `CROSSREF_ROWS_PER_JOURNAL=100`; raise it
+(up to 1000) if a busy journal exceeds that cap. Source outages are still logged
+and do not stop arXiv recommendations. No fixed journal quota is imposed.
+
+After the unchanged embedding/MMR ranking, V3 prefers candidates outside a
+**7-day recommendation cooldown** (`RECOMMENDATION_COOLDOWN_DAYS=7`). A paper
+recommended September 29 becomes eligible normally on October 6. Same-day reruns
+also consult history. DOI case/URL prefixes, arXiv revisions and normalized titles
+are matched across sources. If too few eligible candidates remain, the highest
+ranked recent papers fill the remaining slots, clearly labeled **Repeat highlight**
+with the previous date in both email and the archive. Previously recommended
+papers outside the cooldown are labeled **Revisit**. Scores and ranking within
+each tier are unchanged. `0` disables cooldown priority but keeps repeat labels;
+`MAX_PAPER_NUM=-1` still selects all candidates.
+
+Only selected papers from a successful email send are added to the atomic ledger
+at `SITE_OUTPUT_DIR/data/recommendation-history.json`. Merely fetching/ranking a
+paper, or failing before/during SMTP delivery, does not consume its cooldown.
+Archive generation now follows successful email delivery. The ledger works even
+with `PUBLISH_SITE=false`; retain/persist this data directory between local runs.
+GitHub Actions commits it alongside the archive and serializes daily runs.
+Existing `data/daily/*.json` files bootstrap recommendation history without schema
+migration; those old selections are treated as previously recommended (they are
+not independent proof of email delivery). Same-day ledger entries are merged,
+even though the daily archive snapshot remains the latest run for that date.
+An invalid durable ledger fails the run rather than silently resetting history.
+
+As with any SMTP + Git commit workflow, acceptance by SMTP and persistence cannot
+be one atomic transaction. A runner crash after sending or a failed Git push can
+still leave delivered papers unrecorded; inspect delivery before retrying such a
+run. This is not an exactly-once email guarantee.
+
+Existing repository variables override defaults: remove an old explicit
+`CROSSREF_LOOKBACK_DAYS=1` (or change it to `3`) to use the overlapping window.
+CLI equivalents are `--crossref_lookback_days` and
+`--recommendation_cooldown_days`. V2 comparison code/configuration is unaffected.
+
+Offline regression checks (no SMTP, LLM downloads, or live feeds):
+
+```sh
+python -m unittest discover -s tests -v
+python -m py_compile *.py
+node --check site/assets/app.js
+```
+
+### Activation for this fork
+
+This PR targets `v3-pages-ui` only. The fork's scheduled workflow is currently
+read from its default branch, `recommender-v2-zero-token`, even though that
+workflow checks out V3 application code. Merging V3 code enables the code defaults
+(unless repository variables override them); it does **not** activate workflow
+changes stored only on V3. Separately review/sync the updated daily workflow to
+the default branch to enable its cooldown variable mapping, serialized runs and
+stage-before-diff persistence (important when only the new ledger changed after
+an archive failure). Do not change V2 recommender code. That workflow sync and
+any merge/deployment are separate actions, not performed by this fix.

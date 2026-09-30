@@ -146,6 +146,17 @@ function renderCard(paper) {
   node.querySelector(".paper-authors").textContent = textOr(paper.authors, "Unknown authors");
   node.querySelector(".stars").textContent = relevanceStars(paper.relevance_percentile);
   node.querySelector(".relevance-text").textContent = relevanceLabel(paper);
+  const recommendation = (state.date && paper.recommendations_by_date?.[state.date]) || paper;
+  if (["repeat_highlight", "revisit"].includes(recommendation.recommendation_status)) {
+    const badge = document.createElement("span");
+    badge.className = "topic-chip";
+    const label = recommendation.recommendation_status === "repeat_highlight" ? "Repeat highlight" : "Revisit";
+    badge.textContent = `${label} · previously recommended ${recommendation.previous_recommended_at || "earlier"}`;
+    badge.title = recommendation.recommendation_status === "repeat_highlight"
+      ? "Filling a shortfall of candidates outside the recent-recommendation cooldown"
+      : "Recommended again after the cooldown";
+    node.querySelector(".topic-list").appendChild(badge);
+  }
   node.querySelector(".paper-tldr").textContent = paper.tldr || paper.abstract || "No summary available.";
 
   const topics = node.querySelector(".topic-list");

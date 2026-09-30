@@ -102,6 +102,8 @@ def _record_from_paper(paper, seen_date: str) -> dict:
         },
         "topics": _topics(title, summary),
         "seen_date": seen_date,
+        "recommendation_status": getattr(paper, "recommendation_status", "new"),
+        "previous_recommended_at": getattr(paper, "previous_recommended_at", None),
     }
     record["key"] = _paper_key(record)
     return record
@@ -129,6 +131,7 @@ def _rebuild_index(data_dir: Path) -> dict:
                 merged["first_seen"] = date
                 merged["last_seen"] = date
                 merged["seen_dates"] = [date]
+                merged["recommendations_by_date"] = {}
                 by_key[key] = merged
             else:
                 existing = by_key[key]
@@ -136,6 +139,10 @@ def _rebuild_index(data_dir: Path) -> dict:
                 existing["last_seen"] = max(existing["last_seen"], date)
                 if date not in existing["seen_dates"]:
                     existing["seen_dates"].append(date)
+            by_key[key]["recommendations_by_date"][date] = {
+                "recommendation_status": record.get("recommendation_status", "new"),
+                "previous_recommended_at": record.get("previous_recommended_at"),
+            }
 
     papers = sorted(
         by_key.values(),
