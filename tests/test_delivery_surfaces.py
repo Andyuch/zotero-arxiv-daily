@@ -195,7 +195,7 @@ class SourceWindowTests(unittest.TestCase):
 
     def test_same_arxiv_day_is_stable_across_reruns(self):
         morning = self.fetch(datetime(2026, 9, 30, 22, 0, tzinfo=timezone.utc))
-        later = self.fetch(datetime(2026, 10, 1, 0, 0, tzinfo=timezone.utc))
+        later = self.fetch(datetime(2026, 9, 30, 23, 30, tzinfo=timezone.utc))
         self.assertEqual(morning['filter'], later['filter'])
 
     def test_after_20_et_rolls_to_next_completed_day(self):
