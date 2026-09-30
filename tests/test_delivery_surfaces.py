@@ -184,12 +184,13 @@ class SourceWindowTests(unittest.TestCase):
             self.sources.fetch_crossref_papers(now=now, **kwargs)
         return session.get.call_args.kwargs['params']
 
-    def test_morning_run_uses_previous_completed_arxiv_clock_day(self):
-        # 22:00 UTC on Sep 30 is 18:00 EDT: the Sep 30 20:00 ET boundary
-        # has not happened yet, so the stable literature day ends at Sep 30 00:00 UTC.
+    def test_morning_run_widens_completed_arxiv_day_by_two_hours(self):
+        # 22:00 UTC on Sep 30 is 18:00 EDT. The logical day is
+        # Sep 28 20:00 -> Sep 29 20:00 ET; retrieval widens it to
+        # Sep 28 18:00 -> Sep 29 22:00 ET.
         params = self.fetch(datetime(2026, 9, 30, 22, 0, tzinfo=timezone.utc))
-        self.assertIn('from-created-date:2026-09-29T00:00:00', params['filter'])
-        self.assertIn('until-created-date:2026-09-30T00:00:00', params['filter'])
+        self.assertIn('from-created-date:2026-09-28T22:00:00', params['filter'])
+        self.assertIn('until-created-date:2026-09-30T02:00:00', params['filter'])
         self.assertEqual(params['sort'], 'created')
         self.assertEqual(params['order'], 'desc')
 
@@ -198,17 +199,17 @@ class SourceWindowTests(unittest.TestCase):
         later = self.fetch(datetime(2026, 9, 30, 23, 30, tzinfo=timezone.utc))
         self.assertEqual(morning['filter'], later['filter'])
 
-    def test_after_20_et_rolls_to_next_completed_day(self):
+    def test_after_20_et_rolls_to_next_widened_day(self):
         params = self.fetch(datetime(2026, 10, 1, 1, 0, tzinfo=timezone.utc))
-        self.assertIn('from-created-date:2026-09-30T00:00:00', params['filter'])
-        self.assertIn('until-created-date:2026-10-01T00:00:00', params['filter'])
+        self.assertIn('from-created-date:2026-09-29T22:00:00', params['filter'])
+        self.assertIn('until-created-date:2026-10-01T02:00:00', params['filter'])
 
     def test_winter_boundary_tracks_eastern_time_not_fixed_utc(self):
-        # 23:00 UTC is 18:00 EST, so the latest completed 20:00 ET boundary
-        # was 01:00 UTC on the same date.
+        # 23:00 UTC is 18:00 EST. The completed logical day is widened
+        # from 20:00->20:00 ET to 18:00->22:00 ET.
         params = self.fetch(datetime(2026, 1, 15, 23, 0, tzinfo=timezone.utc))
-        self.assertIn('from-created-date:2026-01-14T01:00:00', params['filter'])
-        self.assertIn('until-created-date:2026-01-15T01:00:00', params['filter'])
+        self.assertIn('from-created-date:2026-01-13T23:00:00', params['filter'])
+        self.assertIn('until-created-date:2026-01-15T03:00:00', params['filter'])
 
     def test_old_lookback_override_is_ignored_but_rows_remain_configurable(self):
         params = self.fetch(
@@ -216,8 +217,27 @@ class SourceWindowTests(unittest.TestCase):
             lookback_days=7,
             rows_per_journal=17,
         )
-        self.assertIn('from-created-date:2026-09-29T00:00:00', params['filter'])
+        self.assertIn('from-created-date:2026-09-28T22:00:00', params['filter'])
         self.assertLessEqual(params['rows'], 17)
+
+
+    def test_consecutive_daily_windows_overlap_by_four_hours(self):
+        first_start, first_end = self.sources.widened_crossref_window(
+            datetime(2026, 9, 30, 22, 0, tzinfo=timezone.utc)
+        )
+        second_start, second_end = self.sources.widened_crossref_window(
+            datetime(2026, 10, 1, 22, 0, tzinfo=timezone.utc)
+        )
+        self.assertEqual((first_end - second_start).total_seconds(), 4 * 3600)
+        self.assertLess(first_start, second_start)
+        self.assertLess(first_end, second_end)
+
+    def test_negative_overlap_is_rejected(self):
+        with self.assertRaises(ValueError):
+            self.sources.widened_crossref_window(
+                datetime(2026, 9, 30, 22, 0, tzinfo=timezone.utc),
+                overlap_hours=-1,
+            )
 
     def test_naive_clock_input_is_rejected(self):
         with self.assertRaises(ValueError):
