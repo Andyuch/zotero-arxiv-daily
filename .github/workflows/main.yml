@@ -8,6 +8,10 @@ on:
 permissions:
   contents: write
 
+concurrency:
+  group: v3-daily-recommendations
+  cancel-in-progress: false
+
 jobs:
   calculate-and-send:
     runs-on: ubuntu-latest
@@ -31,6 +35,7 @@ jobs:
           ARXIV_QUERY: ${{ secrets.ARXIV_QUERY }}
           ENABLE_CROSSREF: ${{ vars.ENABLE_CROSSREF }}
           JOURNAL_GROUPS: ${{ vars.JOURNAL_GROUPS }}
+          RECOMMENDATION_COOLDOWN_DAYS: ${{ vars.RECOMMENDATION_COOLDOWN_DAYS }}
           CROSSREF_LOOKBACK_DAYS: ${{ vars.CROSSREF_LOOKBACK_DAYS }}
           CROSSREF_ROWS_PER_JOURNAL: ${{ vars.CROSSREF_ROWS_PER_JOURNAL }}
           CROSSREF_MAILTO: ${{ vars.CROSSREF_MAILTO }}
@@ -52,12 +57,12 @@ jobs:
 
       - name: Commit updated research archive
         run: |
-          if git diff --quiet -- site/data; then
+          git add site/data
+          if git diff --cached --quiet -- site/data; then
             echo "No archive changes to commit."
             exit 0
           fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add site/data
           git commit -m "Update research archive $(date -u +%F)"
           git push origin HEAD:v3-pages-ui

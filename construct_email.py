@@ -90,6 +90,8 @@ def get_block_html(
     arxiv_id: str | None = None,
     doi: str | None = None,
     published_at: str | None = None,
+    recommendation_status: str = "new",
+    previous_recommended_at: str | None = None,
 ):
     title = html.escape(title or "")
     authors = html.escape(authors or "Unknown Authors")
@@ -99,6 +101,11 @@ def get_block_html(
     affiliations = html.escape(affiliations or "Unknown Affiliation")
 
     meta_rows = []
+    if recommendation_status in ("repeat_highlight", "revisit"):
+        label = "Repeat highlight" if recommendation_status == "repeat_highlight" else "Revisit"
+        reason = "; filling a shortfall of unseen candidates" if recommendation_status == "repeat_highlight" else ""
+        previous = html.escape(previous_recommended_at or "an earlier digest")
+        meta_rows.append(f"<strong>{label}:</strong> previously recommended {previous}{reason}")
     if published_at:
         meta_rows.append(f"<strong>Published:</strong> {html.escape(published_at)}")
     if doi:
@@ -224,6 +231,8 @@ def render_email(papers:list):
                 arxiv_id=getattr(p, "arxiv_id", None),
                 doi=getattr(p, "doi", None),
                 published_at=getattr(p, "published_at", None),
+                recommendation_status=getattr(p, "recommendation_status", "new"),
+                previous_recommended_at=getattr(p, "previous_recommended_at", None),
             )
         )
         time.sleep(10)
@@ -252,4 +261,13 @@ def send_email(sender:str, receiver:str, password:str,smtp_server:str,smtp_port:
 
     server.login(sender, password)
     server.sendmail(sender, [receiver], msg.as_string())
-    server.quit()
+    # DATA acceptance is the delivery boundary. A QUIT disconnect must not
+    # discard the successful-send history or encourage a duplicate retry.
+    try:
+        server.quit()
+    except (smtplib.SMTPException, OSError) as exc:
+        logger.warning("Email accepted, but SMTP connection cleanup failed: {}", exc)
+        try:
+            server.close()
+        except (smtplib.SMTPException, OSError):
+            pass
