@@ -21,6 +21,7 @@ CATALOG_PATH = Path(__file__).with_name("journal_sources.json")
 CROSSREF_API = "https://api.crossref.org"
 ARXIV_CLOCK_TZ = ZoneInfo("America/New_York")
 ARXIV_ANNOUNCEMENT_HOUR = 20
+CROSSREF_BOUNDARY_OVERLAP_HOURS = 2
 
 
 def _clean_text(value: str | None) -> str:
@@ -142,7 +143,7 @@ def _paper_from_crossref(item: dict, configured_journal: str) -> JournalPaper | 
     abstract = _clean_text(item.get("abstract"))
     authors, affiliations = _authors_and_affiliations(item)
 
-    return JournalPaper(
+    paper = JournalPaper(
         title=title,
         summary=abstract,
         authors=authors,
@@ -154,6 +155,10 @@ def _paper_from_crossref(item: dict, configured_journal: str) -> JournalPaper | 
         affiliations=affiliations,
         published_at=_date_parts(item),
     )
+    paper.crossref_created_at = _clean_text(
+        (item.get("created") or {}).get("date-time")
+    ) or None
+    return paper
 
 
 def latest_completed_arxiv_clock_window(
@@ -189,6 +194,23 @@ def _crossref_timestamp(value: datetime) -> str:
     return value.astimezone(timezone.utc).strftime("%Y-%m-%dT%H:%M:%S")
 
 
+def widened_crossref_window(
+    now: datetime | None = None,
+    overlap_hours: int = CROSSREF_BOUNDARY_OVERLAP_HOURS,
+) -> tuple[datetime, datetime]:
+    """Widen the completed arXiv-clock day by a small boundary overlap.
+
+    Consecutive daily queries overlap only around the 20:00 ET boundary:
+    18:00 ET -> 22:00 ET for the default ±2 h margin. Persistent ingestion
+    history removes those overlap records before they enter ranking.
+    """
+    if overlap_hours < 0:
+        raise ValueError("overlap_hours must be nonnegative")
+    start, end = latest_completed_arxiv_clock_window(now)
+    margin = timedelta(hours=overlap_hours)
+    return start - margin, end + margin
+
+
 def fetch_crossref_papers(
     groups: str = "nature,science,acs,materials",
     rows_per_journal: int = 100,
@@ -197,14 +219,14 @@ def fetch_crossref_papers(
     now: datetime | None = None,
     lookback_days: int | None = None,
 ) -> list[JournalPaper]:
-    """Retrieve one completed arXiv-clock day of newly deposited journal records.
+    """Retrieve one completed arXiv-clock day with a ±2 h safety overlap.
 
     Crossref is filtered by created date (first metadata deposit), using the
-    same 20:00 America/New_York boundary that defines the daily arXiv rhythm.
-    This is a non-overlapping ingestion window: a paper deposited late simply
-    appears in the next completed window instead of forcing a 3-day candidate
-    overlap. lookback_days is accepted only for backwards compatibility and
-    intentionally no longer expands the ranking pool.
+    same 20:00 America/New_York boundary as arXiv. The default retrieval window
+    is widened from 20:00→20:00 to 18:00→22:00 ET. A persistent ingestion ledger
+    removes overlap records before ranking, so the safety margin does not make
+    journal papers accumulate across days. lookback_days is retained only for
+    backwards compatibility and no longer controls the window.
     """
     journals = load_journal_catalog(groups)
     if not journals:
@@ -220,13 +242,16 @@ def fetch_crossref_papers(
             lookback_days,
         )
 
-    start, end = latest_completed_arxiv_clock_window(now)
+    logical_start, logical_end = latest_completed_arxiv_clock_window(now)
+    start, end = widened_crossref_window(now)
     date_filter = (
         f"from-created-date:{_crossref_timestamp(start)},"
         f"until-created-date:{_crossref_timestamp(end)}"
     )
     logger.info(
-        "Crossref arXiv-clock window: {} -> {} UTC (20:00 ET boundaries).",
+        "Crossref logical day: {} -> {} UTC; retrieval overlap: {} -> {} UTC.",
+        _crossref_timestamp(logical_start),
+        _crossref_timestamp(logical_end),
         _crossref_timestamp(start),
         _crossref_timestamp(end),
     )
