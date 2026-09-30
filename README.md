@@ -145,13 +145,22 @@ If you find this project helpful, welcome to sponsor me via WeChat or via [ko-fi
 
 ## V3 daily freshness and repeat recommendations
 
-V3 uses an overlapping Crossref **created-date** window: today and the two
-preceding UTC calendar dates by default (`CROSSREF_LOOKBACK_DAYS=3`). This avoids
-an early-UTC run seeing only the first hour of today's deposits. It is not a
-rolling 24-hour window and does not mean every journal publishes daily. The
-existing per-journal result cap remains `CROSSREF_ROWS_PER_JOURNAL=100`; raise it
-(up to 1000) if a busy journal exceeds that cap. Source outages are still logged
-and do not stop arXiv recommendations. No fixed journal quota is imposed.
+V3 aligns journal intake to the same **daily clock as arXiv** instead of using
+an overlapping 3-day Crossref pool. Crossref is queried by stable
+`created-date` timestamps for the most recent completed **20:00 ET → 20:00 ET**
+literature day. The production job intentionally remains at 22:00 UTC: at that
+time it is still before the next 20:00 Eastern arXiv announcement, so the arXiv
+feed represents the previous completed announcement day and Crossref is cut to
+the matching completed interval. Morning and later reruns within the same arXiv
+day therefore see the same journal window.
+
+This keeps the journal safety property without allowing two or three previous
+days of journal papers to overwhelm the candidate pool. A publisher record
+deposited late is not lost: because Crossref `created-date` is the first metadata
+deposit time, it naturally enters the next completed literature-day window.
+The per-journal result cap remains `CROSSREF_ROWS_PER_JOURNAL=100`; raise it
+(up to 1000) if a single busy journal exceeds that cap. Source outages are still
+logged and do not stop arXiv recommendations. No fixed journal quota is imposed.
 
 After the unchanged embedding/MMR ranking, V3 prefers candidates outside a
 **7-day recommendation cooldown** (`RECOMMENDATION_COOLDOWN_DAYS=7`). A paper
@@ -181,10 +190,10 @@ be one atomic transaction. A runner crash after sending or a failed Git push can
 still leave delivered papers unrecorded; inspect delivery before retrying such a
 run. This is not an exactly-once email guarantee.
 
-Existing repository variables override defaults: remove an old explicit
-`CROSSREF_LOOKBACK_DAYS=1` (or change it to `3`) to use the overlapping window.
-CLI equivalents are `--crossref_lookback_days` and
-`--recommendation_cooldown_days`. V2 comparison code/configuration is unaffected.
+`CROSSREF_LOOKBACK_DAYS` is no longer used by the production workflow; the
+arXiv-clock window is deliberately fixed to one completed literature day.
+`RECOMMENDATION_COOLDOWN_DAYS` remains configurable and defaults to 7 days.
+V2 comparison code/configuration is unaffected.
 
 Offline regression checks (no SMTP, LLM downloads, or live feeds):
 
@@ -203,8 +212,8 @@ node --check site/assets/app.js
 
 The daily workflow on the default branch runs at 22:00 UTC, checks out `main`,
 and commits archive updates back to `main`. GitHub Pages deploys that archive
-after a successful daily run. The 3-day journal lookback and 7-day recommendation
-cooldown remain in effect unless repository variables override them.
+after a successful daily run. Crossref follows the completed arXiv-clock day;
+the 7-day recommendation cooldown remains configurable.
 
 `upstream` was synced on 2026-09-30 to commit
 `1752039ad2ec41a97ea8f5e65b0838e995b8c461`. It is a clean reference for reviewing
