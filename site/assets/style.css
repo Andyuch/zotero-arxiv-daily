@@ -646,3 +646,5 @@ a { color: inherit; }
     padding: 20px 0;
   }
 }
+
+/* Mobile viewport overflow guard: keep all archive content inside iOS Safari. */
