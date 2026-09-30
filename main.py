@@ -42,7 +42,6 @@ def get_zotero_corpus(id: str, key: str) -> list[dict]:
     collections = zot.everything(zot.collections())
     collections = {c["key"]: c for c in collections}
     corpus = zot.everything(zot.items(itemType="conferencePaper || journalArticle || preprint"))
-    corpus = [c for c in corpus if c["data"]["abstractNote"] != ""]
 
     def get_collection_path(col_key: str) -> str:
         if p := collections[col_key]["data"]["parentCollection"]:
@@ -52,6 +51,18 @@ def get_zotero_corpus(id: str, key: str) -> list[dict]:
     for c in corpus:
         paths = [get_collection_path(col) for col in c["data"]["collections"]]
         c["paths"] = paths
+
+    # Ordinary Zotero profile items still need abstracts. Pending Library is an
+    # explicit high-value signal, so title-only records are retained there even
+    # when a newly saved publisher item has not populated its abstract yet.
+    corpus = [
+        c for c in corpus
+        if c["data"].get("abstractNote", "").strip()
+        or any(
+            str(path).strip().rstrip("/").split("/")[-1].casefold() == "pending library"
+            for path in c.get("paths", [])
+        )
+    ]
     return corpus
 
 
