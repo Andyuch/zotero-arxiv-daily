@@ -344,12 +344,6 @@ if __name__ == "__main__":
         default="nature,science,acs,materials",
     )
     add_argument(
-        "--crossref_lookback_days",
-        type=int,
-        help="Crossref UTC calendar-date window including today (default: 3 days)",
-        default=3,
-    )
-    add_argument(
         "--recommendation_cooldown_days",
         type=int,
         help="Prefer papers not recommended in the last N UTC days; 0 disables cooldown",
@@ -449,7 +443,6 @@ if __name__ == "__main__":
         try:
             journal_papers = fetch_crossref_papers(
                 groups=args.journal_groups,
-                lookback_days=args.crossref_lookback_days,
                 rows_per_journal=args.crossref_rows_per_journal,
                 mailto=args.crossref_mailto,
             )
