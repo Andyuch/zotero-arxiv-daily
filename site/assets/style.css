@@ -168,7 +168,7 @@ a { color: inherit; }
 
 .toolbar {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) 250px 190px;
+  grid-template-columns: minmax(0, 1fr) 220px 170px 170px;
   gap: 18px;
 }
 
@@ -287,6 +287,14 @@ a { color: inherit; }
   transition: 180ms ease;
 }
 
+.paper-card.is-read {
+  border-color: rgba(83, 100, 73, 0.18);
+}
+
+.paper-card.is-archived {
+  opacity: 0.72;
+}
+
 .paper-card:hover {
   border-color: rgba(31,32,29,.24);
   box-shadow: 0 12px 34px rgba(43, 37, 29, 0.065);
@@ -299,6 +307,37 @@ a { color: inherit; }
   justify-content: space-between;
   gap: 16px;
   margin-bottom: 14px;
+}
+
+.paper-labels {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  min-width: 0;
+}
+
+.reading-pill {
+  display: inline-flex;
+  width: fit-content;
+  padding: 5px 9px;
+  border-radius: 999px;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  border: 1px solid var(--line);
+  color: var(--muted);
+  background: rgba(255, 255, 255, 0.58);
+}
+
+.reading-pill.read {
+  color: #4f5d49;
+  background: rgba(226, 234, 220, 0.7);
+}
+
+.reading-pill.archived {
+  color: #6d6259;
+  background: rgba(232, 226, 218, 0.78);
 }
 
 .journal-pill {
@@ -466,6 +505,39 @@ a { color: inherit; }
 }
 
 .paper-actions a:hover { opacity: .78; }
+
+.reading-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-left: auto;
+}
+
+.state-action {
+  appearance: none;
+  border: 1px solid var(--line);
+  background: transparent;
+  color: #5e5a53;
+  border-radius: 999px;
+  padding: 8px 12px;
+  font-size: 11px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.state-action:hover {
+  border-color: rgba(31, 32, 29, 0.32);
+}
+
+.state-action.is-active {
+  background: var(--chip);
+  color: var(--ink);
+}
+
+.reading-summary {
+  color: #9a948a;
+  margin-left: 4px;
+}
 
 .empty-state {
   padding: 80px 16px;
@@ -637,7 +709,23 @@ a { color: inherit; }
 
   .details-grid { min-width: 0; }
   .metadata-panel { min-width: 0; }
-  .paper-actions { max-width: 100%; }
+  .paper-actions {
+    max-width: 100%;
+    align-items: stretch;
+  }
+  .reading-actions {
+    width: 100%;
+    margin-left: 0;
+    padding-top: 2px;
+  }
+  .reading-actions .state-action {
+    flex: 1 1 calc(50% - 4px);
+    min-width: 0;
+  }
+  .reading-summary {
+    display: block;
+    margin: 4px 0 0;
+  }
 
   .footer {
     align-items: flex-start;
