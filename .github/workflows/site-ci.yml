@@ -29,7 +29,7 @@ jobs:
 
       - name: Check Python syntax
         run: |
-          python -m py_compile             main.py recommendation_history.py site_builder.py recommender.py construct_email.py paper.py sources.py
+          python -m py_compile             main.py recommendation_history.py crossref_ingestion.py site_builder.py recommender.py construct_email.py paper.py sources.py
 
       - name: Check browser JavaScript syntax
         run: node --check site/assets/app.js
