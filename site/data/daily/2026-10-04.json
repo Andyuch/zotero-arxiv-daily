@@ -1,0 +1,1267 @@
+{
+  "date": "2026-10-04",
+  "generated_at": "2026-10-04T00:31:29.806964+00:00",
+  "count": 30,
+  "papers": [
+    {
+      "title": "Quantitative Nanoscale Material Mapping Based on Extreme Ultraviolet Ptychography",
+      "authors": [
+        "Leona Licht",
+        "Wilhelm Eschen",
+        "Chang Liu",
+        "Johannes Reents",
+        "Themistoklis Sidiropoulos",
+        "Daniel Santiago Penagos Molina",
+        "Jörg Kaspa",
+        "Holger Althues",
+        "Jonathan Apell",
+        "Dongmei Liu",
+        "Stephanie Lippmann",
+        "Jens Limpert",
+        "Jan Rothhardt"
+      ],
+      "journal": "ACS Applied Materials &amp; Interfaces",
+      "source": "Crossref",
+      "doi": "10.1021/acsami.6c13118",
+      "arxiv_id": null,
+      "published_at": "2026-10-05",
+      "article_url": "https://doi.org/10.1021/acsami.6c13118",
+      "pdf_url": "https://pubs.acs.org/doi/pdf/10.1021/acsami.6c13118",
+      "code_url": null,
+      "abstract": "Abstract Quantitative, nondestructive characterization of materials at the nanoscale is crucial for the development of advanced energy, electronic, and nanostructured systems. In this context, microscopy based on extreme ultraviolet (EUV) radiation has recently attracted considerable interest, as it combines high spatial resolution, strong elemental contrast, and micrometer-scale penetration depth in compact, table-top setups. Here, we employ EUV ptychography to quantitatively resolve the spatial distribution of silicon, oxygen, and aluminum with sub-50 nm half-pitch resolution. Compared to the established energy-dispersive X-ray spectroscopy (EDX) technique, our approach delivers enhanced image quality and spatial resolution, while conventional methods reach their limits. This is enabled by retrieving element-specific atomic areal densities from quantitative amplitude and phase reconstructions provided by EUV ptychography. With a single-wavelength illumination, we determine the oxygen and silicon content within a 1.4 μm thick lamella of an all-solid-state battery anode. We additionally characterize the composition of a more complex aluminum–silicon alloy, enabled through differential contrast dual-wavelength EUV ptychography. Overall, these results establish EUV ptychography as a powerful technique for quantitative nanoscale material analysis. It is suitable for radiation-sensitive specimens or elements, which are difficult to distinguish in electron microscopy. Its capability to accurately map light elements, often challenging for conventional methods, makes it a promising tool for applications spanning materials science, energy technologies, and microbiology.",
+      "tldr": "EUV ptychography enables quantitative, nondestructive nanoscale mapping of light elements like silicon, oxygen, and aluminum with sub-50 nm resolution, outperforming EDX for challenging materials such as battery anodes and alloys.",
+      "affiliations": [
+        "GSI Helmholtzzentrum für Schwerionenforschung , Planckstraße 1 , ,",
+        "Friedrich-Schiller-University Jena , , Albert-Einstein-Straße 15 , ,",
+        "Helmholtz-Institute Jena , Fröbelstieg 3 , ,",
+        "Fraunhofer Institute for Material and Beam Technology , Winterbergstraße 28 , ,",
+        "Friedrich-Schiller-Universität-Jena , , ,",
+        "Fraunhofer Institute for Applied Optics and Precision Engineering , Albert-Einstein-Straße 7 , ,"
+      ],
+      "score": 8.6817,
+      "relevance_percentile": 100.0,
+      "score_components": {
+        "top_k": 0.8712,
+        "cluster": 0.8917,
+        "recent": 0.8253
+      },
+      "topics": [
+        "Battery",
+        "Microscopy",
+        "Spectroscopy",
+        "Materials"
+      ],
+      "seen_date": "2026-10-04",
+      "recommendation_status": "new",
+      "previous_recommended_at": null,
+      "key": "doi:10.1021/acsami.6c13118"
+    },
+    {
+      "title": "Unexpected 4 × 4 Charge Density Wave in 1 H -NbTe2 Monolayer",
+      "authors": [
+        "Noor ul Ain",
+        "Alireza Amiri",
+        "Fabian Calleja",
+        "Beatriz Muñiz Cano",
+        "Archit Dhingra",
+        "Riccardo Rurali",
+        "Amadeo L. Vázquez de Parga",
+        "Rodolfo Miranda",
+        "Miguel A. Valbuena",
+        "Enric Canadell",
+        "Jose Angel Silva-Guillén",
+        "Manuela Garnica"
+      ],
+      "journal": "ACS Nano",
+      "source": "Crossref",
+      "doi": "10.1021/acsnano.6c07014",
+      "arxiv_id": null,
+      "published_at": "2026-10-03",
+      "article_url": "https://doi.org/10.1021/acsnano.6c07014",
+      "pdf_url": "https://pubs.acs.org/doi/pdf/10.1021/acsnano.6c07014",
+      "code_url": null,
+      "abstract": "Abstract Transition metal ditellurides exhibit structural and electronic properties distinct from their selenide and sulfide counterparts, including the stabilization of multiple charge density wave (CDW) phases. Within the niobium compound family, notable differences in structure are also observed: bulk NbTe2 crystallizes in the 1T phase, distinguishing it from NbSe2 and NbS2, which typically adopt both the 2H and 1T structures. However, in this work, we report the unexpectedly successful synthesis of two-dimensional (2D) islands of the metastable 1H-NbTe2 phase via molecular beam epitaxy on epitaxial graphene supported on Ir(111). The phase is identified by its characteristic hexagonal lattice in combination with distinct spectroscopic features and the presence of mirror twin boundaries. A comprehensive analysis combining scanning tunneling spectroscopy (STS), angle-resolved photoemission spectroscopy (ARPES), and density functional theory (DFT) calculations confirms the metallic character and structural stability of the 1H-NbTe2 phase. Furthermore, low-temperature STS measurements reveal the formation of a 4 × 4 CDW modulation, which is explained based on a phonon instability. These findings motivate the exploration of the complex phase behavior and electronic properties of NbTe2 in the 2D limit.",
+      "tldr": "Researchers synthesized metastable 1H-NbTe2 monolayers by molecular beam epitaxy, confirmed their metallic stability, and observed an unexpected 4 × 4 charge density wave driven by a phonon instability.",
+      "affiliations": [
+        "Instituto Madrileño de Estudios Avanzados en Nanociencia (IMDEA-Nanociencia) , ,",
+        "Institut de Ciència de Materials de Barcelona, ICMAB-CSIC , Campus UAB ,",
+        "Universidad Autónoma de Madrid , , ,",
+        "Universidad Autónoma de Madrid (UAM) , , Campus de Cantoblanco , ,",
+        "Royal Academy of Sciences and Arts of Barcelona, Chemistry Section , La Rambla 115 , ,"
+      ],
+      "score": 8.3839,
+      "relevance_percentile": 97.5,
+      "score_components": {
+        "top_k": 0.838,
+        "cluster": 0.8735,
+        "recent": 0.7868
+      },
+      "topics": [
+        "Spectroscopy",
+        "Materials",
+        "AI & Computation"
+      ],
+      "seen_date": "2026-10-04",
+      "recommendation_status": "new",
+      "previous_recommended_at": null,
+      "key": "doi:10.1021/acsnano.6c07014"
+    },
+    {
+      "title": "Aerobic Dehydrogenation by Coupled Electrochemical Reactions Governs Room-Temperature Proton Defect Chemistry in Functional Oxides",
+      "authors": [
+        "Bin Zhao",
+        "Luhan Wei",
+        "Xi Wang",
+        "Zihan Xu",
+        "Ying Lu",
+        "Jieping Zheng",
+        "Lingzhi Huang",
+        "Qiyang Lu"
+      ],
+      "journal": "Journal of the American Chemical Society",
+      "source": "Crossref",
+      "doi": "10.1021/jacs.6c12969",
+      "arxiv_id": null,
+      "published_at": "2026-10-03",
+      "article_url": "https://doi.org/10.1021/jacs.6c12969",
+      "pdf_url": "https://pubs.acs.org/doi/pdf/10.1021/jacs.6c12969",
+      "code_url": null,
+      "abstract": "Abstract Tuning functional oxides by controlling ionic point defects is a well-established paradigm for designing tailored functionalities. At elevated temperatures, this is usually achieved by tuning ambient oxygen partial pressure (pO2) to regulate oxygen chemical potential and defect (e.g., protons and oxygen vacancies) concentrations. At room temperature, however, atmosphere-driven tuning is considered unfeasible due to sluggish surface kinetics and negligible ionic mobility. Here, using hydrogenated NdNiO3 as a model system, we show that ambient pO2 can in fact regulate hydrogen chemical potential and protonic defects through aerobic dehydrogenation driven by coupled anodic proton extraction and cathodic oxygen reduction in aqueous solutions. Using mixed-potential theory together with operando electrochemical, optical, and structural characterizations, we quantitatively analyze these coupled half-reactions and determine how pO2 modulates dehydrogenation kinetics. These insights deepen the understanding of room-temperature defect chemistry and provide guidance for designing functional oxide devices based on controlled modulation of ionic defects.",
+      "tldr": "Ambient oxygen partial pressure can regulate room-temperature proton defects in functional oxides through aerobic dehydrogenation driven by coupled electrochemical proton extraction and oxygen reduction in aqueous solution, as demonstrated in hydrogenated NdNiO₃.",
+      "affiliations": [
+        "Zhejiang University , , ,",
+        "Westlake University , , , ,"
+      ],
+      "score": 8.3764,
+      "relevance_percentile": 92.5,
+      "score_components": {
+        "top_k": 0.8299,
+        "cluster": 0.8664,
+        "recent": 0.8138
+      },
+      "topics": [
+        "Electrochemistry",
+        "Materials"
+      ],
+      "seen_date": "2026-10-04",
+      "recommendation_status": "new",
+      "previous_recommended_at": null,
+      "key": "doi:10.1021/jacs.6c12969"
+    },
+    {
+      "title": "Infiltrating Metal Adhesive Layer for Mechanically Integrated Dry Electrodes",
+      "authors": [
+        "Young‐Hoon Lee",
+        "Eunbin Park",
+        "Hosung Choi",
+        "Sang‐Hwan Oh",
+        "Seungyeon Kim",
+        "Yoon Jeong Choi",
+        "Jin‐Hee Kim",
+        "Yung‐Eun Sung",
+        "Seung‐Ho Yu"
+      ],
+      "journal": "Advanced Energy Materials",
+      "source": "Crossref",
+      "doi": "10.1002/aenm.71661",
+      "arxiv_id": null,
+      "published_at": "2026-10-03",
+      "article_url": "https://doi.org/10.1002/aenm.71661",
+      "pdf_url": "https://advanced.onlinelibrary.wiley.com/doi/pdf/10.1002/aenm.71661",
+      "code_url": null,
+      "abstract": "ABSTRACT Dry‐processed high‐loading electrodes are essential for developing high‐energy‐density lithium‐ion batteries through solvent‐free manufacturing. However, most studies focus on material and structure of dry films, while adhesive layer required to laminate PTFE‐based dry films, which exhibit inherently low adhesion, to current collectors is typically fabricated using a wet‐process. Here, we introduce a sputter‐coated indium metal adhesive layer that enables an all‐solvent‐free dry electrode manufacturing process. During lamination, the indium layer infiltrates pores of graphite dry film and mechanically entangles with PTFE fibril, which strengthens interfacial contact between dry film and current collector. This electrode shows excellent capacity retention of 91.3% after 150 cycles at 0.33 C in half‐cells, while NCM622||graphite pouch‐cells (∼8 mAh cm −2 ) exhibit stable cycling for 150 cycles without delamination and dendrite growth. These results provide insights into infiltrating metal‐based adhesive layers for improving mechanical integrity and cycling stability of high‐loading dry electrodes.",
+      "tldr": "A sputter-coated indium adhesive layer infiltrates PTFE-based graphite dry films and mechanically entangles with PTFE fibrils, enabling an all-solvent-free high-loading dry electrode with improved interfacial adhesion and stable cycling.",
+      "affiliations": [
+        "Department of Chemical and Biological Engineering Korea University Seoul Republic of Korea",
+        "School of Chemical and Biological Engineering Seoul National University (SNU) Seoul Republic of Korea",
+        "Center for Nanoparticle Research Institute for Basic Science (IBS) Seoul Republic of Korea",
+        "Department of Battery‐Smart Factory Korea University Seoul Republic of Korea"
+      ],
+      "score": 8.3788,
+      "relevance_percentile": 95.0,
+      "score_components": {
+        "top_k": 0.8259,
+        "cluster": 0.8642,
+        "recent": 0.8283
+      },
+      "topics": [
+        "Battery",
+        "Materials"
+      ],
+      "seen_date": "2026-10-04",
+      "recommendation_status": "new",
+      "previous_recommended_at": null,
+      "key": "doi:10.1002/aenm.71661"
+    },
+    {
+      "title": "Quantum Dot One-Dimensional Arrays Using Templates: Recent Progress and Future Perspectives",
+      "authors": [
+        "Mitsuaki Yamauchi",
+        "Sadahiro Masuo"
+      ],
+      "journal": "The Journal of Physical Chemistry Letters",
+      "source": "Crossref",
+      "doi": "10.1021/acs.jpclett.6c02118",
+      "arxiv_id": null,
+      "published_at": "2026-10-03",
+      "article_url": "https://doi.org/10.1021/acs.jpclett.6c02118",
+      "pdf_url": "https://pubs.acs.org/jpclcd/article-pdf/doi/10.1021/acs.jpclett.6c02118/68739465/acs.jpclett.6c02118.pdf",
+      "code_url": null,
+      "abstract": "Abstract Semiconductor quantum dots (QDs) represent a premier class of inorganic nanomaterials featuring tunable optical properties, including size- and composition-dependent light absorption and photoluminescence (PL). Recent research has focused on their highly ordered 2D and 3D assemblies, termed superlattices, which exhibit collective photophysical phenomena such as long-range exciton diffusion and superfluorescence. However, constructing lower-dimensional architectures, such as 1D arrays capable of directional energy transport, remains a formidable challenge. This difficulty arises because conventional QDs lack the intrinsic shape anisotropy required for anisotropic self-assembly. This Perspective highlights recent progress in fabricating 1D arrays from spherical and cubic QDs, with particular emphasis on rational scaffolding and templating strategies that enable precise structural control. Finally, we provide perspectives on the future design of nanoscale and mesoscale superstructures integrating organic and inorganic nanomaterials.",
+      "tldr": "This Perspective reviews recent progress and future directions in using scaffolding and templating strategies to fabricate one-dimensional arrays from isotropic semiconductor quantum dots for directional energy transport and advanced nanoscale superstructures.",
+      "affiliations": [
+        "Kyoto University , , , ,",
+        "Kwansei Gakuin University , , , ,"
+      ],
+      "score": 8.2795,
+      "relevance_percentile": 85.0,
+      "score_components": {
+        "top_k": 0.8324,
+        "cluster": 0.8585,
+        "recent": 0.7708
+      },
+      "topics": [
+        "Semiconductors",
+        "Materials"
+      ],
+      "seen_date": "2026-10-04",
+      "recommendation_status": "new",
+      "previous_recommended_at": null,
+      "key": "doi:10.1021/acs.jpclett.6c02118"
+    },
+    {
+      "title": "Highly Controllable Polarity in Two-Dimensional Vertical Transistors",
+      "authors": [
+        "Likuan Ma",
+        "Quanyang Tao",
+        "Lingan Kong",
+        "Wanrong Liu",
+        "Chenxing Jin",
+        "Xiaofang Shi",
+        "Ruihan Li",
+        "Guansong Qiu",
+        "Yuan Liu",
+        "Jia Sun",
+        "Junliang Yang"
+      ],
+      "journal": "The Journal of Physical Chemistry Letters",
+      "source": "Crossref",
+      "doi": "10.1021/acs.jpclett.6c02965",
+      "arxiv_id": null,
+      "published_at": "2026-10-03",
+      "article_url": "https://doi.org/10.1021/acs.jpclett.6c02965",
+      "pdf_url": "https://pubs.acs.org/jpclcd/article-pdf/doi/10.1021/acs.jpclett.6c02965/68739456/acs.jpclett.6c02965.pdf",
+      "code_url": null,
+      "abstract": "Abstract Two-dimensional (2D) vertical transistors, featuring atomically thin channels and an inherent vertical architecture, hold extensive promise for ultrascaled electronics. However, achieving reliable polarity control in such devices has remained a persistent challenge over the past decade. Here, we demonstrate a vertical MoTe2 transistor with highly controllable polarity. By implementing van der Waals (vdW) integration for both contacts, the carrier injection barrier can be effectively modulated via the work functions of the electrodes. Leveraging the favorable band alignment with graphene and the narrow bandgap of MoTe2, we achieve selective n-type and p-type operation using Ag and Pt top contacts, respectively. Furthermore, through graphene work-function engineering, we optimize the switching performance, realizing an on/off ratio exceeding 104 in a ∼5 nm p-type MoTe2 vertical transistor, surpassing all previously reported p-type 2D vertical transistors based on graphene/TMD/metal architectures. Finally, we integrate two vertical transistors of opposite polarities, fabricated from graphene/MoTe2 heterostructure with different top contacts, to demonstrate a complementary inverter on a single chip. Our work not only provides a viable strategy for polarity control in vertical heterostructures but also suggests a potential pathway toward complementary circuits based on 2D vertical transistors.",
+      "tldr": "Researchers demonstrate highly controllable polarity in 2D vertical MoTe₂ transistors using van der Waals graphene contacts and work-function engineering, enabling selective n-/p-type operation, high on/off ratios, and a complementary inverter.",
+      "affiliations": [
+        "Central South University , , ,",
+        "Hunan University , , ,",
+        "Songshan Lake Materials Laboratory , ,"
+      ],
+      "score": 8.3008,
+      "relevance_percentile": 90.0,
+      "score_components": {
+        "top_k": 0.8437,
+        "cluster": 0.845,
+        "recent": 0.7736
+      },
+      "topics": [
+        "Battery",
+        "Semiconductors",
+        "Materials"
+      ],
+      "seen_date": "2026-10-04",
+      "recommendation_status": "new",
+      "previous_recommended_at": null,
+      "key": "doi:10.1021/acs.jpclett.6c02965"
+    },
+    {
+      "title": "Tailoring Alkyl Chain Length to Customize Dual‐Electrode Interface for Reversible Four‐Electron Iodine Chemistry in Zn–I 2 Pouch Batteries",
+      "authors": [
+        "Fei Huang",
+        "Yu Xie",
+        "Jiajun Wan",
+        "Jujing Chai",
+        "Yixin Zhang",
+        "Yi Tan",
+        "Jing Xu",
+        "Huibing He"
+      ],
+      "journal": "Advanced Materials",
+      "source": "Crossref",
+      "doi": "10.1002/adma.75298",
+      "arxiv_id": null,
+      "published_at": "2026-10-03",
+      "article_url": "https://doi.org/10.1002/adma.75298",
+      "pdf_url": "https://advanced.onlinelibrary.wiley.com/doi/pdf/10.1002/adma.75298",
+      "code_url": null,
+      "abstract": "ABSTRACT Aqueous zinc–iodine (Zn–I 2 ) batteries show great promise for large‐scale energy storage, yet realizing four‐electron transfer for high energy density requires cooperation between zinc interface regulation and high valence iodine anchoring. Herein, the dual‐electrode interface microenvironment is customized via a series of bromide quaternary ammonium salts with varied alkyl chain length. The moderately‐sized tetraethylammonium bromide (TEAB) constructs a well‐ordered electric double layer that suppresses water penetration and hydrogen evolution while promoting uniform Zn 2+ deposition. Simultaneously, TEAB stabilizes I + through a synergistic coordination‐hydrophobic anchoring mechanism, preventing iodine hydrolysis and shuttling. This synergistic customization of the anode–cathode dual‐interface microenvironment successfully activates the reversible four‐electron I − /I + redox chemistry. With this design, the symmetric Zn cell operates stably for over 50 days at 5 mA cm −2 and 5 mAh cm −2 as well as shows wide‐temperature adaptability from −20°C to 50°C, the full cell retains 84.5% capacity after 8000 cycles at 1 A g −1 , and an Ah‐scale pouch cell delivers stable 428 cycles with a high‐capacity retention of 98.74% even under a heavy iodine loading of 20 mg cm −2 . This work establishes a molecular‐level design paradigm for simultaneous anode and cathode interface engineering, advancing practical high‐energy aqueous zinc–iodine batteries.",
+      "tldr": "Tailoring the alkyl chain length of bromide quaternary ammonium salts—optimally tetraethylammonium bromide—customizes the dual-electrode interface to enable reversible four-electron I⁻/I⁺ chemistry and stable, high-capacity Zn–I₂ pouch batteries.",
+      "affiliations": [
+        "Guangxi Key Laboratory of Electrochemical Energy Materials University Engineering Research Center of Green Chemical New Materials School of Chemistry and Chemical Engineering Guangxi University Nanning China"
+      ],
+      "score": 8.2853,
+      "relevance_percentile": 87.5,
+      "score_components": {
+        "top_k": 0.8141,
+        "cluster": 0.8648,
+        "recent": 0.8102
+      },
+      "topics": [
+        "Battery",
+        "Electrochemistry"
+      ],
+      "seen_date": "2026-10-04",
+      "recommendation_status": "new",
+      "previous_recommended_at": null,
+      "key": "doi:10.1002/adma.75298"
+    },
+    {
+      "title": "Narrow-Line-Width Electroluminescence in Monolayer WSe2 Enabled by a Sub-5 nm Au/Pt Nanogap",
+      "authors": [
+        "Shurong Miao",
+        "I. K. M. Reaz Rahman",
+        "Aditya Nirmale",
+        "Inha Kim",
+        "Dorottya Urmossy",
+        "Thomas P. Darlington",
+        "Harishankar Jayakumar",
+        "Seiichiro Izawa",
+        "Archana Raja",
+        "Daryl C. Chrzan",
+        "Yutaka Majima",
+        "Ali Javey"
+      ],
+      "journal": "Nano Letters",
+      "source": "Crossref",
+      "doi": "10.1021/acs.nanolett.6c03133",
+      "arxiv_id": null,
+      "published_at": "2026-10-03",
+      "article_url": "https://doi.org/10.1021/acs.nanolett.6c03133",
+      "pdf_url": "https://pubs.acs.org/nalefd/article-pdf/doi/10.1021/acs.nanolett.6c03133/68739397/acs.nanolett.6c03133.pdf",
+      "code_url": null,
+      "abstract": "Abstract Spectrally isolated, electrically driven emission from localized states in two-dimensional semiconductors remains challenging in scalable planar devices. Here, we report narrow-line-width alternating-current electroluminescence (ACEL) from localized states in monolayer WSe2 using a lithographically defined sub-5 nm Au/Pt nanogap on SiO2/Si at 3.5 K. The curved nanogap geometry produces a nonuniform strain landscape and regions of enhanced electric field that may influence the local electronic environment. Under square-wave gate excitation, the device exhibits a spectrally isolated ACEL line at 1.652 eV with an apparent fitted line width of approximately 2 meV, in contrast to broad, multipeak photoluminescence from the same device. Spectral decomposition identifies dominant ZPL-like and weaker red-shifted sideband-like contributions. This nanogap architecture provides a scalable planar platform for narrow-line-width, electrically driven localized emission in two-dimensional materials.",
+      "tldr": "A lithographically defined sub-5 nm Au/Pt nanogap enables narrow-line-width (~2 meV) alternating-current electroluminescence from localized states in monolayer WSe2 at 3.5 K, providing a scalable planar platform for electrically driven localized emission in 2D materials.",
+      "affiliations": [
+        "University of California, Berkeley , , , ,",
+        "Institute of Science Tokyo , , ,",
+        "Lawrence Berkeley National Laboratory , , , ,",
+        "Kavli Energy NanoScience Institute at the University of California, Berkeley , , ,"
+      ],
+      "score": 8.2727,
+      "relevance_percentile": 82.5,
+      "score_components": {
+        "top_k": 0.8348,
+        "cluster": 0.8574,
+        "recent": 0.7632
+      },
+      "topics": [
+        "Semiconductors",
+        "Materials"
+      ],
+      "seen_date": "2026-10-04",
+      "recommendation_status": "new",
+      "previous_recommended_at": null,
+      "key": "doi:10.1021/acs.nanolett.6c03133"
+    },
+    {
+      "title": "Scalable, Simple, and Versatile Encapsulation of 2D Materials and Devices",
+      "authors": [
+        "Gabriel Natale",
+        "Uma Chirkova",
+        "Flávio Henriques Feres",
+        "Ran Jing",
+        "Michael Geiwitz",
+        "Wenyao Liu",
+        "Emma Low",
+        "Josh Leeman",
+        "Kyung-Mo Kim",
+        "Leslie M. Schoop",
+        "Mohamed Shehabeldin",
+        "Qiong Ma",
+        "Michael A. Susner",
+        "Pijush Bhattacharya",
+        "Genda Gu",
+        "Katherine Lee",
+        "James Hone",
+        "Mengkun Liu",
+        "Kenneth S. Burch"
+      ],
+      "journal": "Nano Letters",
+      "source": "Crossref",
+      "doi": "10.1021/acs.nanolett.6c03297",
+      "arxiv_id": null,
+      "published_at": "2026-10-03",
+      "article_url": "https://doi.org/10.1021/acs.nanolett.6c03297",
+      "pdf_url": "https://pubs.acs.org/nalefd/article-pdf/doi/10.1021/acs.nanolett.6c03297/68739484/acs.nanolett.6c03297.pdf",
+      "code_url": null,
+      "abstract": "Abstract Air-sensitive 2D materials present fundamental challenges for device integration. Encapsulation is required to preserve intrinsic properties, yet conventional strategies require complicated fabrication workflows and fail with thicker flakes. We demonstrate that electron-beam (e-beam) evaporated aluminum oxide (AlOx) serves as an effective encapsulation layer and sacrificial fabrication mask, protecting sensitive flakes from air, photoresists, and chemicals. Unlike transfer-based approaches, this scalable technique requires no stacking and enables contacts without postencapsulation etching or harsh chemistry. Using rare-earth tritellurides (RTe3, R = La, Er), semimetallic WTe2, and superconducting FeTexSe1–x, we show that AlOx suppresses oxidation and preserves optical and electronic properties. We establish substrate-dependent optimization of encapsulation across a range of flake thicknesses, demonstrate that ultrathin AlOx preserves WTe2’s plasmonic response, and enhances superconducting performance in FeTexSe1–x devices when employed as a mask. Thus, we overcome the longstanding trade-off between encapsulation and straightforward device fabrication in fragile quantum materials.",
+      "tldr": "E-beam-evaporated AlOx offers a scalable, simple, and versatile encapsulation and sacrificial mask for air-sensitive 2D materials and devices, preserving their optical/electronic properties while avoiding complex transfer, post-encapsulation etching, and harsh chemistry.",
+      "affiliations": [
+        "Boston College , , , ,",
+        "Stony Brook University , , , ,",
+        "Brazilian Center for Research in Energy and Materials (CNPEM) , , ,",
+        "Princeton University , , , ,",
+        "Air Force Research Laboratory , , , ,",
+        "Azimuth Corporation, a Core4ce LLC Company , 2079 Presidential Dr. No. 200 , , ,",
+        "Brookhaven National Laboratory (BNL) , , , ,",
+        "Columbia University , , , ,"
+      ],
+      "score": 8.2066,
+      "relevance_percentile": 80.0,
+      "score_components": {
+        "top_k": 0.8184,
+        "cluster": 0.8556,
+        "recent": 0.7739
+      },
+      "topics": [
+        "Materials"
+      ],
+      "seen_date": "2026-10-04",
+      "recommendation_status": "new",
+      "previous_recommended_at": null,
+      "key": "doi:10.1021/acs.nanolett.6c03297"
+    },
+    {
+      "title": "Nanoscale Thermocatalysis: Mechanisms, Regulation, and Biomedical Applications",
+      "authors": [
+        "Lu Yang",
+        "Bocheng Yuan",
+        "Baokun Zhao",
+        "Shili Gai",
+        "Shuyao Li",
+        "Pengyu Zang",
+        "Jun Lin"
+      ],
+      "journal": "Advanced Materials",
+      "source": "Crossref",
+      "doi": "10.1002/adma.75256",
+      "arxiv_id": null,
+      "published_at": "2026-10-03",
+      "article_url": "https://doi.org/10.1002/adma.75256",
+      "pdf_url": "https://advanced.onlinelibrary.wiley.com/doi/pdf/10.1002/adma.75256",
+      "code_url": null,
+      "abstract": "ABSTRACT Thermal‐driven catalysis has emerged as a promising interdisciplinary field that integrates thermal science, catalysis, nanotechnology, and biomedicine by utilizing thermal energy as a driving force for catalytic reactions. Unlike conventional catalytic systems, thermal‐driven catalysis exploits temperature gradients, thermal fluctuations, or localized heating to induce charge separation, accelerate reaction kinetics, and regulate interfacial redox processes. This review systematically summarizes the fundamental mechanisms of thermoelectric catalysis, pyroelectric catalysis, and thermo‐enhanced catalytic reactions, with particular emphasis on the role of nanoscale heat transport and non‐Fourier thermal behavior in thermal energy conversion. Recent advances in material engineering strategies, including defect engineering, heterojunction engineering, phase engineering, morphology engineering, interface engineering, and emerging approaches such as entropy, spin, and single‐atom engineering, are comprehensively discussed. Furthermore, representative biomedical applications, including photothermal and plasmonic nanomedicine, pyroelectric catalysis, thermoelectric catalysis, and thermally regulated catalytic systems, are highlighted in the contexts of antibacterial therapy, tumor treatment, biosensing, and tissue engineering. Finally, current challenges and future perspectives regarding material design, energy‐conversion efficiency, mechanistic understanding, and clinical translation are discussed. This review provides a comprehensive overview of thermal‐driven catalysis and offers insights into the development of next‐generation catalytic platforms for advanced biomedical applications.",
+      "tldr": "This review summarizes the mechanisms, nanoscale thermal effects, material engineering strategies, and biomedical applications of thermal-driven nanocatalysis, while outlining challenges and future directions for clinical translation.",
+      "affiliations": [
+        "Key Laboratory of Superlight Materials and Surface Technology Ministry of Education College of Material Sciences and Chemical Engineering Harbin Engineering University Harbin P. R. China",
+        "College of Chemistry and Molecular Engineering Northeast Agricultural University Harbin P. R. China",
+        "Key Laboratory of Rare Earth Resource Utilization Changchun Institute of Applied Chemistry Chinese Academy of Sciences Changchun P. R. China"
+      ],
+      "score": 8.1686,
+      "relevance_percentile": 77.5,
+      "score_components": {
+        "top_k": 0.8066,
+        "cluster": 0.8399,
+        "recent": 0.8079
+      },
+      "topics": [
+        "Electrochemistry",
+        "Semiconductors"
+      ],
+      "seen_date": "2026-10-04",
+      "recommendation_status": "new",
+      "previous_recommended_at": null,
+      "key": "doi:10.1002/adma.75256"
+    },
+    {
+      "title": "Correlating In Situ Growth Kinetics with Nanorod Morphology Using iSCAT-FlucCS",
+      "authors": [
+        "Ruchir Gupta",
+        "Shubham Mulay",
+        "Sachin Dev Verma"
+      ],
+      "journal": "The Journal of Physical Chemistry Letters",
+      "source": "Crossref",
+      "doi": "10.1021/acs.jpclett.6c02895",
+      "arxiv_id": null,
+      "published_at": "2026-10-03",
+      "article_url": "https://doi.org/10.1021/acs.jpclett.6c02895",
+      "pdf_url": "https://pubs.acs.org/jpclcd/article-pdf/doi/10.1021/acs.jpclett.6c02895/68739309/acs.jpclett.6c02895.pdf",
+      "code_url": null,
+      "abstract": "Abstract Anisotropic growth in seed-mediated nanocrystal synthesis depends on nucleation and autocatalytic growth, and the aspect ratio is expected to be related to the ratio of growth to nucleation rates. Direct kinetic evidence for this link is limited, because it is difficult to measure both kinetics and morphology in the same experiment. In this work, we examined the growth kinetics of seed-mediated silver nanorods and linked them to their shapes using a dual-mode platform, iSCAT-FlucCS. We measured nucleation (k1) and growth (k2) kinetic parameters in situ with wide-field iSCAT microscopy and compared them to nanorod dimensions obtained from iSCAT fluctuation correlation spectroscopy. We found that k2 increased with seed concentration, and k1 shows no clear monotonic dependence on seed volume, modestly high at low seed levels. The nanorod aspect ratio decreased as k2/k1 rose above a certain point, suggesting a shift from seed-limited to monomer-limited growth, with more variability below this threshold. These findings provide direct kinetic evidence that competition between nucleation and growth shapes seed-dependent nanorod anisotropy.",
+      "tldr": "Using iSCAT-FlucCS to measure in situ nucleation and growth kinetics of seed-mediated silver nanorods, this work directly links the competition between nucleation and growth—specifically the k2/k1 ratio and seed concentration—to nanorod aspect ratio and the transition from seed-limited to monomer-limited growth.",
+      "affiliations": [
+        "Indian Institute of Science Education and Research Bhopal , , Bhauri , , ,"
+      ],
+      "score": 8.0904,
+      "relevance_percentile": 75.0,
+      "score_components": {
+        "top_k": 0.8042,
+        "cluster": 0.8309,
+        "recent": 0.7882
+      },
+      "topics": [
+        "Electrochemistry",
+        "Microscopy",
+        "Spectroscopy",
+        "Materials"
+      ],
+      "seen_date": "2026-10-04",
+      "recommendation_status": "new",
+      "previous_recommended_at": null,
+      "key": "doi:10.1021/acs.jpclett.6c02895"
+    },
+    {
+      "title": "Nonadiabatic Dynamics near Multiple Light-Induced Conical Intersections under Bichromatic Driving: Quantum Wave-Packet Dynamics versus Floquet Surface Hopping",
+      "authors": [
+        "Jiayue Han",
+        "Feng An",
+        "Wenjie Dou"
+      ],
+      "journal": "The Journal of Physical Chemistry Letters",
+      "source": "Crossref",
+      "doi": "10.1021/acs.jpclett.6c02764",
+      "arxiv_id": null,
+      "published_at": "2026-10-03",
+      "article_url": "https://doi.org/10.1021/acs.jpclett.6c02764",
+      "pdf_url": "https://pubs.acs.org/jpclcd/article-pdf/doi/10.1021/acs.jpclett.6c02764/68739346/acs.jpclett.6c02764.pdf",
+      "code_url": null,
+      "abstract": "Abstract Light-induced conical intersections (LICIs) create externally tunable pathways for nonadiabatic transitions, enabling the active control of molecular photophysical and photochemical processes. However, both the dynamics near multiple LICIs under bichromatic driving and the applicability of our recently developed two-mode Floquet fewest switches surface hopping (two-mode F-FSSH) method to this regime remain insufficiently understood. Here, we construct a minimal three-channel Floquet Hamiltonian that supports two LICIs for Na2 interacting with a bichromatic field. We characterize its static Floquet properties and investigate the associated nonadiabatic dynamics using numerically exact quantum wave packet dynamics and two-mode F-FSSH. We find that the second-photon energy controls the relative positions of the LICIs, whereas the second-field intensity primarily redistributes and broadens the derivative-coupling landscape around the second LICI. Consequently, electronic population transfer and molecular alignment exhibit distinct and often nonmonotonic responses to the two control parameters. Two-mode F-FSSH reliably captures the principal features of the early time dynamics and provides a semiquantitative description of the post-transient time-averaged observables. These findings advance our understanding of LICI-mediated dynamics at both physical and methodological levels.",
+      "tldr": "Using a three-channel Floquet model of bichromatic-field-driven Na₂, this study shows that the second photon’s energy and intensity tune multiple light-induced conical intersections and produce nonmonotonic population/alignment dynamics, while two-mode Floquet FSSH captures early-time dynamics and semiquantitative long-time averages compared with exact quantum wave-packet results.",
+      "affiliations": [
+        "Westlake University , , , ,",
+        "Westlake Institute for Advanced Study , , , ,"
+      ],
+      "score": 8.0542,
+      "relevance_percentile": 72.5,
+      "score_components": {
+        "top_k": 0.8124,
+        "cluster": 0.8312,
+        "recent": 0.7494
+      },
+      "topics": [
+        "Spectroscopy"
+      ],
+      "seen_date": "2026-10-04",
+      "recommendation_status": "new",
+      "previous_recommended_at": null,
+      "key": "doi:10.1021/acs.jpclett.6c02764"
+    },
+    {
+      "title": "Four-Photon Molecular Upconversion",
+      "authors": [
+        "Seamus S. Lowe",
+        "Maxwell Sun",
+        "Jesse A. Wisch",
+        "Kostubh Gaur",
+        "Chiao-Jung Su",
+        "Azka Arshad",
+        "Felix N. Castellano",
+        "John E. Anthony",
+        "Noel C. Giebink",
+        "Barry P. Rand"
+      ],
+      "journal": "Journal of the American Chemical Society",
+      "source": "Crossref",
+      "doi": "10.1021/jacs.6c17238",
+      "arxiv_id": null,
+      "published_at": "2026-10-03",
+      "article_url": "https://doi.org/10.1021/jacs.6c17238",
+      "pdf_url": "https://pubs.acs.org/doi/pdf/10.1021/jacs.6c17238",
+      "code_url": null,
+      "abstract": "Abstract Triplet-triplet annihilation (TTA) upconversion converts low-energy photons into higher-energy emission, but conventional TTA is limited by its two-photon nature, as the emitted photon energy cannot exceed twice the excitation photon energy. Here, a fully organic solid-state thin-film architecture cascades two TTA upconversion stages through an intermediate Förster resonance energy transfer (FRET) bridge to achieve molecular four-photon upconversion. The first sensitizer/annihilator bilayer upconverts near-infrared (NIR) excitation into intermediate singlets, which are transferred through the FRET bridge to the sensitizer of the second TTA stage. The second sensitizer/annihilator bilayer performs a second TTA step to generate blue emission. The device converts 904 nm excitation into 445 nm emission, corresponding to a 1.41 eV anti-Stokes shift and an emitted photon energy 2.03 times the excitation photon energy, exceeding the maximum possible energy gain with conventional two-photon TTA. Because two quadratic TTA stages are coupled in series, the ideal low-intensity response of the four-photon device is quartic when both stages operate below threshold, providing a steeper nonlinearity desirable for nonlinear sensing. Experimentally, power-dependent measurements reveal a superquadratic slope of 3.03, followed by quadratic and linear regimes as the constituent TTA stages cross their thresholds. Independent stage measurements and time-resolved photoluminescence dynamics support the four-photon mechanism.",
+      "tldr": "A fully organic solid-state thin film cascades two triplet–triplet annihilation upconversion stages via a FRET bridge to achieve molecular four-photon upconversion, converting 904 nm NIR excitation into 445 nm blue emission with a 1.41 eV anti-Stokes shift and superquadratic low-intensity response.",
+      "affiliations": [
+        "Princeton University , , , ,",
+        "University of Michigan , , , ,",
+        "University of Kentucky , , , ,",
+        "North Carolina State University , , , ,"
+      ],
+      "score": 8.0062,
+      "relevance_percentile": 70.0,
+      "score_components": {
+        "top_k": 0.7983,
+        "cluster": 0.8298,
+        "recent": 0.7626
+      },
+      "topics": [
+        "Battery",
+        "Spectroscopy",
+        "Semiconductors"
+      ],
+      "seen_date": "2026-10-04",
+      "recommendation_status": "new",
+      "previous_recommended_at": null,
+      "key": "doi:10.1021/jacs.6c17238"
+    },
+    {
+      "title": "Design principle for mitigating moisture-induced degradation in 2D halide perovskites",
+      "authors": [
+        "Isaac Metcalf",
+        "Shanize Forte",
+        "Jianlin Zhou",
+        "Claudine Katan",
+        "Esther H. R. Tsai",
+        "Jacky Even",
+        "Aditya D. Mohite"
+      ],
+      "journal": "Nature Communications",
+      "source": "Crossref",
+      "doi": "10.1038/s41467-026-78054-2",
+      "arxiv_id": null,
+      "published_at": "2026-10-03",
+      "article_url": "https://doi.org/10.1038/s41467-026-78054-2",
+      "pdf_url": null,
+      "code_url": null,
+      "abstract": "",
+      "tldr": "Abstract unavailable from publisher metadata; open the article for details.",
+      "affiliations": [],
+      "score": 7.975,
+      "relevance_percentile": 67.5,
+      "score_components": {
+        "top_k": 0.8038,
+        "cluster": 0.8069,
+        "recent": 0.7675
+      },
+      "topics": [
+        "Semiconductors"
+      ],
+      "seen_date": "2026-10-04",
+      "recommendation_status": "new",
+      "previous_recommended_at": null,
+      "key": "doi:10.1038/s41467-026-78054-2"
+    },
+    {
+      "title": "Near‐Infrared‐Active Plasmonic S‐Scheme Zn 0.5 Cd 0.5 S/W 18 O 49 Heterojunction Enables Simultaneous Polylactic Acid Photoreforming and Hydrovoltaic Power Generation",
+      "authors": [
+        "Xin Wang",
+        "Boyan Liu",
+        "Liangcheng Xu",
+        "Yingjuan Zhang",
+        "Kai‐Hang Ye",
+        "Xiaowen Ruan",
+        "Songcan Wang"
+      ],
+      "journal": "Advanced Energy Materials",
+      "source": "Crossref",
+      "doi": "10.1002/aenm.71658",
+      "arxiv_id": null,
+      "published_at": "2026-10-03",
+      "article_url": "https://doi.org/10.1002/aenm.71658",
+      "pdf_url": "https://advanced.onlinelibrary.wiley.com/doi/pdf/10.1002/aenm.71658",
+      "code_url": null,
+      "abstract": "ABSTRACT Plastic photoreforming with H 2 evolution offers a sustainable route for waste‐polymer valorization and solar fuel production, but is limited by insufficient separation and utilization of photogenerated charge carriers. Here, a plasmonic Zn 0.5 Cd 0.5 S/W 18 O 49 (ZCS/WO) S‐scheme heterojunction is proposed, in which the localized surface plasmon resonance (LSPR) effect of W 18 O 49 extends the optical response of ZCS/WO into the near‐infrared region and promotes surface reaction kinetics through local photothermal heating and hot‐electron injection, while the S‐scheme heterointerface preserves highly reductive electrons on Zn 0.5 Cd 0.5 S and oxidative holes on W 18 O 49 for efficient polylactic acid (PLA) photoreforming and H 2 evolution. The optimized ZCS/WO achieves an H 2 evolution rate of 37.33 mmol g −1 h −1 and a pyruvate production rate of 35.08 mmol g −1 h −1 , which is 5.74 times higher than that of pristine ZCS. Apparent quantum yields (AQY) of 32.77% and 1.43% at 405 and 810 nm are achieved, respectively. Furthermore, integrating ZCS/WO into a polyacrylamide hydrogel generates a photocatalysis‐enhanced hydrovoltaic device, delivering a voltage up to 0.60 V during PLA photoreforming. This work demonstrates a multifunctional strategy for integrating plastic valorization, solar fuel production and hydrovoltaic electricity generation.",
+      "tldr": "A plasmonic S-scheme Zn₀.₅Cd₀.₅S/W₁₈O₄₉ heterojunction enables near-infrared-driven simultaneous polylactic acid photoreforming and H₂ evolution, and when integrated into a hydrogel also enables hydrovoltaic power generation.",
+      "affiliations": [
+        "State Key Laboratory of Flexible Electronics &amp; School of Flexible Electronics Northwestern Polytechnical University Xi'an China",
+        "Huizhou Research Institute Sun Yat‐sen University Huizhou China",
+        "School of Energy and Environment City University of Hong Kong Kowloon Hong Kong SAR China"
+      ],
+      "score": 7.9667,
+      "relevance_percentile": 65.0,
+      "score_components": {
+        "top_k": 0.7846,
+        "cluster": 0.8275,
+        "recent": 0.7804
+      },
+      "topics": [
+        "Spectroscopy",
+        "Semiconductors"
+      ],
+      "seen_date": "2026-10-04",
+      "recommendation_status": "new",
+      "previous_recommended_at": null,
+      "key": "doi:10.1002/aenm.71658"
+    },
+    {
+      "title": "Scalable Independently Tunable MoS2 Memtransistor via Contact-Engineering for Cardiac Signal Processing",
+      "authors": [
+        "Durgadevi Elamaran",
+        "Masahiro Sakai",
+        "Liu Huiqin",
+        "Ryoichiro Naoi",
+        "Takashi Kobayashi",
+        "Kai Qi",
+        "Vincent Tung",
+        "Soma Sakota",
+        "Takeshi Yoshimura",
+        "Norifumi Fujimura",
+        "Bang Lu",
+        "Rafika Amalia Annur",
+        "Satoru Takakusagi",
+        "Daisuke Kiriya"
+      ],
+      "journal": "ACS Nano",
+      "source": "Crossref",
+      "doi": "10.1021/acsnano.6c10356",
+      "arxiv_id": null,
+      "published_at": "2026-10-03",
+      "article_url": "https://doi.org/10.1021/acsnano.6c10356",
+      "pdf_url": "https://pubs.acs.org/ancac3/article-pdf/doi/10.1021/acsnano.6c10356/68739343/acsnano.6c10356.pdf",
+      "code_url": null,
+      "abstract": "Abstract Reliable and scalable neuromorphic computing demands memristive devices with deterministic analog tunability. While vertical structures enable high integration density, planar architectures are essential for complementary metal-oxide-semiconductor (CMOS) compatible memtransistor platforms governed by lateral charge transport. However, resistive switching in widely reported memristive devices is dominated by nucleation or filament-driven conduction between electrodes, constraining analog tunability, reproducibility, and scalability. Here, we demonstrate charge-transfer based contact engineering strategy that enables device-level, independently tunable deterministic resistive switching through controlled interfacial charge trapping/detrapping. Dynamic modulation of the metal-semiconductor Schottky barrier by interfacial trap states enables device-independent, nucleation-free, and gate-free resistive switching with a ∼102 ratio. Temperature-dependent transport exhibits linear Arrhenius behavior of ln (ID/T3/2) vs. 1/T with bias dependent slopes, confirming thermally activated, interface-limited conduction. Under gate-free operation, continuous drain current modulation supports reliable synaptic functions, including long-term potentiation/depression and spike-time-dependent-plasticity. Cardiac signal processing is further validated through ECG arrhythmia classification using the MIT–BIH database.",
+      "tldr": "A contact-engineered MoS₂ memtransistor enables scalable, independently tunable, gate-free analog resistive switching via interfacial charge trapping, supporting reliable synaptic functions and ECG arrhythmia classification.",
+      "affiliations": [
+        "The University of Tokyo , , , ,",
+        "Osaka Metropolitan University , , ,",
+        "Hokkaido University , , , ,"
+      ],
+      "score": 7.9539,
+      "relevance_percentile": 62.5,
+      "score_components": {
+        "top_k": 0.7945,
+        "cluster": 0.8158,
+        "recent": 0.767
+      },
+      "topics": [
+        "Battery",
+        "Electrochemistry",
+        "Semiconductors",
+        "Materials"
+      ],
+      "seen_date": "2026-10-04",
+      "recommendation_status": "new",
+      "previous_recommended_at": null,
+      "key": "doi:10.1021/acsnano.6c10356"
+    },
+    {
+      "title": "Visible Light-Harvesting Dinuclear Chromium(III) Complex with Anthracene-Based Phosphorescence for Photon Upconversion and Photocatalysis",
+      "authors": [
+        "Dennis Fritzler",
+        "Katharina L. Deuter",
+        "Nikita Vashistha",
+        "Serhiy Demeshko",
+        "Michael Linseis",
+        "Pengyue Jin",
+        "Franc Meyer",
+        "Benjamin Dietzek-Ivanšić",
+        "Rainer F. Winter",
+        "Cui Wang"
+      ],
+      "journal": "Journal of the American Chemical Society",
+      "source": "Crossref",
+      "doi": "10.1021/jacs.6c13239",
+      "arxiv_id": null,
+      "published_at": "2026-10-03",
+      "article_url": "https://doi.org/10.1021/jacs.6c13239",
+      "pdf_url": "https://pubs.acs.org/doi/pdf/10.1021/jacs.6c13239",
+      "code_url": null,
+      "abstract": "Abstract Luminescent 3d3 chromium(III) complexes are emerging as highly attractive, earth-abundant alternatives to precious 4d or 5d metal complexes in photophysical and photochemical applications. However, the Laporte-forbidden nature of their d–d transitions in the visible region severely hampers the light-harvesting efficiency of conventional photoactive CrIII complexes. To overcome this fundamental bottleneck, we anchored two anthracene-based antennas to the polypyridine ligands in a dinuclear CrIII complex, yielding the complex Cr2-An. The resulting energetically low-lying π–π* transition in the anthracene antenna enhances visible light absorption at 450 nm by a factor of 30 relative to the anthracene-free reference complex, Cr2-ref Both dimers exhibit ferromagnetic ground-state exchange interactions and display room temperature luminescence, albeit originating from different excited states. Specifically, Cr2-An exhibits anthracene-based phosphorescence with a lifetime of ∼150 ns in solution at room temperature, which is likely accessible via two pathways: direct intersystem crossing from the singlet excited state of the anthracene fragment, or intramolecular doublet-triplet energy transfer from the spin-flip excited states of the CrIII centers. These exceptional photophysical properties render Cr2-An an attractive photosensitizer for triplet–triplet annihilation upconversion (TTA-UC) and singlet oxygen-mediated oxidation reactions, delivering photocatalytic performance that surpasses the benchmark [Ru(bpy)3]Cl2 under visible-light irradiation. These findings offer a powerful molecular design strategy for bypassing the intrinsic optical limitations of first-row transition metals, opening new avenues for sustainable and efficient light energy conversion.",
+      "tldr": "An anthracene-anchored dinuclear Cr(III) complex overcomes weak visible-light absorption to enable anthracene-based phosphorescence, efficient triplet–triplet annihilation upconversion, and photocatalysis that outperforms [Ru(bpy)₃]Cl₂ under visible light.",
+      "affiliations": [
+        "University of Konstanz , , Universitätsstraße 10 , ,",
+        "Leibniz Institute of Photonic Technology, e. V. Jena , Albert-Einstein-Straße 9 , ,",
+        "University of Göttingen , , Tammannstraße 4 , ,",
+        "Leibniz Institute of Surface Engineering (IOM) , Permoserstraße 15 , ,"
+      ],
+      "score": 7.8621,
+      "relevance_percentile": 60.0,
+      "score_components": {
+        "top_k": 0.7838,
+        "cluster": 0.8063,
+        "recent": 0.7623
+      },
+      "topics": [
+        "Semiconductors"
+      ],
+      "seen_date": "2026-10-04",
+      "recommendation_status": "new",
+      "previous_recommended_at": null,
+      "key": "doi:10.1021/jacs.6c13239"
+    },
+    {
+      "title": "Far-Red Turn-On Fluorogenic Probe for Versatile Detection of Inorganic Polyphosphates",
+      "authors": [
+        "Kenji Torii",
+        "Ru̅ta Gerasimaitė",
+        "Gražvydas Lukinavičius"
+      ],
+      "journal": "Journal of the American Chemical Society",
+      "source": "Crossref",
+      "doi": "10.1021/jacs.6c14037",
+      "arxiv_id": null,
+      "published_at": "2026-10-03",
+      "article_url": "https://doi.org/10.1021/jacs.6c14037",
+      "pdf_url": "https://pubs.acs.org/doi/pdf/10.1021/jacs.6c14037",
+      "code_url": null,
+      "abstract": "Abstract Inorganic polyphosphate (polyP) is a ubiquitous phosphate biopolymer involved in diverse cellular processes. Despite its significance, selective detection of polyP remains challenging because of its simple and highly charged structure. Here, we report a far-red fluorogenic turn-on chemosensor for selective polyP detection and imaging, SiX-DPA-Zn. It integrates a silicon-xanthene fluorophore with a Zn(II)-coordinated 2,2’-dipicolylamine recognition unit. Replacing the bridging oxygen in the xanthene scaffold with silicon shifts fluorescence into the far-red region and confers up to 100-fold selectivity for inorganic polyP over other phosphate-containing biomolecules, including nucleic acids and nucleoside di(tri)phosphates. SiX-DPA-Zn enables quantitative detection of polyP at micromolar concentrations in microplate assays and stains a broad range of polyP species, starting from tripolyphosphate, in polyacrylamide gels. In HEK293 cells expressing Escherichia coli polyphosphate kinase 1, the probe visualizes intracellular polyP and enables quantitative analysis of its distribution relative to nuclear proteins─fibrillarin and nucleolin. Stimulated emission depletion (STED) microscopy further resolves subdiffraction-sized polyP granules within nuclear polyP aggregates. Together, these results establish SiX-DPA-Zn as a versatile chemical tool for quantitative polyP detection across biochemical assays and advanced fluorescence imaging.",
+      "tldr": "SiX-DPA-Zn is a far-red turn-on fluorogenic chemosensor that selectively detects and images inorganic polyphosphate across biochemical assays, gels, and cells, enabling quantitative and super-resolution visualization.",
+      "affiliations": [
+        "Max Planck Institute for Multidisciplinary Sciences , , Am Fassberg 11 , ,"
+      ],
+      "score": 7.8104,
+      "relevance_percentile": 57.5,
+      "score_components": {
+        "top_k": 0.7752,
+        "cluster": 0.8063,
+        "recent": 0.7578
+      },
+      "topics": [
+        "Microscopy",
+        "Semiconductors"
+      ],
+      "seen_date": "2026-10-04",
+      "recommendation_status": "new",
+      "previous_recommended_at": null,
+      "key": "doi:10.1021/jacs.6c14037"
+    },
+    {
+      "title": "Interstitial Cu-Induced Band Structure and Phonon Transport Regulation for Eco-friendly n-Type SnSe2 Thermoelectric Power Generation",
+      "authors": [
+        "Wenxin Lai",
+        "Pengfei Xu",
+        "Molly Meng-Jung Li",
+        "Biao Xu"
+      ],
+      "journal": "ACS Applied Materials &amp; Interfaces",
+      "source": "Crossref",
+      "doi": "10.1021/acsami.6c14760",
+      "arxiv_id": null,
+      "published_at": "2026-10-02",
+      "article_url": "https://doi.org/10.1021/acsami.6c14760",
+      "pdf_url": "https://pubs.acs.org/doi/pdf/10.1021/acsami.6c14760",
+      "code_url": null,
+      "abstract": "Abstract Layered n-type SnSe2 is a promising eco-friendly thermoelectric (TE) material, yet its practical application is constrained by low carrier concentration and the inherent coupling of electronic-thermal transport. Herein, a CuCl annealing strategy is developed to leverage Cu interstitial intercalation for the precise modulation of electronic band structures and phonon dispersions in SnSe2. By synergizing with the Cu-induced formation of SnSe heterojunctions, this approach effectively decouples electron and phonon transport. Consequently, the SnSe2-2 mol% CuCl sample achieves a maximum power factor (PF) of 0.74 mW m–1 K–2 and surpasses pristine SnSe2 by 8-fold. Furthermore, the κL is reduced to 0.53 W m–1 K–1 at 723 K, marking a 31% decrease relative to pristine SnSe2. This translates to a dimensionless figure of merit (zT) of 0.88 at 723 K parallel to the spark plasma sintering direction. Notably, we fabricate the first SnSe2-based single-leg thermoelectric generator (TEG), which delivers an energy conversion efficiency of about 2% under a ΔT of 340.8 K. By effectively decoupling electronic and thermal transport, this work unlocks the full potential of eco-friendly SnSe2, providing a sustainable and high-performance paradigm for green energy harvesting without relying on toxic elements.",
+      "tldr": "CuCl annealing introduces Cu interstitials and SnSe heterojunctions in n-type SnSe₂, decoupling electron and phonon transport to achieve a zT of 0.88 at 723 K and enable the first SnSe₂-based thermoelectric generator with ~2% efficiency.",
+      "affiliations": [
+        "Nanjing University of Science and Technology , , ,",
+        "Nanjing University of Posts & Telecommunications , , ,",
+        "The Hong Kong Polytechnic University , , ,"
+      ],
+      "score": 7.7758,
+      "relevance_percentile": 55.0,
+      "score_components": {
+        "top_k": 0.7822,
+        "cluster": 0.7907,
+        "recent": 0.7465
+      },
+      "topics": [
+        "Battery",
+        "Semiconductors"
+      ],
+      "seen_date": "2026-10-04",
+      "recommendation_status": "new",
+      "previous_recommended_at": null,
+      "key": "doi:10.1021/acsami.6c14760"
+    },
+    {
+      "title": "Self-restoration of reactive centers via contaminant-to-catalyst electron replenishment for sustained Fenton-like activity",
+      "authors": [
+        "Yu-Hang Li",
+        "Anjie Chen",
+        "Xiaoyi Hu",
+        "Mingyi Liu",
+        "Nan Xu",
+        "Alistair G. L. Borthwick",
+        "Haodong Ji"
+      ],
+      "journal": "Nature Communications",
+      "source": "Crossref",
+      "doi": "10.1038/s41467-026-78165-w",
+      "arxiv_id": null,
+      "published_at": "2026-10-03",
+      "article_url": "https://doi.org/10.1038/s41467-026-78165-w",
+      "pdf_url": null,
+      "code_url": null,
+      "abstract": "",
+      "tldr": "Abstract unavailable from publisher metadata; open the article for details.",
+      "affiliations": [],
+      "score": 7.7564,
+      "relevance_percentile": 50.0,
+      "score_components": {
+        "top_k": 0.7662,
+        "cluster": 0.7983,
+        "recent": 0.7653
+      },
+      "topics": [
+        "Other"
+      ],
+      "seen_date": "2026-10-04",
+      "recommendation_status": "new",
+      "previous_recommended_at": null,
+      "key": "doi:10.1038/s41467-026-78165-w"
+    },
+    {
+      "title": "Engineering Biotic–Abiotic Interfaces of Semi-artificial Photosynthetic Systems for Solar-Driven CO2 Conversion",
+      "authors": [
+        "Ke An",
+        "Wenwen Kong",
+        "Meng Zhang",
+        "Boxiong Shen",
+        "Lianfei Xu",
+        "Honghong Lyu",
+        "Mengmeng Zhen",
+        "Zhong Zhao"
+      ],
+      "journal": "ACS Applied Materials &amp; Interfaces",
+      "source": "Crossref",
+      "doi": "10.1021/acsami.6c13901",
+      "arxiv_id": null,
+      "published_at": "2026-10-05",
+      "article_url": "https://doi.org/10.1021/acsami.6c13901",
+      "pdf_url": "https://pubs.acs.org/doi/pdf/10.1021/acsami.6c13901",
+      "code_url": null,
+      "abstract": "Abstract Semi-artificial photosynthetic systems (SAPSs) integrate the superior light-responsive capabilities of semiconductors with the high selectivity of microbial biocatalysts, offering a pathway for CO2 mitigation and sustainable energy conversion. The performance of SAPSs is primarily constrained by limited CO2 enrichment, inefficient electron transfer, and the low added value of products. To address these challenges, material engineering strategies, including dimension regulation, surface functionalization, and band gap engineering, are employed to enhance CO2 enrichment, charge separation, and electron transfer. Meanwhile, microbial engineering further improves product selectivity through heterologous expression and enzyme engineering, enabling the biosynthesis of value-added chemicals. At the system level, interfacial coupling and electron-transfer mechanisms are systematically analyzed to elucidate electron transport pathways and guide interface optimization. Furthermore, a multidimensional performance evaluation framework is established to systematically compare representative SAPS combinations, C1–Cn product distribution, and solar-to-chemical conversion efficiency, which provides quantitative insights. The environmental influences of light, temperature, and others on biohybrid stability, and carbon-fixation performance are also critically discussed. Finally, future optimization perspectives at molecular level are presented from microbial carbon fixation to the engineering large-scale upgrading of SAPSs.",
+      "tldr": "This review discusses how material and microbial engineering, interfacial optimization, and multidimensional evaluation can overcome CO₂ enrichment, electron-transfer, and product-value limitations in semi-artificial photosynthetic systems for efficient solar-driven CO₂ conversion.",
+      "affiliations": [
+        "Hebei University of Technology , , ,"
+      ],
+      "score": 7.7643,
+      "relevance_percentile": 52.5,
+      "score_components": {
+        "top_k": 0.7709,
+        "cluster": 0.8,
+        "recent": 0.7549
+      },
+      "topics": [
+        "Semiconductors",
+        "Materials"
+      ],
+      "seen_date": "2026-10-04",
+      "recommendation_status": "new",
+      "previous_recommended_at": null,
+      "key": "doi:10.1021/acsami.6c13901"
+    },
+    {
+      "title": "Monolithic three-dimensionally integrated memristor-thin-film transistor for electrically programmable multimode reservoir computing",
+      "authors": [
+        "Sung Keun Shim",
+        "Wonho Choi",
+        "Sunwoo Cheong",
+        "Dong Hoon Shin",
+        "Jonghoon Shin",
+        "Janguk Han",
+        "Jiseong Im",
+        "Sungho Kim",
+        "Kunhee Son",
+        "Hyun Wook Kim",
+        "Jin Hong Kim",
+        "Jea Min Cho",
+        "Junwoo Park",
+        "Byongwoo Park",
+        "Yoon Ho Jang",
+        "Cheol Seong Hwang"
+      ],
+      "journal": "Nature Communications",
+      "source": "Crossref",
+      "doi": "10.1038/s41467-026-78364-5",
+      "arxiv_id": null,
+      "published_at": "2026-10-03",
+      "article_url": "https://doi.org/10.1038/s41467-026-78364-5",
+      "pdf_url": null,
+      "code_url": null,
+      "abstract": "",
+      "tldr": "Abstract unavailable from publisher metadata; open the article for details.",
+      "affiliations": [],
+      "score": 7.6613,
+      "relevance_percentile": 47.5,
+      "score_components": {
+        "top_k": 0.7621,
+        "cluster": 0.7906,
+        "recent": 0.7396
+      },
+      "topics": [
+        "Other"
+      ],
+      "seen_date": "2026-10-04",
+      "recommendation_status": "new",
+      "previous_recommended_at": null,
+      "key": "doi:10.1038/s41467-026-78364-5"
+    },
+    {
+      "title": "Bulk mesophases modeling of ferroelectric nematic liquid crystals",
+      "authors": [
+        "Aditya Vats",
+        "Alenka Mertelj",
+        "Miha Ravnik"
+      ],
+      "journal": "Nature Communications",
+      "source": "Crossref",
+      "doi": "10.1038/s41467-026-78039-1",
+      "arxiv_id": null,
+      "published_at": "2026-10-03",
+      "article_url": "https://doi.org/10.1038/s41467-026-78039-1",
+      "pdf_url": null,
+      "code_url": null,
+      "abstract": "Abstract Ferroelectric nematic liquid crystals (FNLCs) are emerging materials that combine orientational order with spontaneous macroscopic polarization. They exhibit distinctive properties, such as polar domain formation, field-tunable textures, and strong electro-elastic couplings. However, due to the complexity of the underlying mechanisms, the bulk structure of the emergent mesophases is not yet fully understood, and a generalized description of all observed phases is still lacking. Here, we demonstrate the bulk mesophases of FNLCs as stabilized by a combination of flexoelectricity, elasticity, bulk ordering, and polarization-nematic couplings. Specifically, we develop Landau de-Gennes-like free energy framework that predicts and explains the structure of major experimentally observed ferroelectric nematic phases, including ferroelectric nematic, antiferroelectric splay nematic, apolar nematic, and isotropic phase, notably together with the correct phase transition sequences. Additionally, we predict the possible existence of new bend-instability-driven mesophase characterized by periodic splay-bend structure. Finally, we calculate a complete phase diagram of bulk ferroelectric nematics as dependent on the key coupling mechanisms, which could possibly enable the predictive design and applications of these novel emergent ferroelectric nematic materials.",
+      "tldr": "A Landau–de Gennes free-energy framework explains the bulk phases and phase transitions of ferroelectric nematic liquid crystals via flexoelectricity, elasticity, bulk ordering, and polarization-nematic coupling, predicts a new bend-instability mesophase, and provides a phase diagram for predictive design.",
+      "affiliations": [],
+      "score": 7.5962,
+      "relevance_percentile": 40.0,
+      "score_components": {
+        "top_k": 0.753,
+        "cluster": 0.7893,
+        "recent": 0.7316
+      },
+      "topics": [
+        "Materials"
+      ],
+      "seen_date": "2026-10-04",
+      "recommendation_status": "new",
+      "previous_recommended_at": null,
+      "key": "doi:10.1038/s41467-026-78039-1"
+    },
+    {
+      "title": "Sustainability cost of defect engineering in color centers for quantum communications",
+      "authors": [
+        "Sahar Shata",
+        "Julie M. Schoenung"
+      ],
+      "journal": "Nature Communications",
+      "source": "Crossref",
+      "doi": "10.1038/s41467-026-78261-x",
+      "arxiv_id": null,
+      "published_at": "2026-10-03",
+      "article_url": "https://doi.org/10.1038/s41467-026-78261-x",
+      "pdf_url": null,
+      "code_url": null,
+      "abstract": "",
+      "tldr": "Abstract unavailable from publisher metadata; open the article for details.",
+      "affiliations": [],
+      "score": 7.5974,
+      "relevance_percentile": 42.5,
+      "score_components": {
+        "top_k": 0.7532,
+        "cluster": 0.7946,
+        "recent": 0.7239
+      },
+      "topics": [
+        "Other"
+      ],
+      "seen_date": "2026-10-04",
+      "recommendation_status": "new",
+      "previous_recommended_at": null,
+      "key": "doi:10.1038/s41467-026-78261-x"
+    },
+    {
+      "title": "Modular Bio‐Integrated Materials and Devices for Advanced Theranostic Healthcare",
+      "authors": [
+        "Zhenyou Ge",
+        "Xin Li",
+        "Bingbing Gao",
+        "Chwee Teck Lim",
+        "Yukun Ren"
+      ],
+      "journal": "Advanced Materials",
+      "source": "Crossref",
+      "doi": "10.1002/adma.75230",
+      "arxiv_id": null,
+      "published_at": "2026-10-03",
+      "article_url": "https://doi.org/10.1002/adma.75230",
+      "pdf_url": "https://advanced.onlinelibrary.wiley.com/doi/pdf/10.1002/adma.75230",
+      "code_url": null,
+      "abstract": "ABSTRACT Bio‐integrated theranostic systems that combine sensing, analysis, interaction, and therapy are emerging as powerful platforms for personalized healthcare. Unlike conventional diagnostic or therapeutic devices, modular bio‐integrated systems integrate body‐conformal or implantable interfaces with analytical units, user‐interaction platforms, and therapeutic modules to enable continuous monitoring, feedback‐guided decision‐making, and on‐demand intervention. In this review, we summarize progress in modular bio‐integrated theranostic systems (MBTS) from four functional perspectives. First, we discuss biophysical, biochemical, and multimodal sensing modules that provide physiological and molecular inputs across skin‐interfaced, wound‐integrated, ocular, oral, and implantable formats. We review analysis modules that convert sensor‐derived signals into health‐state assessments, risk estimates, and intervention guidance. Interactive interfaces and feedback modules are discussed, focusing on visual and graphical interfaces for data presentation and interactive feedback for user engagement and therapeutic response. Finally, programmable therapeutic modules for controlled drug delivery and nonpharmacological intervention are summarized, followed by biomedical implementations in drug delivery, neuromodulation, diabetes management, wound care, blood pressure regulation, and other healthcare scenarios. We further discuss engineering challenges related to module integration, bio‐interface stability, power supply, data security, and cost‐effective manufacturing. This review provides a modular framework for designing next‐generation bio‐integrated theranostic systems that connect sensing, analysis, interaction, and therapy within healthcare platforms.",
+      "tldr": "This review presents a modular framework for bio-integrated theranostic systems that integrate sensing, analysis, interactive feedback, and programmable therapy to enable personalized, continuous, and on-demand healthcare.",
+      "affiliations": [
+        "School of Mechatronics Engineering Harbin Institute of Technology Harbin P. R. China",
+        "Institute For Health Innovation and Technology (iHealthtech) National University of Singapore Singapore Singapore",
+        "Jiangsu Provincial University Key Laboratory of Green Biomanufacturing for Pharmaceuticals School of Pharmaceutical Sciences Nanjing Tech University Nanjing China",
+        "Department of Biomedical Engineering National University of Singapore Singapore Singapore",
+        "Mechanobiology Institute National University of Singapore Singapore Singapore"
+      ],
+      "score": 7.6101,
+      "relevance_percentile": 45.0,
+      "score_components": {
+        "top_k": 0.7578,
+        "cluster": 0.7755,
+        "recent": 0.7473
+      },
+      "topics": [
+        "Materials"
+      ],
+      "seen_date": "2026-10-04",
+      "recommendation_status": "new",
+      "previous_recommended_at": null,
+      "key": "doi:10.1002/adma.75230"
+    },
+    {
+      "title": "Thermally programmed disassembly and reconstruction of 2D polymer platelets via melting-governed crystallization-driven self-assembly",
+      "authors": [
+        "Emre Turan",
+        "Maria C. Arno"
+      ],
+      "journal": "Nature Communications",
+      "source": "Crossref",
+      "doi": "10.1038/s41467-026-77973-4",
+      "arxiv_id": null,
+      "published_at": "2026-10-03",
+      "article_url": "https://doi.org/10.1038/s41467-026-77973-4",
+      "pdf_url": null,
+      "code_url": null,
+      "abstract": "Abstract Crystallization-driven self-assembly (CDSA) has emerged as a powerful methodology to precisely control the morphology and size of polymer nanostructures, enabling the formation of 1D and 2D nanomaterials. Yet, the melting behavior of polymer crystals grown in solution using this technique has remained largely unexplored. Here, we show that melting temperature is a structurally sensitive descriptor and an active design parameter for 2D poly(ε-caprolactone) platelets formed by seeded living CDSA. Using nano differential scanning calorimetry, we establish quantitative thickness-melting correlations consistent with Gibbs-Thomson theory for finite, solution-grown lamellae. Leveraging these insights, we engineer multilayer platelets with programmed thermal stability gradients that undergo rapid, selective disassembly under mild conditions (37 °C), yielding uniform hollow architectures within minutes. Upon cooling, released polymer chains undergo spatially confined recrystallization, allowing reversible reconstruction and self-healing of the platelet framework. This work establishes melting as a powerful thermodynamic handle for probing and reconfiguring CDSA-derived nanostructures in solution.",
+      "tldr": "By exploiting thickness-dependent melting temperatures in 2D poly(ε-caprolactone) platelets formed by crystallization-driven self-assembly, researchers achieved programmed selective disassembly into hollow structures at 37 °C and reversible reconstruction/self-healing upon cooling.",
+      "affiliations": [],
+      "score": 7.5905,
+      "relevance_percentile": 35.0,
+      "score_components": {
+        "top_k": 0.7498,
+        "cluster": 0.792,
+        "recent": 0.7328
+      },
+      "topics": [
+        "Materials"
+      ],
+      "seen_date": "2026-10-04",
+      "recommendation_status": "new",
+      "previous_recommended_at": null,
+      "key": "doi:10.1038/s41467-026-77973-4"
+    },
+    {
+      "title": "Semitransparent Organic Photovoltaic Achieving 12.98% Efficiency and 33.95% Average Visible Light Transmittance by Employing PPT‐3 With Large Bandgap and Narrow Photon Harvesting Range",
+      "authors": [
+        "Jingjing Huang",
+        "Hongyue Tian",
+        "Dongsheng Xie",
+        "Zuliang Zhuo",
+        "Hang Zhou",
+        "Lu Zhang",
+        "Xiaoling Ma",
+        "Jae Hyun Lee",
+        "Lianbin Niu",
+        "Chunhui Duan",
+        "Han Young Woo",
+        "Fujun Zhang"
+      ],
+      "journal": "Advanced Energy Materials",
+      "source": "Crossref",
+      "doi": "10.1002/aenm.71679",
+      "arxiv_id": null,
+      "published_at": "2026-10-03",
+      "article_url": "https://doi.org/10.1002/aenm.71679",
+      "pdf_url": "https://advanced.onlinelibrary.wiley.com/doi/pdf/10.1002/aenm.71679",
+      "code_url": null,
+      "abstract": "ABSTRACT A broad bandgap polymer PPT‐3 with optical bandgap of 2.25 eV and narrow photon harvesting range of 90 nm was deliberately selected to match with one narrow bandgap acceptor BTP‐eC9 for preparing semitransparent organic photovoltaics (ST‐OPVs). The optimal weight ratio of PPT‐3 to BTP‐eC9 is about 0.7:1 for well balancing the power conversion efficiency (PCE) of 13.72% and the average visible light transmittance of active layer (AVTF) of 61.64%. The PCE of organic photovoltaics (OPVs) can be further increased from 13.72% to 14.73% by incorporating 0.05 wt.% TFB with high hole mobility properties, as confirmed from the grazing‐incidence wide‐angle X‐ray scattering characterization. The Au (1 nm)/Ag (10 nm) was fabricated as the top electrode to prepare ST‐OPVs exhibiting a PCE of 12.98%, an average visible light transmittance (AVT) of 33.95% and a light utilization efficiency (LUE) of 4.41%. This work indicates that the selection of a broad bandgap donor with narrow photon harvesting range and reduced donor content should be the smart strategy for achieving ST‐OPVs.",
+      "tldr": "By pairing the wide-bandgap, narrow-harvesting polymer PPT-3 with BTP-eC9 and optimizing the blend and TFB doping, semitransparent organic photovoltaics achieved 12.98% power conversion efficiency, 33.95% average visible transmittance, and 4.41% light utilization efficiency.",
+      "affiliations": [
+        "Advanced Organic Materials and Devices Laboratory School of Physical Science and Engineering Beijing Jiaotong University Beijing China",
+        "Inst Polymer Optoelect Mat &amp; Devices State Key Lab Luminescent Mat &amp; Devices South China University Technology Guangzhou Guangdong China",
+        "Qingdao SRI Intellectual Technology Co. LTD. Qingdao Shandong China",
+        "Organic Optoelectronic Materials Laboratory Department of Chemistry College of Science Korea University Seoul Republic of Korea",
+        "College of Physics and Electronic Engineering Chongqing Normal University Chongqing China"
+      ],
+      "score": 7.5917,
+      "relevance_percentile": 37.5,
+      "score_components": {
+        "top_k": 0.7681,
+        "cluster": 0.7641,
+        "recent": 0.7293
+      },
+      "topics": [
+        "Battery",
+        "Semiconductors"
+      ],
+      "seen_date": "2026-10-04",
+      "recommendation_status": "new",
+      "previous_recommended_at": null,
+      "key": "doi:10.1002/aenm.71679"
+    },
+    {
+      "title": "Spatiotemporally synchronized pure high-even-order dispersion solitons in multimode fiber lasers",
+      "authors": [
+        "Wenqi Ma",
+        "Xiuquan Li",
+        "Canyi Deng",
+        "Caishan Pang",
+        "Rui Nie",
+        "Frank W. Wise",
+        "Guijun Hu"
+      ],
+      "journal": "Nature Communications",
+      "source": "Crossref",
+      "doi": "10.1038/s41467-026-78194-5",
+      "arxiv_id": null,
+      "published_at": "2026-10-03",
+      "article_url": "https://doi.org/10.1038/s41467-026-78194-5",
+      "pdf_url": null,
+      "code_url": null,
+      "abstract": "Abstract Soliton solutions of nonlinear wave equations continue to attract broad scientific interest across diverse physical settings. Currently, the study of pure high-even-order dispersion (PHEOD) solitons and multimode spatiotemporal dynamics represents two compelling frontiers in ultrafast photonics. The intersection of these domains is theoretically rich; however, the realization of PHEOD solitons in multimode fibers has been difficult due to the challenge of independently managing dispersion for different transverse modes. Here, we report the first experimental generation of synchronized PHEOD solitons in a multimode fiber laser. By employing a transverse mode division control technique, we physically decouple the modes, which enables control of both modal and chromatic dispersions. We systematically demonstrate the generation of spatiotemporally synchronized PHEOD solitons in four transverse modes, with fourth-, sixth-, or eighth-order dispersion. These multimode pulsed states self-organize through nonlinear coupling among the transverse modes. Numerical simulations account for the main experimental observations and illuminate the nonlinear multimode dynamics that underlie the laser operation. This work bridges the scientific gap between PHEOD engineering and multimode fiber lasers, and opens new possibilities for the development of sources of multidimensionally structured ultrafast light.",
+      "tldr": "Researchers experimentally generated spatiotemporally synchronized pure high-even-order dispersion solitons across four transverse modes with fourth-, sixth-, or eighth-order dispersion in a multimode fiber laser by using transverse mode division control to independently manage modal and chromatic dispersion.",
+      "affiliations": [],
+      "score": 7.5362,
+      "relevance_percentile": 32.5,
+      "score_components": {
+        "top_k": 0.7652,
+        "cluster": 0.7602,
+        "recent": 0.715
+      },
+      "topics": [
+        "Semiconductors",
+        "AI & Computation"
+      ],
+      "seen_date": "2026-10-04",
+      "recommendation_status": "new",
+      "previous_recommended_at": null,
+      "key": "doi:10.1038/s41467-026-78194-5"
+    },
+    {
+      "title": "Universal random matrix behavior of a Fermionic quantum gas",
+      "authors": [
+        "Maxime Dixmerias",
+        "Giuseppe Del Vecchio Del Vecchio",
+        "Cyprien Daix",
+        "Joris Verstraten",
+        "Tim de Jongh",
+        "Bruno Peaudecerf",
+        "Pierre Le Doussal",
+        "Grégory Schehr",
+        "Tarik Yefsah"
+      ],
+      "journal": "Nature Communications",
+      "source": "Crossref",
+      "doi": "10.1038/s41467-026-77088-w",
+      "arxiv_id": null,
+      "published_at": "2026-10-03",
+      "article_url": "https://doi.org/10.1038/s41467-026-77088-w",
+      "pdf_url": null,
+      "code_url": null,
+      "abstract": "",
+      "tldr": "Abstract unavailable from publisher metadata; open the article for details.",
+      "affiliations": [],
+      "score": 7.444,
+      "relevance_percentile": 30.0,
+      "score_components": {
+        "top_k": 0.7528,
+        "cluster": 0.7627,
+        "recent": 0.6961
+      },
+      "topics": [
+        "Other"
+      ],
+      "seen_date": "2026-10-04",
+      "recommendation_status": "new",
+      "previous_recommended_at": null,
+      "key": "doi:10.1038/s41467-026-77088-w"
+    },
+    {
+      "title": "A DNAzyme-Driven DNA Nanotracker for Orthogonal Dual-Channel Imaging of an Oncogenic Signaling Axis and Its Pharmacological Modulation",
+      "authors": [
+        "Qianying Zhang",
+        "Jingyi Zheng",
+        "Kaiyue Liu",
+        "Jian-Rong Zhang",
+        "Sai Bi",
+        "Jun-Jie Zhu"
+      ],
+      "journal": "Nano Letters",
+      "source": "Crossref",
+      "doi": "10.1021/acs.nanolett.6c02711",
+      "arxiv_id": null,
+      "published_at": "2026-10-03",
+      "article_url": "https://doi.org/10.1021/acs.nanolett.6c02711",
+      "pdf_url": "https://pubs.acs.org/nalefd/article-pdf/doi/10.1021/acs.nanolett.6c02711/68739467/acs.nanolett.6c02711.pdf",
+      "code_url": null,
+      "abstract": "Abstract Pathway-targeted therapy has emerged as a promising strategy in cancer treatment, yet its efficacy relies on the accurate analysis of key signaling axes in living cells. The miR-140/FEN1 signaling axis, which is balanced in normal hepatocytes but dysregulated in hepatocellular carcinoma, represents a potential target for cancer therapy. Here, we present a DNAzyme-driven DNA nanotracker (DDN) for the orthogonal imaging of this pathway in dual channels with high sensitivity. The nanotracker is constructed by assembling DNAzyme-powered DNA walkers, which are responsive to miR-140 and FEN1, onto gold nanoparticles, enabling simultaneous visualization of upstream miRNA expression and downstream enzymatic activity in living cells. Leveraging this platform, we further revealed the differential pharmacological modulations of the miR-140/FEN1 signaling axis by simvastatin and myricetin. In summary, the DDN serves not only as a sensitive molecular imaging probe but also as a versatile tool for mechanistic studies, offering advanced opportunities for pathway-guided drug discovery and precision therapeutics.",
+      "tldr": "A DNAzyme-driven DNA nanotracker enables orthogonal dual-channel imaging of the miR-140/FEN1 oncogenic signaling axis in living cells and reveals its differential pharmacological modulation by simvastatin and myricetin, offering a tool for pathway-guided drug discovery.",
+      "affiliations": [
+        "Qingdao University , , ,",
+        "Nanjing University , , ,"
+      ],
+      "score": 7.4316,
+      "relevance_percentile": 27.5,
+      "score_components": {
+        "top_k": 0.7457,
+        "cluster": 0.744,
+        "recent": 0.7354
+      },
+      "topics": [
+        "Microscopy"
+      ],
+      "seen_date": "2026-10-04",
+      "recommendation_status": "new",
+      "previous_recommended_at": null,
+      "key": "doi:10.1021/acs.nanolett.6c02711"
+    }
+  ]
+}
