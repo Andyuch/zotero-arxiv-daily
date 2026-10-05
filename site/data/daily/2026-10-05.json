@@ -1,0 +1,645 @@
+{
+  "date": "2026-10-05",
+  "generated_at": "2026-10-05T00:38:03.520891+00:00",
+  "count": 14,
+  "papers": [
+    {
+      "title": "Stabilizing Water Molecules in Hydrogel Electrolytes Enables 2.8 V‐Class Purely Aqueous Zn–Li Hybrid Batteries",
+      "authors": [
+        "Meng Li",
+        "Li Song",
+        "Chen Wang",
+        "Guobin Lai",
+        "Zhonggui Quan",
+        "Zhongdi Fu",
+        "Xinyi Xiu",
+        "Xiangyang Li",
+        "Feng Liu",
+        "Chunlong Dai",
+        "Liangti Qu",
+        "Zhen Zhou",
+        "Xuting Jin"
+      ],
+      "journal": "Advanced Materials",
+      "source": "Crossref",
+      "doi": "10.1002/adma.75221",
+      "arxiv_id": null,
+      "published_at": "2026-10-04",
+      "article_url": "https://doi.org/10.1002/adma.75221",
+      "pdf_url": "https://advanced.onlinelibrary.wiley.com/doi/pdf/10.1002/adma.75221",
+      "code_url": null,
+      "abstract": "ABSTRACT Currently, reported high‐voltage aqueous zinc batteries generally operate below 2.0 V. Achieving a discharge plateau/average operating voltage exceeding 2.0 V typically requires charging voltages above 2.5 V; however, the limited electrochemical stability of water molecules in has thus far prevented purely aqueous zinc batteries from reaching this threshold. Here, we report an extreme water‐confinement strategy that elevates the oxygen evolution potential of water in a poly(acrylamide‐co‐hydroxypropyl acrylate) hydrogel electrolyte to 2.85 V versus Zn/Zn 2+ , far beyond the theoretical value (∼1.58 V versus Zn/Zn 2+ ). This remarkable enhancement originates from the synergistic effects of strong cation–water coordination, TFSI − ‐induced water segregation, and extensive hydrogen bonding within the polymer network, which collectively suppress water activity. When coupled with a lithium nickel manganese oxide cathode, the hydrogel electrolyte enables a 2.8 V‐class Zn–Li hybrid battery that delivers a record‐breaking average operating voltage/discharge plateau of 2.35 V, far exceeding all previously reported purely aqueous zinc batteries. The battery further exhibits excellent mechanical robustness and directly powers a multifunctional wireless sensing monitoring of dynamic pressure, finger movement, muscle activity, speech, and full‐body motion. This work provides a viable pathway toward ultrahigh‐voltage aqueous zinc batteries for next‐generation wearable and intelligent electronic systems.",
+      "tldr": "An extreme water-confinement hydrogel electrolyte suppresses water activity to raise the oxygen evolution potential to 2.85 V vs Zn/Zn²⁺, enabling a 2.8 V-class purely aqueous Zn–Li hybrid battery with a record 2.35 V average operating voltage/discharge plateau for wearable sensing.",
+      "affiliations": [
+        "Interdisciplinary Research Center for Sustainable Energy Science and Engineering (IRC4SE2), School of Chemical Engineering Zhengzhou University Zhengzhou P. R. China",
+        "Henan Institute of Advanced Technology Zhengzhou University Zhengzhou P. R. China",
+        "State Key Laboratory of Nonlinear Mechanics, Institute of Mechanics Chinese Academy of Sciences Beijing P. R. China",
+        "School of Chemistry and Chemical Engineering Beijing Institute of Technology Beijing P. R. China",
+        "School of Materials Science &amp; Engineering Sichuan University Chengdu P. R. China",
+        "Key Lab of Organic Optoelectronics and Molecular Engineering of Ministry of Education, Department of Chemistry Tsinghua University Beijing P. R. China",
+        "College of New Energy and Intelligent Manufacturing National Key Laboratory of Green Chemical Synthesis and Transformation Technology Henan University Henan P. R. China",
+        "Collaborative Innovation Center of Materials Science Nankai University Tianjin P. R. China"
+      ],
+      "score": 8.3799,
+      "relevance_percentile": 100.0,
+      "score_components": {
+        "top_k": 0.8256,
+        "cluster": 0.8676,
+        "recent": 0.8246
+      },
+      "topics": [
+        "Battery",
+        "Electrochemistry",
+        "Semiconductors",
+        "Materials"
+      ],
+      "seen_date": "2026-10-05",
+      "recommendation_status": "new",
+      "previous_recommended_at": null,
+      "key": "doi:10.1002/adma.75221"
+    },
+    {
+      "title": "Vacancy‐Mediated Sulfur Exchange Between Catalysts and Polysulfides Accelerates Sulfur Redox Kinetics in Lithium‐Sulfur Batteries",
+      "authors": [
+        "Jiaqi Lan",
+        "Yun Cao",
+        "Xudong Li",
+        "Mengting Zheng",
+        "Yufei Zhao",
+        "Jiayi Li",
+        "Zhonghao Hu",
+        "Junjie Wang",
+        "Jiwei Shi",
+        "Zhiwei Hu",
+        "Ahmed Gamal Attallah",
+        "Ziying Wu",
+        "Ziyue Zhao",
+        "Chuannan Geng",
+        "Wei Lv",
+        "Jun Lu"
+      ],
+      "journal": "Advanced Materials",
+      "source": "Crossref",
+      "doi": "10.1002/adma.75210",
+      "arxiv_id": null,
+      "published_at": "2026-10-04",
+      "article_url": "https://doi.org/10.1002/adma.75210",
+      "pdf_url": "https://advanced.onlinelibrary.wiley.com/doi/pdf/10.1002/adma.75210",
+      "code_url": null,
+      "abstract": "ABSTRACT Metal sulfides are promising sulfur electrocatalysts for lithium‐sulfur (Li–S) batteries, yet their rational design is limited by an incomplete understanding of interfacial sulfur redox processes. Here, we reveal a vacancy‐mediated sulfur‐exchange mechanism that accelerates sulfur redox kinetics. Using Bi 2 S 3 as a model catalyst, 34 S isotope‐labeling reveals dynamic sulfur exchange between external polysulfides and vacancy‐associated Bi–S lattice environments during cycling. Accessible sulfur vacancies act as exchange centers, enabling sulfur incorporation, migration, and local reconstruction. By tuning vacancy concentration, we establish a direct correlation between sulfur‐vacancy density, sulfur‐exchange extent, and catalytic sulfur conversion. Vacancy‐rich Bi 2 S 3 nearly doubles the electrochemically accessible interfacial area, with double‐layer capacitance increasing from 1.04 to 2.18 mF cm −2 , and raises sulfur exchange from 0.71% to 1.05%. Consequently, Li 2 S nucleation and precipitation are accelerated; the apparent Li 2 S formation barrier decreases from 0.352 to 0.179 eV, and polarization and impedance growth are suppressed. A 2.5 Ah Li–S pouch cell delivers an energy density of ∼504 Wh kg −1 . These findings identify vacancy‐mediated sulfur exchange as a mechanistic basis for designing high‐performance metal sulfide catalysts for practical sulfur batteries.",
+      "tldr": "Vacancy-rich metal sulfide catalysts such as Bi₂S₃ enable dynamic sulfur exchange with polysulfides, accelerating sulfur redox kinetics and enabling high-performance Li–S batteries with ~504 Wh kg⁻¹ energy density.",
+      "affiliations": [
+        "Shenzhen All‐Solid‐State Lithium Battery Electrolyte Engineering Research Center Shenzhen Key Laboratory for Graphene‐based Materials Tsinghua Shenzhen International Graduate School Tsinghua University Shenzhen China",
+        "College of Chemical and Biological Engineering Zhejiang University Hangzhou China",
+        "Institute of Energy Technologies for Extreme Environments Shenzhen University of Advanced Technology Shenzhen China",
+        "Helmholtz‐Zentrum Dresden‐Rossendorf Institute of Radiation Physics Dresden Germany",
+        "Guangdong Provincial Key Laboratory of Optical Information Materials and Technology Institute of Electronic Paper Displays South China Academy of Advanced Optoelectronics South China Normal University Guangzhou China",
+        "China Energy Lithium Co., Ltd. Tianjin China"
+      ],
+      "score": 8.3491,
+      "relevance_percentile": 92.31,
+      "score_components": {
+        "top_k": 0.8265,
+        "cluster": 0.8606,
+        "recent": 0.8175
+      },
+      "topics": [
+        "Battery",
+        "Electrochemistry"
+      ],
+      "seen_date": "2026-10-05",
+      "recommendation_status": "new",
+      "previous_recommended_at": null,
+      "key": "doi:10.1002/adma.75210"
+    },
+    {
+      "title": "Vertical Quasi‐2D Perovskite on ZnMgO Enables High‐Performance Pure‐Red PeLEDs",
+      "authors": [
+        "Guan‐Jie Ding",
+        "Xiaolin Tai",
+        "Bo Li",
+        "Yong‐Hui Song",
+        "Ya‐Lan Hu",
+        "Lin‐Lin Zeng",
+        "Zhen‐Yu Ma",
+        "Sami Ur Rahman",
+        "Yue Lin",
+        "Fengjia Fan",
+        "Hong‐Bin Yao"
+      ],
+      "journal": "Advanced Materials",
+      "source": "Crossref",
+      "doi": "10.1002/adma.75251",
+      "arxiv_id": null,
+      "published_at": "2026-10-04",
+      "article_url": "https://doi.org/10.1002/adma.75251",
+      "pdf_url": "https://advanced.onlinelibrary.wiley.com/doi/pdf/10.1002/adma.75251",
+      "code_url": null,
+      "abstract": "ABSTRACT Quasi‐two‐dimensional (quasi‐2D) perovskites, featuring a large‐cation‐intercalated quantum‐well structure, are efficient emitters for pure‐red perovskite light‐emitting diodes (PeLEDs); however, their electroluminescence is limited by poor carrier injection because all current quasi‐2D emitters are horizontally aligned on low‐mobility organic electron transport layers. Therefore, a PeLED with a quasi‐2D perovskite vertically stacked on a high‐mobility inorganic electron‐transport layer is highly anticipated but has yet to be achieved. Here, we introduce branched guanidinium cations (GA + ) and non‐protonic phosphonium, (2‐aminoethyl) triphenyl‐ cations (PAT + ) to direct the vertical growth of quasi‐2D emitters on a high‐conductivity electron‐transport layer, ZnMgO, enabling high‐performance pure‐red PeLEDs that exhibit a maximum luminance of 65 875 cd m −2 and an external quantum efficiency of 14.63% even at a high brightness of 49 080 cd m −2 . Impressively, the low driving voltage, enabled by efficient carrier transport, also yields an operational half‐lifetime of 5528 h at an initial luminance of 100 cd m −2 , which represents the most stable pure‐red PeLED reported to date.",
+      "tldr": "By using branched guanidinium and phosphonium cations to grow quasi-2D perovskite vertically on a high-mobility ZnMgO electron-transport layer, this work achieves high-performance pure-red PeLEDs with 65,875 cd m⁻² luminance, 14.63% EQE, and a 5,528 h operational half-lifetime at 100 cd m⁻².",
+      "affiliations": [
+        "Hefei National Research Center for Physical Sciences at the Microscale University of Science and Technology of China Hefei China",
+        "Department of Applied Chemistry University of Science and Technology of China Hefei China",
+        "Department of Chemistry University of Science and Technology of China Hefei China",
+        "CAS Key Laboratory of Microscale Magnetic Resonance and School of Physical Sciences University of Science and Technology of China Hefei China",
+        "Hefei National Laboratory University of Science and Technology of China Hefei China"
+      ],
+      "score": 8.2257,
+      "relevance_percentile": 84.62,
+      "score_components": {
+        "top_k": 0.8372,
+        "cluster": 0.8253,
+        "recent": 0.7819
+      },
+      "topics": [
+        "Semiconductors"
+      ],
+      "seen_date": "2026-10-05",
+      "recommendation_status": "new",
+      "previous_recommended_at": null,
+      "key": "doi:10.1002/adma.75251"
+    },
+    {
+      "title": "Electron Pumping Overcomes Spin‐Crossover Barrier to Lock High‐Spin Single‐Atom Sites for Sustained Oxygen Reduction",
+      "authors": [
+        "Juan He",
+        "Jing He",
+        "Xiaoming Wu",
+        "Bingchen He",
+        "Zhenhuang Su",
+        "Weiheng Ding",
+        "Xiaoyong Ma",
+        "Ziye Li",
+        "Zhenhui Cao",
+        "Yunchao Liang",
+        "Fei Yan",
+        "Jiayao Jiang",
+        "Zhen Zhang",
+        "Xuanhua Li"
+      ],
+      "journal": "Advanced Materials",
+      "source": "Crossref",
+      "doi": "10.1002/adma.75270",
+      "arxiv_id": null,
+      "published_at": "2026-10-04",
+      "article_url": "https://doi.org/10.1002/adma.75270",
+      "pdf_url": "https://advanced.onlinelibrary.wiley.com/doi/pdf/10.1002/adma.75270",
+      "code_url": null,
+      "abstract": "ABSTRACT The oxygen reduction reaction (ORR) is kinetically limited by spin‐dependent adsorption of O 2 and intermediates at catalytic sites, yet the high‐spin configuration that promotes O 2 activation is inherently metastable and suffers from uncontrolled spin evolution. Herein, we propose an electron‐pumping strategy to overcome the spin‐forbidden energy barrier, which is achieved by the continuous and unidirectional electron extraction from Fe centers invariably to stabilize the active sites in high‐spin state. The sustained high‐spin state of Fe III (d 5 , S = 5/2) activates the e g orbitals to govern orbital hybridization and electronic coupling with intermediates, while simultaneously overcoming spin‐crossover barrier to continuously drive O 2 activation, thereby accelerating reaction onset and subsequent catalytic steps. Moreover, it reinforces O─O bond scission and eases *OH removal, synergistically enhancing the complete ORR dynamics. Consequently, the designed electrocatalyst delivers an outstanding half‐wave potential of 0.93 V with only 7 mV decay after 10 000 cycles. The assembled anion exchange membrane fuel cell achieves a peak power density of 966 mW cm −2 and retains 97% of its initial voltage after 50 h at 0.5 A cm −2 . This work establishes the electron‐pumping regulation as a paradigm for achieving intrinsic and sustained high‐spin stabilization, breaking the activity–stability trade‐off in oxygen electrocatalysis.",
+      "tldr": "An electron-pumping strategy continuously extracts electrons from Fe single-atom sites to lock them in a high-spin Fe(III) state, overcoming the spin-crossover barrier and enabling highly active, durable oxygen reduction for fuel cells.",
+      "affiliations": [
+        "State Key Laboratory of Solidification Processing Center for Nano Energy Materials School of Materials Science and Engineering Northwestern Polytechnical University Xi'an China",
+        "Advanced Power Research Institute of Northwestern Polytechnical University in Sichuan Tianfu New Area Chengdu China",
+        "Shanghai Synchrotron Radiation Facility (SSRF) Shanghai Advanced Research Institute Chinese Academy of Sciences Shanghai China"
+      ],
+      "score": 8.1264,
+      "relevance_percentile": 76.92,
+      "score_components": {
+        "top_k": 0.8042,
+        "cluster": 0.8432,
+        "recent": 0.788
+      },
+      "topics": [
+        "Other"
+      ],
+      "seen_date": "2026-10-05",
+      "recommendation_status": "new",
+      "previous_recommended_at": null,
+      "key": "doi:10.1002/adma.75270"
+    },
+    {
+      "title": "Nano‐Stabilizer Engineering of Rare‐Earth Metal Single‐Atom Site for Boosted Oxygen Electroreduction and Metal‐Air Batteries",
+      "authors": [
+        "Shengjie Wei",
+        "Xingxin Hu",
+        "Pengcheng Liu",
+        "Rongyan Yang",
+        "Huzhong Zhang",
+        "Yuxiang Hu"
+      ],
+      "journal": "Advanced Materials",
+      "source": "Crossref",
+      "doi": "10.1002/adma.75283",
+      "arxiv_id": null,
+      "published_at": "2026-10-04",
+      "article_url": "https://doi.org/10.1002/adma.75283",
+      "pdf_url": "https://advanced.onlinelibrary.wiley.com/doi/pdf/10.1002/adma.75283",
+      "code_url": null,
+      "abstract": "ABSTRACT Stabilizing the coordination structure of highly active catalytic sites is an effective strategy for enhancing catalytic performance. Herein, rare‐earth metal Pr‐based single‐atom nano‐stabilizer engineering is reported for stabilizing highly active Fe‐N 4 O sites, thereby achieving enhanced activity toward the oxygen reduction reaction and in metal‐air batteries. In situ x‐ray absorption spectroscopy reveals that the axial O coordination atom of the Fe‐N 4 O site is stabilized by the Pr single‐atom nano‐stabilizer, which downshifts the d‐band center of Fe, facilitates the reduction and desorption of the *OH intermediate, and thus lowers the energy barrier of the rate‐determining step—verified via density functional theory calculations. The FePr‐ISAS/CN catalyst with the nano‐stabilizer exhibits a half‐wave potential of 0.921 V versus RHE, 45 and 72 mV higher than those of Fe‐ISAS/CN and the commercial Pt/C catalyst. Furthermore, the FePr‐ISAS/CN‐based Al‐air battery achieves a high peak power density of 360 mW cm −2 , superior to most reported metal single‐atom catalyst‐based Al‐air batteries. This work reveals the potential of rare‐earth metal‐based nano‐stabilizer engineering for stabilizing the coordination structure of highly active sites and thereby boosting activity in both electrocatalytic ORR and metal‐air battery devices.",
+      "tldr": "Rare-earth Pr single-atom nano-stabilizers stabilize Fe–N₄O sites, downshift the Fe d-band, and boost oxygen reduction and Al–air battery performance.",
+      "affiliations": [
+        "State Key Laboratory of Materials Low‐Carbon Recycling Center Excellence for Environmental Safety and Biological Effects College of Chemistry and Life Science and College of Materials Science and Engineering Beijing University of Technology Beijing P. R. China",
+        "Nankai University Tianjin P. R. China",
+        "National Key Laboratory On Vacuum Technology and Physics Lanzhou Institute of Physics Lanzhou Gansu P. R. China"
+      ],
+      "score": 8.1018,
+      "relevance_percentile": 69.23,
+      "score_components": {
+        "top_k": 0.7977,
+        "cluster": 0.8453,
+        "recent": 0.7887
+      },
+      "topics": [
+        "Battery",
+        "Spectroscopy",
+        "AI & Computation"
+      ],
+      "seen_date": "2026-10-05",
+      "recommendation_status": "new",
+      "previous_recommended_at": null,
+      "key": "doi:10.1002/adma.75283"
+    },
+    {
+      "title": "Temperature-Dependent Charge Transport and Polarization Modulation in P(VDF-TrFE)/IZO Ferroelectric Thin-Film Transistors",
+      "authors": [
+        "Chenru Zhao",
+        "Wanyu Zeng",
+        "Shixin Liu",
+        "Wanxun Li",
+        "Hao Wu",
+        "Anna A. Guliakova",
+        "Farida Tatardar",
+        "Qun Zhang",
+        "Guodong Zhu"
+      ],
+      "journal": "ACS Applied Materials &amp; Interfaces",
+      "source": "Crossref",
+      "doi": "10.1021/acsami.6c11707",
+      "arxiv_id": null,
+      "published_at": "2026-10-05",
+      "article_url": "https://doi.org/10.1021/acsami.6c11707",
+      "pdf_url": "https://pubs.acs.org/aamick/article-pdf/doi/10.1021/acsami.6c11707/68740761/am-2026-11707e.pdf",
+      "code_url": null,
+      "abstract": "Abstract Ferroelectric thin-film transistors (FeTFTs) are highly promising for nonvolatile memory and neuromorphic electronics. Investigating temperature-dependent device characteristics can clarify how ferroelectric polarization modulates carrier transport and assess device working reliability under variable thermal conditions. However, most conventional ferroelectrics have a high Curie temperature; high-temperature characterization inevitably changes intrinsic semiconductor performance, which overlaps with polarization modulation, making it difficult to separate the contribution from ferroelectric polarization. Herein, temperature- dependent electrical characteristics are analyzed on flexible IZO-channel FeTFTs with a low-Tc (∼65 °C) 55:45 and a conventional 70:30 P(VDF-TrFE) as ferroelectric gate dielectrics. A polarization-locking method retains preset ON/OFF polarization states via limited gate sweeping during thermal cycles. Experimental results focus on threshold voltage and mobility evolutions with temperature. The results confirm that the temperature-dependent charge transport is synergistically dominated by the temperature-dependent electrical properties in both the semiconductor and ferroelectric layers. The carrier concentration in the IZO layer increases, and the polarization in the ferroelectric layer degrades with temperature, while the gate capacitance exhibits a peak at the Curie point of P(VDF-TrFE). The sharp mobility enhancement near (Tc) is correlated with the ferroelectric phase transition and is consistent with a reduced contribution from polarization-fluctuation-related scattering for both ON- and OFF-state devices. This work deepens the understanding of polarization modulation and thermal stability and guides high-stability ferroelectric device design.",
+      "tldr": "Temperature-dependent measurements of flexible IZO-channel ferroelectric thin-film transistors with low- and conventional-\\(T_c\\) P(VDF-TrFE) gate dielectrics, aided by polarization locking, reveal that threshold-voltage and mobility evolution are governed jointly by semiconductor carrier concentration and ferroelectric polarization/phase-transition effects, including a gate-capacitance peak and mobility enhancement near the Curie temperature from reduced polarization-fluctuation scattering.",
+      "affiliations": [
+        "Fudan University , , ,",
+        "Herzen University , , ,",
+        "Khazar University , , ,"
+      ],
+      "score": 7.753,
+      "relevance_percentile": 61.54,
+      "score_components": {
+        "top_k": 0.7742,
+        "cluster": 0.7915,
+        "recent": 0.7539
+      },
+      "topics": [
+        "Semiconductors"
+      ],
+      "seen_date": "2026-10-05",
+      "recommendation_status": "new",
+      "previous_recommended_at": null,
+      "key": "doi:10.1021/acsami.6c11707"
+    },
+    {
+      "title": "Mechanical Flipping of [1]Rotaxanes Toughens Polymer Networks",
+      "authors": [
+        "Jiaojiao Xie",
+        "Diandian Deng",
+        "Siwen Wang",
+        "Wei Wen",
+        "Lianrui Hu",
+        "Qiuhua Zhao",
+        "Min Zhang"
+      ],
+      "journal": "Journal of the American Chemical Society",
+      "source": "Crossref",
+      "doi": "10.1021/jacs.6c15261",
+      "arxiv_id": null,
+      "published_at": "2026-10-04",
+      "article_url": "https://doi.org/10.1021/jacs.6c15261",
+      "pdf_url": "https://pubs.acs.org/jacsat/article-pdf/doi/10.1021/jacs.6c15261/68740333/jacs.6c15261.pdf",
+      "code_url": null,
+      "abstract": "Abstract Effectively tuning mechanical properties is essential to advance the utility of polymeric materials. Rotaxanes have emerged as promising candidates for this purpose, such as [2]rotaxanes and polyrotaxanes. However, [1]rotaxanes, which are self-interlocked by a single component, remain largely underexplored in this area. Herein, we report the mechanochemical behaviors of two crown ether-based [1]rotaxanes and their impact on bulk mechanical properties when serving as crosslinkers. These two [1]rotaxanes share identical entangled architectures but differ solely in their flipping barriers, which originate from the steric bulkiness of the macrocycle. The DB24C8-based [1]rotaxane requires a substantially higher energy input for flipping, whereas the B24C8-based [1]rotaxane flips freely once the hydrogen bonding is disrupted, as confirmed by solution-phase studies and DFT calculations. When incorporated into polymer networks at a loading as low as 2.0 mol %, the DB24C8-based [1]rotaxane network exhibits a threefold increase in toughness and a twofold enhancement in stretchability compared to the B24C8-based [1]rotaxane network and the corresponding covalent networks. These results demonstrate that properly barriered molecular flipping can effectively dissipate energy and enhance the macroscopic mechanical performance of polymer networks, highlighting the potential of [1]rotaxanes as useful motifs for tuning network mechanics.",
+      "tldr": "High-barrier [1]rotaxane crosslinkers toughen and stretch polymer networks by dissipating energy through mechanically induced flipping.",
+      "affiliations": [
+        "East China Normal University , , ,"
+      ],
+      "score": 7.2663,
+      "relevance_percentile": 53.85,
+      "score_components": {
+        "top_k": 0.7254,
+        "cluster": 0.7404,
+        "recent": 0.7091
+      },
+      "topics": [
+        "Materials"
+      ],
+      "seen_date": "2026-10-05",
+      "recommendation_status": "new",
+      "previous_recommended_at": null,
+      "key": "doi:10.1021/jacs.6c15261"
+    },
+    {
+      "title": "Glycosaminoglycan-Based CD44-Targeted Nanoparticles for Cancer Therapy: Biological Barriers and Barrier-Informed Design Strategies",
+      "authors": [
+        "Shangyu Chen",
+        "Sheida Dabiri",
+        "Yichen Xu",
+        "Song Li"
+      ],
+      "journal": "Nano Letters",
+      "source": "Crossref",
+      "doi": "10.1021/acs.nanolett.6c02400",
+      "arxiv_id": null,
+      "published_at": "2026-10-04",
+      "article_url": "https://doi.org/10.1021/acs.nanolett.6c02400",
+      "pdf_url": "https://pubs.acs.org/nalefd/article-pdf/doi/10.1021/acs.nanolett.6c02400/68740362/acs.nanolett.6c02400.pdf",
+      "code_url": null,
+      "abstract": "Abstract Nanoparticle (NP)-based drug delivery has been explored to improve the therapeutic index of anticancer agents by enhancing tumor accumulation and reducing systemic toxicity. Among active targeting approaches, cluster of differentiation 44 (CD44) has attracted attention because of its overexpression in tumor cells and tumor-associated endothelial cells and its involvement in tumor progression and therapeutic resistance. Hyaluronic acid (HA) and other glycosaminoglycan (GAG)-based nanocarriers have been developed to exploit CD44-mediated tumor targeting and cellular uptake. However, the in vivo performance of CD44-targeted NPs remains variable because of barriers such as systemic clearance, heterogeneous tumor vasculature and stroma, limited receptor accessibility, competition with endogenous ligands, and inefficient intracellular trafficking or payload release. This Letter summarizes advances in CD44-targeted NP delivery, focusing on barriers at systemic, tumor tissue, and cellular levels. We discuss barrier-informed strategies to optimize ligand presentation, improve penetration, promote intracellular payload release, and highlight translational challenges and opportunities for CD44-targeted nanomedicines.",
+      "tldr": "This letter reviews glycosaminoglycan-based CD44-targeted nanoparticles for cancer therapy, highlighting systemic, tumor-tissue, and cellular barriers and barrier-informed design strategies to improve targeting, penetration, intracellular payload release, and translation.",
+      "affiliations": [
+        "University of Pittsburgh , , , ,",
+        "UPMC Hillman Cancer Institute, University of Pittsburgh , , ,"
+      ],
+      "score": 7.0793,
+      "relevance_percentile": 46.15,
+      "score_components": {
+        "top_k": 0.7099,
+        "cluster": 0.7195,
+        "recent": 0.6857
+      },
+      "topics": [
+        "Semiconductors"
+      ],
+      "seen_date": "2026-10-05",
+      "recommendation_status": "new",
+      "previous_recommended_at": null,
+      "key": "doi:10.1021/acs.nanolett.6c02400"
+    },
+    {
+      "title": "Multivalent antiviral conjugates enhance activity against Influenza via cross-linking viruses",
+      "authors": [
+        "Xun Feng",
+        "Lunzhi Yuan",
+        "Lei Zhao",
+        "Lianqi Liu",
+        "Fei Xie",
+        "Ming Zhou",
+        "Gong Cheng",
+        "Yi Guan",
+        "Ningshao Xia",
+        "Tong Cheng",
+        "Wu Zhong",
+        "Dian Xiao",
+        "Xinbo Zhou",
+        "Song Li"
+      ],
+      "journal": "Nature Communications",
+      "source": "Crossref",
+      "doi": "10.1038/s41467-026-78126-3",
+      "arxiv_id": null,
+      "published_at": "2026-10-04",
+      "article_url": "https://doi.org/10.1038/s41467-026-78126-3",
+      "pdf_url": null,
+      "code_url": null,
+      "abstract": "Abstract Long-acting drug–Fc conjugate (CD388) has emerged as a new class of antivirals against influenza A and B, yet the mechanisms governing how Fc conjugation reshapes small-molecule function remain undefined. Here we establish a programmable multivalent antiviral conjugates (AVCs) platform by click chemistry that enables flexible combination of valencies and conjugated drugs, allowing systematic interrogation of valency-dependent antiviral mechanisms. Using zanamivir as a model, mono-, di-, and trivalent zanamivir are conjugated with Fc, with trivalent zanamivir-Fc conjugates (AVC-Z3) exhibiting higher activity than lower-valent AVCs. AVC-Z3 induces inter-virion aggregation, thereby coupling blockade of viral entry with restriction of viral release. This cross-linking–mediated dual-stage inhibition represents a mechanistic shift from neuraminidase suppression to physical viral immobilization. Furthermore, trivalent peramivir-Fc conjugate (AVC-P3) is synthesised and exhibits stronger antiviral activity than AVC-Z3 in vitro, with much longer half-life in vivo than AVC-Z3, and CD388 with YTE mutation. The in vivo antivirus efficacy of AVC-P3 surpasses other AVCs, baloxavir, and CD388 in H1N1-, H3N2-, H5N1-, and influenza B-infection mice models. Together, our findings define ligand valency as a determinant of antiviral mechanism.",
+      "tldr": "Valency-engineered Fc-conjugated antivirals, especially trivalent peramivir-Fc, enhance anti-influenza activity by cross-linking virions to block both entry and release while improving in vivo efficacy and half-life.",
+      "affiliations": [],
+      "score": 7.0611,
+      "relevance_percentile": 38.46,
+      "score_components": {
+        "top_k": 0.7115,
+        "cluster": 0.7036,
+        "recent": 0.6963
+      },
+      "topics": [
+        "Semiconductors"
+      ],
+      "seen_date": "2026-10-05",
+      "recommendation_status": "new",
+      "previous_recommended_at": null,
+      "key": "doi:10.1038/s41467-026-78126-3"
+    },
+    {
+      "title": "An Oral Nanozyme Microsupplement Converts Pathological ROS Into a Colon‐Adhesive Shield for Long‐Term Neutrophil‐Directed Remission of Ulcerative Colitis",
+      "authors": [
+        "Xinying Yu",
+        "Xinwang Yu",
+        "Ziliang Yan",
+        "Yan Tan",
+        "Songhao Li",
+        "Yuzhao Feng",
+        "Kai Luo",
+        "Meifang Wang",
+        "Xiaoling Zhu",
+        "Bei Li",
+        "Yunlu Dai"
+      ],
+      "journal": "Advanced Materials",
+      "source": "Crossref",
+      "doi": "10.1002/adma.75234",
+      "arxiv_id": null,
+      "published_at": "2026-10-04",
+      "article_url": "https://doi.org/10.1002/adma.75234",
+      "pdf_url": "https://advanced.onlinelibrary.wiley.com/doi/pdf/10.1002/adma.75234",
+      "code_url": null,
+      "abstract": "ABSTRACT Neutrophil extracellular traps (NETs) perpetuate chronic inflammation in ulcerative colitis (UC), yet current neutrophil‐targeting therapies focus on acute intervention rather than sustained daily control. Here, we propose an oral microsupplement for long‐term UC management that concurrently scavenges reactive oxygen species (ROS) and suppresses NET formation. The microsupplement integrates a catalase‐mimetic CoAl‐layered double hydroxide (LDH) nanozyme intercalated with the autophagy inhibitor chloroquine (CQ), together with dopamine (DOPA). The LDH nanozyme catalytically converts pathological ROS into oxygen, driving in situ polymerization of DOPA into polydopamine (PDA), a mucoadhesive polymer that prolongs colonic retention of CQ@LDH and promotes mucosal healing. RNA sequencing reveals that internalized CQ@LDH inhibits autophagic flux in neutrophils, thereby upregulating catalase expression and peroxisomal function to prevent NET formation. Consequently, NET‐driven M1 macrophage polarization is reduced from 29.5% to 17.9%, and Th17 differentiation is markedly suppressed, accompanied by a decrease in colonic Th17/Treg ratio from 8.68 to 1.31. In a murine UC model, this microsupplement restores colonic mucosal integrity, rebalances the gut microbiota, and outperforms the clinical drug 5‐aminosalicylic acid in both immune regulation and epithelial restitution. This neutrophil‐regulating, colon‐adhesive platform offers a promising strategy for routine daily UC management.",
+      "tldr": "An oral nanozyme microsupplement that converts pathological ROS into a colon-adhesive polydopamine shield, while delivering chloroquine to suppress NET formation and rebalance immunity, achieves long-term neutrophil-directed remission of ulcerative colitis.",
+      "affiliations": [
+        "Faculty of Medicine University of Macau Macau SAR China",
+        "MoE Frontiers Science Center for Precision Oncology University of Macau Macau SAR China"
+      ],
+      "score": 7.0344,
+      "relevance_percentile": 30.77,
+      "score_components": {
+        "top_k": 0.6985,
+        "cluster": 0.7202,
+        "recent": 0.6907
+      },
+      "topics": [
+        "Materials"
+      ],
+      "seen_date": "2026-10-05",
+      "recommendation_status": "new",
+      "previous_recommended_at": null,
+      "key": "doi:10.1002/adma.75234"
+    },
+    {
+      "title": "Complex Fragment Coupling via O -Mesyl Hydroxylamines: Direct Conversion of Primary Amines to Electrophilic Aminating Agents",
+      "authors": [
+        "Mats Georg",
+        "Young-Do Kwon",
+        "Mathias Boeckle",
+        "Dongdong Yang",
+        "Daniel H. Ess",
+        "László Kürti"
+      ],
+      "journal": "Journal of the American Chemical Society",
+      "source": "Crossref",
+      "doi": "10.1021/jacs.6c14811",
+      "arxiv_id": null,
+      "published_at": "2026-10-04",
+      "article_url": "https://doi.org/10.1021/jacs.6c14811",
+      "pdf_url": "https://pubs.acs.org/jacsat/article-pdf/doi/10.1021/jacs.6c14811/68740323/jacs.6c14811.pdf",
+      "code_url": null,
+      "abstract": "Abstract Nitrogen-containing molecules are ubiquitous in pharmaceuticals, natural products, ligands, and functional materials, sustaining continued interest in efficient C–N bond-forming strategies. Although electrophilic amination has emerged as a powerful complement to classical nucleophilic substitution and cross-coupling methods, the transfer of structurally complex NH-alkyl groups remains limited by the lack of general access to suitably reactive electrophilic aminating reagents. Herein, we report the direct single-step oxidation of primary amines to N-alkyl-O-mesyl hydroxylamines using dimesyl peroxide (MPO). This transformation achieves an umpolung of otherwise nucleophilic amines and provides rapid access to synthetically versatile electrophilic nitrogen building blocks under mild conditions. A broad substrate scope enables the preparation of structurally complex and chiral N-alkyl-O-mesyl hydroxylamines, including derivatives of amino acids, natural products, and pharmaceuticals. These reagents were directly deployed in established electrophilic amination manifolds, including arene C–H amination, olefin aziridination, and aza-Rubottom oxidation, enabling the transfer of structurally complex and chiral amine fragments. Collectively, this work establishes a general strategy for converting readily available primary amines into electrophilic nitrogen fragments for efficient C–N bond formation and N-electrophilic fragment coupling.",
+      "tldr": "A one-step oxidation of primary amines with dimesyl peroxide converts them into N-alkyl-O-mesyl hydroxylamines, providing versatile electrophilic aminating reagents for complex and chiral C–N bond formation.",
+      "affiliations": [
+        "Rice University , , 6500 Main Street, Rm 380 , , ,",
+        "Brigham Young University , , , ,"
+      ],
+      "score": 6.9653,
+      "relevance_percentile": 15.38,
+      "score_components": {
+        "top_k": 0.6976,
+        "cluster": 0.6965,
+        "recent": 0.6938
+      },
+      "topics": [
+        "Semiconductors",
+        "Materials"
+      ],
+      "seen_date": "2026-10-05",
+      "recommendation_status": "new",
+      "previous_recommended_at": null,
+      "key": "doi:10.1021/jacs.6c14811"
+    },
+    {
+      "title": "Engineered IFN‐γ‐Expressing Platelet‐Like Microparticles Trigger Macrophage‐Targeted Immunity to Eradicate Liver Metastases",
+      "authors": [
+        "Ren Zhang",
+        "Jialu Wang",
+        "Borui Li",
+        "Mingchen Jiang",
+        "Jian Li",
+        "Jinxin Liu",
+        "Jiahong Hu",
+        "Liding Zhang",
+        "Xinru Wang",
+        "Lulu Gao",
+        "Songlin Huang",
+        "Zhihong Zhang"
+      ],
+      "journal": "Advanced Materials",
+      "source": "Crossref",
+      "doi": "10.1002/adma.75242",
+      "arxiv_id": null,
+      "published_at": "2026-10-04",
+      "article_url": "https://doi.org/10.1002/adma.75242",
+      "pdf_url": "https://advanced.onlinelibrary.wiley.com/doi/pdf/10.1002/adma.75242",
+      "code_url": null,
+      "abstract": "ABSTRACT Immunotherapy for colorectal cancer liver metastasis is often compromised by a highly immunosuppressive hepatic microenvironment characterized by tolerogenic macrophages that act as a systemic immune sink. Here, given the potent but systemically toxic antitumor profile of interferon‐γ (IFN‐γ), we engineered hepatic macrophage‐targeted cytokine‐expressing platelet‐like microparticles (HM‐CPMP) for the local delivery of IFN‐γ, thereby reprogramming the immune status of the liver. Mechanistically, HM‐CPMP treatment drove extensive M1‐like macrophage polarization and a CXCL9/10 chemotactic axis, which together shifted the liver from a tolerogenic to a pro‐inflammatory state. Therefore, systemic administration of HM‐CPMP facilitated the clearance of established liver metastases and conferred a marked survival benefit while strictly preserving systemic homeostasis. Intravital imaging revealed that this localized innate immune reprogramming broke the immunosuppressive tumor niche and recruited polyfunctional CXCR6 + and CD8 + T cells to eradicate metastatic cells. Collectively, by enabling precise hepatic immune modulation, the cytokine‐expressing platelet‐like microparticle delivery platform unleashes a potent localized antitumor response while preserving systemic homeostasis. Our findings provide a highly translational clinical strategy for biosynthetic cytokine‐based immunotherapy against liver metastases.",
+      "tldr": "Engineered IFN-γ-expressing platelet-like microparticles locally reprogram hepatic macrophages to a pro-inflammatory state and recruit cytotoxic T cells, eradicating colorectal cancer liver metastases without systemic toxicity.",
+      "affiliations": [
+        "MOE Key Laboratory For Biomedical Photonics Wuhan National Laboratory For Optoelectronics‐Huazhong University of Science and Technology Wuhan Hubei China",
+        "School of Life and Health Sciences Hainan Province Key Laboratory of One Health Hainan International One Health Institute Hainan University Haikou Hainan China",
+        "State Key Laboratory of Digital Medical Engineering Britton Chance Center For Biomedical Photonics School of Biomedical Engineering Hainan University Sanya Hainan China"
+      ],
+      "score": 6.9684,
+      "relevance_percentile": 23.08,
+      "score_components": {
+        "top_k": 0.6979,
+        "cluster": 0.7111,
+        "recent": 0.6728
+      },
+      "topics": [
+        "Microscopy"
+      ],
+      "seen_date": "2026-10-05",
+      "recommendation_status": "new",
+      "previous_recommended_at": null,
+      "key": "doi:10.1002/adma.75242"
+    },
+    {
+      "title": "A family of small proteins links c-di-GMP riboswitch signaling with sporulation in Clostridioides difficile",
+      "authors": [
+        "Adriana Badilla Lobo",
+        "Anne-Judith Waligora-Dupriet",
+        "Louise Penven",
+        "Roland Seifert",
+        "César Rodríguez",
+        "Frédéric Barbut",
+        "Olga Soutourina",
+        "Johann Peltier"
+      ],
+      "journal": "Nature Communications",
+      "source": "Crossref",
+      "doi": "10.1038/s41467-026-78452-6",
+      "arxiv_id": null,
+      "published_at": "2026-10-04",
+      "article_url": "https://doi.org/10.1038/s41467-026-78452-6",
+      "pdf_url": null,
+      "code_url": null,
+      "abstract": "Abstract Cyclic diguanosine monophosphate (c-di-GMP) is a second messenger that coordinates lifestyle transitions, virulence, and developmental processes in bacteria. In Clostridioides difficile , elevated c-di-GMP levels inhibit sporulation, but the underlying mechanism remained unclear. Here, we identified a conserved family of small, membrane-associated proteins encoded by c-di-GMP riboswitch-regulated genes. Transcriptomic analyses revealed that c-di-GMP represses these genes, and reporter assays demonstrated riboswitch-dependent transcriptional regulation via premature termination mechanism. Overexpression of a single gene, CD1980.2 , was sufficient to trigger the transcriptional activation of sporulation genes, including sigma factors and their regulons, and to increase spore formation. Conversely, sporulation efficiency decreased proportionally with the number of deleted small-protein genes, and the strain lacking all seven genes displayed a severe sporulation defect, underscoring their cumulative and functionally redundant roles. Elevating c-di-GMP levels in the deletion mutant did not further reduce sporulation, supporting a model in which c-di-GMP inhibits spore formation by repressing the expression of this small-protein family. Thus, our work establishes these small proteins, encoded by c-di-GMP riboswitch-regulated genes, as important regulators of spore formation in C. difficile , a process essential for pathogen persistence and transmission.",
+      "tldr": "A conserved family of small membrane-associated proteins encoded by c-di-GMP riboswitch-regulated genes promotes sporulation in *Clostridioides difficile*, explaining how elevated c-di-GMP inhibits spore formation.",
+      "affiliations": [],
+      "score": 6.3765,
+      "relevance_percentile": 0.0,
+      "score_components": {
+        "top_k": 0.6315,
+        "cluster": 0.6635,
+        "recent": 0.6142
+      },
+      "topics": [
+        "Other"
+      ],
+      "seen_date": "2026-10-05",
+      "recommendation_status": "new",
+      "previous_recommended_at": null,
+      "key": "doi:10.1038/s41467-026-78452-6"
+    },
+    {
+      "title": "A CCL21 gene-modified dendritic cell vaccine combined with pembrolizumab in advanced non-small cell lung cancer: a phase I trial",
+      "authors": [
+        "Michael S. Oh",
+        "Aaron E. Lisberg",
+        "Camelia Dumitras",
+        "Linh M. Tran",
+        "Ramin Salehi-Rad",
+        "Kostyantyn Krysan",
+        "Raymond J. Lim",
+        "Maryam Shabihkhani",
+        "Tahmineh Romero",
+        "Shuo Li",
+        "Weihua Zeng",
+        "Zhe Jing",
+        "Rui Li",
+        "Bitta P. Kahangi",
+        "Olga Tsvetkova",
+        "Robert D. Suh",
+        "Fereidoun Abtin",
+        "Scott J. Genshaft",
+        "Scott S. Oh",
+        "Gregory A. Fishbein",
+        "Daniel R. Greenwald",
+        "Kanwarpal S. Kahlon",
+        "Sidharth R. Anand",
+        "Shahryar Ashouri",
+        "Jonathan W. Goldman",
+        "Jay M. Lee",
+        "Xianghong J. Zhou",
+        "David A. Elashoff",
+        "Edward B. Garon",
+        "Bin Liu",
+        "Steven M. Dubinett"
+      ],
+      "journal": "Nature Communications",
+      "source": "Crossref",
+      "doi": "10.1038/s41467-026-78130-7",
+      "arxiv_id": null,
+      "published_at": "2026-10-04",
+      "article_url": "https://doi.org/10.1038/s41467-026-78130-7",
+      "pdf_url": null,
+      "code_url": null,
+      "abstract": "Abstract Immune checkpoint inhibitors (ICIs) have transformed treatment for non-small cell lung cancer (NSCLC), but resistance to these therapies is common. We report here results from a phase I trial combining intratumoral injection of a CCL21-expressing dendritic cell (CCL21-DC) vaccine with pembrolizumab in patients with advanced non-small cell lung cancer (ClinicalTrials.gov identifier: NCT03546361). The primary objectives were to determine the maximum administered dose (MAD) in the dose escalation phase and the objective response rate (ORR) in the dose expansion. Eleven patients were enrolled in the dose escalation cohort, and 12 patients were treated in the dose expansion cohort at the MAD of 3 ×10 7 cells/injection. The trial did not meet its primary endpoint for ORR as no objective responses were observed, though 36.8% of patients achieved a best response of stable disease. The combination therapy was well tolerated. Post-hoc analyses of longitudinal biopsies revealed that the therapy increased tumor infiltration by CD4+ T cells and novel T cell clones. Disease stability was associated with increased T cell receptor diversity and greater expansion of novel clones following therapy. However, many novel clones failed to persist over time, and immunosuppressive myeloid signaling signatures were identified across time points. Our findings overall demonstrated that CCL21-DC vaccination combined with pembrolizumab can promote T cell infiltration, but this did not translate into meaningful clinical efficacy, potentially due to limited tumor specificity of the T cell response and an inability to fully reprogram the tumor microenvironment.",
+      "tldr": "In a phase I trial of advanced NSCLC, intratumoral CCL21-expressing dendritic cell vaccination plus pembrolizumab was well tolerated and increased T-cell infiltration but produced no objective responses, failing its ORR endpoint, likely due to limited tumor specificity and persistent immunosuppressive myeloid signaling.",
+      "affiliations": [],
+      "score": 6.4108,
+      "relevance_percentile": 7.69,
+      "score_components": {
+        "top_k": 0.6388,
+        "cluster": 0.6638,
+        "recent": 0.6128
+      },
+      "topics": [
+        "Other"
+      ],
+      "seen_date": "2026-10-05",
+      "recommendation_status": "new",
+      "previous_recommended_at": null,
+      "key": "doi:10.1038/s41467-026-78130-7"
+    }
+  ]
+}
