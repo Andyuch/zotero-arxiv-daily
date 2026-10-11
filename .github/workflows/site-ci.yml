@@ -9,6 +9,7 @@ on:
       - 'tests/**'
       - 'site/**'
       - '.github/workflows/site-ci.yml'
+      - '.github/workflows/main.yml'
   pull_request:
     branches:
       - main
