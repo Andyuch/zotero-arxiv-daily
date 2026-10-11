@@ -1,7 +1,11 @@
 {
-  "generated_at": "2026-10-10T07:50:20.545977+00:00",
-  "paper_count": 344,
+  "generated_at": "2026-10-11T12:05:42.022797+00:00",
+  "paper_count": 374,
   "days": [
+    {
+      "date": "2026-10-11",
+      "count": 30
+    },
     {
       "date": "2026-10-10",
       "count": 30
@@ -90,6 +94,1629 @@
     "Spectroscopy"
   ],
   "papers": [
+    {
+      "title": "Large-scale identical-location electron microscopy enables quantifying nanoparticulate electrocatalyst degradation",
+      "authors": [
+        "Ana Rebeka Kamšek",
+        "Francisco Ruiz-Zepeda",
+        "Domen Tabernik",
+        "Jan Vidergar",
+        "Anja Logar",
+        "Ambrož Kregar",
+        "Danijel Skočaj",
+        "Goran Dražić",
+        "Nejc Hodnik"
+      ],
+      "journal": "Nature Communications",
+      "source": "Crossref",
+      "doi": "10.1038/s41467-026-78329-8",
+      "arxiv_id": null,
+      "published_at": "2026-10-10",
+      "article_url": "https://doi.org/10.1038/s41467-026-78329-8",
+      "pdf_url": null,
+      "code_url": null,
+      "abstract": "Abstract Fuel cells convert chemical energy into electricity, and their performance relies on electrocatalysts whose durability during operation remains poorly understood. Deep mechanistic insight into electrocatalyst stability is essential to design durable, resource-efficient fuel cells. Nanoparticulate electrocatalysts degrade via diverse nanoscale processes, yet particle-to-particle heterogeneity in structure, support interaction, and local microenvironment make true particle-level quantification and understanding impossible with classical approaches. Here we scale up identical-location scanning transmission electron microscopy, which repeatedly images the very same nanoparticles, to track the structural evolution of hundreds of carbon-supported platinum-cobalt nanoparticles, a prototypical oxygen reduction reaction electrocatalyst. We present a three-step image analysis workflow comprising segmentation, tracking, and degradation-event classification with progressive automation, including machine-learning-assisted detection of overlapping particles. By pairing nanoscale resolution and local history with population-level statistics, the pipeline enables unbiased identification and quantification of degradation pathways across statistically meaningful particle sets. We reveal particle size- and shape-dependent effects, showing that smaller and irregular nanoparticles are more prone to detachment, and provide a data-driven framework for probing electrocatalyst degradation at scale.",
+      "tldr": "By scaling up identical-location STEM with a machine-learning-assisted image-analysis pipeline, this study tracks hundreds of carbon-supported Pt-Co nanoparticles to quantify degradation pathways, revealing that smaller and irregular particles are more prone to detachment and providing a data-driven framework for electrocatalyst durability.",
+      "affiliations": [],
+      "score": 8.6825,
+      "relevance_percentile": 100.0,
+      "score_components": {
+        "top_k": 0.8572,
+        "cluster": 0.8925,
+        "recent": 0.8595
+      },
+      "topics": [
+        "Microscopy",
+        "Materials"
+      ],
+      "seen_date": "2026-10-11",
+      "recommendation_status": "new",
+      "previous_recommended_at": null,
+      "key": "doi:10.1038/s41467-026-78329-8",
+      "first_seen": "2026-10-11",
+      "last_seen": "2026-10-11",
+      "seen_dates": [
+        "2026-10-11"
+      ],
+      "recommendations_by_date": {
+        "2026-10-11": {
+          "recommendation_status": "new",
+          "previous_recommended_at": null
+        }
+      }
+    },
+    {
+      "title": "Fluorescence-illuminated diffraction tomography using explicit neural fields",
+      "authors": [
+        "Renzhi He",
+        "Yucheng Li",
+        "Junjie Chen",
+        "Truc M. Dinh",
+        "Charlotte R. Stevens",
+        "Aidan E. Gilchrist",
+        "Yi Xue"
+      ],
+      "journal": "Nature Communications",
+      "source": "Crossref",
+      "doi": "10.1038/s41467-026-78326-x",
+      "arxiv_id": null,
+      "published_at": "2026-10-10",
+      "article_url": "https://doi.org/10.1038/s41467-026-78326-x",
+      "pdf_url": null,
+      "code_url": null,
+      "abstract": "Abstract Multimodal fluorescence and phase imaging provides complementary information about biological samples. However, existing simultaneous fluorescence-phase techniques primarily operate in transmission mode and are limited to thin specimens, restricting their use in thick tissues and in vivo applications. Although multiphoton microscopy enables deep-tissue fluorescence imaging, combining it with three-dimensional refractive-index (RI) imaging remains challenging because few methods can reconstruct the RI of bulky, label-free tissues in reflection mode at subcellular resolution. Here, we introduce fluorescence-illuminated diffraction tomography (FDT), which reconstructs the 3D RI of label-free and fluorescence-labeled objects from diffracted fluorescence images acquired in reflection mode under two-photon excitation. FDT uses the transport of intensity equation and a self-supervised neural network based on explicit neural fields. Compared with state-of-the-art implicit neural fields, this approach improves computational speed, reconstruction accuracy, and interpretability. We demonstrate FDT in two experimental regimes: reconstructing the 3D RI of label-free tissues up to 300 μ m thick placed on a fluorescent substrate, and reconstructing the 3D RI of fluorescence-labeled, 3D-cultured cells without transmission-side access using fluorescence emitted by the cells themselves. FDT establishes a foundation for accessible reflection-mode multimodal fluorescence-phase imaging in complex biological systems.",
+      "tldr": "Fluorescence-illuminated diffraction tomography (FDT) uses two-photon excitation, the transport of intensity equation, and explicit neural fields to reconstruct the 3D refractive index of thick, label-free and fluorescence-labeled biological samples from reflection-mode fluorescence images.",
+      "affiliations": [],
+      "score": 8.5224,
+      "relevance_percentile": 98.59,
+      "score_components": {
+        "top_k": 0.8443,
+        "cluster": 0.88,
+        "recent": 0.8304
+      },
+      "topics": [
+        "Microscopy",
+        "AI & Computation"
+      ],
+      "seen_date": "2026-10-11",
+      "recommendation_status": "new",
+      "previous_recommended_at": null,
+      "key": "doi:10.1038/s41467-026-78326-x",
+      "first_seen": "2026-10-11",
+      "last_seen": "2026-10-11",
+      "seen_dates": [
+        "2026-10-11"
+      ],
+      "recommendations_by_date": {
+        "2026-10-11": {
+          "recommendation_status": "new",
+          "previous_recommended_at": null
+        }
+      }
+    },
+    {
+      "title": "Improving the Calendar Life of Silicon Anodes with Inorganic Solid–Electrolyte Interphases",
+      "authors": [
+        "Youngmin Ko",
+        "Dong-Min Kim",
+        "Andrew Dopilka",
+        "Marco-Tulio Fonseca Rodrigues",
+        "Gabriel D. Parker",
+        "Steven Lam",
+        "Xiao-Ying Yu",
+        "Amanda L. Musgrove",
+        "Robert Kostecki",
+        "Brett A. Helms"
+      ],
+      "journal": "ACS Energy Letters",
+      "source": "Crossref",
+      "doi": "10.1021/acsenergylett.6c02871",
+      "arxiv_id": null,
+      "published_at": "2026-10-10",
+      "article_url": "https://doi.org/10.1021/acsenergylett.6c02871",
+      "pdf_url": "https://pubs.acs.org/doi/pdf/10.1021/acsenergylett.6c02871",
+      "code_url": null,
+      "abstract": "Abstract Silicon anodes unlock higher energy density in Li-ion batteries but suffer from poor calendar life due to inadequately passivating solid–electrolyte interphases (SEIs). Here, we contrast the calendar aging behaviors of single- and mixed-salt locally superconcentrated electrolytes (LSCEs) against carbonate electrolytes. Mixed-salt LSCE cells retained 96% and 44% of precalendar capacity after one month and then after five months, while carbonate electrolyte cells retained 77% and 1%, respectively. The mixed-salt LSCE advantage is tied to the formation of a predominantly inorganic SEI, evidenced by nanoscale Fourier transform infrared spectromicroscopy, X-ray photoelectron spectroscopy, and 3D time-of-flight secondary ion mass spectrometry. After 5 months, however, perturbations to SEIs were evident in all cells, accelerating voltage decay and capacity loss by lithium inventory loss associated with SEI growth. These findings suggest that future electrolytes may benefit from strategies that continuously reinforce the SEI through controlled anion and solvent redox in LSCEs.",
+      "tldr": "Mixed-salt locally superconcentrated electrolytes extend silicon-anode calendar life by forming a predominantly inorganic solid–electrolyte interphase, though SEI degradation and lithium inventory loss still limit long-term performance.",
+      "affiliations": [
+        "Lawrence Berkeley National Laboratory , , , ,",
+        "Argonne National Laboratory , , , ,",
+        "Oak Ridge National Laboratory , , , ,",
+        "The University of Tennessee Knoxville , , , ,"
+      ],
+      "score": 8.5201,
+      "relevance_percentile": 97.18,
+      "score_components": {
+        "top_k": 0.8418,
+        "cluster": 0.8739,
+        "recent": 0.8447
+      },
+      "topics": [
+        "Battery",
+        "Electrochemistry",
+        "Microscopy",
+        "Spectroscopy"
+      ],
+      "seen_date": "2026-10-11",
+      "recommendation_status": "new",
+      "previous_recommended_at": null,
+      "key": "doi:10.1021/acsenergylett.6c02871",
+      "first_seen": "2026-10-11",
+      "last_seen": "2026-10-11",
+      "seen_dates": [
+        "2026-10-11"
+      ],
+      "recommendations_by_date": {
+        "2026-10-11": {
+          "recommendation_status": "new",
+          "previous_recommended_at": null
+        }
+      }
+    },
+    {
+      "title": "Probing Valence Electron Distributions at Subatomic Resolution in a Charge Density Wave Material",
+      "authors": [
+        "Anya S. Mulligan",
+        "Guomin Zhu",
+        "Ece Genc",
+        "Eric Cui",
+        "Stephen D. Wilson",
+        "Susanne Stemmer"
+      ],
+      "journal": "Nano Letters",
+      "source": "Crossref",
+      "doi": "10.1021/acs.nanolett.6c04038",
+      "arxiv_id": null,
+      "published_at": "2026-10-10",
+      "article_url": "https://doi.org/10.1021/acs.nanolett.6c04038",
+      "pdf_url": "https://pubs.acs.org/nalefd/article-pdf/doi/10.1021/acs.nanolett.6c04038/68811350/acs.nanolett.6c04038.pdf",
+      "code_url": null,
+      "abstract": "Abstract Probing the internal electronic structure of complex materials with atomic spatial resolution has remained an outstanding challenge in condensed-matter science. A promising approach is convergent-beam electron diffraction (CBED) in four-dimensional scanning transmission electron microscopy (4D-STEM). Here, we apply 4D-STEM CBED to the charge-density-wave (CDW) material 1T-TaS2. We demonstrate a qualitative breakdown of the conventional independent atom model (IAM) in reproducing the experimental CBED patterns. A robust low-angle intensity maximum is systematically absent in IAM-based simulations but is consistently reproduced in simulations that use electrostatic potentials derived from density functional theory. A comparison of CBED patterns with projected charge densities reveals a remarkable correspondence between the local real-space valence charge distribution and diffracted intensities, reflecting site-dependent charge density variations within the CDW structure. These results establish atomic-resolution CBED as an experimental probe of valence electron contributions to the scattering potential and open a route to resolving complex electronic ordering phenomena.",
+      "tldr": "By applying 4D-STEM convergent-beam electron diffraction to the charge-density-wave material 1T-TaS2, the authors show that valence electron distributions—missed by the independent atom model—can be probed at atomic resolution and linked to site-dependent charge-density variations via diffraction intensities.",
+      "affiliations": [
+        "University of California , , , ,"
+      ],
+      "score": 8.5046,
+      "relevance_percentile": 95.77,
+      "score_components": {
+        "top_k": 0.8543,
+        "cluster": 0.8789,
+        "recent": 0.7981
+      },
+      "topics": [
+        "Microscopy",
+        "Materials",
+        "AI & Computation"
+      ],
+      "seen_date": "2026-10-11",
+      "recommendation_status": "new",
+      "previous_recommended_at": null,
+      "key": "doi:10.1021/acs.nanolett.6c04038",
+      "first_seen": "2026-10-11",
+      "last_seen": "2026-10-11",
+      "seen_dates": [
+        "2026-10-11"
+      ],
+      "recommendations_by_date": {
+        "2026-10-11": {
+          "recommendation_status": "new",
+          "previous_recommended_at": null
+        }
+      }
+    },
+    {
+      "title": "Practical Considerations for Operando 7Li Nuclear Magnetic Resonance in Coin and Pouch Cells",
+      "authors": [
+        "Asya Svirinovsky-Arbeli",
+        "Yongbeom Kwon",
+        "Diana Oh",
+        "Kaitlin Rae M. Corpus",
+        "Pascal Scholzen",
+        "Piotr Lepucki",
+        "Oliver Pecher",
+        "Lauren E. Marbella"
+      ],
+      "journal": "Chemistry of Materials",
+      "source": "Crossref",
+      "doi": "10.1021/acs.chemmater.6c01590",
+      "arxiv_id": null,
+      "published_at": "2026-10-10",
+      "article_url": "https://doi.org/10.1021/acs.chemmater.6c01590",
+      "pdf_url": "https://pubs.acs.org/cmatex/article-pdf/doi/10.1021/acs.chemmater.6c01590/68810650/acs.chemmater.6c01590.pdf",
+      "code_url": null,
+      "abstract": "Abstract Operando nuclear magnetic resonance (NMR) spectroscopy provides unique insight into chemical changes in batteries during use but has largely been limited to custom plastic cells. Unfortunately, the metal casings that house commercial batteries distort and shield radiofrequency (RF) fields required for excitation and detection in NMR. Here, we use operando7Li NMR spectroscopy to study metal-encased batteries in both coin and pouch cell formats without modifying the cell or casing. We benchmark NMR spectra obtained from stainless-steel coin cells and aluminum-laminate pouch cells to plastic coin cells and show that casing composition, auxiliary hardware, and sample placement strongly influence observed shift, signal intensity, and line shape due to bulk magnetic susceptibility effects and RF attenuation upon interacting with cell parts. These effects are most severe in stainless-steel coin cells (and in particular 304-grade stainless steel) but can be mitigated through the use of Al spacers while retaining the stainless-steel caps and springs. In light of these considerations, we leverage operando7Li NMR to track lithium plating/stripping and monitor the accumulation of electrochemically inactive “dead” lithium (Li0) during galvanostatic cycling in coin and pouch cells. In pouch cells, the lean electrolyte volume allows us to resolve changes in the 7Li electrolyte signal during formation that are consistent with electrolyte redistribution and wetting. Taken together, these results demonstrate how to alter cell susceptibility to improve NMR signals during operando measurements in commercially relevant form factors while also establishing the cell design constraints that limit quantitative interpretation.",
+      "tldr": "Operando ⁷Li NMR can be used in unmodified metal-encased coin and pouch cells to track lithium plating/stripping and dead lithium, though casing, hardware, and sample placement strongly affect spectra and must be managed—e.g., with Al spacers in stainless-steel coin cells—for meaningful measurements.",
+      "affiliations": [
+        "Columbia University , , , ,",
+        "ePROBE GmbH , Blumenstr. 70 Haus 3 , ,",
+        "NMR Service GmbH , Blumenstr. 70 Haus 3 , ,"
+      ],
+      "score": 8.4597,
+      "relevance_percentile": 94.37,
+      "score_components": {
+        "top_k": 0.8373,
+        "cluster": 0.8627,
+        "recent": 0.8425
+      },
+      "topics": [
+        "Battery",
+        "Electrochemistry",
+        "Spectroscopy"
+      ],
+      "seen_date": "2026-10-11",
+      "recommendation_status": "new",
+      "previous_recommended_at": null,
+      "key": "doi:10.1021/acs.chemmater.6c01590",
+      "first_seen": "2026-10-11",
+      "last_seen": "2026-10-11",
+      "seen_dates": [
+        "2026-10-11"
+      ],
+      "recommendations_by_date": {
+        "2026-10-11": {
+          "recommendation_status": "new",
+          "previous_recommended_at": null
+        }
+      }
+    },
+    {
+      "title": "Regulated Co‐Solvation in Gel Polymer Electrolyte Enables Rapid and Selective Li + Ion Transport for High‐Rate Lithium Metal Batteries",
+      "authors": [
+        "Chuan Luo",
+        "Chunpeng Ning",
+        "Lihua Hu",
+        "Xuehai Huang",
+        "Liwei Yang",
+        "Yu Wang",
+        "Zhenxing Liang",
+        "Kan Yue"
+      ],
+      "journal": "Advanced Materials",
+      "source": "Crossref",
+      "doi": "10.1002/adma.75332",
+      "arxiv_id": null,
+      "published_at": "2026-10-09",
+      "article_url": "https://doi.org/10.1002/adma.75332",
+      "pdf_url": "https://advanced.onlinelibrary.wiley.com/doi/pdf/10.1002/adma.75332",
+      "code_url": null,
+      "abstract": "ABSTRACT The development of gel polymer electrolytes (GPEs) suitable for high‐rate lithium metal batteries (LMBs) is urgently needed but remains inherently challenging. This difficulty originates from the competition between the polymer network and the liquid electrolyte for lithium ion (Li + ) coordination. Polymer‐dominated coordination traps Li + and slows transport, while solvent‐dominated solvation permits uncontrolled anion migration and causes concentration polarization. Here, we resolve this challenge by establishing a matched polymer–electrolyte co‐solvation state, which enables rapid and selective Li + transport via a cooperative mechanism. We implement this concept through a dual‐regulated weak‐coordination gel polymer electrolyte (DWGPE), which comprises a fluorinated polymer backbone that attenuates Li + binding, an amide‐functionalized crosslinker that immobilizes anions via hydrogen bonding, and a weakly solvating adiponitrile‐based liquid phase. Molecular dynamics simulations reveal a cooperative transport mechanism that integrates polymer‐assisted hopping and solvent‐mediated vehicular diffusion, while suppressing anion mobility. Consequently, Li||DWGPE||LFP coin cells sustain 10 000 cycles at 6 C with 65% capacity retention, corresponding to an ultralow capacity decay of 0.003% per cycle. Our DWGPE also operates stably with high‐voltage NCM811 cathodes and in ampere‐hour‐level pouch cells. This work establishes polymer–electrolyte co‐solvation as a design framework for high‐performance GPEs toward fast‐charging LMBs.",
+      "tldr": "A dual-regulated weak-coordination gel polymer electrolyte achieves matched polymer–electrolyte co-solvation for rapid, selective Li⁺ transport, enabling high-rate, long-cycle lithium metal batteries.",
+      "affiliations": [
+        "South China Advanced Institute for Soft Matter Science and Technology School of Emergent Soft Matter South China University of Technology Guangzhou China",
+        "Guangdong Provincial Key Laboratory of Fuel Cell Technology School of Chemistry and Chemical Engineering South China University of Technology Guangzhou China"
+      ],
+      "score": 8.3567,
+      "relevance_percentile": 92.96,
+      "score_components": {
+        "top_k": 0.8262,
+        "cluster": 0.8552,
+        "recent": 0.8301
+      },
+      "topics": [
+        "Battery",
+        "Electrochemistry",
+        "Materials",
+        "AI & Computation"
+      ],
+      "seen_date": "2026-10-11",
+      "recommendation_status": "new",
+      "previous_recommended_at": null,
+      "key": "doi:10.1002/adma.75332",
+      "first_seen": "2026-10-11",
+      "last_seen": "2026-10-11",
+      "seen_dates": [
+        "2026-10-11"
+      ],
+      "recommendations_by_date": {
+        "2026-10-11": {
+          "recommendation_status": "new",
+          "previous_recommended_at": null
+        }
+      }
+    },
+    {
+      "title": "High-Fidelity Electrochemistry with Ultraclean Graphene Electrodes",
+      "authors": [
+        "Jacob Amontree",
+        "Morgan J. Anderson",
+        "Milton Cordeiro",
+        "Xingzhou Yan",
+        "Christian Cupo",
+        "Jessica E. Koehne",
+        "James C. Hone",
+        "Antonio J. Ricco"
+      ],
+      "journal": "ACS Applied Materials &amp; Interfaces",
+      "source": "Crossref",
+      "doi": "10.1021/acsami.6c09852",
+      "arxiv_id": null,
+      "published_at": "2026-10-12",
+      "article_url": "https://doi.org/10.1021/acsami.6c09852",
+      "pdf_url": "https://pubs.acs.org/aamick/article-pdf/doi/10.1021/acsami.6c09852/68812157/am-2026-098523.pdf",
+      "code_url": null,
+      "abstract": "Abstract The electrochemical performance of CVD graphene electrodes has remained inconsistent and often inferior to that of exfoliated graphene, limiting their utility in analytical applications. This variability is widely attributed to structural disorder, but the dominant source remains unclear. Here, we show that amorphous carbon contamination introduced during synthesis is the primary factor governing the electrochemical behavior of CVD graphene. By eliminating this disorder during growth through oxygen-free CVD (OF-CVD), we obtain graphene electrodes that exhibit intrinsic and highly reproducible electrochemical behavior. Compared with conventional and commercial graphene, these electrodes display substantially enhanced heterogeneous electron-transfer kinetics, reduced charge-transfer resistance, and improved detection limits across both outer- and inner-sphere redox systems. Notably, they exhibit consistent anodic peak potentials across wide concentration ranges, nearly eliminating the concentration-dependent potential shifts characteristic of both glassy carbon and commercial/contaminated graphene electrodes. Further, microelectrode array architectures fabricated from this material suppress non-Faradaic background currents and exhibit steady-state diffusion behavior consistent with electrochemical theory, with improved signal-to-noise ratios. Together, these results establish that extrinsic carbon disorder has limited the electrochemical performance of CVD graphene to date. The removal of amorphous carbon reveals defect-free graphene’s intrinsic electrochemical behavior and enables a reproducible, high-performance electrode platform, providing a clear pathway for reliable graphene-based electrochemical systems.",
+      "tldr": "Ultraclean CVD graphene grown without oxygen contamination removes amorphous carbon disorder, enabling reproducible, intrinsic, high-performance graphene electrodes with faster electron transfer, lower resistance, and improved detection limits.",
+      "affiliations": [
+        "Columbia University , , , ,",
+        "NASA Ames Research Center , , ,"
+      ],
+      "score": 8.3415,
+      "relevance_percentile": 91.55,
+      "score_components": {
+        "top_k": 0.8213,
+        "cluster": 0.8643,
+        "recent": 0.821
+      },
+      "topics": [
+        "Battery",
+        "Electrochemistry",
+        "Materials"
+      ],
+      "seen_date": "2026-10-11",
+      "recommendation_status": "new",
+      "previous_recommended_at": null,
+      "key": "doi:10.1021/acsami.6c09852",
+      "first_seen": "2026-10-11",
+      "last_seen": "2026-10-11",
+      "seen_dates": [
+        "2026-10-11"
+      ],
+      "recommendations_by_date": {
+        "2026-10-11": {
+          "recommendation_status": "new",
+          "previous_recommended_at": null
+        }
+      }
+    },
+    {
+      "title": "Successive Redox Mediation Supported by Pnictogen Chalcohalide Enables High‐Performance Zinc–Sulfur Batteries",
+      "authors": [
+        "Shixun Wang",
+        "Arsenii Portniagin",
+        "Qingshun Nian",
+        "Zhiquan Wei",
+        "Yeyang Jia",
+        "Zhiqiang Zhao",
+        "Zhuo Li",
+        "Shimei Li",
+        "Shaoce Zhang",
+        "Hu Hong",
+        "Xueying Zheng",
+        "Xiaoyan Zhong",
+        "Andrey L. Rogach",
+        "Chunyi Zhi"
+      ],
+      "journal": "Advanced Materials",
+      "source": "Crossref",
+      "doi": "10.1002/adma.75303",
+      "arxiv_id": null,
+      "published_at": "2026-10-09",
+      "article_url": "https://doi.org/10.1002/adma.75303",
+      "pdf_url": "https://advanced.onlinelibrary.wiley.com/doi/pdf/10.1002/adma.75303",
+      "code_url": null,
+      "abstract": "ABSTRACT Sulfur is a promising high‐capacity cathode but suffers from sluggish redox kinetics and severe side reactions in aqueous electrolytes. We introduce pnictogen chalcohalide Bi 12.67 S 18 Br 2 nanorods (abbreviated as Bi‐S‐Br) as a multifunctional cathode material that functions as a sulfur/bismuth reservoir and a catalytic redox mediator (RM). By integrating a trace amount of iodide electrolyte additive, we demonstrate a potential pathway, featuring several redox couples with gradient potentials: I 0 /I − (0.530 V, RM1) &gt; Bi 3+ /Bi 0 (0.308 V, RM2) &gt; S 0 /S 2− (0.144 V vs. standard hydrogen electrode), whose stepwise dual mediation accelerates sulfur redox kinetics. The sulfurphilic Bi‐S‐Br nanorods also strengthen surface Bi–S interfacial interactions, thus localizing active species and suppressing sulfur disproportionation. As a result, Zn||Bi‐S‐Br cells exhibit synergistic discharge plateaus at 0.66 and 0.59 V and deliver a high specific capacity of 792 mAh g Bi‐S‐Br −1 at 0.4 A g −1 , with an energy density of 488.2 Wh kg −1 and a power density of 244.1 W kg −1 , normalized to the Bi‐S‐Br mass. The practical Zn||Bi‐S‐Br pouch cell configuration sustains 250 cycles at 0.8 mA cm −2 with capacity retention of 70.1%. This study elucidated the successive redox mediation strategy for enhanced sulfur redox kinetics, offering a new design principle for high‐performance aqueous energy storage systems.",
+      "tldr": "Bi₁₂.₆₇S₁₈Br₂ nanorods plus an iodide additive provide successive redox mediation that accelerates sulfur redox kinetics and stabilizes active species, enabling high-performance aqueous zinc–sulfur batteries with high capacity and energy density.",
+      "affiliations": [
+        "Department of Mechanical Engineering The University of Hong Kong Hong Kong SAR P. R. China",
+        "Department of Materials Science and Engineering City University of Hong Kong Hong Kong SAR P. R. China",
+        "Hong Kong Center for Cerebro‐Cardiovascular Health Engineering (COCHE) Hong Kong SAR P. R. China",
+        "Hong Kong Institute for Clean Energy (HKICE) and TRACE EM Unit City University of Hong Kong Hong Kong SAR P. R. China",
+        "City University of Hong Kong Matter Science Research Institute (Futian) Shenzhen P. R. China",
+        "Nanomanufacturing Laboratory (NML) City University of Hong Kong Shenzhen Research Institute Shenzhen P. R. China",
+        "Centre for Energy Storage The University of Hong Kong Hong Kong SAR P. R. China",
+        "Materials Innovation Institute for Life Sciences and Energy (MILES) HKU‐SIRI Shenzhen P. R. China",
+        "Department of Materials and Energy The University of Hong Kong Hong Kong SAR P. R. China"
+      ],
+      "score": 8.3376,
+      "relevance_percentile": 90.14,
+      "score_components": {
+        "top_k": 0.8204,
+        "cluster": 0.8688,
+        "recent": 0.8144
+      },
+      "topics": [
+        "Battery",
+        "Electrochemistry"
+      ],
+      "seen_date": "2026-10-11",
+      "recommendation_status": "new",
+      "previous_recommended_at": null,
+      "key": "doi:10.1002/adma.75303",
+      "first_seen": "2026-10-11",
+      "last_seen": "2026-10-11",
+      "seen_dates": [
+        "2026-10-11"
+      ],
+      "recommendations_by_date": {
+        "2026-10-11": {
+          "recommendation_status": "new",
+          "previous_recommended_at": null
+        }
+      }
+    },
+    {
+      "title": "Quantum-sensing-based super-resolution live cell microenvironment imaging",
+      "authors": [
+        "Yuxian Lu",
+        "Yibo Yang",
+        "Ke Xu",
+        "Zihan Mao",
+        "Lu Yin",
+        "Yang Xu",
+        "Zengrong Zhou",
+        "Xin Wang",
+        "Chi Zhang",
+        "Wenxin Zhu",
+        "Jiandong Feng"
+      ],
+      "journal": "Nature Communications",
+      "source": "Crossref",
+      "doi": "10.1038/s41467-026-78321-2",
+      "arxiv_id": null,
+      "published_at": "2026-10-10",
+      "article_url": "https://doi.org/10.1038/s41467-026-78321-2",
+      "pdf_url": null,
+      "code_url": null,
+      "abstract": "",
+      "tldr": "Abstract unavailable from publisher metadata; open the article for details.",
+      "affiliations": [],
+      "score": 8.3323,
+      "relevance_percentile": 88.73,
+      "score_components": {
+        "top_k": 0.823,
+        "cluster": 0.8679,
+        "recent": 0.8069
+      },
+      "topics": [
+        "Microscopy"
+      ],
+      "seen_date": "2026-10-11",
+      "recommendation_status": "new",
+      "previous_recommended_at": null,
+      "key": "doi:10.1038/s41467-026-78321-2",
+      "first_seen": "2026-10-11",
+      "last_seen": "2026-10-11",
+      "seen_dates": [
+        "2026-10-11"
+      ],
+      "recommendations_by_date": {
+        "2026-10-11": {
+          "recommendation_status": "new",
+          "previous_recommended_at": null
+        }
+      }
+    },
+    {
+      "title": "A Comprehensive Review and Future Prospects of Aluminum–Sulfur Batteries: From Material Design to Practical Challenges",
+      "authors": [
+        "Xiao Zheng",
+        "Xuebin Yu"
+      ],
+      "journal": "Advanced Materials",
+      "source": "Crossref",
+      "doi": "10.1002/adma.202506181",
+      "arxiv_id": null,
+      "published_at": "2026-10-09",
+      "article_url": "https://doi.org/10.1002/adma.202506181",
+      "pdf_url": "https://advanced.onlinelibrary.wiley.com/doi/pdf/10.1002/adma.202506181",
+      "code_url": null,
+      "abstract": "ABSTRACT Aluminum–sulfur (Al–S) batteries are promising next‐generation energy storage systems owing to the high abundance, low cost, and multi‐electron redox capability of Al, combined with the high theoretical capacity and environmental friendliness of S. This review systematically compares the dual electrochemical mechanisms based on S reduction (S 0 /S 2− ) and S oxidation (S 0 /S 4+ ), highlighting their distinct advantages in energy density and safety. Key strategies for cathode design—including carbon‐based, anchoring‐functional, and catalytic‐functional hosts—are discussed, alongside electrolyte engineering using ionic liquids, deep eutectic solvents, inorganic molten salts, and aqueous systems. Recent advances in dendrite suppression, anode protective layers, and functional separators are also summarized. A central challenge identified is the sluggish Al 3+ solvation/desolvation kinetics, which limits rate capability and low‐temperature performance. The application of in situ/operando characterization techniques (XANES, Raman, UV–vis) to unravel complex reaction pathways is emphasized. By integrating multidisciplinary innovations, this review provides a comprehensive perspective and a phased commercialization roadmap, aiming to accelerate the transition of Al–S batteries from laboratory research to practical green energy storage.",
+      "tldr": "This review comprehensively examines aluminum–sulfur battery mechanisms, cathode and electrolyte design, anode/separator advances, and characterization techniques, identifies sluggish Al³⁺ solvation/desolvation as a key bottleneck, and proposes a phased roadmap toward practical commercialization.",
+      "affiliations": [
+        "Department of Materials Science Fudan University Shanghai China"
+      ],
+      "score": 8.3072,
+      "relevance_percentile": 87.32,
+      "score_components": {
+        "top_k": 0.8219,
+        "cluster": 0.8478,
+        "recent": 0.8271
+      },
+      "topics": [
+        "Battery",
+        "Electrochemistry",
+        "Spectroscopy",
+        "Semiconductors"
+      ],
+      "seen_date": "2026-10-11",
+      "recommendation_status": "new",
+      "previous_recommended_at": null,
+      "key": "doi:10.1002/adma.202506181",
+      "first_seen": "2026-10-11",
+      "last_seen": "2026-10-11",
+      "seen_dates": [
+        "2026-10-11"
+      ],
+      "recommendations_by_date": {
+        "2026-10-11": {
+          "recommendation_status": "new",
+          "previous_recommended_at": null
+        }
+      }
+    },
+    {
+      "title": "Unraveling the Mystery of Near-Infrared Emission in an Antimony Halide Dimer Driven by the Jahn–Teller Effect",
+      "authors": [
+        "Jia Jiang",
+        "Weihao Wang",
+        "Yage Ji",
+        "Yulin Zhang",
+        "Zhuozi Lin",
+        "Yalin An",
+        "Yuhui Zheng",
+        "Qianming Wang"
+      ],
+      "journal": "Chemistry of Materials",
+      "source": "Crossref",
+      "doi": "10.1021/acs.chemmater.6c02476",
+      "arxiv_id": null,
+      "published_at": "2026-10-10",
+      "article_url": "https://doi.org/10.1021/acs.chemmater.6c02476",
+      "pdf_url": "https://pubs.acs.org/cmatex/article-pdf/doi/10.1021/acs.chemmater.6c02476/68810653/acs.chemmater.6c02476.pdf",
+      "code_url": null,
+      "abstract": "Abstract Most zero-dimensional hybrid metal halides enable emission in the first near-infrared (NIR-I) region (650–950 nm), and the shorter wavelengths result in poor photon penetration depth. Here, we report the observation of an NIR-II emission signal (band gap = 1.13 eV) from a (BTBAC)2Sb2Cl8 single crystal at room temperature. Although a variety of mechanisms are involved in the explanation of such a broad band with a large Stokes shift, the exploration of the structural origin of the NIR optical activity remains challenging due to misconceptions about excitons and experimental limitations. A strategy that spatially confines 5s2 ions within edge-shared [Sb2Cl8]2– units with controlled lattice distortion is proposed to cause a Jahn–Teller effect (JTE) during the interconfiguration transition (3P1 → 1S0). A family of hybrid metal halides doped with Bi3+,In3+ or Bi3+/In3+ demonstrates that the fine interplay between the Jahn–Teller effect and spin–orbit coupling (SOC) takes into full consideration orbital degeneracy and electron flipping, thus boosting the photoluminescence quantum yield to 12%. TD-DFT calculations visualize the symmetry of the two lattices within a dimeric structure varying with specific modes, and the rational assignment of the energy gap (ground state: 3.69 eV; excited state: 1.22 eV) between 1S0 and 3P1 is highly consistent with the experimental findings (λex = 330 nm; λem = 1100 nm). Leveraging the (BTBAC)2Sb2Cl8 sample, electroluminescence pumped by a UV-LED chip yields a highly efficient NIR-II emission, and the phosphor displays diverse functions in night vision and anticounterfeiting.",
+      "tldr": "A Jahn–Teller effect coupled with spin–orbit coupling in edge-shared [Sb₂Cl₈]²⁻ dimers enables room-temperature NIR-II emission from (BTBAC)₂Sb₂Cl₈, reaching 12% photoluminescence quantum yield and enabling efficient NIR-II electroluminescence for night vision and anticounterfeiting.",
+      "affiliations": [
+        "South China Normal University , , ,",
+        "Sun Yat-sen University , , , ,"
+      ],
+      "score": 8.2503,
+      "relevance_percentile": 85.92,
+      "score_components": {
+        "top_k": 0.8212,
+        "cluster": 0.8654,
+        "recent": 0.7741
+      },
+      "topics": [
+        "Spectroscopy",
+        "Materials"
+      ],
+      "seen_date": "2026-10-11",
+      "recommendation_status": "new",
+      "previous_recommended_at": null,
+      "key": "doi:10.1021/acs.chemmater.6c02476",
+      "first_seen": "2026-10-11",
+      "last_seen": "2026-10-11",
+      "seen_dates": [
+        "2026-10-11"
+      ],
+      "recommendations_by_date": {
+        "2026-10-11": {
+          "recommendation_status": "new",
+          "previous_recommended_at": null
+        }
+      }
+    },
+    {
+      "title": "Trace Bifunctional Diboron Additive Enables Robust CEI/SEI Interphases for Long-Cycling 4.5 V Li||NCM811 Batteries",
+      "authors": [
+        "Yahui Zhang",
+        "Detian Ma",
+        "Yebo Song",
+        "Yueyang Gao",
+        "Yunfei Bai",
+        "Dawei Yu",
+        "Jincai Wu",
+        "Xiaobo Pan"
+      ],
+      "journal": "ACS Applied Materials &amp; Interfaces",
+      "source": "Crossref",
+      "doi": "10.1021/acsami.6c15184",
+      "arxiv_id": null,
+      "published_at": "2026-10-12",
+      "article_url": "https://doi.org/10.1021/acsami.6c15184",
+      "pdf_url": "https://pubs.acs.org/aamick/article-pdf/doi/10.1021/acsami.6c15184/68812177/am-2026-15184u.pdf",
+      "code_url": null,
+      "abstract": "Abstract Developing efficient, low-cost, multifunctional additives that require small amounts and can simultaneously protect both the cathode and anode remains a major challenge for the practical application of lithium batteries. Herein, bis(2,4-dimethylpentane-2,4-glycolato)diboron (B2hmp2) was introduced to construct a greatly Li+-conductive cathode electrolyte interphases (CEIs) at the LiNi0.8Co0.1Mn0.1O2 (NCM811) surface together with robust solid electrolyte interphases (SEIs). Using a common electrolyte with 0.2 wt % B2hmp2, the Li||Li cells deliver markedly enhanced long-cycling stability, sustaining stable operation for 500 h at 0.5 mA cm–2. Furthermore, following 350 cycles at 0.5 C, the capacity retention of 4.5 V Li||NCM811 cells was elevated from 57.2 to 83.6%. Experimental results reveal that the thin, uniform, boron-rich CEI generated by B2hmp2 effectively mitigates particle microcracking and restrains the dissolution of transition metal ions. Interface analysis reveals that the modified SEI film enriched with B–O species and LiF facilitates uniform Li plating/stripping without dendrite formation and reduces the continuous parasitic decomposition of electrolyte solvents. This article highlights the value of trace diboron for forming desirable electrolyte interphases to obtain the wonderful long-term cycle performance and rate performance of Li||NCM811 cells.",
+      "tldr": "A trace 0.2 wt% diboron additive (B2hmp2) forms a Li⁺-conductive boron-rich CEI and robust B–O/LiF-rich SEI, improving Li plating/stripping stability and raising 4.5 V Li||NCM811 capacity retention from 57.2% to 83.6% after 350 cycles.",
+      "affiliations": [
+        "Lanzhou University , , ,",
+        "Synvent Shandong Co., Ltd , ,"
+      ],
+      "score": 8.2352,
+      "relevance_percentile": 84.51,
+      "score_components": {
+        "top_k": 0.8161,
+        "cluster": 0.8455,
+        "recent": 0.8091
+      },
+      "topics": [
+        "Battery"
+      ],
+      "seen_date": "2026-10-11",
+      "recommendation_status": "new",
+      "previous_recommended_at": null,
+      "key": "doi:10.1021/acsami.6c15184",
+      "first_seen": "2026-10-11",
+      "last_seen": "2026-10-11",
+      "seen_dates": [
+        "2026-10-11"
+      ],
+      "recommendations_by_date": {
+        "2026-10-11": {
+          "recommendation_status": "new",
+          "previous_recommended_at": null
+        }
+      }
+    },
+    {
+      "title": "Giant step-boundary-triggered nonlocal modulation of magnetization reversal in multi-stepped van der Waals ferromagnet Fe3GaTe2",
+      "authors": [
+        "Xiaoli Chen",
+        "Daxiang Liu",
+        "Xue Zhang",
+        "Xing Chen",
+        "Fangfang Pei",
+        "Yongsen Zhang",
+        "Penghui Yan",
+        "Yanyan Ai",
+        "Gong Chen",
+        "Yizheng Wu",
+        "Ziqiang Qiu",
+        "Zhifeng Zhu",
+        "Mengmeng Yang",
+        "Qian Li"
+      ],
+      "journal": "Nature Communications",
+      "source": "Crossref",
+      "doi": "10.1038/s41467-026-78522-9",
+      "arxiv_id": null,
+      "published_at": "2026-10-10",
+      "article_url": "https://doi.org/10.1038/s41467-026-78522-9",
+      "pdf_url": null,
+      "code_url": null,
+      "abstract": "",
+      "tldr": "Abstract unavailable from publisher metadata; open the article for details.",
+      "affiliations": [],
+      "score": 8.1992,
+      "relevance_percentile": 83.1,
+      "score_components": {
+        "top_k": 0.8218,
+        "cluster": 0.8647,
+        "recent": 0.748
+      },
+      "topics": [
+        "Other"
+      ],
+      "seen_date": "2026-10-11",
+      "recommendation_status": "new",
+      "previous_recommended_at": null,
+      "key": "doi:10.1038/s41467-026-78522-9",
+      "first_seen": "2026-10-11",
+      "last_seen": "2026-10-11",
+      "seen_dates": [
+        "2026-10-11"
+      ],
+      "recommendations_by_date": {
+        "2026-10-11": {
+          "recommendation_status": "new",
+          "previous_recommended_at": null
+        }
+      }
+    },
+    {
+      "title": "Continuously Tunable Localized Surface Plasmon Resonance of Anisotropic Gold Nanopolyhedrons for Multiplexed Surface-Enhanced Raman Scattering Imaging",
+      "authors": [
+        "Chaoqin He",
+        "Xiuwen Zheng",
+        "Jingzhi Zhou",
+        "Ruo Yuan",
+        "Ying Zhuo",
+        "Xia Yang"
+      ],
+      "journal": "Nano Letters",
+      "source": "Crossref",
+      "doi": "10.1021/acs.nanolett.6c03822",
+      "arxiv_id": null,
+      "published_at": "2026-10-10",
+      "article_url": "https://doi.org/10.1021/acs.nanolett.6c03822",
+      "pdf_url": "https://pubs.acs.org/nalefd/article-pdf/doi/10.1021/acs.nanolett.6c03822/68811328/acs.nanolett.6c03822.pdf",
+      "code_url": null,
+      "abstract": "Abstract Surface-enhanced Raman scattering (SERS) is attractive for multiplex bioimaging owing to its excellent photostability and ultranarrow spectral bandwidth. However, achieving synergistic enhancement of excitation and Raman scattering fields remains challenging. Herein, the relationship between geometry and localized surface plasmon resonance (LSPR) was investigated by continuously tuning the aspect ratio (AR) of anisotropic Au nanopolyhedrons (Au NPHs). Central-body modulation while preserving sharp terminal tips enables continuous LSPR tuning while retaining tip-associated electromagnetic enhancement. The SERS behavior was further analyzed by considering the spectral matching between the LSPR and the excitation/scattering wavelengths. For different excitation wavelengths, the optimal SERS response can be achieved by selecting Au NPHs whose LSPR band best matches with the excitation and Raman scattering wavelengths. These results demonstrate that Raman enhancement is governed by spectral matching rather than a fixed optimal geometry. The optimized Au NPHs enabled the use of dual SERS probes for proof-of-concept multiplex biomarker imaging.",
+      "tldr": "Continuously tuning the aspect ratio of anisotropic Au nanopolyhedrons optimizes localized surface plasmon resonance spectral matching for maximal surface-enhanced Raman scattering, enabling multiplexed biomarker imaging with dual SERS probes.",
+      "affiliations": [
+        "Southwest University , , ,"
+      ],
+      "score": 8.1798,
+      "relevance_percentile": 81.69,
+      "score_components": {
+        "top_k": 0.8201,
+        "cluster": 0.8265,
+        "recent": 0.7999
+      },
+      "topics": [
+        "Microscopy",
+        "Spectroscopy"
+      ],
+      "seen_date": "2026-10-11",
+      "recommendation_status": "new",
+      "previous_recommended_at": null,
+      "key": "doi:10.1021/acs.nanolett.6c03822",
+      "first_seen": "2026-10-11",
+      "last_seen": "2026-10-11",
+      "seen_dates": [
+        "2026-10-11"
+      ],
+      "recommendations_by_date": {
+        "2026-10-11": {
+          "recommendation_status": "new",
+          "previous_recommended_at": null
+        }
+      }
+    },
+    {
+      "title": "Competing Magnetic Configurations Enable Low-Field Magnetoresistance Switching in Cr3Te4",
+      "authors": [
+        "Qian Chen",
+        "Wei Jiang",
+        "Jiaqi Bai",
+        "Kaidi Guo",
+        "Xingze Dai",
+        "Dezheng Yang",
+        "Xiaoqian Zhang",
+        "Liang He",
+        "Wen Zhang",
+        "Zhaocong Huang",
+        "Lei Wang",
+        "Ke Xia",
+        "Ya Zhai"
+      ],
+      "journal": "Nano Letters",
+      "source": "Crossref",
+      "doi": "10.1021/acs.nanolett.6c02943",
+      "arxiv_id": null,
+      "published_at": "2026-10-10",
+      "article_url": "https://doi.org/10.1021/acs.nanolett.6c02943",
+      "pdf_url": "https://pubs.acs.org/nalefd/article-pdf/doi/10.1021/acs.nanolett.6c02943/68811314/acs.nanolett.6c02943.pdf",
+      "code_url": null,
+      "abstract": "Abstract Large magnetoresistance typically emerges from transitions between distinct electronic phases or magnetic configurations, yet controllable switching between competing magnetic configurations within a single metallic material remains challenging. Here we investigate magnetotransport in Cr3Te4 and demonstrate a magnetic-field-switchable resistance modulation of up to −37.6%, enabled by the near degeneracy between antiparallel and parallel magnetic configurations. Remarkably, a magnetic field of ∼0.25 T suffices to induce switching between these competing magnetic configurations, accompanied by a reconstruction in electronic transport supported by Boltzmann transport calculations. Substituting 5% of Cr with Co suppresses the switching behavior, consistent with a suppression of the competition between the nearly degenerate magnetic configurations, while the magnetoresistance evolves into a negative longitudinal magnetoresistance, suggesting a possible Weyl-band-related contribution associated with a Co-induced upward shift of the Fermi level. Our results establish competing magnetic configurations as an effective route toward large magnetoresistance in structurally simple metallic systems.",
+      "tldr": "In Cr₃Te₄, nearly degenerate competing magnetic configurations enable up to −37.6% magnetoresistance switching at a low field of ∼0.25 T, while 5% Co substitution suppresses this switching.",
+      "affiliations": [
+        "Southeast University , , ,",
+        "Nanjing University , , ,",
+        "Lanzhou University , , ,"
+      ],
+      "score": 8.136,
+      "relevance_percentile": 80.28,
+      "score_components": {
+        "top_k": 0.8106,
+        "cluster": 0.8598,
+        "recent": 0.7517
+      },
+      "topics": [
+        "Other"
+      ],
+      "seen_date": "2026-10-11",
+      "recommendation_status": "new",
+      "previous_recommended_at": null,
+      "key": "doi:10.1021/acs.nanolett.6c02943",
+      "first_seen": "2026-10-11",
+      "last_seen": "2026-10-11",
+      "seen_dates": [
+        "2026-10-11"
+      ],
+      "recommendations_by_date": {
+        "2026-10-11": {
+          "recommendation_status": "new",
+          "previous_recommended_at": null
+        }
+      }
+    },
+    {
+      "title": "Controlling BCC‐FCC Phase Selection in Cantor Thin Films Grown by Molecular Beam Epitaxy",
+      "authors": [
+        "Vincent Boucher",
+        "Salah‐Eddine Benrazzouq",
+        "Abdelkader Kara",
+        "Gwladys Steciuk",
+        "Pascal Boulet",
+        "Stéphane Suire",
+        "Jean‐François Pierson",
+        "Vincent Fournée",
+        "Julian Ledieu",
+        "Stéphane Andrieu"
+      ],
+      "journal": "Advanced Materials",
+      "source": "Crossref",
+      "doi": "10.1002/adma.75307",
+      "arxiv_id": null,
+      "published_at": "2026-10-09",
+      "article_url": "https://doi.org/10.1002/adma.75307",
+      "pdf_url": "https://advanced.onlinelibrary.wiley.com/doi/pdf/10.1002/adma.75307",
+      "code_url": null,
+      "abstract": "ABSTRACT High entropy alloys (HEAs) constitute a new class of materials with promising physicochemical properties which remain largely unexplored experimentally. The overall objective of this study is to prepare single‐crystalline Cantor films (CrMnFeCoNi) grown by Molecular Beam Epitaxy. Film growth was monitored in real time via electron diffraction, while their structure and morphology were characterized using x‐ray diffraction and transmission electron microscopy. The use of metallic buffer layers such as Ni, Rh, or RhNi 2 enabled the growth of epitaxial Cantor alloy layers with an FCC structure, consistent with existing literature. Surprisingly, the use of Fe, Cr, or Pd buffer layers resulted in the formation of Cantor alloy films with a BCC structure—a phase never previously reported. This phase is also obtained by depositing the Cantor by magnetron sputtering on a Cr buffer layer. Using ab initio calculations, we demonstrate that the selection of the FCC or BCC phases is governed by the commensurability with buffer layer thanks to strong adsorption energies. Finally, structural relaxation during calculations yields the same energy gain for both structures. Unlike FCC films, this BCC Cantor phase is observed to be ferromagnetic with a moment around 1000 kA/m at 300K, confirming reported ab initio calculations.",
+      "tldr": "Buffer-layer choice during molecular beam epitaxy controls whether Cantor (CrMnFeCoNi) thin films form an FCC or a previously unreported BCC phase, with the BCC phase being ferromagnetic at room temperature.",
+      "affiliations": [
+        "Institut Jean Lamour (UMR7198) Université de Lorraine, CNRS Nancy France",
+        "Department of Physics University of Central Florida Orlando Florida USA"
+      ],
+      "score": 8.1105,
+      "relevance_percentile": 78.87,
+      "score_components": {
+        "top_k": 0.8077,
+        "cluster": 0.861,
+        "recent": 0.7445
+      },
+      "topics": [
+        "Microscopy",
+        "Materials"
+      ],
+      "seen_date": "2026-10-11",
+      "recommendation_status": "new",
+      "previous_recommended_at": null,
+      "key": "doi:10.1002/adma.75307",
+      "first_seen": "2026-10-11",
+      "last_seen": "2026-10-11",
+      "seen_dates": [
+        "2026-10-11"
+      ],
+      "recommendations_by_date": {
+        "2026-10-11": {
+          "recommendation_status": "new",
+          "previous_recommended_at": null
+        }
+      }
+    },
+    {
+      "title": "Formamidinium-Solvent Intermediates Mediate Self-Seeding Crystallization for Efficient Inverted α-FAPbI3 Perovskite Solar Cells",
+      "authors": [
+        "Yezhi Li",
+        "Shuyuan Wan",
+        "Yang Yang",
+        "Fengyuan Li",
+        "Xu Xiao",
+        "Haoze Lu",
+        "Zihao Fan",
+        "Zhiyuan Dai",
+        "Yaqian Zhou",
+        "Yerzhan Mukhametkarimov",
+        "Ruihao Chen",
+        "Hongqiang Wang"
+      ],
+      "journal": "ACS Energy Letters",
+      "source": "Crossref",
+      "doi": "10.1021/acsenergylett.6c01690",
+      "arxiv_id": null,
+      "published_at": "2026-10-10",
+      "article_url": "https://doi.org/10.1021/acsenergylett.6c01690",
+      "pdf_url": "https://pubs.acs.org/aelccp/article-pdf/doi/10.1021/acsenergylett.6c01690/68812365/nz-2026-01690s.pdf",
+      "code_url": null,
+      "abstract": "Abstract Formamidinium lead iodide (FAPbI3) perovskites are promising for high-performance solar cells; however, the low surface energy of self-assembled monolayers (SAMs) impedes α-phase nucleation in inverted devices. Here, we report a formamidinium (FA)-solvent intermediate-mediated self-seeding crystallization strategy to enable quality α-phase FAPbI3. By employing N-formylmorpholine (NFM) as a non-toxic solvent, (FA···NFM)PbI3 intermediates are formed, thereby lowering the phase-transition barrier and promoting the spontaneous formation of α-phase nuclei at the early stage of crystallization. These preformed nuclei serve as intrinsic seeds, facilitating rapid nucleation and orientated crystal growth. Consequently, NFM-based devices achieve efficiencies of 26.41% and 26.56% using 2-methoxyethanol (2-Me) and N,N-dimethylformamide (DMF) as primary solvents, respectively, with a 1 cm2 device reaching 25.47%. The unencapsulated devices retain 85% and 90% of their initial efficiencies after 1200 h illumination and 1400 h thermal aging at 85 °C, respectively.",
+      "tldr": "A formamidinium-solvent intermediate-mediated self-seeding crystallization strategy using N-formylmorpholine enables efficient inverted α-FAPbI3 perovskite solar cells with up to 26.56% efficiency and improved thermal/light stability.",
+      "affiliations": [
+        "Northwestern Polytechnical University and Shaanxi Joint Laboratory of Graphene (NPU) , , ,",
+        "Advanced Power Research Institute of Northwestern Polytechnical University in Sichuan Tianfu New Area , ,",
+        "Northwest University , , ,",
+        "Al-Farabi Kazakh National University , , ,"
+      ],
+      "score": 8.0971,
+      "relevance_percentile": 77.46,
+      "score_components": {
+        "top_k": 0.8264,
+        "cluster": 0.8084,
+        "recent": 0.77
+      },
+      "topics": [
+        "Electrochemistry",
+        "Semiconductors",
+        "Materials"
+      ],
+      "seen_date": "2026-10-11",
+      "recommendation_status": "new",
+      "previous_recommended_at": null,
+      "key": "doi:10.1021/acsenergylett.6c01690",
+      "first_seen": "2026-10-11",
+      "last_seen": "2026-10-11",
+      "seen_dates": [
+        "2026-10-11"
+      ],
+      "recommendations_by_date": {
+        "2026-10-11": {
+          "recommendation_status": "new",
+          "previous_recommended_at": null
+        }
+      }
+    },
+    {
+      "title": "Cesium-Induced Stabilization of the FeOOH Cocatalyst on Bismuth Vanadate Photoanode for Ultraefficient and Stable Photoelectrochemical Water Oxidation",
+      "authors": [
+        "Wenchao Jiang",
+        "Yange Ma",
+        "Ying Tao",
+        "Haochuan Jing",
+        "Jiazang Chen",
+        "Rengui Li",
+        "Yi Jiang",
+        "Bin Liu"
+      ],
+      "journal": "Journal of the American Chemical Society",
+      "source": "Crossref",
+      "doi": "10.1021/jacs.6c12237",
+      "arxiv_id": null,
+      "published_at": "2026-10-10",
+      "article_url": "https://doi.org/10.1021/jacs.6c12237",
+      "pdf_url": "https://pubs.acs.org/jacsat/article-pdf/doi/10.1021/jacs.6c12237/68810944/jacs.6c12237.pdf",
+      "code_url": null,
+      "abstract": "Abstract Developing active and durable water oxidation cocatalysts is essential for advancing photoelectrochemical (PEC) water-splitting systems. This study investigates the cesium-induced reconstruction of the FeOOH cocatalyst on a bismuth vanadate (BVO) photoanode for the water oxidation reaction, with a focus on the reconstruction process and its effect in improving interfacial charge transfer and photostability. Cesium ions induce the reconstruction of Fe species on the BVO/FeOOH photoanode during the PEC process, leading to the formation of a robust Cs-incorporated FeOOH (Cs:FeOOH) catalytic layer. Spectroscopic analysis combined with open-circuit potential measurement reveals that the in situ formed Cs:FeOOH cocatalyst can effectively protect BVO and promote interfacial hole transfer during PEC operation. As a result, the BVO/Cs:FeOOH photoanode achieves a photocurrent density of 6.29 mA cm–2 at 1.23 V vs. RHE and maintains stable operation for over 100 h. Furthermore, the Cs-incorporated FeOOH cocatalyst strategy can be extended to other semiconductor systems, including TiO2 and FeOx, highlighting its broader potential for improving solar-driven PEC water oxidation.",
+      "tldr": "Cesium-induced reconstruction of FeOOH into a stable Cs:FeOOH cocatalyst on a BiVO₄ photoanode enhances interfacial hole transfer, yielding 6.29 mA cm⁻² at 1.23 V vs. RHE and over 100 h of stable photoelectrochemical water oxidation.",
+      "affiliations": [
+        "Liaoning University , , ,",
+        "Great Bay University , , , ,",
+        "Huzhou Normal University , , ,",
+        "Northeast Normal University , , ,",
+        "Hangzhou Normal University , , ,",
+        "Chinese Academy of Sciences , , ,",
+        "City University of Hong Kong , , ,"
+      ],
+      "score": 8.0905,
+      "relevance_percentile": 76.06,
+      "score_components": {
+        "top_k": 0.7962,
+        "cluster": 0.8373,
+        "recent": 0.7988
+      },
+      "topics": [
+        "Battery",
+        "Electrochemistry",
+        "Semiconductors"
+      ],
+      "seen_date": "2026-10-11",
+      "recommendation_status": "new",
+      "previous_recommended_at": null,
+      "key": "doi:10.1021/jacs.6c12237",
+      "first_seen": "2026-10-11",
+      "last_seen": "2026-10-11",
+      "seen_dates": [
+        "2026-10-11"
+      ],
+      "recommendations_by_date": {
+        "2026-10-11": {
+          "recommendation_status": "new",
+          "previous_recommended_at": null
+        }
+      }
+    },
+    {
+      "title": "Vacancy‐Associated La–Ir Pairs Enable Water‐Derived Oxygen‐Hydroxyl Coupling for Durable Low‐Ir PEM Water Electrolysis",
+      "authors": [
+        "Yong Gao",
+        "Yunyun Xu",
+        "Lingjie Yuan",
+        "Zhenwen Yu",
+        "Mengyue Liu",
+        "Ruize Xu",
+        "Kun Chang",
+        "Yinlong Zhu",
+        "Zhong‐Shuai Wu"
+      ],
+      "journal": "Advanced Materials",
+      "source": "Crossref",
+      "doi": "10.1002/adma.75352",
+      "arxiv_id": null,
+      "published_at": "2026-10-10",
+      "article_url": "https://doi.org/10.1002/adma.75352",
+      "pdf_url": "https://advanced.onlinelibrary.wiley.com/doi/pdf/10.1002/adma.75352",
+      "code_url": null,
+      "abstract": "ABSTRACT Developing highly stable, low‐iridium catalysts is critical for acidic oxygen evolution, but is limited by structural degradation driven by acid corrosion and voltage polarization. Herein, we report an iridium and lanthanum co‐doped manganese‐cobalt spinel catalyst, Ir,La‐MCO δ , featuring octahedral La–Ir pairs (La oct –Ir oct ) with a theoretical favorable configuration of adjacent bridging and Ir z ‐axis oxygen vacancies. This low‐Ir catalyst Ir,La‐MCO δ (0.12 mg Ir cm −2 ) exhibits an overpotential of merely 220 mV at 10 mA cm −2 in pH = 1 electrolyte, and demonstrates robust operation for over 1550 h at 1 A cm −2 in a proton exchange membrane (PEM) water electrolyzer. Coupled (quasi)in situ characterizations and operando spectroscopy reveal that the adjacent oxygen vacancies mediate the evolution of oxygen intermediates, enabling water‐derived oxygen‐hydroxyl coupling with negligible lattice oxygen involvement, via a decoupled proton–electron transfer pathway. This mechanism preserves the structural integrity of the catalyst and yields a calculated reaction free‐energy change of merely 0.38 eV ( U = 1.23 V) for the most unfavorable oxygen‐hydroxyl coupling elementary step, thereby endowing Ir,La‐MCO δ with exceptional durability. This work provides a valuable mechanistic insight into designing highly stable defective catalysts.",
+      "tldr": "A low-iridium Ir,La-doped MnCo spinel with octahedral La–Ir pairs and adjacent oxygen vacancies enables water-derived oxygen–hydroxyl coupling via decoupled proton–electron transfer, achieving 220 mV overpotential and over 1550 h durability in acidic PEM water electrolysis.",
+      "affiliations": [
+        "Centre for Hydrogenergy College of Materials Science and Technology Nanjing University of Aeronautics and Astronautics Nanjing P. R. China",
+        "State Key Laboratory of Catalysis Dalian Institute of Chemical Physics Chinese Academy of Sciences Dalian P. R. China",
+        "Institute for Frontier Science Nanjing University of Aeronautics and Astronautics Nanjing P. R. China"
+      ],
+      "score": 8.0883,
+      "relevance_percentile": 74.65,
+      "score_components": {
+        "top_k": 0.8009,
+        "cluster": 0.8311,
+        "recent": 0.7954
+      },
+      "topics": [
+        "Battery",
+        "Spectroscopy",
+        "Semiconductors"
+      ],
+      "seen_date": "2026-10-11",
+      "recommendation_status": "new",
+      "previous_recommended_at": null,
+      "key": "doi:10.1002/adma.75352",
+      "first_seen": "2026-10-11",
+      "last_seen": "2026-10-11",
+      "seen_dates": [
+        "2026-10-11"
+      ],
+      "recommendations_by_date": {
+        "2026-10-11": {
+          "recommendation_status": "new",
+          "previous_recommended_at": null
+        }
+      }
+    },
+    {
+      "title": "In situ reduction-driven formation of sub-nanometer alternating heterostructures",
+      "authors": [
+        "Yuan Huang",
+        "Zhenyu Ren",
+        "Yijian Gao",
+        "Haoyang Li",
+        "Hai Xiao",
+        "Qingda Liu",
+        "Xun Wang"
+      ],
+      "journal": "Nature Communications",
+      "source": "Crossref",
+      "doi": "10.1038/s41467-026-78575-w",
+      "arxiv_id": null,
+      "published_at": "2026-10-11",
+      "article_url": "https://doi.org/10.1038/s41467-026-78575-w",
+      "pdf_url": null,
+      "code_url": null,
+      "abstract": "",
+      "tldr": "Abstract unavailable from publisher metadata; open the article for details.",
+      "affiliations": [],
+      "score": 8.0657,
+      "relevance_percentile": 73.24,
+      "score_components": {
+        "top_k": 0.8088,
+        "cluster": 0.8311,
+        "recent": 0.7642
+      },
+      "topics": [
+        "Other"
+      ],
+      "seen_date": "2026-10-11",
+      "recommendation_status": "new",
+      "previous_recommended_at": null,
+      "key": "doi:10.1038/s41467-026-78575-w",
+      "first_seen": "2026-10-11",
+      "last_seen": "2026-10-11",
+      "seen_dates": [
+        "2026-10-11"
+      ],
+      "recommendations_by_date": {
+        "2026-10-11": {
+          "recommendation_status": "new",
+          "previous_recommended_at": null
+        }
+      }
+    },
+    {
+      "title": "Experimental Signature of Transient Symmetry Breaking in a Cavity Dirty-Limit Superconductor",
+      "authors": [
+        "Siyu Duan",
+        "Jingbo Wu",
+        "Xiaoqing Jia",
+        "Hongkai Shi",
+        "Haojie Li",
+        "Anneke Reinold",
+        "Huabing Wang",
+        "Ilya M. Eremin",
+        "Götz S. Uhrig",
+        "Biaobing Jin",
+        "Zhe Wang"
+      ],
+      "journal": "Nano Letters",
+      "source": "Crossref",
+      "doi": "10.1021/acs.nanolett.6c03749",
+      "arxiv_id": null,
+      "published_at": "2026-10-10",
+      "article_url": "https://doi.org/10.1021/acs.nanolett.6c03749",
+      "pdf_url": "https://pubs.acs.org/nalefd/article-pdf/doi/10.1021/acs.nanolett.6c03749/68811325/acs.nanolett.6c03749.pdf",
+      "code_url": null,
+      "abstract": "Abstract Transient states of matter far from equilibrium may exhibit physical properties beyond those allowed by the equilibrium-state crystalline symmetries. We explore ultrafast and direct electronic excitations of transient states in a dirty-limit superconductor with time-resolved terahertz-pump terahertz-probe spectroscopy. By embedding the superconductor into a designed microcavity structure of metallic split-ring resonators, we can sensitively probe the pump field-induced transient variations of the superconducting states around the cavity’s resonant frequency. Our results show that the strong terahertz field can transiently modify the symmetries of the electronic subsystems via the injection of a picosecond supercurrent, leading to high-order nonlinear dynamical responses that are not compatible with the equilibrium-state symmetries, which is evidence for transient symmetry breaking on the picosecond time scale.",
+      "tldr": "Using cavity-enhanced terahertz pump-probe spectroscopy on a dirty-limit superconductor, researchers observe picosecond supercurrent-induced high-order nonlinear responses that transiently break equilibrium symmetries, providing experimental evidence of transient symmetry breaking on the picosecond timescale.",
+      "affiliations": [
+        "Nanjing University , , ,",
+        "TU Dortmund University , , ,",
+        "Ruhr-Universität Bochum , , ,"
+      ],
+      "score": 8.0319,
+      "relevance_percentile": 71.83,
+      "score_components": {
+        "top_k": 0.8162,
+        "cluster": 0.8286,
+        "recent": 0.7326
+      },
+      "topics": [
+        "Spectroscopy",
+        "Materials"
+      ],
+      "seen_date": "2026-10-11",
+      "recommendation_status": "new",
+      "previous_recommended_at": null,
+      "key": "doi:10.1021/acs.nanolett.6c03749",
+      "first_seen": "2026-10-11",
+      "last_seen": "2026-10-11",
+      "seen_dates": [
+        "2026-10-11"
+      ],
+      "recommendations_by_date": {
+        "2026-10-11": {
+          "recommendation_status": "new",
+          "previous_recommended_at": null
+        }
+      }
+    },
+    {
+      "title": "Addition and Correction to “Polymer Brush-Assisted Fabrication of Layered Metal Oxide Heterostructures for Future Electronic Device Applications”",
+      "authors": [
+        "Tandra Ghoshal",
+        "Sajan Singh",
+        "Hazel Neill",
+        "Farzan Gity",
+        "Joy Roy",
+        "Fernando Q. Borbon",
+        "Francisco Servando Aguirre-Tostado",
+        "Paul K. Hurley",
+        "Robert M. Wallace",
+        "Michael A. Morris"
+      ],
+      "journal": "ACS Applied Materials &amp; Interfaces",
+      "source": "Crossref",
+      "doi": "10.1021/acsami.6c19445",
+      "arxiv_id": null,
+      "published_at": "2026-10-12",
+      "article_url": "https://doi.org/10.1021/acsami.6c19445",
+      "pdf_url": "https://pubs.acs.org/doi/pdf/10.1021/acsami.6c19445",
+      "code_url": null,
+      "abstract": "",
+      "tldr": "Abstract unavailable from publisher metadata; open the article for details.",
+      "affiliations": [
+        "Trinity College Dublin , , ,",
+        "Tyndall National Institute, University College Cork , , Lee Maltings, Dyke Parade , ,",
+        "The University of Texas at Dallas , , , ,",
+        "Unidad Monterrey, Centro de Investigación en Materiales Avanzados, S. C. (CIMAV) , , ,",
+        "University College Cork , , ,"
+      ],
+      "score": 7.9561,
+      "relevance_percentile": 70.42,
+      "score_components": {
+        "top_k": 0.794,
+        "cluster": 0.8189,
+        "recent": 0.7645
+      },
+      "topics": [
+        "Materials"
+      ],
+      "seen_date": "2026-10-11",
+      "recommendation_status": "new",
+      "previous_recommended_at": null,
+      "key": "doi:10.1021/acsami.6c19445",
+      "first_seen": "2026-10-11",
+      "last_seen": "2026-10-11",
+      "seen_dates": [
+        "2026-10-11"
+      ],
+      "recommendations_by_date": {
+        "2026-10-11": {
+          "recommendation_status": "new",
+          "previous_recommended_at": null
+        }
+      }
+    },
+    {
+      "title": "Topological Chemistry of PtPb4 Surfaces under Reconstruction and Hydrogen Adsorption",
+      "authors": [
+        "Junwei He",
+        "Anastassia N. Alexandrova"
+      ],
+      "journal": "ACS Applied Materials &amp; Interfaces",
+      "source": "Crossref",
+      "doi": "10.1021/acsami.6c14280",
+      "arxiv_id": null,
+      "published_at": "2026-10-12",
+      "article_url": "https://doi.org/10.1021/acsami.6c14280",
+      "pdf_url": "https://pubs.acs.org/aamick/article-pdf/doi/10.1021/acsami.6c14280/68812667/am-2026-14280e.pdf",
+      "code_url": null,
+      "abstract": "Abstract Topological materials have recently been proposed as promising catalysts owing to the presence of robust topological surface states (TSSs). However, the microscopic role of TSSs in catalytic processes remains elusive. In particular, it is unclear how TSSs can simultaneously remain robust against chemical perturbations while actively participating in surface reactions. Here, we address this question through a combined study of the bulk topology, surface structure, and hydrogen evolution reaction (HER) behavior of PtPb4, a valence analogue of a known topological catalyst PtSn4. We show that PtPb4 is a topological semimetal with non-trivial ℤ2 indices under spin-orbit coupling. This nontrivial band topology originates from a band inversion between two Pb-derived states near the Fermi level. Surface calculations reveal well-defined TSSs on the (100) surface, a surface that also exhibits potential HER properties. Hydrogen binding is primarily achieved by the deep H-1s/Pt-d bonding state located well below the Fermi level, while the TSSs play only a secondary, perturbative role in adsorption. By continuously tracking the evolution of the surface bands during adsorption, we demonstrate that the topological order is preserved despite substantial energy shifts, charge transfer, and hybridization in surface states. Our work provides a qualitative picture of how the TSSs of PtPb4 respond to hydrogen adsorption while the global topology of the surface remains inherently robust.",
+      "tldr": "PtPb4 is a topological semimetal whose (100) topological surface states remain robust under hydrogen adsorption and only perturbatively influence HER, with hydrogen binding dominated by deep H-1s/Pt-d states.",
+      "affiliations": [
+        "University of California , , , ,"
+      ],
+      "score": 7.9282,
+      "relevance_percentile": 69.01,
+      "score_components": {
+        "top_k": 0.792,
+        "cluster": 0.8163,
+        "recent": 0.7596
+      },
+      "topics": [
+        "Materials"
+      ],
+      "seen_date": "2026-10-11",
+      "recommendation_status": "new",
+      "previous_recommended_at": null,
+      "key": "doi:10.1021/acsami.6c14280",
+      "first_seen": "2026-10-11",
+      "last_seen": "2026-10-11",
+      "seen_dates": [
+        "2026-10-11"
+      ],
+      "recommendations_by_date": {
+        "2026-10-11": {
+          "recommendation_status": "new",
+          "previous_recommended_at": null
+        }
+      }
+    },
+    {
+      "title": "Photogenerated Charge Injection-Modulated Ultralow-Power ZnO/Sb2S3 Heterojunction Memristors for Artificial Visual Nociception and Persistence Systems",
+      "authors": [
+        "Yuanhui Yang",
+        "Yuanfeng Sun",
+        "Kai Hu",
+        "Haoyuan Li",
+        "Shifu Xiong",
+        "Shixing Teng",
+        "Yuhang Wang",
+        "Chuanzhen Dong",
+        "Hongling Guo"
+      ],
+      "journal": "The Journal of Physical Chemistry Letters",
+      "source": "Crossref",
+      "doi": "10.1021/acs.jpclett.6c02683",
+      "arxiv_id": null,
+      "published_at": "2026-10-10",
+      "article_url": "https://doi.org/10.1021/acs.jpclett.6c02683",
+      "pdf_url": "https://pubs.acs.org/jpclcd/article-pdf/doi/10.1021/acs.jpclett.6c02683/68811194/acs.jpclett.6c02683.pdf",
+      "code_url": null,
+      "abstract": "Abstract Bioinspired neuromorphic architectures featuring sensory-memory-computing integration offer a highly effective approach to overcoming the traditional von Neumann computing bottleneck. However, existing optoelectronic memristors universally face challenges such as high static power consumption and difficulties in modulating resistive switching behaviors during array-level integration. Here, an ultralow-power Ag/PMMA/ZnO/Sb2S3/FTO heterojunction memristor operating at the nanoampere scale is reported. By engineering a Type-II ZnO/Sb2S3 band alignment and incorporating an ultrathin PMMA tunneling barrier, the device achieves synergistic carrier regulation and broadband charge separation. Notably, light illumination significantly reduces the SET voltage from 5.0 to 2.65 V. A collaborative switching model, governed by photocarrier injection and electric-field-driven dynamics, is proposed to elucidate the mechanism of threshold modulation at the interface. Functionally, the device emulates essential synaptic plasticity and realizes an advanced artificial visual nociceptor featuring threshold-triggering, nonadaptation, and relaxation. Furthermore, simulation-based spatiotemporal image processing, including dynamic forgetting and visual persistence, is demonstrated. This work establishes a new mechanistic paradigm for ultralow-power, multimodal neuromorphic vision hardware, paving the way for next-generation energy-efficient bioinspired perception systems.",
+      "tldr": "This work presents an ultralow-power ZnO/Sb2S3 heterojunction memristor with a PMMA tunneling barrier that uses photogenerated charge injection to modulate resistive switching, enabling synaptic plasticity, artificial visual nociception, and spatiotemporal image-processing functions for energy-efficient neuromorphic vision.",
+      "affiliations": [
+        "Tianjin University of Technology , , ,"
+      ],
+      "score": 7.9266,
+      "relevance_percentile": 67.61,
+      "score_components": {
+        "top_k": 0.7911,
+        "cluster": 0.8119,
+        "recent": 0.7677
+      },
+      "topics": [
+        "Semiconductors",
+        "AI & Computation"
+      ],
+      "seen_date": "2026-10-11",
+      "recommendation_status": "new",
+      "previous_recommended_at": null,
+      "key": "doi:10.1021/acs.jpclett.6c02683",
+      "first_seen": "2026-10-11",
+      "last_seen": "2026-10-11",
+      "seen_dates": [
+        "2026-10-11"
+      ],
+      "recommendations_by_date": {
+        "2026-10-11": {
+          "recommendation_status": "new",
+          "previous_recommended_at": null
+        }
+      }
+    },
+    {
+      "title": "Suppressing Nonradiative Voltage Losses in Ternary Organic Solar Cells via Additional CT States",
+      "authors": [
+        "Botao Wang",
+        "Yuan Xiao",
+        "Fanghao Cheng",
+        "Yaru Dong",
+        "Sun Yin"
+      ],
+      "journal": "The Journal of Physical Chemistry Letters",
+      "source": "Crossref",
+      "doi": "10.1021/acs.jpclett.6c03080",
+      "arxiv_id": null,
+      "published_at": "2026-10-10",
+      "article_url": "https://doi.org/10.1021/acs.jpclett.6c03080",
+      "pdf_url": "https://pubs.acs.org/jpclcd/article-pdf/doi/10.1021/acs.jpclett.6c03080/68811197/acs.jpclett.6c03080.pdf",
+      "code_url": null,
+      "abstract": "Abstract Ternary organic solar cells (TOSCs) have attracted considerable attention due to their high power conversion efficiency (PCE). However, they still suffer from large nonradiative voltage losses ΔVnr, which impede further progress. The fundamental mechanisms responsible for this remain under debate, and the addition of a third component introduces further complexity that warrants deeper theoretical investigation.Here, we construct a model based on a five-state framework incorporating spin-dependent, quantum-evolving states to assess how the third component mitigates ΔVnr. This framework explains previous experiments and provides a theoretical basis with quantitative predictions of energy level to minimize ΔVnr. From our results, we derive two design guidelines for high-performance TOSCs: (i) selecting a third component with good miscibility to ensure tight state coupling; (ii) employing a third component whose relevant energy level lies between the HOMO (or LUMO) of the donor and that of the acceptor.",
+      "tldr": "A five-state spin-dependent quantum model shows that adding a well-miscible third component with energy levels between the donor and acceptor HOMO/LUMO creates additional CT states that suppress nonradiative voltage losses in ternary organic solar cells.",
+      "affiliations": [
+        "Shandong University , , ,"
+      ],
+      "score": 7.9249,
+      "relevance_percentile": 66.2,
+      "score_components": {
+        "top_k": 0.7933,
+        "cluster": 0.8177,
+        "recent": 0.7527
+      },
+      "topics": [
+        "Semiconductors",
+        "Materials"
+      ],
+      "seen_date": "2026-10-11",
+      "recommendation_status": "new",
+      "previous_recommended_at": null,
+      "key": "doi:10.1021/acs.jpclett.6c03080",
+      "first_seen": "2026-10-11",
+      "last_seen": "2026-10-11",
+      "seen_dates": [
+        "2026-10-11"
+      ],
+      "recommendations_by_date": {
+        "2026-10-11": {
+          "recommendation_status": "new",
+          "previous_recommended_at": null
+        }
+      }
+    },
+    {
+      "title": "Electroanalytical and Computational Investigation of Oxoammonium-Mediated Hydride Transfer",
+      "authors": [
+        "Elya Kandahari",
+        "Natalie A. Cox",
+        "Yi Wang",
+        "Song Lin"
+      ],
+      "journal": "Journal of the American Chemical Society",
+      "source": "Crossref",
+      "doi": "10.1021/jacs.6c10904",
+      "arxiv_id": null,
+      "published_at": "2026-10-10",
+      "article_url": "https://doi.org/10.1021/jacs.6c10904",
+      "pdf_url": "https://pubs.acs.org/jacsat/article-pdf/doi/10.1021/jacs.6c10904/68810913/jacs.6c10904.pdf",
+      "code_url": null,
+      "abstract": "Abstract Oxoammonium-mediated hydride transfer is an important yet relatively underexplored elementary step in C–H functionalization. In this work, we employed cyclic voltammetry (CV) to measure the rates of hydride transfer between electrochemically generated oxoammonium catalysts and 42 substrates including ethers, carbamates, amides, and sulfonamides. Through quantum mechanical (QM) calculations, we uncovered a new transition-state model for hydride transfer in which the N atom of the catalyst resides near a heteroatom (X = N or O) of the substrate to allow alignment of the oxoammonium’s O═N+ motif and the substrate’s forming C═X+ bond. Energy decomposition analysis was subsequently performed to elucidate the key factors that govern the kinetics of oxoammonium-mediated hydride transfer. Beyond conventional electronic and steric considerations, we identified substrate distortion, secondary orbital interactions, and noncovalent interactions as critical factors that influence hydride transfer reactivity. We anticipate that these kinetic data along with the mechanistic insights they provide will inform future catalyst development and synthetic applications to broaden the scope of oxoammonium catalysis.",
+      "tldr": "This study combines cyclic voltammetry and quantum mechanical calculations to measure and rationalize oxoammonium-mediated hydride transfer across diverse substrates, revealing a new transition-state model and key nonconventional kinetic factors—substrate distortion, secondary orbital interactions, and noncovalent interactions—that can guide future catalyst design.",
+      "affiliations": [
+        "Cornell University , , , ,",
+        "Stanford University , , , ,"
+      ],
+      "score": 7.8627,
+      "relevance_percentile": 64.79,
+      "score_components": {
+        "top_k": 0.7791,
+        "cluster": 0.807,
+        "recent": 0.773
+      },
+      "topics": [
+        "Electrochemistry"
+      ],
+      "seen_date": "2026-10-11",
+      "recommendation_status": "new",
+      "previous_recommended_at": null,
+      "key": "doi:10.1021/jacs.6c10904",
+      "first_seen": "2026-10-11",
+      "last_seen": "2026-10-11",
+      "seen_dates": [
+        "2026-10-11"
+      ],
+      "recommendations_by_date": {
+        "2026-10-11": {
+          "recommendation_status": "new",
+          "previous_recommended_at": null
+        }
+      }
+    },
+    {
+      "title": "Conductivity‐Engineered Polymeric Rear Contacts for Bifacial Sb 2 (S,Se) 3 Solar Cells and 4T Tandem Photovoltaics",
+      "authors": [
+        "Dae‐Kue Hwang",
+        "Jaebaek Lee",
+        "Amanat Ali",
+        "Naveen Kumar",
+        "Jin‐Kyu Kang",
+        "Kee‐Jeong Yang",
+        "Shi‐Joon Sung",
+        "Eunkyung Cho",
+        "Dae‐Hwan Kim"
+      ],
+      "journal": "Advanced Materials",
+      "source": "Crossref",
+      "doi": "10.1002/adma.75358",
+      "arxiv_id": null,
+      "published_at": "2026-10-09",
+      "article_url": "https://doi.org/10.1002/adma.75358",
+      "pdf_url": "https://advanced.onlinelibrary.wiley.com/doi/pdf/10.1002/adma.75358",
+      "code_url": null,
+      "abstract": "ABSTRACT Transparent rear contacts that combine efficient charge extraction with low optical loss are essential for extending Sb 2 (S,Se) 3 photovoltaics toward bifacial and tandem applications. Here, a solution‐processed 2,2′,7,7′‐tetrakis(N,N‐di‐p‐methoxyphenylamine)‐9,9′‐spirobifluorene (Spiro‐OMeTAD)/poly(3,4‐ethylenedioxythiophene):poly(styrene sulfonate) (PEDOT:PSS) bilayer is introduced as a polymeric transparent rear‐contact architecture for bifacial Sb 2 (S,Se) 3 solar cells. Established dimethyl sulfoxide (DMSO) solvent engineering reduces the sheet resistance of PEDOT:PSS by nearly four orders of magnitude while preserving its high transparency, enabling front‐ and rear‐side power conversion efficiencies (PCEs) of 8.2% and 3.3%, respectively. Under 1‐sun front plus 0.3‐sun rear illumination, the bifacial device delivers a power generation density of 9.7 mW cm −2 . Combined optical and electrical analyses reveal that the lower rear‐side response arises from asymmetric photogeneration, direction‐dependent carrier transport, depth‐dependent absorber inhomogeneity, and enhanced recombination associated with the transparent rear interface. The device is further integrated as the top cell in an electrically independent Sb 2 (S,Se) 3 /CuInSe 2 four‐terminal tandem, achieving a combined standard‐condition PCE of 12.32%. This work demonstrates a solution‐processable polymeric rear‐contact strategy complementary to conventional inorganic transparent contacts and identifies the optical and interfacial factors governing bifacial Sb 2 (S,Se) 3 photovoltaics.",
+      "tldr": "A DMSO-engineered Spiro-OMeTAD/PEDOT:PSS polymeric transparent rear contact enables bifacial Sb₂(S,Se)₃ solar cells with 8.2% front and 3.3% rear PCEs and integration into a 12.32%-efficient 4-terminal Sb₂(S,Se)₃/CuInSe₂ tandem.",
+      "affiliations": [
+        "Division of Energy &amp; Environmental Technology Daegu Gyeongbuk Institute of Science and Technology (DGIST) Daegu Republic of Korea",
+        "Department of Interdisciplinary Engineering Daegu Gyeongbuk Institute of Science and Technology (DGIST) Daegu Republic of Korea"
+      ],
+      "score": 7.8404,
+      "relevance_percentile": 63.38,
+      "score_components": {
+        "top_k": 0.7859,
+        "cluster": 0.8032,
+        "recent": 0.7506
+      },
+      "topics": [
+        "Semiconductors",
+        "Materials"
+      ],
+      "seen_date": "2026-10-11",
+      "recommendation_status": "new",
+      "previous_recommended_at": null,
+      "key": "doi:10.1002/adma.75358",
+      "first_seen": "2026-10-11",
+      "last_seen": "2026-10-11",
+      "seen_dates": [
+        "2026-10-11"
+      ],
+      "recommendations_by_date": {
+        "2026-10-11": {
+          "recommendation_status": "new",
+          "previous_recommended_at": null
+        }
+      }
+    },
+    {
+      "title": "Gate-Programmable Spectral Plasticity in Nanoporous Vertical Organic Synaptic Transistors for Adaptive Neuromorphic Vision",
+      "authors": [
+        "Xiaolong Li",
+        "Jia Li",
+        "Min Guo",
+        "Xinmu Chen",
+        "Yang Liu",
+        "Yali Yu",
+        "Jiayang Jiang",
+        "Yu Zhang",
+        "Yufeng Hu",
+        "Feng Teng"
+      ],
+      "journal": "ACS Applied Materials &amp; Interfaces",
+      "source": "Crossref",
+      "doi": "10.1021/acsami.6c14764",
+      "arxiv_id": null,
+      "published_at": "2026-10-12",
+      "article_url": "https://doi.org/10.1021/acsami.6c14764",
+      "pdf_url": "https://pubs.acs.org/doi/pdf/10.1021/acsami.6c14764",
+      "code_url": null,
+      "abstract": "Abstract Artificial vision systems capable of dynamically adapting to changing spectral environments are essential for next-generation intelligent perception but remain fundamentally constrained by the fixed spectral responsivity of conventional photodetectors. While narrowband photodetectors effectively suppress optical background interference, their spectral selectivity is generally predetermined by material composition or device geometry, preventing adaptive spectral perception within a single hardware platform. Here, we report a nanoporous vertical organic synaptic transistor based on a highly diluted P3HT:PC61BM (100:1) blend that enables gate-programmable spectral plasticity, allowing reversible electrical switching between wavelength-selective narrowband detection and broadband panchromatic perception. Unlike conventional planar phototransistors, the vertically configured transport architecture spatially decouples optical absorption from electrostatic channel modulation, thereby overcoming the long-standing incompatibility between the thick photoactive layers (1.5 μm) required for charge-collection narrowing and the ultrathin semiconductor channels necessary for efficient gate control. By electrically reshaping the interfacial energy landscape and carrier collection length, gate modulation dynamically regulates the extraction of photogenerated carriers across different penetration depths, producing adaptive spectral responses without altering either the material composition or device structure. Quantitatively, the device achieves a competitive R of 41.7 A/W, a shot-noise-limited D* of 2.7 × 1013 Jones, and an EQE of 8.3 × 103%. Beyond spectral reconfigurability, the thick active layer naturally introduces persistent photoconductivity arising from trap-mediated carrier relaxation, enabling biologically analogous excitatory postsynaptic current generation together with paired-pulse facilitation (reaching an index of 290%), spike-number-, spike-duration-, and spike-intensity-dependent plasticity, as well as programmable transitions from short-term to long-term plasticity. These multidimensional synaptic dynamics provide intrinsic temporal information processing directly at the sensor level, eliminating the need for separate sensing and memory units. Furthermore, experimentally acquired synaptic conductance characteristics are integrated into convolutional neural networks through a hardware–algorithm codesign strategy to emulate adaptive retinal signal preprocessing. System-level simulations demonstrate that electrically programmable spectral weighting significantly improves both broadband image recognition and monochromatic color discrimination by dynamically matching spectral perception to different visual tasks. This work establishes a general strategy for integrating adaptive spectral sensing, electrically programmable phototransistors, and neuromorphic information processing within a unified vertical organic transistor architecture, providing a versatile materials platform for intelligent optoelectronic systems.",
+      "tldr": "A nanoporous vertical organic synaptic transistor enables gate-programmable switching between narrowband and broadband spectral perception while providing synaptic plasticity for adaptive neuromorphic vision.",
+      "affiliations": [
+        "Beijing Jiaotong University , , ,"
+      ],
+      "score": 7.8261,
+      "relevance_percentile": 61.97,
+      "score_components": {
+        "top_k": 0.7817,
+        "cluster": 0.8023,
+        "recent": 0.7554
+      },
+      "topics": [
+        "Semiconductors",
+        "Materials",
+        "AI & Computation"
+      ],
+      "seen_date": "2026-10-11",
+      "recommendation_status": "new",
+      "previous_recommended_at": null,
+      "key": "doi:10.1021/acsami.6c14764",
+      "first_seen": "2026-10-11",
+      "last_seen": "2026-10-11",
+      "seen_dates": [
+        "2026-10-11"
+      ],
+      "recommendations_by_date": {
+        "2026-10-11": {
+          "recommendation_status": "new",
+          "previous_recommended_at": null
+        }
+      }
+    },
+    {
+      "title": "Charge Storage and Dark Photocatalysis in Multivariate Ti‐Based Metal‐Organic Frameworks",
+      "authors": [
+        "Julia E. Knapp",
+        "Bibhuti Bhusan Rath",
+        "Borja Ortín‐Rubio",
+        "Lukas Bauder",
+        "Kristina Gjorgjevikj",
+        "Saunak Das",
+        "Mariia Ferree",
+        "Frédéric Laquai",
+        "Lorenzo Tesi",
+        "Bettina Baumgartner",
+        "Simon Krause",
+        "Bettina V. Lotsch"
+      ],
+      "journal": "Advanced Materials",
+      "source": "Crossref",
+      "doi": "10.1002/adma.75312",
+      "arxiv_id": null,
+      "published_at": "2026-10-09",
+      "article_url": "https://doi.org/10.1002/adma.75312",
+      "pdf_url": "https://advanced.onlinelibrary.wiley.com/doi/pdf/10.1002/adma.75312",
+      "code_url": null,
+      "abstract": "ABSTRACT “Dark photocatalysis” decouples electron storage from photoconversion, offering a promising route to buffer solar intermittency, however requiring precise control of light‐matter interactions. Metal–organic frameworks (MOFs) provide a platform to tailor these interactions at the molecular level through judicious selection of organic linkers and interconnected metal nodes. This study advances design principles for dark photocatalysis by integrating two linkers with complementary light‐interaction roles in a multivariate (MTV) COK‐47 series. Varying the ratio between biphenyl dicarboxylate ( biph ) and bipyridine dicarboxylate ( bipy ) linker shows that under continuous irradiation (365 nm), COK‐47 biph is the most photocatalytically active member, surpassing COK‐47 bipy by threefold. In contrast, COK‐47 bipy exhibits an eightfold increase in photocharging capacity, revealed by a multispectroscopic approach, evidencing the formation of Ti 3+ and reduced linker species as storage unit. The stored charges drive methyl viologen (MV) reduction and H 2 evolution in the dark. Notably, the mixed‐linker material COK‐47 50‐50 combines both advantages, delivering near‐maximal H 2 production under illumination while retaining substantial charge storage capability, achieving the highest MV reduction activity and second‐highest dark H 2 evolution in the series. These findings connect framework composition to light‐matter interaction, charge storage capacity, catalytic activity, and establish a design strategy for multifunctional dark photocatalytic materials.",
+      "tldr": "Tuning the biphenyl/bipyridine linker ratio in multivariate Ti-based COK-47 MOFs reveals a trade-off between photocatalytic activity and charge storage, with the 50–50 mixed-linker material combining both for efficient dark photocatalysis (MV reduction and H₂ evolution).",
+      "affiliations": [
+        "Max Planck Institute for Solid State Research Stuttgart Germany",
+        "Department of Chemistry University of Stuttgart Stuttgart Germany",
+        "Institute of Physical Chemistry University of Stuttgart Stuttgart Germany",
+        "Center for Integrated Quantum Science and Technology (IQST) Stuttgart Germany",
+        "Department of Chemistry University of Ulm Ulm Germany",
+        "Chair of Physical Chemistry and Spectroscopy of Energy Materials Department of Chemistry Ludwig‐Maximilians‐Universität Munich Munich Germany",
+        "Van ’t Hoff Institute for Molecular Sciences University of Amsterdam Amsterdam the Netherlands",
+        "Department of Chemistry Ludwig‐Maximilians‐Universität Munich Munich Germany",
+        "Cluster of Excellence e‐conversion and Center for Nanoscience Garching Germany"
+      ],
+      "score": 7.808,
+      "relevance_percentile": 60.56,
+      "score_components": {
+        "top_k": 0.7758,
+        "cluster": 0.804,
+        "recent": 0.7587
+      },
+      "topics": [
+        "Electrochemistry",
+        "Semiconductors",
+        "Materials"
+      ],
+      "seen_date": "2026-10-11",
+      "recommendation_status": "new",
+      "previous_recommended_at": null,
+      "key": "doi:10.1002/adma.75312",
+      "first_seen": "2026-10-11",
+      "last_seen": "2026-10-11",
+      "seen_dates": [
+        "2026-10-11"
+      ],
+      "recommendations_by_date": {
+        "2026-10-11": {
+          "recommendation_status": "new",
+          "previous_recommended_at": null
+        }
+      }
+    },
+    {
+      "title": "Sparse Electromagnetic-Compatibility Flexible Electrodes for High-Accuracy, Fast-Recognition Human–Computer Interfaces",
+      "authors": [
+        "Jiayu Xiang",
+        "Yongjie Lei",
+        "Kang Chen",
+        "Bowen Wang",
+        "Haopeng Liu",
+        "Qi Ge",
+        "Kostya S. Novoselov",
+        "Yafeng Liu"
+      ],
+      "journal": "ACS Applied Materials &amp; Interfaces",
+      "source": "Crossref",
+      "doi": "10.1021/acsami.6c12862",
+      "arxiv_id": null,
+      "published_at": "2026-10-12",
+      "article_url": "https://doi.org/10.1021/acsami.6c12862",
+      "pdf_url": "https://pubs.acs.org/aamick/article-pdf/doi/10.1021/acsami.6c12862/68812602/am-2026-12862p.pdf",
+      "code_url": null,
+      "abstract": "Abstract Surface electromyography (sEMG) gesture recognition technology offers significant potential for enhancing human-computer interaction and rehabilitation engineering by providing an intuitive and noninvasive method of engagement. However, challenges such as electromagnetic interference (EMI), signal feature processing, and adaptability to individual variability remain prevalent. To address these issues, this paper presents a comprehensive framework that encompasses material selection, device design, feature selection algorithms, integration strategies, and system layout to create a skin-integrated electronic system functioning as a wireless control interface between humans and machines. This system features a flexible electrode that incorporates fractal design elements, serpentine structures, honeycomb configurations, and multilayer graphene, along with an efficient feature selection algorithm grounded in data dispersion principles. It is characterized by enhanced resistance to EMI, conformal attachment capabilities, rapid motion recognition, and high accuracy. Our work stands out with a dramatically higher shielding efficiency of 99.98% and a classification accuracy rate of 97.8%. This methodology significantly enhances the performance of sEMG-based human-computer interfaces, emphasizing rapid recognition speeds and high accuracy in real-time applications such as remote-control systems and virtual reality environments, thereby broadening its applicability across diverse contexts.",
+      "tldr": "The authors develop an EMI-resistant flexible sEMG electrode system combining graphene-based fractal/serpentine/honeycomb structures and a dispersion-based feature-selection algorithm, achieving 99.98% shielding efficiency and 97.8% recognition accuracy for fast, high-accuracy human–computer interfaces.",
+      "affiliations": [
+        "Southwest University , , ,",
+        "Institute for Functional Intelligent Materials, National University of Singapore , ,",
+        "Chongqing 2D Materials Institute , ,"
+      ],
+      "score": 7.7998,
+      "relevance_percentile": 59.15,
+      "score_components": {
+        "top_k": 0.7707,
+        "cluster": 0.8065,
+        "recent": 0.7636
+      },
+      "topics": [
+        "Battery",
+        "Materials"
+      ],
+      "seen_date": "2026-10-11",
+      "recommendation_status": "new",
+      "previous_recommended_at": null,
+      "key": "doi:10.1021/acsami.6c12862",
+      "first_seen": "2026-10-11",
+      "last_seen": "2026-10-11",
+      "seen_dates": [
+        "2026-10-11"
+      ],
+      "recommendations_by_date": {
+        "2026-10-11": {
+          "recommendation_status": "new",
+          "previous_recommended_at": null
+        }
+      }
+    },
     {
       "title": "Ni/NiO Heterointerface-Induced Built-In Electric Field Directs Charge Redistribution and LiF-Rich SEI for Stable Lithium Metal Batteries",
       "authors": [
