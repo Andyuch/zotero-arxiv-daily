@@ -89,7 +89,7 @@ That's all! Now you can test the workflow by manually triggering it:
 
 Then check the log and the receiver email after it finishes.
 
-By default, the main workflow runs on 22:00 UTC everyday. You can change this time by editting the workflow config `.github/workflows/main.yml`.
+By default, the main workflow is scheduled for 20:17 UTC every day. The non-zero minute avoids GitHub's busiest top-of-hour scheduling boundary. You can change this time by editing `.github/workflows/main.yml`.
 
 ### Local Running
 Supported by [uv](https://github.com/astral-sh/uv), this workflow can easily run on your local device if uv is installed:
@@ -161,7 +161,7 @@ The separate `recommendation-history.json` still controls the 7-day delivered
 recommendation cooldown; ingestion history and recommendation history serve
 different purposes.
 
-The production job remains at 22:00 UTC. At that time it is before the next
+The production job is scheduled at 20:17 UTC. That remains before the next
 20:00 Eastern arXiv announcement, so the visible arXiv feed and the completed
 Crossref literature day stay aligned. The ±2 h overlap catches ordinary
 boundary/visibility jitter near 20:00 ET without reverting to a multi-day journal
@@ -219,7 +219,7 @@ node --check site/assets/app.js
 - `own_branch`: personal work, preserved unchanged.
 - `upstream`: unmodified snapshot of `TideDra/zotero-arxiv-daily`'s `main`.
 
-The daily workflow on the default branch runs at 22:00 UTC, checks out `main`,
+The daily workflow on the default branch is scheduled at 20:17 UTC, checks out `main`,
 and commits archive updates back to `main`. GitHub Pages deploys that archive
 after a successful daily run. Crossref follows the completed arXiv-clock day
 with a ±2 h boundary overlap filtered by the ingestion ledger; the 7-day
