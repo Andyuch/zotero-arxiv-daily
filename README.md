@@ -36,6 +36,7 @@
 - AI-generated TL;DR for you to quickly pick up target papers.
 - Affiliations of the paper are resolved and presented.
 - Links of PDF and code implementation (if any) presented in the e-mail.
+- Share the same daily digest with multiple recipients without exposing the recipient list.
 - List of papers sorted by relevance with your recent research interest.
 - Fast deployment via fork this repo and set environment variables in the Github Action Page.
 - Support LLM API for generating TL;DR of papers.
@@ -63,7 +64,7 @@ Below are all the secrets you need to set. They are invisible to anyone includin
 | SMTP_PORT | ✅ | int | The port of SMTP server. | 465 |
 | SENDER | ✅ | str | The email account of the SMTP server that sends you email. | abc@qq.com |
 | SENDER_PASSWORD | ✅ | str | The password of the sender account. Note that it's not necessarily the password for logging in the e-mail client, but the authentication code for SMTP service. Ask your email provider for this.   | abcdefghijklmn |
-| RECEIVER | ✅ | str | The e-mail address that receives the paper list. | abc@outlook.com |
+| RECEIVER | ✅ | str | One or more e-mail addresses that receive the same paper list. Separate addresses with commas, semicolons, or newlines. Recipients are delivered privately via the SMTP envelope, so the list is not exposed in the message headers. | abc@outlook.com, colleague@example.com |
 | MAX_PAPER_NUM | | int | The maximum number of the papers presented in the email. This value directly affects the execution time of this workflow, because it takes about 70s to generate TL;DR for one paper. `-1` means to present all the papers retrieved. | 50 |
 | SEND_EMPTY | | bool | Whether to send an empty email even if no new papers today. | False |
 | USE_LLM_API | | bool | Whether to use the LLM API in the cloud or to use local LLM. If set to `1`, the API is used. Else if set to `0`, the workflow will download and deploy an open-source LLM. Default to `0`. | 0 |
@@ -88,6 +89,8 @@ That's all! Now you can test the workflow by manually triggering it:
 > The Test-Workflow Action is the debug version of the main workflow (Send-emails-daily), which always retrieve 5 arxiv papers regardless of the date. While the main workflow will be automatically triggered everyday and retrieve new papers released yesterday. There is no new arxiv paper at weekends and holiday, in which case you may see "No new papers found" in the log of main workflow.
 
 Then check the log and the receiver email after it finishes.
+
+To share the digest, keep `RECEIVER` as a GitHub Actions secret and append additional addresses there, for example `you@example.com, colleague@example.com`. Do not commit recipient addresses into the public repository.
 
 By default, the main workflow is scheduled for 20:17 UTC every day. The non-zero minute avoids GitHub's busiest top-of-hour scheduling boundary. You can change this time by editing `.github/workflows/main.yml`.
 
