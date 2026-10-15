@@ -131,8 +131,61 @@ class EmailTests(unittest.TestCase):
         rendered = self.block(recommendation_status='repeat_highlight', previous_recommended_at='<script>alert(1)</script>')
         self.assertNotIn('<script>', rendered)
 
+    def test_receiver_parser_accepts_common_separators_and_deduplicates(self):
+        parsed = self.email.parse_receivers(
+            'one@example.invalid, TWO@example.invalid; one@example.invalid\nthree@example.invalid'
+        )
+        self.assertEqual(parsed, [
+            'one@example.invalid',
+            'TWO@example.invalid',
+            'three@example.invalid',
+        ])
+
+    def test_receiver_parser_rejects_empty_or_invalid_list(self):
+        with self.assertRaises(ValueError):
+            self.email.parse_receivers(' , ; not-an-email ')
+
+    def test_multi_recipient_delivery_hides_recipient_list(self):
+        smtp = MagicMock()
+        smtp.sendmail.return_value = {}
+        with patch.object(self.email.smtplib, 'SMTP', return_value=smtp), \
+             patch.object(self.email.smtplib, 'SMTP_SSL') as fallback:
+            refused = self.email.send_email(
+                'sender@example.invalid',
+                'first@example.invalid; second@example.invalid',
+                'fake-test-secret',
+                'smtp.example.invalid',
+                587,
+                '<p>test</p>',
+            )
+        self.assertEqual(refused, {})
+        args = smtp.sendmail.call_args.args
+        self.assertEqual(args[1], ['first@example.invalid', 'second@example.invalid'])
+        self.assertIn('To: undisclosed-recipients:;', args[2])
+        self.assertNotIn('first@example.invalid', args[2])
+        self.assertNotIn('second@example.invalid', args[2])
+        fallback.assert_not_called()
+
+    def test_partial_recipient_refusal_does_not_retry_accepted_recipients(self):
+        smtp = MagicMock()
+        smtp.sendmail.return_value = {
+            'second@example.invalid': (550, b'rejected'),
+        }
+        with patch.object(self.email.smtplib, 'SMTP', return_value=smtp):
+            refused = self.email.send_email(
+                'sender@example.invalid',
+                'first@example.invalid,second@example.invalid',
+                'fake-test-secret',
+                'smtp.example.invalid',
+                587,
+                '<p>test</p>',
+            )
+        self.assertEqual(list(refused), ['second@example.invalid'])
+        smtp.sendmail.assert_called_once()
+
     def test_smtp_acceptance_survives_quit_disconnect(self):
         smtp = MagicMock()
+        smtp.sendmail.return_value = {}
         smtp.quit.side_effect = self.email.smtplib.SMTPServerDisconnected('QUIT disconnected')
         with patch.object(self.email.smtplib, 'SMTP', return_value=smtp), \
              patch.object(self.email.smtplib, 'SMTP_SSL') as fallback:
