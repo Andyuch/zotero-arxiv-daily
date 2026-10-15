@@ -291,10 +291,10 @@ def send_email(sender:str, receiver:str, password:str,smtp_server:str,smtp_port:
     refused = server.sendmail(sender, recipients, msg.as_string())
     if refused:
         logger.warning(
-            "SMTP accepted the digest for {} recipient(s), but refused {}: {}",
+            "SMTP accepted the digest for {} recipient(s), but refused {} recipient(s). "
+            "Recipient addresses are intentionally omitted from logs.",
             len(recipients) - len(refused),
             len(refused),
-            ", ".join(sorted(refused)),
         )
     else:
         logger.info("SMTP accepted the digest for {} recipient(s).", len(recipients))
