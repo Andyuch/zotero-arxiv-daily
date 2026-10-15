@@ -3,7 +3,7 @@ import html
 from tqdm import tqdm
 from email.header import Header
 from email.mime.text import MIMEText
-from email.utils import parseaddr, formataddr
+from email.utils import getaddresses, parseaddr, formataddr
 import smtplib
 import datetime
 import time
@@ -56,7 +56,7 @@ framework = """
 
 <br><br>
 <div>
-To unsubscribe, remove your email in your Github Action setting.
+To stop receiving this digest, please contact the sender.
 </div>
 
 </body>
@@ -240,14 +240,42 @@ def render_email(papers:list):
     content = '<br>' + '</br><br>'.join(parts) + '</br>'
     return framework.replace('__CONTENT__', content)
 
+def parse_receivers(receiver: str) -> list[str]:
+    """Parse comma/semicolon/newline-separated recipients and remove duplicates."""
+    raw = (receiver or "").replace(";", ",").replace("\n", ",")
+    parsed = getaddresses([raw])
+
+    recipients: list[str] = []
+    seen: set[str] = set()
+    for _, addr in parsed:
+        addr = addr.strip()
+        # Keep validation deliberately conservative without adding a dependency.
+        # SMTP remains the final authority on whether a mailbox is deliverable.
+        if not addr or "@" not in addr or any(ch in addr for ch in "\r\n"):
+            continue
+        key = addr.casefold()
+        if key in seen:
+            continue
+        seen.add(key)
+        recipients.append(addr)
+
+    if not recipients:
+        raise ValueError("RECEIVER must contain at least one valid email address")
+    return recipients
+
+
 def send_email(sender:str, receiver:str, password:str,smtp_server:str,smtp_port:int, html:str,):
     def _format_addr(s):
         name, addr = parseaddr(s)
         return formataddr((Header(name, 'utf-8').encode(), addr))
 
+    recipients = parse_receivers(receiver)
+
     msg = MIMEText(html, 'html', 'utf-8')
     msg['From'] = _format_addr('Github Action <%s>' % sender)
-    msg['To'] = _format_addr('You <%s>' % receiver)
+    # Do not expose the mailing list to recipients. Envelope recipients are
+    # supplied separately to SMTP, equivalent to BCC delivery.
+    msg['To'] = 'undisclosed-recipients:;'
     today = datetime.datetime.now().strftime('%Y/%m/%d')
     msg['Subject'] = Header(f'Daily Research Papers {today}', 'utf-8').encode()
 
@@ -260,7 +288,17 @@ def send_email(sender:str, receiver:str, password:str,smtp_server:str,smtp_port:
         server = smtplib.SMTP_SSL(smtp_server, smtp_port)
 
     server.login(sender, password)
-    server.sendmail(sender, [receiver], msg.as_string())
+    refused = server.sendmail(sender, recipients, msg.as_string())
+    if refused:
+        logger.warning(
+            "SMTP accepted the digest for {} recipient(s), but refused {}: {}",
+            len(recipients) - len(refused),
+            len(refused),
+            ", ".join(sorted(refused)),
+        )
+    else:
+        logger.info("SMTP accepted the digest for {} recipient(s).", len(recipients))
+
     # DATA acceptance is the delivery boundary. A QUIT disconnect must not
     # discard the successful-send history or encourage a duplicate retry.
     try:
@@ -271,3 +309,5 @@ def send_email(sender:str, receiver:str, password:str,smtp_server:str,smtp_port:
             server.close()
         except (smtplib.SMTPException, OSError):
             pass
+
+    return refused
