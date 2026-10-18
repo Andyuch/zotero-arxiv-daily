@@ -1,7 +1,11 @@
 {
-  "generated_at": "2026-10-17T22:30:44.614673+00:00",
-  "paper_count": 524,
+  "generated_at": "2026-10-18T22:35:58.761265+00:00",
+  "paper_count": 554,
   "days": [
+    {
+      "date": "2026-10-18",
+      "count": 30
+    },
     {
       "date": "2026-10-17",
       "count": 30
@@ -116,6 +120,1619 @@
     "Spectroscopy"
   ],
   "papers": [
+    {
+      "title": "Spatially Decoupled Charge Compensation Enables Versatile Cation–Anion Co‐Intercalation in Layered Metal Oxide Cathodes",
+      "authors": [
+        "Huabin Kong",
+        "Jianxin Ou",
+        "Lei Fang",
+        "Chuangchuang Duan",
+        "Xuanbing Chen",
+        "Yancheng Chen",
+        "Siying Chen",
+        "Le Yang",
+        "Xianji Qiao",
+        "Fuda Yu",
+        "Yanbin Shen",
+        "Liwei Chen",
+        "Hongwei Chen"
+      ],
+      "journal": "Advanced Materials",
+      "source": "Crossref",
+      "doi": "10.1002/adma.75440",
+      "arxiv_id": null,
+      "published_at": "2026-10-16",
+      "article_url": "https://doi.org/10.1002/adma.75440",
+      "pdf_url": "https://advanced.onlinelibrary.wiley.com/doi/pdf/10.1002/adma.75440",
+      "code_url": null,
+      "abstract": "ABSTRACT Multivalent cation–anion co‐(de)intercalation offers a promising pathway to higher energy densities in multivalent ion batteries. However, its practical realization is challenged by lattice strain and the lack of effective dual charge‐compensation strategies. Here, we report a layered vanadium oxide cathode with pre‐intercalated melamine ligands (MeVO) that enables a spatially decoupled charge‐compensation mechanism—organic ligands serve as redox centers for anions, while metal sites accommodate multivalent cation redox. This design alleviates electrostatic crowding, promotes ion mobility, and preserves structural integrity. Using Mg 2 + ‐TFSI − as a representative system, MeVO delivers a record cycle life of over 36 000 cycles at a loading of approximately 3 mg cm − 2 and an areal capacity of 3.3 mAh cm − 2 at a higher loading of 16.4 mg cm − 2 , surpassing leading Mg‐ion cathodes. The hybrid structure also supports co‐(de)intercalation of various multivalent cations and anions, demonstrating its potential as a versatile intercalation platform for high‐performance energy storage.",
+      "tldr": "Pre-intercalating melamine ligands into layered vanadium oxide spatially decouples anion and multivalent-cation redox, enabling versatile cation–anion co-intercalation with long cycle life and high areal capacity in multivalent-ion batteries.",
+      "affiliations": [
+        "College of Materials Science and Engineering Huaqiao University Xiamen Fujian China",
+        "College of Mechanical Engineering and Automation Huaqiao University Xiamen Fujian China",
+        "CAS Center for Excellence in Nanoscience Suzhou Institute of Nano‐Tech and Nano‐Bionics (SINANO) Chinese Academy of Sciences Suzhou Jiangsu China",
+        "School of Chemistry and Chemical Engineering In‐Situ Center for Physical Sciences Shanghai Electrochemical Energy Device Research Center (SEED) Shanghai Jiao Tong University Shanghai China"
+      ],
+      "score": 8.4629,
+      "relevance_percentile": 100.0,
+      "score_components": {
+        "top_k": 0.8377,
+        "cluster": 0.8635,
+        "recent": 0.8418
+      },
+      "topics": [
+        "Battery",
+        "Electrochemistry",
+        "Semiconductors",
+        "Materials"
+      ],
+      "seen_date": "2026-10-18",
+      "recommendation_status": "new",
+      "previous_recommended_at": null,
+      "key": "doi:10.1002/adma.75440",
+      "first_seen": "2026-10-18",
+      "last_seen": "2026-10-18",
+      "seen_dates": [
+        "2026-10-18"
+      ],
+      "recommendations_by_date": {
+        "2026-10-18": {
+          "recommendation_status": "new",
+          "previous_recommended_at": null
+        }
+      }
+    },
+    {
+      "title": "Mechanistic Insights into the Colloidal Synthesis of Monodisperse CoF2 Nanorods",
+      "authors": [
+        "Liwei Dai",
+        "Henry McCollom",
+        "Albert Xiao",
+        "Mauro Pasta"
+      ],
+      "journal": "Chemistry of Materials",
+      "source": "Crossref",
+      "doi": "10.1021/acs.chemmater.6c02062",
+      "arxiv_id": null,
+      "published_at": "2026-10-17",
+      "article_url": "https://doi.org/10.1021/acs.chemmater.6c02062",
+      "pdf_url": "https://pubs.acs.org/doi/pdf/10.1021/acs.chemmater.6c02062",
+      "code_url": null,
+      "abstract": "Abstract Transition metal fluorides (TMFs) are promising conversion-type cathode materials for high-energy lithium–metal batteries owing to their exceptionally high theoretical energy density, making them attractive for demanding applications such as electric aviation. However, their practical implementation is hindered by sluggish conversion kinetics, pronounced voltage hysteresis, and poor electrochemical reversibility. Understanding the structural and chemical evolution of TMFs and the electrode–electrolyte interphase formed during cycling is essential for improving their performance. Monodisperse nanocrystalline TMFs are ideal model systems for high-resolution transmission electron microscopy because their uniform size, morphology, and electron transparency enable representative nanoscale characterization. Here, we investigate a reproducible colloidal synthesis of monodisperse, single-crystalline CoF2 nanorods and elucidate the mechanisms governing their formation to achieve precise control over particle size and aspect ratio. By independently varying reaction time, temperature, precursor composition, and ligand chemistry, we identify the key factors controlling precursor decomposition, burst nucleation, phase selection, and anisotropic crystal growth. These insights provide a transferable framework for the controlled synthesis of a broad range of transition metal fluoride nanocrystals.",
+      "tldr": "This study reveals the mechanistic factors controlling precursor decomposition, nucleation, phase selection, and anisotropic growth in the colloidal synthesis of monodisperse single-crystalline CoF₂ nanorods, enabling precise size/aspect-ratio tuning and providing a transferable framework for other transition metal fluoride nanocrystals.",
+      "affiliations": [
+        "University of Oxford , , Parks Road , ,"
+      ],
+      "score": 8.3439,
+      "relevance_percentile": 98.25,
+      "score_components": {
+        "top_k": 0.8223,
+        "cluster": 0.8703,
+        "recent": 0.8109
+      },
+      "topics": [
+        "Battery",
+        "Electrochemistry",
+        "Microscopy",
+        "Semiconductors"
+      ],
+      "seen_date": "2026-10-18",
+      "recommendation_status": "new",
+      "previous_recommended_at": null,
+      "key": "doi:10.1021/acs.chemmater.6c02062",
+      "first_seen": "2026-10-18",
+      "last_seen": "2026-10-18",
+      "seen_dates": [
+        "2026-10-18"
+      ],
+      "recommendations_by_date": {
+        "2026-10-18": {
+          "recommendation_status": "new",
+          "previous_recommended_at": null
+        }
+      }
+    },
+    {
+      "title": "A Multifunctional Phosphate-Containing Acrylic Monomer Enabling LiNO3 Solvation in a Flame-Retardant Gel Polymer Electrolyte for Lithium Metal Batteries",
+      "authors": [
+        "Tianqi Xiang",
+        "Xiao Liu",
+        "Lijun Ma",
+        "Dongwei Yan",
+        "Fengquan Liu",
+        "Hong Huo",
+        "Jianjun Zhou",
+        "Lin Li"
+      ],
+      "journal": "ACS Applied Materials &amp; Interfaces",
+      "source": "Crossref",
+      "doi": "10.1021/acsami.6c15572",
+      "arxiv_id": null,
+      "published_at": "2026-10-19",
+      "article_url": "https://doi.org/10.1021/acsami.6c15572",
+      "pdf_url": "https://pubs.acs.org/aamick/article-pdf/doi/10.1021/acsami.6c15572/68896347/am-2026-15572h.pdf",
+      "code_url": null,
+      "abstract": "Abstract The wide application of lithium metal batteries is still hindered by several challenges, such as lithium dendrite growth, cathode degradation, and electrolyte flammability. Herein, a multifunctional phosphate-containing acrylic ester monomer (DMPMA) is designed to simultaneously address these issues by integrating LiNO3 solvation, in situ gelation, and intrinsic flame retardancy within a single carbonate-based electrolyte platform. DMPMA promotes LiNO3 dissolution through strong Li+-phosphate coordination, bringing NO3– into the innermost solvation sheath for inorganic-rich interphase formation. In situ polymerization yields a gel polymer electrolyte (GPE-N) that suppresses solvent evaporation, raises the Li+ transference number to 0.62, and widens the electrochemical stability window. The resulting electrolyte enables stable Li plating/stripping for over 1000 h, delivers 97.6% capacity retention in LiNi0.6Co0.2Mn0.2O2||Li full cells after 300 cycles, and exhibits immediate self-extinguishing behavior with enhanced pouch-cell safety. Spectroscopic and structural analyses reveal that the polymer framework redirects LiPF6 decomposition toward a protective LiF/LixPOyFz-rich cathode interphase, suppressing transition-metal dissolution and lattice distortion. This work establishes a molecular-to-interphase design paradigm in which solvation regulation, interfacial stabilization, and safety enhancement all originate from a single structural motif.",
+      "tldr": "A phosphate-containing acrylic monomer (DMPMA) enables LiNO₃ solvation and in situ gelation in a carbonate electrolyte, creating a flame-retardant gel polymer electrolyte that stabilizes Li-metal and cathode interfaces, enhances Li⁺ transport, and improves cycling stability and safety in lithium metal batteries.",
+      "affiliations": [
+        "Beijing Normal University , , ,",
+        "Tianjin Guoan Mengguli New Materials Science & Technology Co., Ltd. , ,",
+        "Shanxi University , , ,",
+        "Qingdao University , , ,"
+      ],
+      "score": 8.3318,
+      "relevance_percentile": 96.49,
+      "score_components": {
+        "top_k": 0.824,
+        "cluster": 0.8533,
+        "recent": 0.8261
+      },
+      "topics": [
+        "Battery",
+        "Electrochemistry",
+        "Semiconductors",
+        "Materials"
+      ],
+      "seen_date": "2026-10-18",
+      "recommendation_status": "new",
+      "previous_recommended_at": null,
+      "key": "doi:10.1021/acsami.6c15572",
+      "first_seen": "2026-10-18",
+      "last_seen": "2026-10-18",
+      "seen_dates": [
+        "2026-10-18"
+      ],
+      "recommendations_by_date": {
+        "2026-10-18": {
+          "recommendation_status": "new",
+          "previous_recommended_at": null
+        }
+      }
+    },
+    {
+      "title": "Nonflammable sulfamoyl–carbonate hybrid electrolyte for high-voltage lithium batteries via preemptive passivation",
+      "authors": [
+        "Hun Kim",
+        "Jae-Min Kim",
+        "Yo-Han Yang",
+        "Xiaosheng Song",
+        "Dong-Gun Koo",
+        "Kang Xu",
+        "Yang-Kook Sun"
+      ],
+      "journal": "Nature Communications",
+      "source": "Crossref",
+      "doi": "10.1038/s41467-026-78701-8",
+      "arxiv_id": null,
+      "published_at": "2026-10-17",
+      "article_url": "https://doi.org/10.1038/s41467-026-78701-8",
+      "pdf_url": null,
+      "code_url": null,
+      "abstract": "Abstract Achieving high energy density without compromising safety remains a significant challenge for advanced batteries. Nonflammable electrolytes can mitigate fire risk, but poor bulk and interfacial properties of such electrolytes limit their application. Here, a nonflammable sulfamoyl–carbonate electrolyte was developed, achieving a self-extinguishing time of ~0 s and stable cycling in both lithium metal and lithium-ion batteries under high-voltage conditions. The electrolyte comprising lithium hexafluorophosphate dissolved in dimethylsulfamoyl fluoride, fluoroethylene carbonate, and ethyl methyl carbonate at low concentration establishes a weakly solvating environment, wherein dimethylsulfamoyl fluoride and fluoroethylene carbonate preferentially contribute to stabilize the positive and negative electrodes, while working together to enhance the rate capability, low-temperature performance, and long-term cycling at high-voltage. Accelerating rate calorimetry revealed a delayed thermal runaway onset by 87 °C, correlating with Broadness Index. These findings suggest that preemptive passivation on both electrodes, when coupled with nonflammable electrolyte design, can provide a viable route toward safe, high-energy lithium batteries.",
+      "tldr": "A nonflammable sulfamoyl–carbonate hybrid electrolyte forms a weakly solvating environment that preemptively passivates both electrodes, enabling stable high-voltage lithium metal and lithium-ion cycling while delaying thermal runaway by 87 °C.",
+      "affiliations": [],
+      "score": 8.2695,
+      "relevance_percentile": 94.74,
+      "score_components": {
+        "top_k": 0.8197,
+        "cluster": 0.8433,
+        "recent": 0.8205
+      },
+      "topics": [
+        "Battery"
+      ],
+      "seen_date": "2026-10-18",
+      "recommendation_status": "new",
+      "previous_recommended_at": null,
+      "key": "doi:10.1038/s41467-026-78701-8",
+      "first_seen": "2026-10-18",
+      "last_seen": "2026-10-18",
+      "seen_dates": [
+        "2026-10-18"
+      ],
+      "recommendations_by_date": {
+        "2026-10-18": {
+          "recommendation_status": "new",
+          "previous_recommended_at": null
+        }
+      }
+    },
+    {
+      "title": "Analysis of the Topology of a Plasmonic Target-Skyrmion Texture",
+      "authors": [
+        "Alexander Neuhaus",
+        "Pascal Dreher",
+        "Philipp Gessler",
+        "Bettina Frank",
+        "Timothy J. Davis",
+        "Harald Giessen",
+        "Karin Everschor-Sitte",
+        "Frank-J. Meyer zu Heringdorf"
+      ],
+      "journal": "ACS Photonics",
+      "source": "Crossref",
+      "doi": "10.1021/acsphotonics.6c01729",
+      "arxiv_id": null,
+      "published_at": "2026-10-17",
+      "article_url": "https://doi.org/10.1021/acsphotonics.6c01729",
+      "pdf_url": "https://pubs.acs.org/doi/pdf/10.1021/acsphotonics.6c01729",
+      "code_url": null,
+      "abstract": "Abstract Topological concepts are frequently used to describe structured optical fields, including plasmonic near fields. Topological descriptions in terms of skyrmion numbers implicitly assume the compactness of the underlying manifold. While this concept works for constrained fields due to inherent integration boundaries, compactness is usually not fulfilled in extended optical fields. Here, we use time-resolved polarimetric photoemission microscopy to determine the electric field vectors of a surface plasmon polariton nanofocus on Au(111) with deep sub-wavelength spatial and sub-fs temporal resolution. The surface plasmon polaritons were excited with circularly polarized light at an Archimedean spiral that was milled into the Au surface by a focused ion beam. The full vectorial field information provided by polarimetric PEEM allows for a spatiotemporal analysis of the skyrmion number of the field texture. At a fixed time, the skyrmion number oscillates as a function of the radius. Furthermore, the skyrmion number oscillates in time. The experimental findings are compared to analytical calculations that lead to the same conclusion: a global skyrmion number cannot be assigned in such non-compact fields. Our results reveal the limitations of the skyrmion number for optical fields and motivate the search for new topological invariants suited for optical fields.",
+      "tldr": "Using time-resolved polarimetric photoemission microscopy, the authors show that a plasmonic nanofocus has a skyrmion number that oscillates with radius and time, so no global skyrmion number can be assigned to such non-compact optical fields, highlighting the need for new topological invariants.",
+      "affiliations": [
+        "University of Duisburg-Essen , , ,",
+        "University of Stuttgart , , ,",
+        "University of Melbourne , , Parkville , ,"
+      ],
+      "score": 8.2335,
+      "relevance_percentile": 92.98,
+      "score_components": {
+        "top_k": 0.8317,
+        "cluster": 0.8395,
+        "recent": 0.7784
+      },
+      "topics": [
+        "Microscopy"
+      ],
+      "seen_date": "2026-10-18",
+      "recommendation_status": "new",
+      "previous_recommended_at": null,
+      "key": "doi:10.1021/acsphotonics.6c01729",
+      "first_seen": "2026-10-18",
+      "last_seen": "2026-10-18",
+      "seen_dates": [
+        "2026-10-18"
+      ],
+      "recommendations_by_date": {
+        "2026-10-18": {
+          "recommendation_status": "new",
+          "previous_recommended_at": null
+        }
+      }
+    },
+    {
+      "title": "Data-Driven Flipping Engineering for High Thermal Anisotropy in Janus Two-Dimensional Materials",
+      "authors": [
+        "Xin Wu",
+        "Ting Liang",
+        "Weitao Wang",
+        "Jiangjiang Ma",
+        "Zheyong Fan",
+        "Jianbin Xu",
+        "Sebastian Volz",
+        "Masahiro Nomura"
+      ],
+      "journal": "ACS Nano",
+      "source": "Crossref",
+      "doi": "10.1021/acsnano.6c07922",
+      "arxiv_id": null,
+      "published_at": "2026-10-17",
+      "article_url": "https://doi.org/10.1021/acsnano.6c07922",
+      "pdf_url": "https://pubs.acs.org/ancac3/article-pdf/doi/10.1021/acsnano.6c07922/68896205/acsnano.6c07922.pdf",
+      "code_url": null,
+      "abstract": "Abstract The vertical integration of heterogeneous dies in three-dimensional integrated circuits demands materials with extreme thermal anisotropy to dissipate heat in-plane while suppressing cross-plane leakage. Randomly twisted van der Waals stacks can enhance anisotropy, but their stochastic nature lacks precise control. Here, we report flipping engineering in Janus MoSSe stacks, exploiting the intrinsic asymmetry between the S–Mo–Se and Se–Mo–S terminations as a programmable structural degree of freedom orthogonal to twisting. By integrating machine-learned potential molecular dynamics with Bayesian optimization for a 14-layer MoSSe stack, we identify a structure with strongly suppressed effective cross-plane thermal conductivity of 0.082 ± 0.002 W m–1 K–1 at 300 K while maintaining robust in-plane conduction, yielding an anisotropy ratio of about 760 and 35% higher than the crystalline reference. This effect arises from flipping-induced breaking of stacking periodicity, which perturbs midfrequency phonons (2–8 THz) and leads to band splitting and nearly flat, layer-localized modes. These changes reduce the cross-plane propagating channels and thus weaken their contribution to thermal transport, while their impact on in-plane transport dominated by low-frequency acoustic phonons is negligible. Flipping engineering thus provides programmable stacking-sequence strategy and a versatile route for designing anisotropic properties in layered materials.",
+      "tldr": "By using data-driven flipping engineering of Janus MoSSe stacks—combined with machine-learned potentials and Bayesian optimization—researchers achieved an extreme thermal anisotropy ratio of ~760 by suppressing cross-plane phonon transport while preserving in-plane conduction.",
+      "affiliations": [
+        "The University of Tokyo , , ,",
+        "The Chinese University of Hong Kong , , Shatin, N.T. , ,",
+        "Shanxi Normal University , , ,",
+        "Bohai University , , ,"
+      ],
+      "score": 8.2162,
+      "relevance_percentile": 91.23,
+      "score_components": {
+        "top_k": 0.8207,
+        "cluster": 0.8551,
+        "recent": 0.7737
+      },
+      "topics": [
+        "Materials",
+        "AI & Computation"
+      ],
+      "seen_date": "2026-10-18",
+      "recommendation_status": "new",
+      "previous_recommended_at": null,
+      "key": "doi:10.1021/acsnano.6c07922",
+      "first_seen": "2026-10-18",
+      "last_seen": "2026-10-18",
+      "seen_dates": [
+        "2026-10-18"
+      ],
+      "recommendations_by_date": {
+        "2026-10-18": {
+          "recommendation_status": "new",
+          "previous_recommended_at": null
+        }
+      }
+    },
+    {
+      "title": "Zr-based oxyhalide superionic electrolyte with self-passivating interphase stabilisation for high-voltage and fast-charging all-solid-state lithium batteries",
+      "authors": [
+        "Zongnan Li",
+        "Yongbiao Mu",
+        "Yuxun Xia",
+        "Ting Yang",
+        "Zhepei Yan",
+        "Yafeng Li",
+        "Longyuan Guo",
+        "Lin Zeng",
+        "Xueliang Sun",
+        "Mingdeng Wei"
+      ],
+      "journal": "Nature Communications",
+      "source": "Crossref",
+      "doi": "10.1038/s41467-026-78813-1",
+      "arxiv_id": null,
+      "published_at": "2026-10-17",
+      "article_url": "https://doi.org/10.1038/s41467-026-78813-1",
+      "pdf_url": null,
+      "code_url": null,
+      "abstract": "",
+      "tldr": "Abstract unavailable from publisher metadata; open the article for details.",
+      "affiliations": [],
+      "score": 8.1931,
+      "relevance_percentile": 89.47,
+      "score_components": {
+        "top_k": 0.8108,
+        "cluster": 0.8392,
+        "recent": 0.8108
+      },
+      "topics": [
+        "Battery",
+        "Electrochemistry"
+      ],
+      "seen_date": "2026-10-18",
+      "recommendation_status": "new",
+      "previous_recommended_at": null,
+      "key": "doi:10.1038/s41467-026-78813-1",
+      "first_seen": "2026-10-18",
+      "last_seen": "2026-10-18",
+      "seen_dates": [
+        "2026-10-18"
+      ],
+      "recommendations_by_date": {
+        "2026-10-18": {
+          "recommendation_status": "new",
+          "previous_recommended_at": null
+        }
+      }
+    },
+    {
+      "title": "Plasmonic Coupling within Atomically Precise Nanocluster Dimers for Engineering Hot-Carrier Generation and Molecular Activation",
+      "authors": [
+        "Khushboo Bhardwaj",
+        "Samir Kumar Nayak",
+        "Pramod K. Verma",
+        "Sharma S. R. K. C. Yamijala"
+      ],
+      "journal": "Nano Letters",
+      "source": "Crossref",
+      "doi": "10.1021/acs.nanolett.6c03672",
+      "arxiv_id": null,
+      "published_at": "2026-10-17",
+      "article_url": "https://doi.org/10.1021/acs.nanolett.6c03672",
+      "pdf_url": "https://pubs.acs.org/doi/pdf/10.1021/acs.nanolett.6c03672",
+      "code_url": null,
+      "abstract": "Abstract Activating the exceptionally strong N≡N bond remains a fundamental challenge due to the chemical inertness of molecular nitrogen (N2). Plasmonic nanoclusters offer a promising approach by generating localized electromagnetic fields and energetic hot carriers that can drive bond activation under ambient conditions. Here, we combine real-time time-dependent density functional theory with Ehrenfest molecular dynamics to reveal how plasmonic coupling between tetrahedral Ag20 nanoclusters governs N2 activation and dissociation. Systematic variation of the intercluster separation shows that a 6 Å nanogap maximizes near-field enhancement and hot-electron transfer to the adsorbed N2, accompanied by N–N activation. Consequently, N2 dissociation is achieved at incident field strengths as low as 0.5 V Å–1, whereas larger-gap dimers exhibit substantially lower activity. Similarly, isolated N2 remains intact under comparable conditions. These findings establish nanogap engineering as an effective strategy for optimizing plasmon-driven N2 activation and provide design principles for developing efficient plasmonic catalysts.",
+      "tldr": "A 6 Å nanogap between tetrahedral Ag20 nanocluster dimers maximizes plasmonic near-field enhancement and hot-electron transfer, enabling N₂ activation and dissociation at low incident field strengths and providing design principles for plasmonic N₂ catalysts.",
+      "affiliations": [
+        "Indian Institute of Technology Madras , , ,"
+      ],
+      "score": 8.1073,
+      "relevance_percentile": 87.72,
+      "score_components": {
+        "top_k": 0.8039,
+        "cluster": 0.8302,
+        "recent": 0.7985
+      },
+      "topics": [
+        "Semiconductors",
+        "AI & Computation"
+      ],
+      "seen_date": "2026-10-18",
+      "recommendation_status": "new",
+      "previous_recommended_at": null,
+      "key": "doi:10.1021/acs.nanolett.6c03672",
+      "first_seen": "2026-10-18",
+      "last_seen": "2026-10-18",
+      "seen_dates": [
+        "2026-10-18"
+      ],
+      "recommendations_by_date": {
+        "2026-10-18": {
+          "recommendation_status": "new",
+          "previous_recommended_at": null
+        }
+      }
+    },
+    {
+      "title": "Exciplex-Facilitated Charge Extraction and Defect Chelation to Improve Inorganic Perovskite Solar Cells",
+      "authors": [
+        "Tianxiang Zhou",
+        "Wenshi Zhao",
+        "Rui Li",
+        "Qiyong Chen",
+        "Kuo Wang",
+        "Guiyong Yin",
+        "Hongcan Yu",
+        "Qi Zhang",
+        "Xianghan Feng",
+        "Dong Liang",
+        "Yang Liu",
+        "Qingwen Tian",
+        "Shengzhong (Frank) Liu"
+      ],
+      "journal": "ACS Energy Letters",
+      "source": "Crossref",
+      "doi": "10.1021/acsenergylett.6c01037",
+      "arxiv_id": null,
+      "published_at": "2026-10-17",
+      "article_url": "https://doi.org/10.1021/acsenergylett.6c01037",
+      "pdf_url": "https://pubs.acs.org/aelccp/article-pdf/doi/10.1021/acsenergylett.6c01037/68896795/nz-2026-01037x.pdf",
+      "code_url": null,
+      "abstract": "Abstract Rational molecular engineering of the perovskite/hole transport layer interface offers a promising route to simultaneously address inefficient charge extraction, defect-mediated recombination, and lead leakage in CsPbI3–xBrx perovskite solar cells. Herein, we introduce 2,2′-dinitro-9,9′-spirobifluorene (DN-SBF) as an interfacial molecular bridge to tackle these challenges. DN-SBF optimizes energy level alignment, establishes π–π interactions, and forms exciplexes with Spiro-OMeTAD, thereby facilitating interfacial charge transport. Meanwhile, DN-SBF passivates undercoordinated Pb2+ through multiple coordination modes, including robust bidentate chelation formed by adjacent nitro groups, effectively passivating defects and suppressing non-radiative recombination. Importantly, multipoint coordination immobilizes leachable Pb2+, substantially mitigating lead leakage and improving film biocompatibility. As a result, DN-SBF-engineered CsPbI3–xBrx devices achieve a champion power conversion efficiency of 22.40% along with significantly enhanced operational and environmental stability. This work highlights the potential of versatile molecular bridges to concurrently enhance performance, stability, and eco-friendliness, which may contribute to the development of more sustainable perovskite photovoltaics.",
+      "tldr": "An interfacial DN-SBF molecular bridge improves CsPbI3–xBrx perovskite solar cells by forming exciplexes with Spiro-OMeTAD to enhance charge extraction and chelating Pb2+ defects to suppress recombination and lead leakage, enabling a 22.40% efficiency with improved stability and biocompatibility.",
+      "affiliations": [
+        "Shaanxi Normal University , , ,",
+        "Jilin Normal University , , ,",
+        "Shanghai University , , ,",
+        "Chinese Academy of Sciences Dalian , , ,",
+        "University of Chinese Academy of Sciences , , ,"
+      ],
+      "score": 8.0822,
+      "relevance_percentile": 85.96,
+      "score_components": {
+        "top_k": 0.822,
+        "cluster": 0.805,
+        "recent": 0.7786
+      },
+      "topics": [
+        "Semiconductors"
+      ],
+      "seen_date": "2026-10-18",
+      "recommendation_status": "new",
+      "previous_recommended_at": null,
+      "key": "doi:10.1021/acsenergylett.6c01037",
+      "first_seen": "2026-10-18",
+      "last_seen": "2026-10-18",
+      "seen_dates": [
+        "2026-10-18"
+      ],
+      "recommendations_by_date": {
+        "2026-10-18": {
+          "recommendation_status": "new",
+          "previous_recommended_at": null
+        }
+      }
+    },
+    {
+      "title": "Ultralow-Threshold NIR AgAuSe Colloidal Quantum Dot Laser",
+      "authors": [
+        "Ziyan Zhang",
+        "Yuhua Chen",
+        "Hongchao Yang",
+        "Yejun Zhang",
+        "Jiang Jiang",
+        "Yuliang Zhao",
+        "Xingwang Zhang",
+        "Qiangbin Wang"
+      ],
+      "journal": "Nano Letters",
+      "source": "Crossref",
+      "doi": "10.1021/acs.nanolett.6c04105",
+      "arxiv_id": null,
+      "published_at": "2026-10-17",
+      "article_url": "https://doi.org/10.1021/acs.nanolett.6c04105",
+      "pdf_url": "https://pubs.acs.org/nalefd/article-pdf/doi/10.1021/acs.nanolett.6c04105/68896119/acs.nanolett.6c04105.pdf",
+      "code_url": null,
+      "abstract": "Abstract Solution-processable quantum dot (QD) lasers are essential for next-generation integrated photonic circuits, ranging, and optical sensing. However, their practical deployment remains hampered by high lasing thresholds. Here, we report AgAuSe QD lasing with a record-low threshold of 0.01 μJ cm–2 at 900 nm, representing a reduction of more than 4 orders of magnitude compared to those of previous near-infrared (NIR) QD lasing reports. This achievement is enabled by a well-designed twisted-lattice photonic crystal (PhC) nanocavity delivering extreme light confinement with an ultrahigh quality (Q) factor. The extended photon lifetime reduces the required gain volume, enabling lasing from a single-layer self-assembled QD superlattice (SL), which minimizes scattering losses. Crucially, the robust system allows us to push the operational regime to quasi-continuous-wave (q-CW) lasing at room temperature. These results establish a new benchmark for solution-processed NIR QD sources and provide a technologically viable pathway for sustained CW operation.",
+      "tldr": "Researchers achieved record-low-threshold near-infrared lasing (0.01 μJ cm⁻² at 900 nm) from AgAuSe colloidal quantum dots using a high-Q twisted-lattice photonic crystal nanocavity and single-layer superlattice, enabling room-temperature quasi-continuous-wave operation.",
+      "affiliations": [
+        "University of Science and Technology of China , , ,",
+        "Chinese Academy of Sciences , , ,",
+        "ShanghaiTech University , , ,",
+        "University of Chinese Academy of Sciences , , ,"
+      ],
+      "score": 8.0502,
+      "relevance_percentile": 84.21,
+      "score_components": {
+        "top_k": 0.8115,
+        "cluster": 0.8304,
+        "recent": 0.7508
+      },
+      "topics": [
+        "Spectroscopy",
+        "Materials"
+      ],
+      "seen_date": "2026-10-18",
+      "recommendation_status": "new",
+      "previous_recommended_at": null,
+      "key": "doi:10.1021/acs.nanolett.6c04105",
+      "first_seen": "2026-10-18",
+      "last_seen": "2026-10-18",
+      "seen_dates": [
+        "2026-10-18"
+      ],
+      "recommendations_by_date": {
+        "2026-10-18": {
+          "recommendation_status": "new",
+          "previous_recommended_at": null
+        }
+      }
+    },
+    {
+      "title": "Plasmon-Enhanced Ultraviolet–Visible Dual-Band Photodetection in Self-Powered 2D/3D MoS2/ZnO Heterojunctions",
+      "authors": [
+        "Peiye Yan",
+        "Minju Ying",
+        "Cai Luo",
+        "Yi Wang",
+        "Enbo Gao",
+        "Tianci Hu",
+        "Jian Zhao",
+        "Sen Chen",
+        "Yuan Qi",
+        "Mingfeng Li",
+        "Tong Ye",
+        "Baoli Liu",
+        "Xiaofeng Fan",
+        "Changzhi Gu",
+        "Yang Guo"
+      ],
+      "journal": "ACS Applied Materials &amp; Interfaces",
+      "source": "Crossref",
+      "doi": "10.1021/acsami.6c13860",
+      "arxiv_id": null,
+      "published_at": "2026-10-19",
+      "article_url": "https://doi.org/10.1021/acsami.6c13860",
+      "pdf_url": "https://pubs.acs.org/aamick/article-pdf/doi/10.1021/acsami.6c13860/68896338/am-2026-138608.pdf",
+      "code_url": null,
+      "abstract": "Abstract The intrinsically weak light absorption of monolayer MoS2 limits its photoresponse and remains a major obstacle to its application in high-performance photodetectors. Here, we report a Au-grating-integrated 2D/3D MoS2/ZnO heterojunction photodetector that combines self-powered ultraviolet–visible (UV–Vis) detection with enhanced visible-light response and polarization sensitivity. The MoS2/ZnO heterojunction provides complementary UV–Vis absorption and a built-in electric field for self-powered operation. The integrated 1D Au grating induces localized surface plasmon resonance, selectively enhancing the visible-light absorption of monolayer MoS2, as confirmed by both FDTD simulations and experiments. Under 633 nm illumination, the grating-integrated device achieves a responsivity of 1.85 × 10–1 mA/W, corresponding to a nearly order-of-magnitude enhancement over the pristine heterojunction. The anisotropic grating further enables polarization-dependent photodetection, with a TM/TE responsivity ratio of 3.8. This work demonstrates that plasmonic integration is an effective strategy for enhancing light–matter interaction while enabling additional functionalities in 2D/3D heterojunction photodetectors.",
+      "tldr": "A Au-grating-integrated 2D/3D MoS2/ZnO heterojunction enables self-powered UV–Vis photodetection with plasmon-enhanced visible responsivity (~0.185 mA/W at 633 nm, nearly 10× enhancement) and polarization sensitivity (TM/TE ≈ 3.8).",
+      "affiliations": [
+        "Beijing Normal University , , ,",
+        "Institute of Physics, Chinese Academy of Sciences , , ,",
+        "Jilin University , , ,",
+        "University of Chinese Academy of Sciences , , ,"
+      ],
+      "score": 7.9933,
+      "relevance_percentile": 82.46,
+      "score_components": {
+        "top_k": 0.8023,
+        "cluster": 0.824,
+        "recent": 0.7548
+      },
+      "topics": [
+        "Semiconductors",
+        "AI & Computation"
+      ],
+      "seen_date": "2026-10-18",
+      "recommendation_status": "new",
+      "previous_recommended_at": null,
+      "key": "doi:10.1021/acsami.6c13860",
+      "first_seen": "2026-10-18",
+      "last_seen": "2026-10-18",
+      "seen_dates": [
+        "2026-10-18"
+      ],
+      "recommendations_by_date": {
+        "2026-10-18": {
+          "recommendation_status": "new",
+          "previous_recommended_at": null
+        }
+      }
+    },
+    {
+      "title": "Spatially resolving isomeric trisaccharides on surfaces with Orbitrap-SIMS",
+      "authors": [
+        "Margaret Moloney",
+        "Richard Paterson",
+        "Bin Yan",
+        "Anya Eyres",
+        "Clare L. Newell",
+        "Jean-Luc Vorng",
+        "Alexander Pirkl",
+        "John F. Watts",
+        "Ian S. Gilmore",
+        "Gustavo F. Trindade"
+      ],
+      "journal": "Nature Communications",
+      "source": "Crossref",
+      "doi": "10.1038/s41467-026-78604-8",
+      "arxiv_id": null,
+      "published_at": "2026-10-17",
+      "article_url": "https://doi.org/10.1038/s41467-026-78604-8",
+      "pdf_url": null,
+      "code_url": null,
+      "abstract": "Abstract Many biologically important molecules are structural isomers that share the same molecular mass yet differ in shape, bonding and function. This creates an ambiguity for mass spectrometry imaging (MSI), where chemically distinct species can be indistinguishable on the mass-to-charge ( m/z) scale and therefore cannot be reliably mapped in heterogeneous materials. Here we demonstrate that Orbitrap secondary ion mass spectrometry (OrbiSIMS) can provide an orthogonal contrast that enables both identification and spatial separation of isomeric molecules directly on surfaces. By exploiting structure-dependent secondary-ion dissociation and gas-phase collisional effects during ion transmission, we discriminate isomeric trisaccharides raffinose, maltotriose and melezitose and spatially resolve raffinose and maltotriose in mixtures. We benchmark these measurements against ion mobility spectrometry and observe consistent trends between OrbiSIMS transmission behaviour and ion mobility separation. These results establish OrbiSIMS as an approach for isomer-resolved MSI at surfaces and interfaces, opening opportunities to map isomeric biomolecules in complex systems where spatial distribution is central to function.",
+      "tldr": "Orbitrap-SIMS can identify and spatially resolve surface isomeric trisaccharides by exploiting structure-dependent secondary-ion dissociation and collisional effects, enabling isomer-resolved mass spectrometry imaging.",
+      "affiliations": [],
+      "score": 7.9907,
+      "relevance_percentile": 80.7,
+      "score_components": {
+        "top_k": 0.7904,
+        "cluster": 0.8262,
+        "recent": 0.7801
+      },
+      "topics": [
+        "Microscopy",
+        "Materials"
+      ],
+      "seen_date": "2026-10-18",
+      "recommendation_status": "new",
+      "previous_recommended_at": null,
+      "key": "doi:10.1038/s41467-026-78604-8",
+      "first_seen": "2026-10-18",
+      "last_seen": "2026-10-18",
+      "seen_dates": [
+        "2026-10-18"
+      ],
+      "recommendations_by_date": {
+        "2026-10-18": {
+          "recommendation_status": "new",
+          "previous_recommended_at": null
+        }
+      }
+    },
+    {
+      "title": "Ultra-Sensitive Battery-Free Wireless Humidity Sensor for Real-Time Diaper Monitoring",
+      "authors": [
+        "Jun-Woo Lee",
+        "Hyejun Kim",
+        "Jong Ho Won",
+        "Yeonjae Yang",
+        "Jinsu Park",
+        "Sun-Woo Jang",
+        "Seok-Hun Kim",
+        "Minseok Kim",
+        "Sunghoon Kim",
+        "Yuan-Bo Zhang",
+        "Jie Wei",
+        "Weon Ho Shin",
+        "Kanghee Won",
+        "Jeonghyun Kim",
+        "Jong-Min Oh"
+      ],
+      "journal": "ACS Applied Materials &amp; Interfaces",
+      "source": "Crossref",
+      "doi": "10.1021/acsami.6c13704",
+      "arxiv_id": null,
+      "published_at": "2026-10-19",
+      "article_url": "https://doi.org/10.1021/acsami.6c13704",
+      "pdf_url": "https://pubs.acs.org/aamick/article-pdf/doi/10.1021/acsami.6c13704/68895927/am-2026-13704j.pdf",
+      "code_url": null,
+      "abstract": "Abstract Wearable healthcare systems require humidity sensors that integrate exceptional sensitivity with robust environmental stability and biocompatible materials. However, most reported sensors exhibit compromised response kinetics at high sensitivity. Here, we report a high-performance, lead-free humidity sensing platform based on Cs3Bi2Br9/BaTiO3 composite films, engineered via a solvent-free aerosol deposition method. By modulating the inorganic percolative networks, the optimized 5 wt % Cs3Bi2Br9 sensor achieves remarkable sensitivity of 9002.6 pF/%RH and a rapid recovery time of 5 s. The high-permittivity BaTiO3 matrix enhances interfacial polarization and serves as a robust moisture-barrier framework, extending the sensor’s operational stability to over 15 days. To demonstrate system-level utility, the sensor was integrated with a battery-free NFC platform for real-time, wireless diaper monitoring, showcasing robust signal transduction and reliability in healthcare settings. This study presents a scalable, eco-friendly strategy for developing multifunctional perovskite composites, providing a viable pathway for next-generation, self-powered health-monitoring technologies.",
+      "tldr": "A lead-free Cs₃Bi₂Br₉/BaTiO₃ composite humidity sensor fabricated by solvent-free aerosol deposition achieves ultrahigh sensitivity, fast recovery, and long-term stability, enabling battery-free NFC-based real-time wireless diaper monitoring.",
+      "affiliations": [
+        "Kwangwoon University , , 20 Kwangwoon-ro, Nowon-gu , ,",
+        "Dankook University , , 119 Dandae-ro, Dongnam-gu , , ,",
+        "Kyung Hee University , , 26 Kyungheedae-ro, Dongdaemun-gu , ,",
+        "Dong-Eui University , , 176 Eomgwang-ro, Busanjun-gu , ,",
+        "Harbin Institute of Technology , , ,"
+      ],
+      "score": 7.9416,
+      "relevance_percentile": 78.95,
+      "score_components": {
+        "top_k": 0.78,
+        "cluster": 0.8287,
+        "recent": 0.7777
+      },
+      "topics": [
+        "Battery",
+        "Semiconductors",
+        "Materials"
+      ],
+      "seen_date": "2026-10-18",
+      "recommendation_status": "new",
+      "previous_recommended_at": null,
+      "key": "doi:10.1021/acsami.6c13704",
+      "first_seen": "2026-10-18",
+      "last_seen": "2026-10-18",
+      "seen_dates": [
+        "2026-10-18"
+      ],
+      "recommendations_by_date": {
+        "2026-10-18": {
+          "recommendation_status": "new",
+          "previous_recommended_at": null
+        }
+      }
+    },
+    {
+      "title": "Confining chlorine in the cation solvation sheaths towards stable and sustainable seawater electrolysis",
+      "authors": [
+        "Peng-Cheng Yu",
+        "Ye-Hua Wang",
+        "Xiao-Long Zhang",
+        "Shu-Ping Sun",
+        "Tao Fang",
+        "Xu-Ying-Nan Tao",
+        "Yu Yang",
+        "Jie Liao",
+        "Ye-Cheng Li",
+        "Zhuang-Zhuang Niu",
+        "Mei Sun",
+        "Ming-Hui Fan",
+        "Shou-Jie Liu",
+        "Fei-Yue Gao",
+        "Min-Rui Gao"
+      ],
+      "journal": "Nature Communications",
+      "source": "Crossref",
+      "doi": "10.1038/s41467-026-78207-3",
+      "arxiv_id": null,
+      "published_at": "2026-10-17",
+      "article_url": "https://doi.org/10.1038/s41467-026-78207-3",
+      "pdf_url": null,
+      "code_url": null,
+      "abstract": "Abstract Chlorine electro-oxidation represents the primary anode side reaction during direct seawater electrolysis, causing corrosion and permanent deactivation of catalyst and thereby insufficient stability. We report that in situ segregated fluorine can actuate the desolvation of cations and Cl − ions via strong H ∙ ∙ ∙ F bonding, leading to the formation of intimate cation-Cl − contact ion pairs that make Cl − migration toward electrode surface prohibited. Meanwhile, fluorine remaining in the cobalt-based catalyst shortens the Co–Co distance, attributable to its large electronegativity, triggering an oxide path mechanism that circumvents the nonideal scaling between OH * and OOH * during oxygen-evolving reaction. Direct seawater electrolysis (with 1 M NaOH) incorporating this catalyst achieves 1 ampere per square centimeter (A cm −2 ) at 1.7 volts and maintains at 0.5 A cm −2 and 60 °C over 2,450 hours degrading at 24.9 microvolts per hour. Our catalyst even survives repeatedly switched current densities (0.25, 0.5, and 1 A cm −2 ) for more than 1,250 hours, manifesting compatibility with fluctuating renewable electricity.",
+      "tldr": "Fluorine segregated in situ within a cobalt-based catalyst confines Cl⁻ in cation–Cl⁻ contact ion pairs and shortens Co–Co bonds, suppressing chlorine oxidation and steering oxygen evolution to enable highly stable direct seawater electrolysis at ampere-level current densities for thousands of hours.",
+      "affiliations": [],
+      "score": 7.9293,
+      "relevance_percentile": 77.19,
+      "score_components": {
+        "top_k": 0.7828,
+        "cluster": 0.8206,
+        "recent": 0.7767
+      },
+      "topics": [
+        "Battery",
+        "Materials"
+      ],
+      "seen_date": "2026-10-18",
+      "recommendation_status": "new",
+      "previous_recommended_at": null,
+      "key": "doi:10.1038/s41467-026-78207-3",
+      "first_seen": "2026-10-18",
+      "last_seen": "2026-10-18",
+      "seen_dates": [
+        "2026-10-18"
+      ],
+      "recommendations_by_date": {
+        "2026-10-18": {
+          "recommendation_status": "new",
+          "previous_recommended_at": null
+        }
+      }
+    },
+    {
+      "title": "Reversible Ferroelastic Strain Engineering Enables Stabilization of a Hidden Ga2O3 Polymorph",
+      "authors": [
+        "Zijun Qi",
+        "Zhanpeng Sun",
+        "Rui Li",
+        "Qijun Wang",
+        "Jingyuan Ni",
+        "Sheng Liu",
+        "Wei Shen",
+        "Gai Wu"
+      ],
+      "journal": "ACS Nano",
+      "source": "Crossref",
+      "doi": "10.1021/acsnano.6c12416",
+      "arxiv_id": null,
+      "published_at": "2026-10-17",
+      "article_url": "https://doi.org/10.1021/acsnano.6c12416",
+      "pdf_url": "https://pubs.acs.org/ancac3/article-pdf/doi/10.1021/acsnano.6c12416/68896232/acsnano.6c12416.pdf",
+      "code_url": null,
+      "abstract": "Abstract Understanding the formation, transformation, and stabilization of metastable polymorphs in functional compounds is a central challenge in materials science and has a profound impact on phase engineering and property control. Ga2O3 is an ultrawide bandgap semiconductor whose rich polymorphism underpins diverse electronic and optoelectronic functionalities, motivating continued exploration of its metastable phases. Among the known Ga2O3 polymorphs, the P1̅-phase has been predicted to have the closest energy to the thermodynamically stable β-phase; however, its existence has not been definitively identified experimentally, and feasible preparation routes remain unclear up to now. Here, combining large-scale molecular dynamics simulations with a high-accuracy machine learning potential, we reveal a reversible strain-induced ferroelastic β–P1̅ phase transition in Ga2O3 and further investigate the origin of instability of P1̅-Ga2O3. Our work not only explains the absence of experimental observations of P1̅-Ga2O3 from the perspectives of mechanical stability and crystallization kinetics but also extends the application of strain engineering in phase transitions of wide-bandgap semiconductor single-crystal materials.",
+      "tldr": "Using machine-learning-potential molecular dynamics, the authors show that reversible ferroelastic strain can drive a β–P1̅ phase transition in Ga2O3 and help stabilize the hidden P1̅ polymorph, explaining why it has been difficult to observe experimentally.",
+      "affiliations": [
+        "Wuhan University , , ,",
+        "University of Illinois Urbana−Champaign , , , ,",
+        "Wuhan University Shenzhen Research Institute , ,"
+      ],
+      "score": 7.9069,
+      "relevance_percentile": 75.44,
+      "score_components": {
+        "top_k": 0.7829,
+        "cluster": 0.8216,
+        "recent": 0.7637
+      },
+      "topics": [
+        "Semiconductors",
+        "Materials",
+        "AI & Computation"
+      ],
+      "seen_date": "2026-10-18",
+      "recommendation_status": "new",
+      "previous_recommended_at": null,
+      "key": "doi:10.1021/acsnano.6c12416",
+      "first_seen": "2026-10-18",
+      "last_seen": "2026-10-18",
+      "seen_dates": [
+        "2026-10-18"
+      ],
+      "recommendations_by_date": {
+        "2026-10-18": {
+          "recommendation_status": "new",
+          "previous_recommended_at": null
+        }
+      }
+    },
+    {
+      "title": "Memcapacitive-Dominated Reservoir Computing with Self-Organizing Nanowire Networks",
+      "authors": [
+        "Haochen Wang",
+        "Zuheng Wu",
+        "Wenbin Guo",
+        "Zihao Wang",
+        "Yunxia Hao",
+        "Wei Wang",
+        "Xumeng Zhang",
+        "Xiaolong Zhao",
+        "Jian Lu",
+        "Rongrong Cao",
+        "Jianxun Zou",
+        "Zhe Feng",
+        "Yunlai Zhu",
+        "Zuyu Xu",
+        "Lihua Xu",
+        "Wendong Lu",
+        "Yuehua Dai"
+      ],
+      "journal": "ACS Applied Materials &amp; Interfaces",
+      "source": "Crossref",
+      "doi": "10.1021/acsami.6c12382",
+      "arxiv_id": null,
+      "published_at": "2026-10-19",
+      "article_url": "https://doi.org/10.1021/acsami.6c12382",
+      "pdf_url": "https://pubs.acs.org/aamick/article-pdf/doi/10.1021/acsami.6c12382/68895930/am-2026-12382t.pdf",
+      "code_url": null,
+      "abstract": "Abstract Nanowire networks have emerged as a promising platform for physical reservoir computing. However, networks based on memristive switching exhibit inherent limitations in dynamical richness and short-term memory capacity. Memcapacitors are expected to overcome these dynamical constraints through their topology-dependent dynamics. In this work, inspired by the distributed processing of neural systems, we endow Ag nanowire networks with memcapacitive properties via a temperature-modulated fabrication process, realizing a multi-path channel-dependent reservoir system with richer reservoir dynamics and establishing its circuit model. Benefiting from its memcapacitive nature, the system exhibits channel-specific responses and approximate linear superposition, enabling parallel and spontaneous fusion of multi-input signals with controllable and predictable behavior. This allows input states to expand exponentially with channel count. Leveraging this capability, we designed a multi-threshold encoding scheme that generates 256 highly separable states within four time steps while consuming only 18.98 pJ/pulse. This approach reduces the information loss inherent in conventional binarization and delivers over 94% accuracy on a compressed MNIST recognition task, demonstrating a potent strategy for high-performance neuromorphic edge computing.",
+      "tldr": "By engineering Ag nanowire networks to be memcapacitive, this work creates a multi-channel reservoir-computing system with richer, predictable dynamics and efficient multi-input fusion, enabling low-energy multi-threshold encoding and >94% accuracy on compressed MNIST recognition for neuromorphic edge computing.",
+      "affiliations": [
+        "Anhui University , , , ,",
+        "National University of Defense Technology , , , ,",
+        "Fudan University , , ,",
+        "University of Science and Technology of China , , , ,"
+      ],
+      "score": 7.8075,
+      "relevance_percentile": 73.68,
+      "score_components": {
+        "top_k": 0.774,
+        "cluster": 0.8088,
+        "recent": 0.7556
+      },
+      "topics": [
+        "Semiconductors",
+        "AI & Computation"
+      ],
+      "seen_date": "2026-10-18",
+      "recommendation_status": "new",
+      "previous_recommended_at": null,
+      "key": "doi:10.1021/acsami.6c12382",
+      "first_seen": "2026-10-18",
+      "last_seen": "2026-10-18",
+      "seen_dates": [
+        "2026-10-18"
+      ],
+      "recommendations_by_date": {
+        "2026-10-18": {
+          "recommendation_status": "new",
+          "previous_recommended_at": null
+        }
+      }
+    },
+    {
+      "title": "Coplanar Dual-Side-Gated One-Dimensional Van der Waals Materials for Reconfigurable Logic Circuits",
+      "authors": [
+        "Wei Gan",
+        "Qiaoqiao Ye",
+        "Jingyao Zhang",
+        "Zhen Wang",
+        "Li Song",
+        "Xiaolong Zhao",
+        "Zhiheng Liu",
+        "Yi Gong",
+        "Hui Li",
+        "Chuanqiang Wu",
+        "Xue Liu"
+      ],
+      "journal": "ACS Applied Materials &amp; Interfaces",
+      "source": "Crossref",
+      "doi": "10.1021/acsami.6c15155",
+      "arxiv_id": null,
+      "published_at": "2026-10-19",
+      "article_url": "https://doi.org/10.1021/acsami.6c15155",
+      "pdf_url": "https://pubs.acs.org/aamick/article-pdf/doi/10.1021/acsami.6c15155/68896292/am-2026-15155h.pdf",
+      "code_url": null,
+      "abstract": "Abstract The ongoing miniaturization and function diversification of the Internet of Things (IoT) devices necessitate a paradigm shift beyond the inherent constraints of conventional complementary metal-oxide-semiconductor (CMOS) technology. Although reconfigurable devices represent a compelling alternative, their widespread implementation remains obstructed by the architectural complexity and stringent nanofabrication processes. Herein, we report a coplanar dual-side-gate (SG) reconfigurable logic gate constructed from typical one-dimensional (1D) van der Waals materials (vdWM), including n-type Ta2Pd3Se8 and Nb2Pd1–xSe5, and p-type Ta2Pt3Se8. Leveraging its outstanding electrostatic tunability and superior gate control efficiency, we achieve precise carrier-density modulation within a single 1D vdWM device. Remarkably, this single device is capable of performing six fundamental Boolean logic operations: AND, NAND, OR, NOR, XNOR, and INHIBIT. In contrast to traditional CMOS implementations, this strategy could reduce the required transistor count and enhance integration density. Furthermore, we extend the functionality of this platform to reconfigurable multi-valued logic (RMVL) and cryptographic applications, demonstrating robust ASCII code translation as well as secure QR code encryption and decryption via XNOR-based logic. These findings highlight the potential of coplanar dual-SG devices based on 1D vdWM as a viable routine toward next-generation multifunctional and reconfigurable integrated circuits.",
+      "tldr": "A coplanar dual-side-gated one-dimensional van der Waals device enables precise carrier-density tuning in a single transistor to perform six Boolean logic functions and reconfigurable multi-valued logic/encryption, offering a simpler, higher-density route beyond CMOS.",
+      "affiliations": [
+        "Anhui University , , ,",
+        "University of Science and Technology of China , , ,",
+        "China-Europe Electronic Materials International Innovation Center (Hefei) Co., Ltd. , ,",
+        "Shanghai Institute of Technical Physics, Chinese Academy of Sciences , , ,",
+        "Zhejiang Institute of Photonelectronics , , ,"
+      ],
+      "score": 7.7436,
+      "relevance_percentile": 71.93,
+      "score_components": {
+        "top_k": 0.7778,
+        "cluster": 0.7875,
+        "recent": 0.7459
+      },
+      "topics": [
+        "Semiconductors",
+        "Materials"
+      ],
+      "seen_date": "2026-10-18",
+      "recommendation_status": "new",
+      "previous_recommended_at": null,
+      "key": "doi:10.1021/acsami.6c15155",
+      "first_seen": "2026-10-18",
+      "last_seen": "2026-10-18",
+      "seen_dates": [
+        "2026-10-18"
+      ],
+      "recommendations_by_date": {
+        "2026-10-18": {
+          "recommendation_status": "new",
+          "previous_recommended_at": null
+        }
+      }
+    },
+    {
+      "title": "Rationally micropatterned antifogging hydrogels counteracting extreme condensation",
+      "authors": [
+        "Hyunchul Park",
+        "Cheuk Wing Edmond Lam",
+        "Iwan Haechler",
+        "Thomas M. Schutzius",
+        "Dimos Poulikakos"
+      ],
+      "journal": "Nature Communications",
+      "source": "Crossref",
+      "doi": "10.1038/s41467-026-78429-5",
+      "arxiv_id": null,
+      "published_at": "2026-10-17",
+      "article_url": "https://doi.org/10.1038/s41467-026-78429-5",
+      "pdf_url": null,
+      "code_url": null,
+      "abstract": "Abstract Loss of transparency due to water vapor condensation is a widespread problem across diverse applications such as windows, eyewear, displays, vehicles, and kitchenware. Conventional antifogging strategies relying on hydrophilic or hydrophobic coatings, based on chemistry and/or nano-topography, can counteract up to mild water deposition, but lose functionality at excessive condensation environments. Here, we present a passive approach, rationally micropatterning an inherently hydrophilic hydrogel to maintain high transparency under supersaturation. Guided by optics and wetting theory, and employing a diffusion model to calculate related timescales of water film formation, we engineer a wicking structure on poly(ethylene glycol) diacrylate hydrogel, facilitating long-term sustainable filmwise condensation. Employing quantitative optical clarity measurements and visualization, we show that our approach clearly outperforms state-of-the-art antifogging alternatives, retaining high optical clarity even in boiling environments. Facile fabrication and superior performance establish our microstructured hydrogel as an excellent choice for sustaining transparency under extreme condensation.",
+      "tldr": "A rationally micropatterned hydrophilic poly(ethylene glycol) diacrylate hydrogel with a wicking structure sustains filmwise condensation and high optical clarity under extreme supersaturation, outperforming conventional antifogging coatings even in boiling environments.",
+      "affiliations": [],
+      "score": 7.7367,
+      "relevance_percentile": 70.18,
+      "score_components": {
+        "top_k": 0.7645,
+        "cluster": 0.8052,
+        "recent": 0.7494
+      },
+      "topics": [
+        "Other"
+      ],
+      "seen_date": "2026-10-18",
+      "recommendation_status": "new",
+      "previous_recommended_at": null,
+      "key": "doi:10.1038/s41467-026-78429-5",
+      "first_seen": "2026-10-18",
+      "last_seen": "2026-10-18",
+      "seen_dates": [
+        "2026-10-18"
+      ],
+      "recommendations_by_date": {
+        "2026-10-18": {
+          "recommendation_status": "new",
+          "previous_recommended_at": null
+        }
+      }
+    },
+    {
+      "title": "Experimental Design Signatures Emerge from Topic Modeling of Graphene Oxide Literature",
+      "authors": [
+        "Henry J. Kobs",
+        "Henrique Ferreira",
+        "Liu Yang",
+        "Amauri J. Paula",
+        "Carlos E. Andrade",
+        "Andreia F. Faria"
+      ],
+      "journal": "ACS Nano",
+      "source": "Crossref",
+      "doi": "10.1021/acsnano.6c04548",
+      "arxiv_id": null,
+      "published_at": "2026-10-17",
+      "article_url": "https://doi.org/10.1021/acsnano.6c04548",
+      "pdf_url": "https://pubs.acs.org/ancac3/article-pdf/doi/10.1021/acsnano.6c04548/68896191/acsnano.6c04548.pdf",
+      "code_url": null,
+      "abstract": "Abstract The literature on graphene oxide (GO) comprises hundreds of thousands of publications spanning synthesis, characterization, and applications in diverse domains. Advancing GO materials requires a structured knowledge map derived from systematic mining of this extensive corpus. However, extracting meaningful insights from this vast, heterogeneous, sparse, and unstructured data remains a challenge. To address this challenge, Natural Language Processing techniques, including topic modeling, community discovery, and parameter extraction, are here employed to establish a framework. Latent Dirichlet Allocation (LDA) was applied to the full text of more than 120,000 articles, enabling the identification of eight macro-domains within the GO literature, and neural topic modeling was subsequently employed to characterize the granularity and heterogeneity of these domains. Parameter extraction was performed using Large Language Models (LLMs) on a subset of 8000 full-text articles, with a proto-ontology incorporated into the extraction prompt. Even with a broad prompt, an F1 score of 94% was achieved against manual validation. The extracted parameters were then clustered through community modeling and compared with the LDA-derived topics. At this intermediate resolution of the literature, we demonstrate the application of a recommendation system for relevant parameters according to the material family and application domain. The applicability of the framework at higher resolutions was further demonstrated through the construction of a data set of CO2 adsorption for graphene- and GO-based materials. This data set was subsequently employed in a downstream predictive case study using an Extremely Randomized Trees Regressor, with different training-test splitting strategies evaluated to assess in-domain and out-of-domain generalization at article-level resolution.",
+      "tldr": "Using LDA and neural topic modeling on over 120,000 graphene oxide papers plus LLM-based parameter extraction, this study builds a structured knowledge map that identifies eight macro-domains, enables parameter recommendations, and supports a CO2 adsorption dataset for downstream predictive modeling.",
+      "affiliations": [
+        "University of Florida , , , , ,",
+        "Aeronautics Institute of Technology − ITA , , , , ,",
+        "AT&T Laboratories Research , 1405 US Hwy 206 , , , ,"
+      ],
+      "score": 7.7223,
+      "relevance_percentile": 68.42,
+      "score_components": {
+        "top_k": 0.7721,
+        "cluster": 0.7927,
+        "recent": 0.7418
+      },
+      "topics": [
+        "Materials",
+        "AI & Computation"
+      ],
+      "seen_date": "2026-10-18",
+      "recommendation_status": "new",
+      "previous_recommended_at": null,
+      "key": "doi:10.1021/acsnano.6c04548",
+      "first_seen": "2026-10-18",
+      "last_seen": "2026-10-18",
+      "seen_dates": [
+        "2026-10-18"
+      ],
+      "recommendations_by_date": {
+        "2026-10-18": {
+          "recommendation_status": "new",
+          "previous_recommended_at": null
+        }
+      }
+    },
+    {
+      "title": "Topology-Engineered Dual-Functional COFs with Spatially Cooperated Hydrophilic and Photocatalytic Sites for Harvesting Safe Water from Polluted Atmosphere",
+      "authors": [
+        "Meng Zhang",
+        "Pengpeng Shao",
+        "Jia-Xin Liu",
+        "Shan Wang",
+        "Yingying Wei",
+        "Qian-You Wang",
+        "Qinglang Ma",
+        "Bo Wang"
+      ],
+      "journal": "Journal of the American Chemical Society",
+      "source": "Crossref",
+      "doi": "10.1021/jacs.6c16023",
+      "arxiv_id": null,
+      "published_at": "2026-10-17",
+      "article_url": "https://doi.org/10.1021/jacs.6c16023",
+      "pdf_url": "https://pubs.acs.org/jacsat/article-pdf/doi/10.1021/jacs.6c16023/68896011/jacs.6c16023.pdf",
+      "code_url": null,
+      "abstract": "Abstract Atmospheric water harvesting (AWH) has emerged as a promising decentralized solution for freshwater supply in off-grid regions by extracting ubiquitous moisture from the air. However, the atmosphere also carries airborne pathogens and, under extreme scenarios, toxic chemicals, which can be coharvested to contaminate the collected water. Despite extensive efforts to maximize water uptake, the safety of the harvested water has been largely neglected in the pursuit of higher water production yields. Covalent organic frameworks (COFs) provide crystalline, molecularly programmable platforms for integrating water adsorption with photocatalytic detoxification. However, achieving such functional synergy depends on framework topology, which governs site accessibility and mass transport. Here, we report topology-engineered dual-functional COFs that regulate spatial cooperation among hydrophilic sites, photoactive sites, and pore structures in a series of 1D and 2D hydrazone COFs constructed from identical molecular building blocks. Compared to the compact 1D chain packing, the open and continuous channels of the 2D framework increase functional-site accessibility, support hydrogen-bonded water network formation, and facilitate charge-carrier separation and O2 activation. The optimized Por-TAH (2D) exhibits a saturated water uptake of 629 mg g–1, releases 94% of adsorbed water under mild heating, inactivates 99.99% of S. aureus within 1 h, and completely converts chemical agents with high selectivity within 10 min. As a proof-of-concept application, continuous-flow operation demonstrates integrated water harvesting and photocatalytic detoxification, yielding safe water free of detectable mustard gas simulants. This study establishes topology-directed spatial cooperation as a design principle for multifunctional porous materials, enabling safe water production from real contaminated air.",
+      "tldr": "Topology-engineered dual-functional hydrazone COFs with open 2D channels spatially integrate hydrophilic water-adsorption and photocatalytic detoxification sites, enabling efficient atmospheric water harvesting and simultaneous purification to produce safe water from contaminated air.",
+      "affiliations": [
+        "Beijing Institute of Technology , , ,",
+        "Shaanxi Applied Physics and Chemistry Research Institute , , ,",
+        "Central South University , , ,",
+        "Chongqing Advanced Materials Institute , ,",
+        "Zhengzhou Academy of Intelligent Technology , , ,",
+        "Chongqing Innovation Center , , ,"
+      ],
+      "score": 7.5875,
+      "relevance_percentile": 66.67,
+      "score_components": {
+        "top_k": 0.7552,
+        "cluster": 0.7805,
+        "recent": 0.7351
+      },
+      "topics": [
+        "Semiconductors",
+        "Materials"
+      ],
+      "seen_date": "2026-10-18",
+      "recommendation_status": "new",
+      "previous_recommended_at": null,
+      "key": "doi:10.1021/jacs.6c16023",
+      "first_seen": "2026-10-18",
+      "last_seen": "2026-10-18",
+      "seen_dates": [
+        "2026-10-18"
+      ],
+      "recommendations_by_date": {
+        "2026-10-18": {
+          "recommendation_status": "new",
+          "previous_recommended_at": null
+        }
+      }
+    },
+    {
+      "title": "Optical-handedness-driven enantioselective synthesis and programmable chirality encoding of covalent organic frameworks",
+      "authors": [
+        "Taewoong Kim",
+        "Jaewon Kim",
+        "Joohee Oh",
+        "Seungyoon Kang",
+        "Song Gyun Kim",
+        "Jee Hyeon Kim",
+        "Min Su Han",
+        "Young Yong Kim",
+        "Chanho Pak",
+        "Jeong-Eun Park",
+        "Hyunseob Lim"
+      ],
+      "journal": "Nature Communications",
+      "source": "Crossref",
+      "doi": "10.1038/s41467-026-78524-7",
+      "arxiv_id": null,
+      "published_at": "2026-10-17",
+      "article_url": "https://doi.org/10.1038/s41467-026-78524-7",
+      "pdf_url": null,
+      "code_url": null,
+      "abstract": "",
+      "tldr": "Abstract unavailable from publisher metadata; open the article for details.",
+      "affiliations": [],
+      "score": 7.5574,
+      "relevance_percentile": 64.91,
+      "score_components": {
+        "top_k": 0.7551,
+        "cluster": 0.769,
+        "recent": 0.7375
+      },
+      "topics": [
+        "Semiconductors",
+        "Materials"
+      ],
+      "seen_date": "2026-10-18",
+      "recommendation_status": "new",
+      "previous_recommended_at": null,
+      "key": "doi:10.1038/s41467-026-78524-7",
+      "first_seen": "2026-10-18",
+      "last_seen": "2026-10-18",
+      "seen_dates": [
+        "2026-10-18"
+      ],
+      "recommendations_by_date": {
+        "2026-10-18": {
+          "recommendation_status": "new",
+          "previous_recommended_at": null
+        }
+      }
+    },
+    {
+      "title": "Size-dependent catalysis of Ru nanoparticles for selective reductive amination of PET plastic",
+      "authors": [
+        "Zuyi Zhang",
+        "Yawen Shi",
+        "Shengbo Zhang",
+        "Junyang Wang",
+        "Chen Meng",
+        "Xinyi Niu",
+        "Xinyong Diao",
+        "Na Ji"
+      ],
+      "journal": "Nature Communications",
+      "source": "Crossref",
+      "doi": "10.1038/s41467-026-78873-3",
+      "arxiv_id": null,
+      "published_at": "2026-10-17",
+      "article_url": "https://doi.org/10.1038/s41467-026-78873-3",
+      "pdf_url": null,
+      "code_url": null,
+      "abstract": "",
+      "tldr": "Abstract unavailable from publisher metadata; open the article for details.",
+      "affiliations": [],
+      "score": 7.5501,
+      "relevance_percentile": 63.16,
+      "score_components": {
+        "top_k": 0.7509,
+        "cluster": 0.7755,
+        "recent": 0.7346
+      },
+      "topics": [
+        "Other"
+      ],
+      "seen_date": "2026-10-18",
+      "recommendation_status": "new",
+      "previous_recommended_at": null,
+      "key": "doi:10.1038/s41467-026-78873-3",
+      "first_seen": "2026-10-18",
+      "last_seen": "2026-10-18",
+      "seen_dates": [
+        "2026-10-18"
+      ],
+      "recommendations_by_date": {
+        "2026-10-18": {
+          "recommendation_status": "new",
+          "previous_recommended_at": null
+        }
+      }
+    },
+    {
+      "title": "High-Performance PDMS Elastomers Constructed via Oxalyl Dihydrazide for Thermoreversible Bonding in Flexible Electronics",
+      "authors": [
+        "Chenxi Lin",
+        "Jianhui Xia"
+      ],
+      "journal": "ACS Applied Materials &amp; Interfaces",
+      "source": "Crossref",
+      "doi": "10.1021/acsami.6c15060",
+      "arxiv_id": null,
+      "published_at": "2026-10-19",
+      "article_url": "https://doi.org/10.1021/acsami.6c15060",
+      "pdf_url": "https://pubs.acs.org/aamick/article-pdf/doi/10.1021/acsami.6c15060/68896300/am-2026-15060g.pdf",
+      "code_url": null,
+      "abstract": "Abstract The rapid proliferation of flexible and wearable electronics has imposed stringent requirements on elastomeric substrates, including high mechanical strength, exceptional toughness, reversible adhesion, and reprocessability—properties that conventional covalently crosslinked polydimethylsiloxane (PDMS) elastomers inherently lack due to their permanent networks. Owing to their reversible physical crosslinking and versatile design strategies, hydrogen bonds can endow linear PDMS with a broader spectrum of performance possibilities. However, the construction of hydrogen-bonded PDMS elastomers that simultaneously achieve both outstanding mechanical performance and reversible interfacial adhesion remains a significant challenge. Herein, we report the first design and synthesis of linear PDMS elastomers dynamically crosslinked by dense multiple hydrogen-bonding arrays derived from oxalyl dihydrazide (ODH). A series of silicone poly(urea oxalyl dihydrazide) (SPUOH) elastomers were synthesized via a one-pot method by tailoring the molecular weight of the α, ω-bis (aminopropyl) polydimethylsiloxanes (A-PDMS) and the ODH loading. The synergistic interplay of strong ODH-based hydrogen bonds and weak urea-based hydrogen bonds enables tunable mechanical properties: SPUOH-3k-0.33 achieves a tensile strength of 5.15 MPa, an elongation at break of ∼1200%, and a toughness of 39.8 MJ m–3, substantially surpassing reported linear PDMS elastomers. Rheological and AFM analyses reveal that hydrogen-bond ordering governs thermal resistance and microphase separation, with high ODH loading inducing a phase inversion. Benefiting from thermally reversible hydrogen bonds, SPUOH-3k-0.33 exhibits a lap shear strength of 2.72 MPa on polyamide and maintains performance over 20 cycles. A prototype flexible sensor demonstrates a gauge factor of 4.6 with reliable motion monitoring. This work establishes ODH-based hydrogen-bonding arrays as a versatile platform for high-performance, sustainable, and adhesively integrable PDMS substrates for next-generation flexible electronics.",
+      "tldr": "By dynamically crosslinking linear PDMS with dense oxalyl dihydrazide-derived multiple hydrogen-bonding arrays, the authors create strong, tough, thermally reprocessable, and reversibly adhesive elastomers suitable for flexible electronics and sensors.",
+      "affiliations": [
+        "South China University of Technology (SCUT) , , ,"
+      ],
+      "score": 7.4653,
+      "relevance_percentile": 61.4,
+      "score_components": {
+        "top_k": 0.7401,
+        "cluster": 0.7689,
+        "recent": 0.7291
+      },
+      "topics": [
+        "Other"
+      ],
+      "seen_date": "2026-10-18",
+      "recommendation_status": "new",
+      "previous_recommended_at": null,
+      "key": "doi:10.1021/acsami.6c15060",
+      "first_seen": "2026-10-18",
+      "last_seen": "2026-10-18",
+      "seen_dates": [
+        "2026-10-18"
+      ],
+      "recommendations_by_date": {
+        "2026-10-18": {
+          "recommendation_status": "new",
+          "previous_recommended_at": null
+        }
+      }
+    },
+    {
+      "title": "Realisation of a protected cat-qutrit manifold via engineered quantum tunnelling",
+      "authors": [
+        "Sangil Kwon",
+        "Daisuke Hoshi",
+        "Toshiaki Nagase",
+        "Daichi Sugiyama",
+        "Hiroto Mukai",
+        "Kengo Takemura",
+        "Rintaro Kojima",
+        "Yu Zhou",
+        "Shohei Watabe",
+        "Fumiki Yoshihara",
+        "Jaw-Shen Tsai"
+      ],
+      "journal": "Nature Communications",
+      "source": "Crossref",
+      "doi": "10.1038/s41467-026-78631-5",
+      "arxiv_id": null,
+      "published_at": "2026-10-17",
+      "article_url": "https://doi.org/10.1038/s41467-026-78631-5",
+      "pdf_url": null,
+      "code_url": null,
+      "abstract": "",
+      "tldr": "Abstract unavailable from publisher metadata; open the article for details.",
+      "affiliations": [],
+      "score": 7.4383,
+      "relevance_percentile": 59.65,
+      "score_components": {
+        "top_k": 0.7447,
+        "cluster": 0.776,
+        "recent": 0.6934
+      },
+      "topics": [
+        "Other"
+      ],
+      "seen_date": "2026-10-18",
+      "recommendation_status": "new",
+      "previous_recommended_at": null,
+      "key": "doi:10.1038/s41467-026-78631-5",
+      "first_seen": "2026-10-18",
+      "last_seen": "2026-10-18",
+      "seen_dates": [
+        "2026-10-18"
+      ],
+      "recommendations_by_date": {
+        "2026-10-18": {
+          "recommendation_status": "new",
+          "previous_recommended_at": null
+        }
+      }
+    },
+    {
+      "title": "Fabrication of Polyurea-Based Ionogels for Strain Sensing with High Conductivity, Flame Retardancy, and Room-Temperature Self-Healing",
+      "authors": [
+        "Qinyong Liu",
+        "Hailiang Wang",
+        "Wenwen Wu",
+        "Chunying Xu",
+        "Huihui Li",
+        "Jun Sun",
+        "Xiaoyu Gu",
+        "Sheng Zhang"
+      ],
+      "journal": "ACS Applied Materials &amp; Interfaces",
+      "source": "Crossref",
+      "doi": "10.1021/acsami.6c16550",
+      "arxiv_id": null,
+      "published_at": "2026-10-19",
+      "article_url": "https://doi.org/10.1021/acsami.6c16550",
+      "pdf_url": "https://pubs.acs.org/aamick/article-pdf/doi/10.1021/acsami.6c16550/68895948/am-2026-16550x.pdf",
+      "code_url": null,
+      "abstract": "Abstract Flexible sensors used under high temperatures and open flames are in high demand in fire rescue and similar scenarios, yet related research remains limited. An intrinsic flame-retardant polyurea-based ionogel with high ionic conductivity and room-temperature self-healing ability is developed in this work. Reactive ionic liquid (IL) containing phosphorus/nitrogen (P/N) flame-retardant groups and dynamic disulfide bonds is covalently incorporated into the polyurea backbone as a chain extender, constructing a dynamic network. The ionic conductivity of the ionogel is as high as 0.169 S/m, with a tensile strength of 2.2 MPa and an elongation at break of 1027%. Meanwhile, 99.5% of the tensile strength is recovered at room temperature after 24 h of self-healing. The polyurea-based ionogel containing P/N groups is intrinsically flame retardant, as evidenced by a limiting oxygen index of 28.8%, a UL-94 V-0 rating, and significantly suppressed heat and smoke release. The flexible strain sensor monitors human motions, even under high temperatures or fire exposure. This work provides a solution for the applications of intelligent sensing devices for fire rescue under high-risk conditions.",
+      "tldr": "Researchers developed a phosphorus/nitrogen-containing polyurea-based ionogel with high ionic conductivity (0.169 S/m), intrinsic flame retardancy, and room-temperature self-healing for flexible strain sensing in high-temperature and fire-risk rescue applications.",
+      "affiliations": [
+        "Beijing University of Chemical Technology , , ,",
+        "Marine Chemical Research Institute Co., Ltd. , , ,"
+      ],
+      "score": 7.4164,
+      "relevance_percentile": 57.89,
+      "score_components": {
+        "top_k": 0.7342,
+        "cluster": 0.7625,
+        "recent": 0.7291
+      },
+      "topics": [
+        "Other"
+      ],
+      "seen_date": "2026-10-18",
+      "recommendation_status": "new",
+      "previous_recommended_at": null,
+      "key": "doi:10.1021/acsami.6c16550",
+      "first_seen": "2026-10-18",
+      "last_seen": "2026-10-18",
+      "seen_dates": [
+        "2026-10-18"
+      ],
+      "recommendations_by_date": {
+        "2026-10-18": {
+          "recommendation_status": "new",
+          "previous_recommended_at": null
+        }
+      }
+    },
+    {
+      "title": "Circularly Polarized Phased Array Antenna with a Linear-to-Circular Polarization Conformal Metasurface Superstrate for EnhancedScan Range",
+      "authors": [
+        "Hyeonji Song",
+        "Minjae Lee",
+        "Seyeon Park",
+        "Sungjoon Lim"
+      ],
+      "journal": "ACS Applied Materials &amp; Interfaces",
+      "source": "Crossref",
+      "doi": "10.1021/acsami.6c13729",
+      "arxiv_id": null,
+      "published_at": "2026-10-19",
+      "article_url": "https://doi.org/10.1021/acsami.6c13729",
+      "pdf_url": "https://pubs.acs.org/doi/pdf/10.1021/acsami.6c13729",
+      "code_url": null,
+      "abstract": "Abstract In this study, we propose a circularly polarized (CP) beam scanning antenna system that integrates a linearly polarized phased array antenna (PAA) with a linear-to-circular polarization conformal metasurface superstrate (CMS). The metasurface is composed of uniform unit cells, the geometry of which is optimized for electromagnetic response under normal incidence. However, when such a uniform cell metasurface is implemented with a planar profile, the wave radiated from the array becomes increasingly obliquely incident on the metasurface as the steering angle increases, inevitably degrading the polarization conversion performance and thereby limiting the achievable beam coverage. To address this issue, conformal curvature profiles are employed to mitigate oblique incidence across different scan angle regions. The transverse aperture dimension of the CMS is optimized, and three curvature profiles are optimized for different steering regions. Next, the antenna system was fabricated and assembled using separate 3D-printed jigs to maintain the respective CMS curvature profiles, and the corresponding jig was manually replaced during measurement. Using the corresponding CMS curvature profiles for different steering regions, the proposed CP PAA experimentally demonstrates CP beam steering to a maximum measured angle of approximately 45°. The measured AR remains below 3 dB at the investigated steering states, and the broadside-referenced scan loss at the maximum measured steering angle is approximately 1.8 dB.",
+      "tldr": "A linearly polarized phased array with a curvature-optimized conformal linear-to-circular polarization metasurface superstrate achieves circularly polarized beam steering up to ~45° with axial ratio below 3 dB and ~1.8 dB scan loss.",
+      "affiliations": [
+        "Chung-Ang University , , 84 Heukseok-Ro, Dongjak-Gu , ,"
+      ],
+      "score": 7.4104,
+      "relevance_percentile": 56.14,
+      "score_components": {
+        "top_k": 0.7348,
+        "cluster": 0.7627,
+        "recent": 0.7241
+      },
+      "topics": [
+        "Other"
+      ],
+      "seen_date": "2026-10-18",
+      "recommendation_status": "new",
+      "previous_recommended_at": null,
+      "key": "doi:10.1021/acsami.6c13729",
+      "first_seen": "2026-10-18",
+      "last_seen": "2026-10-18",
+      "seen_dates": [
+        "2026-10-18"
+      ],
+      "recommendations_by_date": {
+        "2026-10-18": {
+          "recommendation_status": "new",
+          "previous_recommended_at": null
+        }
+      }
+    },
+    {
+      "title": "Unlocking electric vehicle flexibility in microgrids via lightweight on-charger coordination",
+      "authors": [
+        "Yehui Li",
+        "Xueyuan Cui",
+        "Chongqing Kang",
+        "Thomas Morstyn",
+        "Yi Wang"
+      ],
+      "journal": "Nature Communications",
+      "source": "Crossref",
+      "doi": "10.1038/s41467-026-78319-w",
+      "arxiv_id": null,
+      "published_at": "2026-10-17",
+      "article_url": "https://doi.org/10.1038/s41467-026-78319-w",
+      "pdf_url": null,
+      "code_url": null,
+      "abstract": "",
+      "tldr": "Abstract unavailable from publisher metadata; open the article for details.",
+      "affiliations": [],
+      "score": 7.357,
+      "relevance_percentile": 54.39,
+      "score_components": {
+        "top_k": 0.7274,
+        "cluster": 0.7532,
+        "recent": 0.7303
+      },
+      "topics": [
+        "Other"
+      ],
+      "seen_date": "2026-10-18",
+      "recommendation_status": "new",
+      "previous_recommended_at": null,
+      "key": "doi:10.1038/s41467-026-78319-w",
+      "first_seen": "2026-10-18",
+      "last_seen": "2026-10-18",
+      "seen_dates": [
+        "2026-10-18"
+      ],
+      "recommendations_by_date": {
+        "2026-10-18": {
+          "recommendation_status": "new",
+          "previous_recommended_at": null
+        }
+      }
+    },
+    {
+      "title": "Breaking water-structure constraints by Hofmeister effects in interfacial polymerization for polyamide membranes",
+      "authors": [
+        "Qingchen Tang",
+        "Hao Chen",
+        "Yu Chen",
+        "Hanyu Wu",
+        "Xingwang Meng",
+        "Wu Jin",
+        "Panjia Jiang",
+        "Yizhou Zhang",
+        "Xunda Feng"
+      ],
+      "journal": "Nature Communications",
+      "source": "Crossref",
+      "doi": "10.1038/s41467-026-78649-9",
+      "arxiv_id": null,
+      "published_at": "2026-10-17",
+      "article_url": "https://doi.org/10.1038/s41467-026-78649-9",
+      "pdf_url": null,
+      "code_url": null,
+      "abstract": "Abstract Hydration critically governs the physicochemical behavior of solutes in both the aqueous bulk and interfacial environments. As typical chaotropic Hofmeister ions, weakly hydrated anions (WHAs) can reshape hydration structures and accumulate at water–hydrophobe interfaces. Notably, WHAs paradoxically suppress the solubility of certain small-molecule monomers in water while enhancing that of chemically analogous polymers. Here, we exploit WHA-mediated Hofmeister hydration control to regulate polyamide-forming interfacial polymerization (IP), using the piperazine (PIP) and trimesoyl chloride (TMC) nanofiltration system as the primary model. Introducing WHAs into the aqueous phase reduces the affinity of amine monomers for water and accelerates partitioning into the reaction front in the oil phase, remarkably reinforcing IP self-limitation. Simultaneously, interfacial WHA enrichment lowers interfacial tension and, together with accelerated amine delivery, potentially intensifies transport-driven interfacial instabilities. WHAs also lower interfacial water availability, attenuating acyl chloride hydrolysis. These synergistic effects yield hollow-ridged polyamide selective layers with reduced thickness and high crosslinking density, delivering enhanced water permeance and salt rejection. Crucially, module-scale fabrication of high-performance membranes demonstrates that WHA-mediated Hofmeister hydration control is directly compatible with established desalination pipelines.",
+      "tldr": "Weakly hydrated Hofmeister anions are used to tune hydration during interfacial polymerization, yielding thinner, highly crosslinked hollow-ridged polyamide membranes with improved water permeance and salt rejection that are compatible with module-scale desalination fabrication.",
+      "affiliations": [],
+      "score": 7.3226,
+      "relevance_percentile": 52.63,
+      "score_components": {
+        "top_k": 0.7286,
+        "cluster": 0.7497,
+        "recent": 0.7151
+      },
+      "topics": [
+        "Other"
+      ],
+      "seen_date": "2026-10-18",
+      "recommendation_status": "new",
+      "previous_recommended_at": null,
+      "key": "doi:10.1038/s41467-026-78649-9",
+      "first_seen": "2026-10-18",
+      "last_seen": "2026-10-18",
+      "seen_dates": [
+        "2026-10-18"
+      ],
+      "recommendations_by_date": {
+        "2026-10-18": {
+          "recommendation_status": "new",
+          "previous_recommended_at": null
+        }
+      }
+    },
+    {
+      "title": "A Histidine-Mediated, Pendulum-Like Proton Transport Mechanism Is Required for the High Catalytic Activity of [FeFe]-Hydrogenases",
+      "authors": [
+        "Jifu Duan",
+        "Zhaoya Yang",
+        "Oliver Lampret",
+        "Federica Arrigoni",
+        "Lukas van Impel",
+        "Feng Zheng",
+        "Julian Kleinhaus",
+        "Ulf-Peter Apfel",
+        "Claudio Greco",
+        "Luca De Gioia",
+        "Eckhard Hofmann",
+        "Anja Hemschemeier",
+        "Thomas Happe"
+      ],
+      "journal": "Journal of the American Chemical Society",
+      "source": "Crossref",
+      "doi": "10.1021/jacs.6c14410",
+      "arxiv_id": null,
+      "published_at": "2026-10-17",
+      "article_url": "https://doi.org/10.1021/jacs.6c14410",
+      "pdf_url": "https://pubs.acs.org/jacsat/article-pdf/doi/10.1021/jacs.6c14410/68895972/jacs.6c14410.pdf",
+      "code_url": null,
+      "abstract": "Abstract [FeFe]-hydrogenases are molecular hydrogen (H2) converting enzymes that employ a hexanuclear iron complex, the H-cluster, as the catalytic cofactor, and a proton transfer pathway (PTP) that enables efficient proton-coupled electron transfer (PCET). Recent phylogenetic analyses have revealed different groups of [FeFe]-hydrogenases. Although only very few members of other groups have been characterized, current knowledge suggests that high catalytic activity is predominantly associated with group A members. Here, we show that metal ions inhibit group A [FeFe]-hydrogenases by binding to three specific residues at the entrance of the PTP. Exchanging residue H565 of Clostridium pasteurianum CpI results in a metal-insensitive protein variant with wild-type-like activity. In contrast, exchanging S320 and H569 in CpI, and their counterparts in additional group A [FeFe]-hydrogenases results in enzymes with markedly decreased activities and large overpotential requirements. These features are consistent with important roles of both residues in catalytic proton transfer. CpI structures reveal that H569, locally anchored by E278, can be present in two conformations, such that we propose a histidine-dependent pendulum mechanism for exchanging protons between the bulk solvent and the PTP, which is well supported by theoretical calculations. In doing so, our study broadens understanding of how histidine mobility, governed by neighboring residues in the vicinity, contributes to the fundamental concept of PCET.",
+      "tldr": "A histidine-dependent “pendulum” proton shuttle at the proton-transfer-pathway entrance is required for efficient proton-coupled electron transfer and high catalytic activity in group A [FeFe]-hydrogenases, and its disruption or metal binding impairs catalysis.",
+      "affiliations": [
+        "Ruhr University Bochum , , Universitätsstrasse 150 , ,",
+        "Tianjin Institute of Industrial Biotechnology, Chinese Academy of Sciences , , ,",
+        "University of Milano-Bicocca , , Piazza della Scienza 2 , ,",
+        "Fraunhofer UMSICHT , , ,",
+        "University of Milano-Bicocca , , Piazza della Scienza 1 , ,"
+      ],
+      "score": 7.19,
+      "relevance_percentile": 50.88,
+      "score_components": {
+        "top_k": 0.7195,
+        "cluster": 0.7247,
+        "recent": 0.7091
+      },
+      "topics": [
+        "Other"
+      ],
+      "seen_date": "2026-10-18",
+      "recommendation_status": "new",
+      "previous_recommended_at": null,
+      "key": "doi:10.1021/jacs.6c14410",
+      "first_seen": "2026-10-18",
+      "last_seen": "2026-10-18",
+      "seen_dates": [
+        "2026-10-18"
+      ],
+      "recommendations_by_date": {
+        "2026-10-18": {
+          "recommendation_status": "new",
+          "previous_recommended_at": null
+        }
+      }
+    },
+    {
+      "title": "Nanopore Signatures of High-Molecular-Weight Polysaccharides with Recurring Structural Motifs",
+      "authors": [
+        "Wenzheng Li",
+        "Yunqi Xiao",
+        "Xinmeng Gao",
+        "Panke Zhang",
+        "Shuo Huang",
+        "Kefan Wang"
+      ],
+      "journal": "ACS Nano",
+      "source": "Crossref",
+      "doi": "10.1021/acsnano.6c07846",
+      "arxiv_id": null,
+      "published_at": "2026-10-17",
+      "article_url": "https://doi.org/10.1021/acsnano.6c07846",
+      "pdf_url": "https://pubs.acs.org/ancac3/article-pdf/doi/10.1021/acsnano.6c07846/68896148/acsnano.6c07846.pdf",
+      "code_url": null,
+      "abstract": "Abstract Polysaccharides in nature possess profound biological significance, and their structural complexity renders them of great research value. However, the structural heterogeneity of complex polysaccharides has long posed a great challenge for analysis. Here, a nanopore profiling strategy was developed for polysaccharide characterization. Experimentally, polysaccharides are hydrolyzed into informative fragments, and the distribution of their resulting nanopore events forms a unique profile that serves as a reliable molecular signature. Seven distinct polysaccharides, including xanthan gum, gum arabic, agarose, sodium alginate, gellan gum, heparin, and chondroitin sulfate A, were successfully identified and discriminated. A profile-based machine learning classifier was also developed, which utilizes the overall distribution profile of fragment events as training input, yielding 100% validation accuracy. Further application of the fully constrained least-squares (FCLS) algorithm enabled accurate quantification of polysaccharide mixture composition, allowing for unambiguous analysis of mixtures of polysaccharides in the same assay. Collectively, this work establishes a universal, label-free, and high-resolution framework for decoding the structural complexity of polysaccharides.",
+      "tldr": "Hydrolyzing complex polysaccharides into fragments and profiling their nanopore event distributions enables label-free identification and accurate quantification of seven structurally distinct polysaccharides using machine learning.",
+      "affiliations": [
+        "Nanjing University , , ,"
+      ],
+      "score": 7.1809,
+      "relevance_percentile": 49.12,
+      "score_components": {
+        "top_k": 0.708,
+        "cluster": 0.7439,
+        "recent": 0.7045
+      },
+      "topics": [
+        "Battery",
+        "Materials",
+        "AI & Computation"
+      ],
+      "seen_date": "2026-10-18",
+      "recommendation_status": "new",
+      "previous_recommended_at": null,
+      "key": "doi:10.1021/acsnano.6c07846",
+      "first_seen": "2026-10-18",
+      "last_seen": "2026-10-18",
+      "seen_dates": [
+        "2026-10-18"
+      ],
+      "recommendations_by_date": {
+        "2026-10-18": {
+          "recommendation_status": "new",
+          "previous_recommended_at": null
+        }
+      }
+    },
     {
       "title": "Selective Interfacial Coupling in Polymer Electrolytes Stabilizes High‐Voltage Ni‐Rich Cathodes for &gt; 500 Wh Kg −1 Lithium Metal Batteries",
       "authors": [
