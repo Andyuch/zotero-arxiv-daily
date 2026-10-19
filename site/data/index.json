@@ -1,7 +1,11 @@
 {
-  "generated_at": "2026-10-18T22:35:58.761265+00:00",
-  "paper_count": 554,
+  "generated_at": "2026-10-19T23:56:10.149081+00:00",
+  "paper_count": 584,
   "days": [
+    {
+      "date": "2026-10-19",
+      "count": 30
+    },
     {
       "date": "2026-10-18",
       "count": 30
@@ -120,6 +124,1442 @@
     "Spectroscopy"
   ],
   "papers": [
+    {
+      "title": "Visualizing surface-reaction-driven chloride migration and cascading failure in sulfide solid electrolytes",
+      "authors": [
+        "Xiaoya He, Haoran Zhang, Xinyang Yue, Hang Liu, Zian Mao, Jialong Wang, Min Liu, Shufen Chu, Liwei Chen, Zhaoxin Yu, Xi Liu, Chuying Ouyang, Ziyang Ning, Yujun Xie"
+      ],
+      "journal": "arXiv",
+      "source": "arXiv",
+      "doi": null,
+      "arxiv_id": "2610.22394",
+      "published_at": null,
+      "article_url": "https://arxiv.org/abs/2610.22394",
+      "pdf_url": "https://arxiv.org/pdf/2610.22394.pdf",
+      "code_url": null,
+      "abstract": "Moisture instability of sulfide solid electrolytes limits practical use in all-solid-state batteries. Spatially resolving gas--solid reactions during moisture exposure remains challenging. Here, cryogenic four-dimensional scanning transmission electron microscopy (cryo-4D-STEM) maps nanoscale degradation in low- and high-Cl argyrodite electrolytes, Li\\(_6\\)PS\\(_5\\)Cl and Li\\(_{5.5}\\)PS\\(_{4.5}\\)Cl\\(_{1.5}\\). Li\\(_6\\)PS\\(_5\\)Cl undergoes predominantly surface-localized degradation that progressively extends inward, whereas Li\\(_{5.5}\\)PS\\(_{4.5}\\)Cl\\(_{1.5}\\) exhibits rapid interior amorphization accompanied by outward chloride redistribution. Density functional theory calculations indicate a lower chloride-migration barrier along the modeled pathway in the higher-Cl composition, while chloride removal and vacancy formation distort the PS\\(_4^{3-}\\) framework and may destabilize the lattice. Surface treatment suppresses detectable large-scale chloride segregation and improves moisture tolerance, retaining 99.9% of the capacity measured at the start of 0.33 C cycling after 150 cycles. These results identify chloride redistribution as a key process in degradation propagation and suggest a route toward moisture-tolerant solid-state batteries.",
+      "tldr": "Using cryo-4D-STEM and DFT, this study shows that moisture-driven chloride redistribution drives cascading degradation in argyrodite sulfide electrolytes—surface-localized inward degradation in low-Cl Li₆PS₅Cl versus rapid interior amorphization in high-Cl Li₅.₅PS₄.₅Cl₁.₅—and that surface treatment suppresses chloride segregation and improves moisture tolerance.",
+      "affiliations": [],
+      "score": 8.6256,
+      "relevance_percentile": 100.0,
+      "score_components": {
+        "top_k": 0.8567,
+        "cluster": 0.8811,
+        "recent": 0.8494
+      },
+      "topics": [
+        "Battery",
+        "Microscopy",
+        "Materials",
+        "AI & Computation"
+      ],
+      "seen_date": "2026-10-19",
+      "recommendation_status": "new",
+      "previous_recommended_at": null,
+      "key": "arxiv:2610.22394",
+      "first_seen": "2026-10-19",
+      "last_seen": "2026-10-19",
+      "seen_dates": [
+        "2026-10-19"
+      ],
+      "recommendations_by_date": {
+        "2026-10-19": {
+          "recommendation_status": "new",
+          "previous_recommended_at": null
+        }
+      }
+    },
+    {
+      "title": "Coherent phonons in photoexcited semiconductors from first principles",
+      "authors": [
+        "Yuhui Qiu, Rong-Tian Pang, Meng-Xue Guan, Jin-Jian Zhou"
+      ],
+      "journal": "arXiv",
+      "source": "arXiv",
+      "doi": null,
+      "arxiv_id": "2610.22901",
+      "published_at": null,
+      "article_url": "https://arxiv.org/abs/2610.22901",
+      "pdf_url": "https://arxiv.org/pdf/2610.22901.pdf",
+      "code_url": null,
+      "abstract": "Coherent phonons are phase-locked lattice vibrations that provide a sensitive probe of nonequilibrium dynamics in materials. Existing first-principles equation-of-motion (EOM) approaches have successfully described coherent phonons in metals and semimetals, but their extension to semiconductors requires treating the long-lived electron--hole plasma created by above-gap excitation. Here we extend the first-principles EOM framework to photoexcited semiconductors by incorporating the residual plasma force that shifts the lattice equilibrium together with the plasma-induced renormalization of the electronic structure. For monolayer MoTe$_2$, the calculated carrier-density-dependent Te displacement agrees with constrained density-functional perturbation theory only when the renormalized band structure is included. We then show that increasing the photoexcited carrier density enhances both the initial total force and the plasma-shifted equilibrium position of the $A_{1g}$ mode, producing larger coherent lattice oscillations. This density-controlled response appears in both the atomic displacement and the coherent-phonon-induced band renormalization, providing complementary signatures for ultrafast reflectivity and time- and angle-resolved photoemission spectroscopy.",
+      "tldr": "This paper extends a first-principles equation-of-motion framework to photoexcited semiconductors by including the long-lived electron–hole plasma’s residual lattice force and electronic-structure renormalization, showing for monolayer MoTe₂ that carrier density controls the amplitude and equilibrium shift of coherent A₁g phonons and the associated band renormalization.",
+      "affiliations": [
+        "Beijing Institute of Technology"
+      ],
+      "score": 8.6171,
+      "relevance_percentile": 99.85,
+      "score_components": {
+        "top_k": 0.87,
+        "cluster": 0.8981,
+        "recent": 0.7865
+      },
+      "topics": [
+        "Spectroscopy",
+        "Semiconductors",
+        "Materials",
+        "AI & Computation"
+      ],
+      "seen_date": "2026-10-19",
+      "recommendation_status": "new",
+      "previous_recommended_at": null,
+      "key": "arxiv:2610.22901",
+      "first_seen": "2026-10-19",
+      "last_seen": "2026-10-19",
+      "seen_dates": [
+        "2026-10-19"
+      ],
+      "recommendations_by_date": {
+        "2026-10-19": {
+          "recommendation_status": "new",
+          "previous_recommended_at": null
+        }
+      }
+    },
+    {
+      "title": "Electrochemical Molecular Dynamics within the Finite-Field Framework",
+      "authors": [
+        "Krystof Brezina, Ludwig Ahrens-Iwers, Mariana Rossi"
+      ],
+      "journal": "arXiv",
+      "source": "arXiv",
+      "doi": null,
+      "arxiv_id": "2610.23291",
+      "published_at": null,
+      "article_url": "https://arxiv.org/abs/2610.23291",
+      "pdf_url": "https://arxiv.org/pdf/2610.23291.pdf",
+      "code_url": null,
+      "abstract": "Electrochemical processes at charged interfaces lie at the heart of modern technologies and their continued improvement depends on insights into the relevant atomistic processes. However, the necessary tools to impose constant-voltage conditions in molecular dynamics (MD) simulations typically directly target the electrode charge, making their extension to methods that go beyond an empirical description of metals more cumbersome. In this work, we propose an MD protocol to realize a thermodynamic ensemble in which voltage control is attained, but which is formulated purely within the framework of finite-field simulations in 3D periodic boundary conditions. We show a derivation and implementation of such a control device, which we coin an electrostat, in the ELECTRODE package within LAMMPS. Our simulations systematically benchmark the derived theory against other established approaches, for example, showing its equivalence to a potentiostat, and quantify the importance of properly accounting for ensemble fluctuations. We find that for systems of several thousands of atoms, one obtains the same equilibrium properties with the electrostat as with a simpler constant-field simulation. The difference between the two methods only manifests itself at smaller length scales, thereby establishing practical limits for the inclusion of voltage fluctuations in atomistic simulations of electrochemical systems. The strength of this framework also lies in its simplicity of extension to first-principles ab initio and reactive machine-learning potentials.",
+      "tldr": "We introduce an “electrostat” finite-field molecular-dynamics protocol for constant-voltage simulations in 3D periodic boundary conditions, implement it in LAMMPS, and show it reproduces potentiostat behavior and constant-field equilibrium results at large scales while remaining extensible to ab initio and machine-learning potentials.",
+      "affiliations": [
+        "Max Planck Institute for the Structure and Dynamics of Matter",
+        "University of Cambridge"
+      ],
+      "score": 8.5381,
+      "relevance_percentile": 99.69,
+      "score_components": {
+        "top_k": 0.8503,
+        "cluster": 0.8781,
+        "recent": 0.8261
+      },
+      "topics": [
+        "Battery",
+        "Electrochemistry",
+        "Materials",
+        "AI & Computation"
+      ],
+      "seen_date": "2026-10-19",
+      "recommendation_status": "new",
+      "previous_recommended_at": null,
+      "key": "arxiv:2610.23291",
+      "first_seen": "2026-10-19",
+      "last_seen": "2026-10-19",
+      "seen_dates": [
+        "2026-10-19"
+      ],
+      "recommendations_by_date": {
+        "2026-10-19": {
+          "recommendation_status": "new",
+          "previous_recommended_at": null
+        }
+      }
+    },
+    {
+      "title": "Light-induced local control of magnetic anisotropy and domain pattern in Co/Pt multilayers",
+      "authors": [
+        "Ivan Soldatov, Aman Singh, Volker Neu, Rudolf Sch\\\"afer, Andrei Sherstobitov, Yana Vaynzof, Stanislav Bodnar"
+      ],
+      "journal": "arXiv",
+      "source": "arXiv",
+      "doi": null,
+      "arxiv_id": "2610.23132",
+      "published_at": null,
+      "article_url": "https://arxiv.org/abs/2610.23132",
+      "pdf_url": "https://arxiv.org/pdf/2610.23132.pdf",
+      "code_url": null,
+      "abstract": "Control of magnetic anisotropy is essential for the fabrication of next-generation devices in spintronics and magnetic memory. While conventional approaches such as material composition, thermal annealing, and ion bombardment are widely used, achieving spatially resolved, continuous control remains a challenge. Herein, we demonstrate a dual-regime, localized control over both transient magnetic states and permanent intrinsic properties in perpendicularly magnetized Co/Pt multilayers using ultra-short laser pulses. By employing a multi-scale approach combining Kerr microscopy, magnetic force microscopy, and vibrating sample magnetometry, we reveal that low-fluence irradiation enables a reversible, helicity-dependent accumulation of magnetic phases without altering the intrinsic quasistatic properties. Conversely, high-fluence exposure acts as localized thermal annealing that permanently hardens the magnetic system. This structural relaxation leads to a substantial enhancement of the effective perpendicular magnetic anisotropy, driving a twofold increase in the local coercive field and expanding the equilibrium stripe domain width. By offering both reversible spin manipulation and deterministic engineering of 2D magnetic landscapes, this work paves the way towards flexible, lithography-free anisotropy structuring for advanced spintronic applications.",
+      "tldr": "Ultrafast laser irradiation of Co/Pt multilayers enables dual-regime local magnetic control: low fluence reversibly accumulates helicity-dependent magnetic phases without altering intrinsic properties, while high fluence permanently enhances perpendicular magnetic anisotropy, doubles coercivity, and expands stripe domains, enabling lithography-free 2D magnetic landscape engineering.",
+      "affiliations": [
+        "TU Dresden",
+        "Dresden University of Technology",
+        "Leibniz Institute for Solid State and Materials Research (IFW) Dresden"
+      ],
+      "score": 8.5337,
+      "relevance_percentile": 99.54,
+      "score_components": {
+        "top_k": 0.863,
+        "cluster": 0.8903,
+        "recent": 0.7741
+      },
+      "topics": [
+        "Microscopy",
+        "Spectroscopy"
+      ],
+      "seen_date": "2026-10-19",
+      "recommendation_status": "new",
+      "previous_recommended_at": null,
+      "key": "arxiv:2610.23132",
+      "first_seen": "2026-10-19",
+      "last_seen": "2026-10-19",
+      "seen_dates": [
+        "2026-10-19"
+      ],
+      "recommendations_by_date": {
+        "2026-10-19": {
+          "recommendation_status": "new",
+          "previous_recommended_at": null
+        }
+      }
+    },
+    {
+      "title": "Analysis of Transient Microscopy Data in Reciprocal Space",
+      "authors": [
+        "Thomas J. Sheehan, William A. Tisdale"
+      ],
+      "journal": "arXiv",
+      "source": "arXiv",
+      "doi": null,
+      "arxiv_id": "2610.23756",
+      "published_at": null,
+      "article_url": "https://arxiv.org/abs/2610.23756",
+      "pdf_url": "https://arxiv.org/pdf/2610.23756.pdf",
+      "code_url": null,
+      "abstract": "Transient microscopy has evolved to include a family of well-established techniques for studying the spatiotemporal dynamics of excited states in a variety of materials systems. In these methods, a laser pulse is focused to locally excite a material, and the subsequent evolution of the excited species is visualized to extract transport parameters such as diffusivities. Typically, transport coefficients are extracted from experimental datasets using curve-fitting methods to analyze the change in the mean squared displacement (MSD) of the spatial profiles over time. However, this approach can lead to inaccurate or misleading diffusivity values under many common experimental conditions, and is only formally accurate for the case of a single diffusing species. In this work, we introduce a new approach to the analysis of transient microscopy data based on the evolution of profile shapes in reciprocal space. We use simulated datasets to quantitatively analyze the performance of our proposed methods and compare them to current state-of-the-art analysis techniques. We demonstrate that reciprocal-space-based analysis methods have the highest overall performance in terms of accuracy and precision for normal diffusive transport over a range of realistic initial conditions and signal-to-noise ratios. Furthermore, we highlight the limitations of using MSD alone to characterize anomalous transport in materials, and we show how analysis of spatial frequencies can yield a more comprehensive understanding of complex excited-state dynamics and their underlying physical mechanisms. Our results show that reciprocal-space-based analysis methods are powerful tools for characterizing and quantifying many different types of transport behaviors.",
+      "tldr": "This paper introduces reciprocal-space analysis of transient microscopy data as a more accurate and comprehensive alternative to mean-squared-displacement curve fitting for characterizing normal and anomalous excited-state transport.",
+      "affiliations": [],
+      "score": 8.5161,
+      "relevance_percentile": 99.39,
+      "score_components": {
+        "top_k": 0.8558,
+        "cluster": 0.8697,
+        "recent": 0.814
+      },
+      "topics": [
+        "Microscopy",
+        "Spectroscopy",
+        "Materials"
+      ],
+      "seen_date": "2026-10-19",
+      "recommendation_status": "new",
+      "previous_recommended_at": null,
+      "key": "arxiv:2610.23756",
+      "first_seen": "2026-10-19",
+      "last_seen": "2026-10-19",
+      "seen_dates": [
+        "2026-10-19"
+      ],
+      "recommendations_by_date": {
+        "2026-10-19": {
+          "recommendation_status": "new",
+          "previous_recommended_at": null
+        }
+      }
+    },
+    {
+      "title": "Scalable long-range machine learning interatomic potentials with electrical response for atomistic material modeling",
+      "authors": [
+        "Yicheng Chen, Xiaoyun Yu, Hyejeong Song, Xintian Wang, Zihui Li, Zixi Xia, Junmin Chen, Peichen Zhong"
+      ],
+      "journal": "arXiv",
+      "source": "arXiv",
+      "doi": null,
+      "arxiv_id": "2610.23643",
+      "published_at": null,
+      "article_url": "https://arxiv.org/abs/2610.23643",
+      "pdf_url": "https://arxiv.org/pdf/2610.23643.pdf",
+      "code_url": null,
+      "abstract": "Accurate atomistic simulations of materials under electric fields require long-range electrostatics and electrical-response modeling at length scales beyond the reach of conventional first-principles methods. Yet these capabilities remain difficult to reconcile with the scalability of machine-learning interatomic potentials (MLIPs). Strictly local models enable efficient spatial parallelization but neglect long-range interactions, whereas existing electrostatic extensions introduce global dependencies that hinder distributed computation. Here, we overcome this limitation by analytically separating the long-range electrostatic forces and Born effective charges (BECs) into a global electrostatics calculation and strictly local derivatives of learned latent charges. This formulation preserves the spatial decomposability of equivariant MLIPs while enabling distributed evaluation of energies, forces, stresses, and BECs across different boundary conditions. Implemented as DPA4C-LR on the \\texttt{nvalchemi} platform, the framework scales to 5.2 million atoms on four GPUs at approximately twice the computational cost of its short-range backbone. Trained on energies and forces, DPA4C-LR accurately infers BECs and reproduces the field-dependent infrared spectra of water. We further demonstrate its capabilities by recovering the characteristic slim polarization hysteresis of relaxor \\ce{Pb(Mg_{1/3}Nb_{2/3})O3}, which is obscured by finite-size effects in smaller simulations; predicting a room-temperature field-driven ionic conductivity of $6.8 \\pm 0.7$~mS/cm in amorphous \\ce{Li_{0.9}NbO_{0.9}Cl_{4.1}}; and modeling interfacial thermal transport across Si/diamond interfaces with slab-corrected electrostatics. By combining long-range physics, electrical-response inference, and distributed computation, this framework extends predictive atomistic modeling toward device-relevant length scales.",
+      "tldr": "The paper introduces DPA4C-LR, a scalable long-range machine-learning interatomic potential that separates global particle-mesh Ewald electrostatics from local learned-charge derivatives, enabling multi-GPU simulations of millions of atoms with accurate energies, forces, stresses, Born effective charges, and electric-field-dependent material responses.",
+      "affiliations": [
+        "National University of Singapore"
+      ],
+      "score": 8.3977,
+      "relevance_percentile": 99.24,
+      "score_components": {
+        "top_k": 0.8486,
+        "cluster": 0.8563,
+        "recent": 0.7928
+      },
+      "topics": [
+        "Spectroscopy",
+        "Materials",
+        "AI & Computation"
+      ],
+      "seen_date": "2026-10-19",
+      "recommendation_status": "new",
+      "previous_recommended_at": null,
+      "key": "arxiv:2610.23643",
+      "first_seen": "2026-10-19",
+      "last_seen": "2026-10-19",
+      "seen_dates": [
+        "2026-10-19"
+      ],
+      "recommendations_by_date": {
+        "2026-10-19": {
+          "recommendation_status": "new",
+          "previous_recommended_at": null
+        }
+      }
+    },
+    {
+      "title": "Limits from nonlinear loss of spin-orbit-torque control of magnon transport",
+      "authors": [
+        "Lerato Takana, Katya Mikhailova, Charles Zheng, Sauviz Alaei, Xiangcheng Liu, Junwei Tong, Kwangyul Hu, Michael Flatt\\'e, Xiaoqin Li, Yuri Suzuki"
+      ],
+      "journal": "arXiv",
+      "source": "arXiv",
+      "doi": null,
+      "arxiv_id": "2610.23763",
+      "published_at": null,
+      "article_url": "https://arxiv.org/abs/2610.23763",
+      "pdf_url": "https://arxiv.org/pdf/2610.23763.pdf",
+      "code_url": null,
+      "abstract": "Controlling magnon currents is central to the development of magnonic devices, which exploit spin excitations for information transport without charge flow. Here, we use the spin-orbit torque (SOT) from a Pt gate to control the effective magnon damping in three-terminal devices fabricated from low-damping lithium aluminum ferrite (LAFO) thin films and identify the nonlinear damping that ultimately limits the gate response. With increasing gate current, the nonlocal magnon signal initially increases, but saturates and subsequently decreases above a critical gate current density. Brillouin light scattering microscopy reveals that this turnover coincides with the emergence of an SOT-driven auto-oscillation mode localized beneath the gate, whose frequency continuously redshifts with increasing gate current, characteristic of large-amplitude nonlinear dynamics, and with a suppression of the propagating magnon population away from the gate. Micromagnetic simulations reproduce the observed nonmonotonic gate response only when an amplitude-dependent effective damping is included, indicating that nonlinear losses, rather than saturation of spin injection, limit the degree of magnon modulation. Our results show that SOT compensation of magnon damping is ultimately limited by nonlinear damping attributed to auto-oscillations, providing a framework for understanding the limits of magnon current modulation in magnetic insulators.",
+      "tldr": "Spin-orbit-torque control of magnon transport in low-damping lithium aluminum ferrite is ultimately limited by nonlinear damping from gate-localized auto-oscillations, causing the magnon signal to saturate and then decrease above a critical gate current.",
+      "affiliations": [
+        "Stanford University",
+        "The University of Texas at Austin",
+        "University of Iowa",
+        "SLAC National Accelerator Laboratory"
+      ],
+      "score": 8.3485,
+      "relevance_percentile": 99.08,
+      "score_components": {
+        "top_k": 0.8495,
+        "cluster": 0.8691,
+        "recent": 0.747
+      },
+      "topics": [
+        "Battery",
+        "Electrochemistry",
+        "Microscopy",
+        "Materials"
+      ],
+      "seen_date": "2026-10-19",
+      "recommendation_status": "new",
+      "previous_recommended_at": null,
+      "key": "arxiv:2610.23763",
+      "first_seen": "2026-10-19",
+      "last_seen": "2026-10-19",
+      "seen_dates": [
+        "2026-10-19"
+      ],
+      "recommendations_by_date": {
+        "2026-10-19": {
+          "recommendation_status": "new",
+          "previous_recommended_at": null
+        }
+      }
+    },
+    {
+      "title": "Temperature and Thickness Dependent Spin Current Transmission through Epitaxial Antiferromagnetic {\\alpha}-Fe2O3",
+      "authors": [
+        "Koushik Prabhakara, Rajeev Nepal, Subhashree Chatterjee, Rabindra Basnet, Ezana Negusse, Ramesh C Budhani"
+      ],
+      "journal": "arXiv",
+      "source": "arXiv",
+      "doi": null,
+      "arxiv_id": "2610.23764",
+      "published_at": null,
+      "article_url": "https://arxiv.org/abs/2610.23764",
+      "pdf_url": "https://arxiv.org/pdf/2610.23764.pdf",
+      "code_url": null,
+      "abstract": "Antiferromagnetic insulator {\\alpha}-Fe2O3 is a potential medium for coherent motion of spin waves over relatively large distances, allowing non-dissipative transfer of information between circuit elements. However, the structural defects and temperature dependent spin reorientations in this oxide impact the propagation. Understanding how the magnetic state of an antiferromagnetic insulator affects spin-current transmission is therefore important for elucidating the mechanisms governing spin transport. Here, we report spin-current transmission through epitaxial {\\alpha}-Fe2O3 thin films sandwiched between Permalloy and Pt. Using spin pumping and inverse spin Hall effect, we observe a finite symmetric dc voltage across the Pt layer over the temperature range 1.6 to 300 K for alpha-Fe2O3 thicknesses of 0, 30, 40, and 100 nm. The symmetric voltage coefficient Ks exhibits two approximately linear temperature regimes, separated by a characteristic temperature T* whose value depends on the thickness of the {\\alpha}-Fe2O3 layer. Further, the dc magnetization measurements on some of the samples suggest that the T* is correlated with the spin reorientation transition (Morin transition) in {\\alpha}-Fe2O3. Interestingly, a significantly larger magnitude of dKs/dT is noted below the characteristic temperature T*. The observed thickness and temperature dependent spin-current transmission indicates a sensitivity to the magnetic state of the insulating hematite layer.",
+      "tldr": "Spin-current transmission through epitaxial α-Fe₂O₃ films is thickness- and temperature-dependent, with a characteristic temperature correlated to the Morin spin-reorientation transition and enhanced sensitivity below it.",
+      "affiliations": [],
+      "score": 8.334,
+      "relevance_percentile": 98.93,
+      "score_components": {
+        "top_k": 0.8468,
+        "cluster": 0.8717,
+        "recent": 0.7424
+      },
+      "topics": [
+        "Materials"
+      ],
+      "seen_date": "2026-10-19",
+      "recommendation_status": "new",
+      "previous_recommended_at": null,
+      "key": "arxiv:2610.23764",
+      "first_seen": "2026-10-19",
+      "last_seen": "2026-10-19",
+      "seen_dates": [
+        "2026-10-19"
+      ],
+      "recommendations_by_date": {
+        "2026-10-19": {
+          "recommendation_status": "new",
+          "previous_recommended_at": null
+        }
+      }
+    },
+    {
+      "title": "Ligand Electronics and Metal‐Site Acidity Enable High‐Voltage MOF Electrolytes for Quasi‐Solid‐State Lithium‐Metal Batteries",
+      "authors": [
+        "Yuzhu Tian",
+        "Yifei Xu",
+        "Kang Liang",
+        "Tianqi Deng",
+        "Wei Zhao",
+        "Qinghe Wang",
+        "Yurong Ren",
+        "Hao Bin Wu"
+      ],
+      "journal": "Advanced Energy Materials",
+      "source": "Crossref",
+      "doi": "10.1002/aenm.71716",
+      "arxiv_id": null,
+      "published_at": "2026-10-18",
+      "article_url": "https://doi.org/10.1002/aenm.71716",
+      "pdf_url": "https://advanced.onlinelibrary.wiley.com/doi/pdf/10.1002/aenm.71716",
+      "code_url": null,
+      "abstract": "ABSTRACT Lithium‐metal batteries (LMBs) coupled with Ni‐rich cathodes offer high energy density for next‐generation energy storage. Their practical implementation, however, is limited by electrolyte oxidation and interfacial degradation under high voltage. Metal‐organic frameworks (MOFs) would regulate ion solvation and stabilize electrode‐electrolyte interfaces in quasi‐solid‐state electrolytes, yet the molecular origins of their oxidation stability remain unclear. Here, we identify ligand electronics and metal‐site acidity as key descriptors for high‐voltage‐stable MOF electrolytes. Electron‐withdrawing ligands lower the HOMO energy levels of MOFs, while hard Lewis‐acidic Al sites further enhance oxidation resistance. Guided by this principle, we design a perfluorinated Al‐based MOF, Al‐FBDC, featuring a high oxidation onset potential of 4.82 V (vs. Li + /Li). Incorporating Al‐FBDC into a composite cathode reconstructs the local electrolyte environment at particle‐level interfaces, thereby suppressing parasitic reactions and cathode degradation under high‐voltage operation. As a result, Li||Al‐FBDC@NCM quasi‐solid‐state cells deliver excellent long‐term cycling stability and rate performance, retaining 82% of the capacity after 200 cycles at 1 C over 3.0‐4.5 V, while maintaining robust performance even at 4.6 and 4.8 V cut‐off voltages and with controlled electrolyte loading. This work identifies a general design principle for high‐voltage‐stable MOF electrolytes and offers a practical route toward high‐energy‐density LMBs.",
+      "tldr": "By identifying electron-withdrawing ligands and hard Lewis-acidic Al sites as keys to oxidation-resistant MOF electrolytes, the authors designed a perfluorinated Al-based MOF (Al-FBDC) that enables high-voltage quasi-solid-state Li-metal batteries with stable cycling and 82% capacity retention after 200 cycles at 1 C.",
+      "affiliations": [
+        "State Key Laboratory of Silicon and Advanced Semiconductor Materials School of Materials Science and Engineering Zhejiang University Hangzhou People's Republic of China",
+        "Institute of Wenzhou Zhejiang University Wenzhou People's Republic of China",
+        "School of Materials Science and Engineering Changzhou University Changzhou People's Republic of China",
+        "Zhejiang Key Laboratory of Advanced Solid State Energy Storage Technology and Applications Taizhou Institute of Zhejiang University Taizhou People's Republic of China"
+      ],
+      "score": 8.3168,
+      "relevance_percentile": 98.78,
+      "score_components": {
+        "top_k": 0.823,
+        "cluster": 0.8528,
+        "recent": 0.8216
+      },
+      "topics": [
+        "Battery",
+        "Semiconductors",
+        "Materials"
+      ],
+      "seen_date": "2026-10-19",
+      "recommendation_status": "new",
+      "previous_recommended_at": null,
+      "key": "doi:10.1002/aenm.71716",
+      "first_seen": "2026-10-19",
+      "last_seen": "2026-10-19",
+      "seen_dates": [
+        "2026-10-19"
+      ],
+      "recommendations_by_date": {
+        "2026-10-19": {
+          "recommendation_status": "new",
+          "previous_recommended_at": null
+        }
+      }
+    },
+    {
+      "title": "Machine Learning in Liquid Electrolyte Design for Rechargeable Batteries: Addressing Fundamental Challenges",
+      "authors": [
+        "Qianqian Liu",
+        "Chaojie Wang",
+        "Zeyi Zhang",
+        "Ming Xiao",
+        "Xiaokai Hao",
+        "Kunzhe Wang",
+        "Liguang Wang"
+      ],
+      "journal": "Advanced Energy Materials",
+      "source": "Crossref",
+      "doi": "10.1002/aenm.71714",
+      "arxiv_id": null,
+      "published_at": "2026-10-18",
+      "article_url": "https://doi.org/10.1002/aenm.71714",
+      "pdf_url": "https://advanced.onlinelibrary.wiley.com/doi/pdf/10.1002/aenm.71714",
+      "code_url": null,
+      "abstract": "ABSTRACT Designing high‐performance liquid electrolytes for rechargeable batteries requires simultaneously achieving fast ionic transport, a wide electrochemical window, and interphase stability, yet these objectives are intrinsically coupled and often involve competing trade‐offs. Electrolyte optimization remains a formidable challenge for conventional trial‐and‐error approaches. Recent advances in machine learning (ML) are transforming electrolyte research into a data‐driven and increasingly autonomous paradigm for accelerated materials discovery. This review provides a comprehensive perspective on how ML methodologies are tailored to address the fundamental challenges of liquid electrolyte design. We first introduce the physicochemical foundations of liquid electrolytes alongside key ML workflows, emphasizing dataset construction and feature representation tailored to electrolyte chemistry. We then examine ML strategies for predicting and optimizing ionic transport, electrochemical window, interphase regulation, and multi‐objective optimization, highlighting representative advances and practical design principles for rational electrolyte development. Finally, we discuss current challenges, including data quality, model generalizability, and interpretability, as well as future opportunities for developing mechanism‐informed and transferable ML frameworks. By bridging machine learning with electrolyte science, this review aims to facilitate the rational design of next‐generation liquid electrolytes and accelerate the development of high‐performance rechargeable batteries.",
+      "tldr": "This review summarizes how machine learning can overcome the coupled trade-offs in liquid electrolyte design for rechargeable batteries—covering data and feature workflows, prediction and multi-objective optimization of ionic transport, electrochemical windows, and interphases—while highlighting data-quality, generalizability, and interpretability challenges and future mechanism-informed, transferable frameworks.",
+      "affiliations": [
+        "Key Laboratory of Electronic Materials and Devices of Tianjin, School of Electronics and Information Engineering Hebei University of Technology Tianjin China",
+        "College of Chemical and Biological Engineering Zhejiang University Hangzhou China"
+      ],
+      "score": 8.315,
+      "relevance_percentile": 98.62,
+      "score_components": {
+        "top_k": 0.8253,
+        "cluster": 0.8545,
+        "recent": 0.8124
+      },
+      "topics": [
+        "Battery",
+        "Electrochemistry",
+        "Materials",
+        "AI & Computation"
+      ],
+      "seen_date": "2026-10-19",
+      "recommendation_status": "new",
+      "previous_recommended_at": null,
+      "key": "doi:10.1002/aenm.71714",
+      "first_seen": "2026-10-19",
+      "last_seen": "2026-10-19",
+      "seen_dates": [
+        "2026-10-19"
+      ],
+      "recommendations_by_date": {
+        "2026-10-19": {
+          "recommendation_status": "new",
+          "previous_recommended_at": null
+        }
+      }
+    },
+    {
+      "title": "Chirality-resolved imaging of spin waves with a quantum spin",
+      "authors": [
+        "Enbo Zhang, Tiancheng Zheng, Bo-Yuan Yang, Shreyes Nallan, Chengchao Xu, Mark Ku, Jian-Gang Zhu"
+      ],
+      "journal": "arXiv",
+      "source": "arXiv",
+      "doi": null,
+      "arxiv_id": "2610.22867",
+      "published_at": null,
+      "article_url": "https://arxiv.org/abs/2610.22867",
+      "pdf_url": "https://arxiv.org/pdf/2610.22867.pdf",
+      "code_url": null,
+      "abstract": "Spin waves carry their propagation direction in the handedness of their circularly polarized stray field, a property inaccessible to scalar magnetometers. In the Damon-Eshbach surface wave of an in-plane magnetized film, the dipolar field above the film rotates with a handedness fixed by the direction of travel. The nitrogen-vacancy (NV) centre in diamond is an intrinsic polarization analyser: a right-handed field about the NV axis drives one spin transition, and a left-handed field drives the other, in both the ground and the excited state. Here, we exploit the two excited-state transitions, which lie inside the spin-wave band of yttrium iron garnet (YIG), as a pair of chirality channels and image Damon-Eshbach waves in both directions. Because reflection from an etched boundary reverses the handedness, the incident and reflected waves appear as two lines in one spectrum and are imaged separately. In the ground state, the same rule applies, and the selected field drives Rabi oscillations, a route to chirality-selective control of the NV spin by magnons. Reading the two channels gives the direction of a spin wave at one point, without a phase reference. This advances chirality-resolved quantum sensing and provides insight into chiral spin-wave dynamics.",
+      "tldr": "Using the chirality-selective excited-state transitions of a nitrogen-vacancy center as two detection channels, the authors image Damon-Eshbach spin waves and distinguish their propagation directions—including incident and reflected waves—without a phase reference, enabling chirality-resolved quantum sensing.",
+      "affiliations": [],
+      "score": 8.3011,
+      "relevance_percentile": 98.47,
+      "score_components": {
+        "top_k": 0.8389,
+        "cluster": 0.8558,
+        "recent": 0.7696
+      },
+      "topics": [
+        "Microscopy"
+      ],
+      "seen_date": "2026-10-19",
+      "recommendation_status": "new",
+      "previous_recommended_at": null,
+      "key": "arxiv:2610.22867",
+      "first_seen": "2026-10-19",
+      "last_seen": "2026-10-19",
+      "seen_dates": [
+        "2026-10-19"
+      ],
+      "recommendations_by_date": {
+        "2026-10-19": {
+          "recommendation_status": "new",
+          "previous_recommended_at": null
+        }
+      }
+    },
+    {
+      "title": "High‐Energy and Long‐Life Na 3 V 2 (PO 4 ) 2 F 3 Cathodes via Multielement V‐Site Modulation of Local M–O/F Bonding",
+      "authors": [
+        "Zhichao Li",
+        "Fuqiang Li",
+        "Mushun Chen",
+        "Yanyu Sun",
+        "Shouyu Sun",
+        "Zifei Shi",
+        "Cheng Yang",
+        "Yu Liu"
+      ],
+      "journal": "Advanced Energy Materials",
+      "source": "Crossref",
+      "doi": "10.1002/aenm.71719",
+      "arxiv_id": null,
+      "published_at": "2026-10-18",
+      "article_url": "https://doi.org/10.1002/aenm.71719",
+      "pdf_url": "https://advanced.onlinelibrary.wiley.com/doi/pdf/10.1002/aenm.71719",
+      "code_url": null,
+      "abstract": "ABSTRACT Sodium‐ion batteries are promising for sustainable energy storage, but their energy density still lags behind lithium‐ion systems. Na 3 V 2 (PO 4 ) 2 F 3 (NVPF) is an attractive high‐voltage polyanionic cathode, but fluorine loss generates low‐voltage Na 3 V 2 (PO 4 ) 3 impurities that lower energy density and aggravate lattice deformation during cycling. Here, we report a multielement V‐site charge modulation strategy, realized in Na 3‐δ V 1.9 Zr 0.02 Ti 0.02 Cr 0.02 Fe 0.02 Al 0.02 (PO 4 ) 2 F 3 (ME‐NVPF). The deliberate combination of high‐valence Zr 4+ , Ti 4+ , and same‐valence Cr 3+ , Fe 3+ , Al 3+ cations creates a heterogeneous M–O/F bonding network with multi‐directional electrostatic interactions enhancing lattice‐F retention that completely eliminates NVP impurities, lowers the Na + migration barrier, and reduces unit‐cell volume variation to merely 2.87%. Consequently, ME‐NVPF delivers a record‐high energy density of 477 Wh kg −1 , sustains 11 000 cycles, operates across −40 to 80°C, and is further validated in 600 mAh‐level pouch cells. This work establishes multielement compositional regulation as an effective strategy for designing high‐energy, long‐life, and all‐temperature polyanionic cathodes.",
+      "tldr": "Multielement V-site modulation of Na₃V₂(PO₄)₂F₃ strengthens local M–O/F bonding to suppress fluorine loss and impurities, enabling a high-energy (477 Wh kg⁻¹), long-life (11,000 cycles), wide-temperature sodium-ion cathode.",
+      "affiliations": [
+        "Shanghai Institute of Ceramics Chinese Academy of Sciences Shanghai China",
+        "University of Chinese Academy of Sciences Beijing China",
+        "School of College of Science Shanghai University Shanghai China"
+      ],
+      "score": 8.2835,
+      "relevance_percentile": 98.32,
+      "score_components": {
+        "top_k": 0.8206,
+        "cluster": 0.8493,
+        "recent": 0.8162
+      },
+      "topics": [
+        "Battery"
+      ],
+      "seen_date": "2026-10-19",
+      "recommendation_status": "new",
+      "previous_recommended_at": null,
+      "key": "doi:10.1002/aenm.71719",
+      "first_seen": "2026-10-19",
+      "last_seen": "2026-10-19",
+      "seen_dates": [
+        "2026-10-19"
+      ],
+      "recommendations_by_date": {
+        "2026-10-19": {
+          "recommendation_status": "new",
+          "previous_recommended_at": null
+        }
+      }
+    },
+    {
+      "title": "Magnetic order in epitaxial (La2/3Sr1/3MnO3)3/(BaTiO3)3 trilayer heterostructures: Evidence for quasi-two-dimensional ferrimagnetism",
+      "authors": [
+        "E. Rebolini, H. Himanshu, K. Beauvois, S. Grenier, B. Mercey, B. Domenges, B. Ouladdiaf, C. Simon, M. B. Lepetit"
+      ],
+      "journal": "arXiv",
+      "source": "arXiv",
+      "doi": null,
+      "arxiv_id": "2610.23556",
+      "published_at": null,
+      "article_url": "https://arxiv.org/abs/2610.23556",
+      "pdf_url": "https://arxiv.org/pdf/2610.23556.pdf",
+      "code_url": null,
+      "abstract": "The realization of artificial magnetic structures with high epitaxial quality and elevated critical temperatures remains a key challenge for spintronics. Here, we report the fabrication and characterization of epitaxial (La2/3Sr1/3MnO3)3/(BaTiO3)3 trilayer heterostructures grown by layer-by-layer laser ablation. High-resolution transmission electron microscopy, magnetization measurements, and neutron diffraction confirm their exceptional crystalline order and the absence of structural defects. Neutron diffraction reveals no antiferromagnetic Bragg peaks, ruling out most antiferromagnetic configurations with a non zero wave vector Q. Magnetic hysteresis loops instead evidence a ferromagnetic order with a remanent moment of about 0.5 bohr magneton per Mn atom at room temperature, persisting either in-plane or out-of-plane depending on the applied field. Our findings highlight neutron diffraction as a powerful tool for elucidating the magnetic structure of complex thin films and suggest that weak interlayer coupling through BaTiO3 leads to ferromagnetism with a high critical temperature (about 600 K).",
+      "tldr": "Epitaxial (La₂/₃Sr₁/₃MnO₃)₃/(BaTiO₃)₃ trilayers show defect-free, room-temperature ferromagnetic order (~0.5 μB/Mn) persisting to ~600 K, with neutron diffraction ruling out most antiferromagnetic configurations and suggesting weak interlayer coupling yields quasi-two-dimensional ferrimagnetism.",
+      "affiliations": [],
+      "score": 8.2487,
+      "relevance_percentile": 98.17,
+      "score_components": {
+        "top_k": 0.8275,
+        "cluster": 0.8815,
+        "recent": 0.7334
+      },
+      "topics": [
+        "Microscopy",
+        "Materials"
+      ],
+      "seen_date": "2026-10-19",
+      "recommendation_status": "new",
+      "previous_recommended_at": null,
+      "key": "arxiv:2610.23556",
+      "first_seen": "2026-10-19",
+      "last_seen": "2026-10-19",
+      "seen_dates": [
+        "2026-10-19"
+      ],
+      "recommendations_by_date": {
+        "2026-10-19": {
+          "recommendation_status": "new",
+          "previous_recommended_at": null
+        }
+      }
+    },
+    {
+      "title": "Valley-Selective Transport through Structural Domain Walls in Rhombohedral Graphene Quarter Metals",
+      "authors": [
+        "Vo Tien Phong, Pablo San-Jose, Bing Cheng, Zhengguang Lu, Elsa Prada, Long Ju, Eugene Mele, Cyprian Lewandowski, Francisco Guinea"
+      ],
+      "journal": "arXiv",
+      "source": "arXiv",
+      "doi": null,
+      "arxiv_id": "2610.22521",
+      "published_at": null,
+      "article_url": "https://arxiv.org/abs/2610.22521",
+      "pdf_url": "https://arxiv.org/pdf/2610.22521.pdf",
+      "code_url": null,
+      "abstract": "Domain walls separating quarter metals with opposite valley polarizations have recently been imaged in rhombohedral graphene multilayers. Depending on their formation mechanism, these walls respond in distinct ways to external magnetic probes. Therefore, understanding their behaviors is critical to the interpretation of experimental results. In this work, we examine domain walls formed from strain-induced one-dimensional structural defects that separate domains with complementary rhombohedral stacking orders. We show that while transport across such domain walls is controlled by the valley degree of freedom, the coupling to a magnetic field is dictated by the momentum-space chirality encoded in the Hamiltonian. As a consequence, structural domain walls are rendered electronically opaque by an applied magnetic field, while intrinsic domain walls formed by spontaneous valley symmetry breaking are unstable in the presence of such an ordering field and can be eliminated. This dichotomy allows the two types of domain walls to be distinguished in a magnetotransport experiment.",
+      "tldr": "Structural domain walls in rhombohedral graphene quarter metals support valley-selective transport but become electronically opaque in a magnetic field—unlike intrinsic valley-symmetry-breaking walls, which are eliminated—allowing the two wall types to be distinguished by magnetotransport.",
+      "affiliations": [
+        "University of Pennsylvania",
+        "Donostia International Physics Center",
+        "National High Magnetic Field Laboratory",
+        "Florida State University",
+        "CSIC",
+        "IMDEA Nanoscience",
+        "Massachusetts Institute of Technology"
+      ],
+      "score": 8.2143,
+      "relevance_percentile": 98.01,
+      "score_components": {
+        "top_k": 0.828,
+        "cluster": 0.8554,
+        "recent": 0.7541
+      },
+      "topics": [
+        "Materials"
+      ],
+      "seen_date": "2026-10-19",
+      "recommendation_status": "new",
+      "previous_recommended_at": null,
+      "key": "arxiv:2610.22521",
+      "first_seen": "2026-10-19",
+      "last_seen": "2026-10-19",
+      "seen_dates": [
+        "2026-10-19"
+      ],
+      "recommendations_by_date": {
+        "2026-10-19": {
+          "recommendation_status": "new",
+          "previous_recommended_at": null
+        }
+      }
+    },
+    {
+      "title": "Active Learning for Interatomic Potentials: A Review of Uncertainty-Driven Data Efficiency",
+      "authors": [
+        "Ilya V. Chepkasov, Alexander V. Shapeev, Alexander G. Kvashnin"
+      ],
+      "journal": "arXiv",
+      "source": "arXiv",
+      "doi": null,
+      "arxiv_id": "2610.23776",
+      "published_at": null,
+      "article_url": "https://arxiv.org/abs/2610.23776",
+      "pdf_url": "https://arxiv.org/pdf/2610.23776.pdf",
+      "code_url": null,
+      "abstract": "Developing a machine learning interatomic potential (MLIP) that is accurate for the specific conditions under which it will be applied, rather than simply for the predefined configurations chosen by the model developer, is a significant challenge in atomistic simulation. Active learning (AL) addresses this challenge by closing the loop between candidate generation, data selection, reference calculation, and model updating. Here, we survey more than seventy studies, with an emphasis on work from 2020 to 2026, to understand how active learning has evolved from a niche, on-the-fly training technique for query-by-committee and Gaussian process force fields into a diverse family of data-efficient strategies. he reviewed examples include on-the-fly molecular dynamics, active data selection for fine-tuning pretrained models, kernel- and representation-based acquisition using frozen pretrained models, and reaction-aware sampling for chemical systems far from equilibrium. We explore the use of active learning in elemental and alloy mechanics, hydrogen and ion diffusion, ferroelectrics and effective Hamiltonians of functional materials, reactive and photochemical dynamics, high-entropy and compositionally disordered materials, as well as generative and autonomous material discovery pipelines. Drawing on a growing body of critical, methodologically self-aware literature, we also show that this achievement carries systematic caveats. Uncertainty estimates are not interchangeable across model architectures and are frequently the least reliable exactly where they matter most. We close by discussing the outlook for standardized, uncertainty-calibrated, and observable-targeted active-learning workflows in the foundation-model era.",
+      "tldr": "This review synthesizes over seventy studies to show how active learning for machine-learned interatomic potentials has evolved from niche uncertainty-driven on-the-fly training into a diverse family of data-efficient strategies—including pretrained foundation-model fine-tuning and reaction-aware sampling—while emphasizing persistent challenges in uncertainty calibration and the need for standardized, observable-targeted workflows.",
+      "affiliations": [
+        "Skolkovo Institute of Science and Technology",
+        "Bauman Moscow State Technical University",
+        "Digital Materials LLC"
+      ],
+      "score": 8.2073,
+      "relevance_percentile": 97.86,
+      "score_components": {
+        "top_k": 0.8308,
+        "cluster": 0.8378,
+        "recent": 0.77
+      },
+      "topics": [
+        "Materials",
+        "AI & Computation"
+      ],
+      "seen_date": "2026-10-19",
+      "recommendation_status": "new",
+      "previous_recommended_at": null,
+      "key": "arxiv:2610.23776",
+      "first_seen": "2026-10-19",
+      "last_seen": "2026-10-19",
+      "seen_dates": [
+        "2026-10-19"
+      ],
+      "recommendations_by_date": {
+        "2026-10-19": {
+          "recommendation_status": "new",
+          "previous_recommended_at": null
+        }
+      }
+    },
+    {
+      "title": "Engineering Advanced Electrocatalysts for Energy‐Saving Zinc−Air Hybrid Batteries: Concurrent Energy Storage Coupled With Chemical Upgrading",
+      "authors": [
+        "Xian‐Wei Lv",
+        "Tao Meng",
+        "Mengyue Zhang",
+        "Xiaodong Meng",
+        "Zhongli Wang",
+        "Xuhuan Yan",
+        "Zhong‐Yong Yuan",
+        "Jianxin Geng"
+      ],
+      "journal": "Advanced Energy Materials",
+      "source": "Crossref",
+      "doi": "10.1002/aenm.71713",
+      "arxiv_id": null,
+      "published_at": "2026-10-18",
+      "article_url": "https://doi.org/10.1002/aenm.71713",
+      "pdf_url": "https://advanced.onlinelibrary.wiley.com/doi/pdf/10.1002/aenm.71713",
+      "code_url": null,
+      "abstract": "ABSTRACT Additive‐assisted zinc−air hybrid batteries (ZAHBs) that couple favorable additive oxidation with oxygen reduction represent ideal energy storage candidates, distinguished by high theoretical energy density, reduced charging voltage, and functionality for electrochemical upgrading of organics or wastewater. Herein, a critical overview of ZAHBs is provided, commencing with the fundamental electrochemistry (including advantages, working mechanisms, cell configurations, and evaluation parameters) and the selection criteria for small‐molecule additives (including theoretical potential, solubility, stability, toxicity, and volatility). We then summarize recent progress in three categories of ZAHBs (i.e., wastewater‐purified, value‐added, and redox‐mediated), discussing alternative anodic oxidation reactions (e.g., alcohol, urea, hydrazine, and iodine oxidation) coupled with cathodic oxygen reduction, along with the underlying catalytic mechanisms. Particular emphasis is placed on catalyst design strategies spanning electronic (ligand engineering, heteroatom doping, electron delocalization, orbital hybridization, and built‐in electric field), geometric (defect engineering, curvature engineering, and nano‐confinement effect), and interfacial (high‐energy interface, heterostructure, interfacial microenvironment, and core–shell structure) modulations. Finally, we discuss the remaining challenges and future perspectives for advancing ZAHBs. This review offers valuable guidance for the rational design and practical deployment of next‐generation energy devices.",
+      "tldr": "This review summarizes additive-assisted zinc–air hybrid batteries that couple anodic additive oxidation with cathodic oxygen reduction for energy-saving energy storage and chemical upgrading, covering fundamentals, additive selection, device categories, catalyst design strategies, and future challenges.",
+      "affiliations": [
+        "Tianjin Key Laboratory of Advanced Fibers and Energy Storage School of Material Science and Engineering Tiangong University Tianjin China",
+        "Cangzhou Institute of Tiangong University Cangzhou China",
+        "Collaborative Innovation Center of Materials Science School of Materials Science and Engineering Nankai University Tianjin China"
+      ],
+      "score": 8.2019,
+      "relevance_percentile": 97.71,
+      "score_components": {
+        "top_k": 0.8125,
+        "cluster": 0.8476,
+        "recent": 0.7984
+      },
+      "topics": [
+        "Electrochemistry",
+        "Semiconductors"
+      ],
+      "seen_date": "2026-10-19",
+      "recommendation_status": "new",
+      "previous_recommended_at": null,
+      "key": "doi:10.1002/aenm.71713",
+      "first_seen": "2026-10-19",
+      "last_seen": "2026-10-19",
+      "seen_dates": [
+        "2026-10-19"
+      ],
+      "recommendations_by_date": {
+        "2026-10-19": {
+          "recommendation_status": "new",
+          "previous_recommended_at": null
+        }
+      }
+    },
+    {
+      "title": "Engineering nonrelativistic spin splitting in semiconductors by altermagnetic proximity",
+      "authors": [
+        "Sing Lam Wong, Marcel Franz"
+      ],
+      "journal": "arXiv",
+      "source": "arXiv",
+      "doi": null,
+      "arxiv_id": "2610.23773",
+      "published_at": null,
+      "article_url": "https://arxiv.org/abs/2610.23773",
+      "pdf_url": "https://arxiv.org/pdf/2610.23773.pdf",
+      "code_url": null,
+      "abstract": "Altermagnets combine vanishing net magnetization with momentum-dependent, nonrelativistic spin splitting, offering functionalities attractive for spintronics and quantum devices. Their practical use, however, is constrained by the limited availability of materials that simultaneously possess the required altermagnetic symmetry, semiconducting electronic structure, and weak spin-orbit coupling. Here we show that these requirements can instead be separated between constituent materials through proximity engineering. We develop an analytical theory for a conventional semiconductor coupled to a gapped $d$-wave altermagnet and demonstrate that virtual tunneling transfers the altermagnetic spin splitting to the semiconductor. Crucially, the induced nonrelativistic and relativistic spin splittings exhibit qualitatively different dependences on band alignment. Virtual processes involving the valence and conduction bands of the altermagnet can reinforce the altermagnetic splitting while contributing with opposite signs to the interfacial Rashba coupling. Consequently, electrostatic tuning can access a regime in which the Rashba splitting vanishes while a sizable $d$-wave spin splitting persists. Exact diagonalization of the full heterostructure model confirms the analytical theory and establishes the robustness of this mechanism beyond the perturbative regime. Our results identify altermagnetic proximity as a route for engineering nonrelativistic spin-split electronic states in established semiconductor platforms, providing a general strategy for disentangling magnetic and relativistic spin interactions in quantum heterostructures.",
+      "tldr": "By proximity-coupling a conventional semiconductor to an insulating \\(d\\)-wave altermagnet, the paper shows that altermagnetic spin splitting can be transferred into the semiconductor and, via band-alignment tuning, isolated from interfacial Rashba spin-orbit coupling to realize a gate-tunable nonrelativistic spin-split semiconductor.",
+      "affiliations": [
+        "University of British Columbia"
+      ],
+      "score": 8.1984,
+      "relevance_percentile": 97.55,
+      "score_components": {
+        "top_k": 0.8355,
+        "cluster": 0.8608,
+        "recent": 0.7194
+      },
+      "topics": [
+        "Semiconductors",
+        "Materials"
+      ],
+      "seen_date": "2026-10-19",
+      "recommendation_status": "new",
+      "previous_recommended_at": null,
+      "key": "arxiv:2610.23773",
+      "first_seen": "2026-10-19",
+      "last_seen": "2026-10-19",
+      "seen_dates": [
+        "2026-10-19"
+      ],
+      "recommendations_by_date": {
+        "2026-10-19": {
+          "recommendation_status": "new",
+          "previous_recommended_at": null
+        }
+      }
+    },
+    {
+      "title": "Kinematics of Inverse Compton Scattering from Dirac Carriers in Graphene",
+      "authors": [
+        "Dar Faheem Ul Haq, Naveed Ahmad Shah, SSZ Ashraf"
+      ],
+      "journal": "arXiv",
+      "source": "arXiv",
+      "doi": null,
+      "arxiv_id": "2610.23358",
+      "published_at": null,
+      "article_url": "https://arxiv.org/abs/2610.23358",
+      "pdf_url": "https://arxiv.org/pdf/2610.23358.pdf",
+      "code_url": null,
+      "abstract": "We examine the kinematics of Compton and inverse Compton scattering by Dirac carriers in graphene. Unlike photons in vacuum, which propagate at the speed of light c, graphene carriers have a characteristic velocity vF, with vF much less than c. This difference means that the standard Compton scattering formula cannot be applied to graphene simply by replacing c with vF. We first examine Compton-like scattering for a gapless Dirac carrier initially at the Dirac point and for a gapped carrier at the band edge, both corresponding to zero in-plane momentum. We then consider scattering from an energetic gapless Dirac carrier. By combining energy conservation with the graphene dispersion and in-plane momentum conservation, we obtain a quadratic equation for the scattered photon energy within the model considered. This relation is the main kinematic result of the work. We identify inverse Compton-like scattering by the transfer of energy from the carrier to the photon, subject to the simultaneous conservation of energy and in-plane momentum. We also discuss how this process differs kinematically from Doppler-shifted emission, Cerenkov-like radiation, harmonic generation, photon drag, and other nonlinear optical processes. Finally, we propose a time-resolved pump-probe arrangement in which the scattered photon spectrum is the primary observable, while time- and angle-resolved photoemission spectroscopy (TR-ARPES) provides an independent probe of the nonequilibrium carrier distribution. These results provide a kinematic framework for analysing inverse Compton-like scattering in graphene and for identifying the conditions under which energy can be transferred from energetic Dirac carriers to photons.",
+      "tldr": "The paper derives the kinematic conditions for Compton-like and inverse Compton-like photon scattering by Dirac carriers in graphene—yielding a quadratic equation for the scattered photon energy from energy and in-plane momentum conservation—and proposes a time-resolved pump–probe/TR-ARPES scheme to probe inverse-Compton energy transfer.",
+      "affiliations": [
+        "Aligarh Muslim University"
+      ],
+      "score": 8.196,
+      "relevance_percentile": 97.4,
+      "score_components": {
+        "top_k": 0.8268,
+        "cluster": 0.8483,
+        "recent": 0.7587
+      },
+      "topics": [
+        "Spectroscopy",
+        "Semiconductors",
+        "Materials"
+      ],
+      "seen_date": "2026-10-19",
+      "recommendation_status": "new",
+      "previous_recommended_at": null,
+      "key": "arxiv:2610.23358",
+      "first_seen": "2026-10-19",
+      "last_seen": "2026-10-19",
+      "seen_dates": [
+        "2026-10-19"
+      ],
+      "recommendations_by_date": {
+        "2026-10-19": {
+          "recommendation_status": "new",
+          "previous_recommended_at": null
+        }
+      }
+    },
+    {
+      "title": "Intercalation of Ultrathin Ferromagnetic Iron Films at the Graphene/SiC Interface",
+      "authors": [
+        "Niels R\\\"osch, Rico Ehrler, Stefanie Suzanne Brinkman, Xin Liang Tan, Anders Christian Mathisen, Marc Stevens, Sascha Hermann, Olav Hellwig, Philip Sch\\\"adlich, Hendrik Bentmann, Susanne Wolff, Thomas Seyller, Fabian G\\\"ohler"
+      ],
+      "journal": "arXiv",
+      "source": "arXiv",
+      "doi": null,
+      "arxiv_id": "2610.23728",
+      "published_at": null,
+      "article_url": "https://arxiv.org/abs/2610.23728",
+      "pdf_url": "https://arxiv.org/pdf/2610.23728.pdf",
+      "code_url": null,
+      "abstract": "The intercalation of high-quality PASG-grown (polymer-assisted sublimation growth) zero-layer graphene on 4H-SiC(0001) with iron is studied using a deposition-and-annealing approach. We find that unlike other metals, Fe does not easily intercalate, and the intercalation procedure has to be balanced with the formation of iron silicides and graphitic carbon at the interface. After successful intercalation, the ultrathin iron films are protected against oxidation by the covering graphene sheet, and retain ferromagnetic behaviour with an in-plane easy axis even at room temperature. When exposed to a selenium-rich atmosphere at elevated temperatures, an almost complete exchange of Fe by Se is observed, imposing a major restriction for the formation of multi-element 2D compounds via sequential intercalation schemes.",
+      "tldr": "Ultrathin ferromagnetic Fe films can be intercalated at the graphene/SiC interface and protected from oxidation by graphene, but the process competes with iron silicide/graphitic carbon formation, and Fe is almost completely exchanged by Se at elevated temperature, limiting sequential multi-element intercalation.",
+      "affiliations": [
+        "Fraunhofer-Institut für Elektronische Nanosysteme ENAS",
+        "Chemnitz University of Technology",
+        "Research Center for Materials, Architectures and Integration of Nanomembranes (MAIN)",
+        "Norwegian University of Science and Technology"
+      ],
+      "score": 8.1887,
+      "relevance_percentile": 97.25,
+      "score_components": {
+        "top_k": 0.8269,
+        "cluster": 0.8318,
+        "recent": 0.7794
+      },
+      "topics": [
+        "Battery",
+        "Materials"
+      ],
+      "seen_date": "2026-10-19",
+      "recommendation_status": "new",
+      "previous_recommended_at": null,
+      "key": "arxiv:2610.23728",
+      "first_seen": "2026-10-19",
+      "last_seen": "2026-10-19",
+      "seen_dates": [
+        "2026-10-19"
+      ],
+      "recommendations_by_date": {
+        "2026-10-19": {
+          "recommendation_status": "new",
+          "previous_recommended_at": null
+        }
+      }
+    },
+    {
+      "title": "Site‐Selectively Engineered MoS 2 /ReS 2 Heterostructures for High‐Performance Supercapacitors",
+      "authors": [
+        "Haodong Bi",
+        "Huilin Zhang",
+        "Jisong Hu",
+        "Ling Kang",
+        "Yusuke Yamauchi",
+        "Bin Ding",
+        "Shude Liu"
+      ],
+      "journal": "Advanced Energy Materials",
+      "source": "Crossref",
+      "doi": "10.1002/aenm.71698",
+      "arxiv_id": null,
+      "published_at": "2026-10-18",
+      "article_url": "https://doi.org/10.1002/aenm.71698",
+      "pdf_url": "https://advanced.onlinelibrary.wiley.com/doi/pdf/10.1002/aenm.71698",
+      "code_url": null,
+      "abstract": "ABSTRACT Layered MoS 2 holds great potential for supercapacitors; however, its intrinsically low electrical conductivity, sluggish electrochemical kinetics, and susceptibility to Mo dissolution severely hamper its electrochemical performance. Here, we propose a selective‐doping‐coupled heterostructure engineering strategy, in which atomic Fe preferentially incorporates into the MoS 2 domain, while the local structure of the ReS 2 component remains largely preserved, forming an Fe‐doped MoS 2 /ReS 2 (Fe‐MRS) heterostructure. Theoretical and experimental results reveal the formation of a built‐in electric field at the Fe‐MRS interface, driving electron transfer from ReS 2 to Fe‐doped MoS 2 , reconfiguring the Mo‐S electronic structure, while simultaneously strengthening Mo─S bonds and suppressing Mo dissolution. Moreover, Fe incorporation is energetically favored at octahedrally coordinated Mo sites within the MoS 2 domain, modulating the local electronic environment of the MoS 2 domain and thereby facilitating coupled electron/ion transport. Consequently, the Fe‐MRS electrode delivers high specific capacitance and excellent cycling stability with a capacitance retention of 97.0% over 5000 cycles. Moreover, asymmetric supercapacitors assembled with the Fe‐MRS anode achieve a high energy density of 55.2 Wh kg −1 at 1000 W kg −1 , maintaining good structural and mechanical robustness. This work offers clear guidance for leveraging selective doping to engineer heterostructures with enhanced electron‐ion coupling for advanced electrochemical energy storage systems.",
+      "tldr": "Selective Fe doping of the MoS₂ domain in a MoS₂/ReS₂ heterostructure creates an interfacial electric field that enhances electron/ion transport and suppresses Mo dissolution, enabling high-capacitance, stable supercapacitors with 97.0% retention over 5000 cycles and 55.2 Wh kg⁻¹ energy density.",
+      "affiliations": [
+        "Engineering Research Center of Technical Textile College of Textiles Ministry of Education Donghua University Shanghai China",
+        "College of Physics and Optoelectronic Engineering College of Materials Science and Engineering Shenzhen University Shenzhen China",
+        "Advanced Materials and Devices Laboratory School of Materials Science and Engineering School of Chemistry and Environmental Engineering Hanshan Normal University Chaozhou China",
+        "School of Mechanical Engineering Yonsei University Seoul South Korea",
+        "Department of Materials Process Engineering Graduate School of Engineering Nagoya University Nagoya Japan",
+        "School of Chemical Engineering and Australian Institute for Bioengineering and Nanotechnology The University of Queensland Brisbane Queensland Australia",
+        "Department of Convergent Biotechnology and Advanced Materials Science Kyung Hee University Yongin‐si Gyeonggi‐do South Korea",
+        "School of Energy and Materials Shanghai Polytechnic University Shanghai China",
+        "Innovation Center for Textile Science and Technology College of Textiles Donghua University Shanghai China"
+      ],
+      "score": 8.167,
+      "relevance_percentile": 97.09,
+      "score_components": {
+        "top_k": 0.8176,
+        "cluster": 0.84,
+        "recent": 0.7793
+      },
+      "topics": [
+        "Battery",
+        "Electrochemistry"
+      ],
+      "seen_date": "2026-10-19",
+      "recommendation_status": "new",
+      "previous_recommended_at": null,
+      "key": "doi:10.1002/aenm.71698",
+      "first_seen": "2026-10-19",
+      "last_seen": "2026-10-19",
+      "seen_dates": [
+        "2026-10-19"
+      ],
+      "recommendations_by_date": {
+        "2026-10-19": {
+          "recommendation_status": "new",
+          "previous_recommended_at": null
+        }
+      }
+    },
+    {
+      "title": "Termination-dependent surface Fermiology in the intercalated altermagnet CoNb$_4$Se$_8$",
+      "authors": [
+        "Pietro Maria Forcella, Alessandro De Vita, Matthew D. Watson, Sammar Tayyab, Chiara Bigi, Iulia Cojocariu, Marcin Szpytma, Matteo Jugovac, Andrea Locatelli, Tevfik Onur Mentes, My Bang Petersen, Paolo Moras, Polina M. Sheverdyaeva, Christopher Candelora, Ilija Zeljkovic, Federico Motti, Jill A. Miwa, Vincent Polewczyk, Matthieu Jamet, Matteo Calandra, Younghun Hwang, Davide Romanin, Federico Mazzola"
+      ],
+      "journal": "arXiv",
+      "source": "arXiv",
+      "doi": null,
+      "arxiv_id": "2610.23375",
+      "published_at": null,
+      "article_url": "https://arxiv.org/abs/2610.23375",
+      "pdf_url": "https://arxiv.org/pdf/2610.23375.pdf",
+      "code_url": null,
+      "abstract": "Altermagnets have recently gained attention for hosting symmetry-enforced spin-split bands despite zero net magnetization. Angle-resolved photoelectron spectroscopy (ARPES) offers direct access to their electronic structure. However, the intrinsic surface sensitivity of this technique complicates the identification of the observed features: Surface states can be misinterpreted as the spin-split counterpart of bulk bands. This issue becomes particularly relevant for layered intercalated systems, where micrometer-sized domains with distinct terminations often coexist on a cleaved surface. We discuss this scenario for CoNb$_4$Se$_8$, one of the first established layered altermagnets. Supported by density functional theory calculations, we employ micro-ARPES to probe individual domains and reveal two contrasting surface terminations. We identify Co- and Se-terminated domains with characteristic surface states arising from bulk-surface connectivity of the material. Our work shows that termination-dependent surface contributions are essential for the reliable spectroscopic identification of altermagnetism and for assessing its presence across the family of layered materials.",
+      "tldr": "Micro-ARPES and DFT reveal that CoNb₄Se₈ cleaves into Co- and Se-terminated domains with distinct surface states, highlighting that termination-dependent surface effects must be considered when spectroscopically identifying altermagnetism in layered materials.",
+      "affiliations": [
+        "Institute for Basic Science (IBS)",
+        "Univ. Grenoble Alpes",
+        "Sapienza Università di Roma",
+        "Université Paris-Saclay",
+        "Fritz Haber Institut der Max Planck Gesellschaft",
+        "Boston College",
+        "AGH University of Krakow",
+        "Synchrotron SOLEIL",
+        "Elettra - Sincrotrone Trieste S.C.p.A.",
+        "Aarhus University",
+        "University of Trento",
+        "Università degli Studi di Trieste",
+        "Diamond Light Source Ltd",
+        "CNR-Istituto di Struttura della Materia (CNR-ISM)",
+        "Ulsan College",
+        "CNR-Istituto Officina dei Materiali (IOM)",
+        "University of Padova"
+      ],
+      "score": 8.1662,
+      "relevance_percentile": 96.94,
+      "score_components": {
+        "top_k": 0.8154,
+        "cluster": 0.8551,
+        "recent": 0.7619
+      },
+      "topics": [
+        "Spectroscopy",
+        "Materials",
+        "AI & Computation"
+      ],
+      "seen_date": "2026-10-19",
+      "recommendation_status": "new",
+      "previous_recommended_at": null,
+      "key": "arxiv:2610.23375",
+      "first_seen": "2026-10-19",
+      "last_seen": "2026-10-19",
+      "seen_dates": [
+        "2026-10-19"
+      ],
+      "recommendations_by_date": {
+        "2026-10-19": {
+          "recommendation_status": "new",
+          "previous_recommended_at": null
+        }
+      }
+    },
+    {
+      "title": "Ionic switching between supermagnetic states",
+      "authors": [
+        "Sumaiyatul Ahsan, Yin-Ju Yen, Andrew H. Comstock, Tanya A. Balandin, Jason D. Azoulay, Jamie H. Warner, Dario A. Arena, Faisal M. Alamgir"
+      ],
+      "journal": "arXiv",
+      "source": "arXiv",
+      "doi": null,
+      "arxiv_id": "2610.23829",
+      "published_at": null,
+      "article_url": "https://arxiv.org/abs/2610.23829",
+      "pdf_url": "https://arxiv.org/pdf/2610.23829.pdf",
+      "code_url": null,
+      "abstract": "Supermagnetic states are typically set during synthesis. Changing and retaining these states requires sustained external stimulus. Without resynthesis or continued stimulus, we show, for the first time, a reversible magneto-ionic switching between superferromagnetic (SFM) and superspin-glass (SSG) states using room-temperature Li-ion transport. We utilize the incomplete lithiation of NiO into nanoscale Ni and Li2O to switch between the states. Lithiation generates a fragmented nano-Ni network that strengthens dipolar interactions and promotes SFM order with stronger memory and higher room-temperature moments. Delithiation partially regenerates NiO and drives the system into an SSG state with higher low-temperature coercivity and sharper temperature-selective memory. The interconversion between SFM and SSG persists at all measured subsequent lithiation-delithiation cycles, creating a general framework for supermagnetic switching.",
+      "tldr": "The paper demonstrates reversible room-temperature Li-ion–driven magneto-ionic switching between superferromagnetic and superspin-glass states via incomplete lithiation/delithiation of NiO into nanoscale Ni and Li₂O, enabling persistent interconversion of supermagnetic states without resynthesis or sustained external stimulus.",
+      "affiliations": [],
+      "score": 8.1414,
+      "relevance_percentile": 96.79,
+      "score_components": {
+        "top_k": 0.81,
+        "cluster": 0.8473,
+        "recent": 0.7747
+      },
+      "topics": [
+        "Electrochemistry",
+        "Materials"
+      ],
+      "seen_date": "2026-10-19",
+      "recommendation_status": "new",
+      "previous_recommended_at": null,
+      "key": "arxiv:2610.23829",
+      "first_seen": "2026-10-19",
+      "last_seen": "2026-10-19",
+      "seen_dates": [
+        "2026-10-19"
+      ],
+      "recommendations_by_date": {
+        "2026-10-19": {
+          "recommendation_status": "new",
+          "previous_recommended_at": null
+        }
+      }
+    },
+    {
+      "title": "Non-Adiabatic Spin-Induced Currents in Magnetic Weyl Semimetals",
+      "authors": [
+        "Kota Watanabe, Akihiro Ozawa, Hiroaki Ishizuka, Hiroki Isobe, Kentaro Nomura"
+      ],
+      "journal": "arXiv",
+      "source": "arXiv",
+      "doi": null,
+      "arxiv_id": "2610.23197",
+      "published_at": null,
+      "article_url": "https://arxiv.org/abs/2610.23197",
+      "pdf_url": "https://arxiv.org/pdf/2610.23197.pdf",
+      "code_url": null,
+      "abstract": "We theoretically study dc electric currents induced by rapid spin precession in noncentrosymmetric magnetic Weyl semimetals using the Floquet--Keldysh Green's-function formalism. The spin dynamics act as a time-dependent chiral gauge field and the geometric structure of electric currents is expressed in terms of the Berry curvature, the quantum metric, and the shift vector. For an isotropic Weyl cone, only an injection current is generated. This current scales quadratically with the driving frequency and linearly with the relaxation time associated with coupling to a fermionic bath. We further show that a finite Weyl-cone tilt modifies the available interband-transition phase space, smooths the frequency dependence of the current, and allows for a shift current and another type of injection current, both of which flow in directions determined by the tilt and the direction of the precession. A finite net current can remain after summing contributions from Weyl nodes of opposite chiralities when their transition phase spaces are inequivalent.",
+      "tldr": "Using Floquet–Keldysh theory, the paper shows that rapid spin precession in noncentrosymmetric magnetic Weyl semimetals acts as a time-dependent chiral gauge field and induces dc currents whose geometric injection and shift contributions—governed by Berry curvature, quantum metric, and shift vector—are strongly modified by Weyl-cone tilt, enabling a finite net current even after summing opposite-chirality nodes.",
+      "affiliations": [
+        "Kyushu University",
+        "The University of Tokyo",
+        "Institute of Science Tokyo",
+        "Universität Leipzig"
+      ],
+      "score": 8.137,
+      "relevance_percentile": 96.64,
+      "score_components": {
+        "top_k": 0.8204,
+        "cluster": 0.862,
+        "recent": 0.7245
+      },
+      "topics": [
+        "Other"
+      ],
+      "seen_date": "2026-10-19",
+      "recommendation_status": "new",
+      "previous_recommended_at": null,
+      "key": "arxiv:2610.23197",
+      "first_seen": "2026-10-19",
+      "last_seen": "2026-10-19",
+      "seen_dates": [
+        "2026-10-19"
+      ],
+      "recommendations_by_date": {
+        "2026-10-19": {
+          "recommendation_status": "new",
+          "previous_recommended_at": null
+        }
+      }
+    },
+    {
+      "title": "From Surface Reactions to Inhibitor Coverage: A Machine-Learning-Assisted Computational Study of Area-Selective Atomic Layer Deposition",
+      "authors": [
+        "Gijin Kim, Seungwu Han, Youngho Kang"
+      ],
+      "journal": "arXiv",
+      "source": "arXiv",
+      "doi": null,
+      "arxiv_id": "2610.22911",
+      "published_at": null,
+      "article_url": "https://arxiv.org/abs/2610.22911",
+      "pdf_url": "https://arxiv.org/pdf/2610.22911.pdf",
+      "code_url": null,
+      "abstract": "Area-selective atomic layer deposition (AS-ALD) enables selective material growth for the fabrication of nanoscale semiconductor devices. Predicting inhibitor coverage is essential for understanding and optimizing surface blocking in AS-ALD. Here, we present a computational workflow combining a pretrained universal machine-learning interatomic potential with off-lattice grand canonical Monte Carlo simulations and apply it to inhibitor adsorption and precursor blocking on amorphous SiO2. Realistic surface models reveal substantial site-dependent variations in reaction energies and activation barriers, with silanol groups serving as the primary adsorption sites for aminosilane and related inhibitors and metal precursors. Coverage simulations show that inhibitors producing identical adsorbed fragments can yield different coverages because the intact molecules impose distinct steric constraints, leading to different accessible site densities and blocking capabilities. Beyond coverage, we highlight the importance of the reactivity of adsorbed inhibitor fragments toward precursors in determining inhibitor stability and blocking performance. Together, these findings demonstrate the need to consider both steric effects and chemical reactivity on realistic amorphous surfaces. Our calculations connect local reaction chemistry with inhibitor coverage and provide a computational basis for understanding inhibition mechanisms and selecting suitable inhibitor-precursor combinations for AS-ALD.",
+      "tldr": "A machine-learning-assisted workflow combining a universal interatomic potential with off-lattice grand canonical Monte Carlo simulations predicts inhibitor coverage and precursor blocking on amorphous SiO₂ for area-selective atomic layer deposition, revealing that both steric constraints and the reactivity of adsorbed inhibitor fragments determine blocking effectiveness.",
+      "affiliations": [
+        "Incheon National University",
+        "Seoul National University",
+        "Korea Institute for Advanced Study"
+      ],
+      "score": 8.1312,
+      "relevance_percentile": 96.48,
+      "score_components": {
+        "top_k": 0.8167,
+        "cluster": 0.8306,
+        "recent": 0.7779
+      },
+      "topics": [
+        "Semiconductors",
+        "AI & Computation"
+      ],
+      "seen_date": "2026-10-19",
+      "recommendation_status": "new",
+      "previous_recommended_at": null,
+      "key": "arxiv:2610.22911",
+      "first_seen": "2026-10-19",
+      "last_seen": "2026-10-19",
+      "seen_dates": [
+        "2026-10-19"
+      ],
+      "recommendations_by_date": {
+        "2026-10-19": {
+          "recommendation_status": "new",
+          "previous_recommended_at": null
+        }
+      }
+    },
+    {
+      "title": "Magnetic tunnel junctions of twisted La2/3Sr1/3MnO3 freestanding bilayers",
+      "authors": [
+        "Kota Kanda, Shiho Irie, Kodai Niitsu, Masayuki Ochi, Takumi Yamazaki, Kouta Kondou, Kohei Ueda, Takeshi Seki, Jobu Matsuno, Junichi Shiogai"
+      ],
+      "journal": "arXiv",
+      "source": "arXiv",
+      "doi": null,
+      "arxiv_id": "2610.23720",
+      "published_at": null,
+      "article_url": "https://arxiv.org/abs/2610.23720",
+      "pdf_url": "https://arxiv.org/pdf/2610.23720.pdf",
+      "code_url": null,
+      "abstract": "Transition metal oxides (TMOs) host a variety of emergent spintronic or multiferroic functionalities owing to the intricate interplay between lattice, orbital, charge, and spin degrees of freedom. Recent advances in epitaxial lift-off and dry transfer techniques using water-soluble sacrificial layers enables stacking and twisting of freestanding membranes of such strongly correlated oxides, providing even richer physical properties and functionalities. To date, the twisted junctions of TMOs have been mainly investigated in insulators, focusing on their structural and dielectric properties. Here, we demonstrate that the twisted bilayer membranes of La2/3Sr1/3MnO3, a prototypical half-metallic ferromagnetic metal TMO, offer a magnetic tunnel junction (MTJ) with their van der Waals (vdW) gap acting as a tunnel barrier. The twisted junctions of La2/3Sr1/3MnO3 exhibit tunnelling magnetoresistance (TMR) effect with respect to relative orientation of magnetizations of top and bottom membranes. In addition, high-field magnetoresistance shows uniaxial anisotropy, which can be assigned to tunnelling anisotropic magnetoresistance (TAMR) effect reflecting rhombohedral distortion of fully-relaxed La2/3Sr1/3MnO3. The demonstration of TMR and TAMR effects suggests that spin and in-plane momentum degrees of freedom of 3d electrons are conserved across the twisted junctions of TMOs, opening a new avenue for realizing strongly correlated twistronics utilizing electron coherence through tunnelling processes.",
+      "tldr": "Twisted freestanding La₂/₃Sr₁/₃MnO₃ bilayers form van der Waals magnetic tunnel junctions that exhibit tunneling magnetoresistance and tunneling anisotropic magnetoresistance, demonstrating conserved spin and in-plane momentum across the junction and opening a route to strongly correlated oxide twistronics.",
+      "affiliations": [],
+      "score": 8.1091,
+      "relevance_percentile": 96.33,
+      "score_components": {
+        "top_k": 0.8101,
+        "cluster": 0.8573,
+        "recent": 0.7432
+      },
+      "topics": [
+        "Materials"
+      ],
+      "seen_date": "2026-10-19",
+      "recommendation_status": "new",
+      "previous_recommended_at": null,
+      "key": "arxiv:2610.23720",
+      "first_seen": "2026-10-19",
+      "last_seen": "2026-10-19",
+      "seen_dates": [
+        "2026-10-19"
+      ],
+      "recommendations_by_date": {
+        "2026-10-19": {
+          "recommendation_status": "new",
+          "previous_recommended_at": null
+        }
+      }
+    },
+    {
+      "title": "Magnetic Field-assisted Crystallographic Selection During Grain Growth in Non-Magnetic Polycrystals: A Phase-Field Study",
+      "authors": [
+        "Rakesh Maurya, Soumya Bandyopadhyay, Somnath Bhowmick, Rajdip Mukherjee"
+      ],
+      "journal": "arXiv",
+      "source": "arXiv",
+      "doi": null,
+      "arxiv_id": "2610.23473",
+      "published_at": null,
+      "article_url": "https://arxiv.org/abs/2610.23473",
+      "pdf_url": "https://arxiv.org/pdf/2610.23473.pdf",
+      "code_url": null,
+      "abstract": "Magnetic fields drive grain boundary migration in non-magnetic systems through anisotropic susceptibility, yet how the local orientation can affect the resulting collective grain growth behavior remains unclear. We employ a phase-field model to investigate magnetic-field-assisted grain growth in the diamagnetic Bi. This study provides a mechanistic basis for using static and dynamically varied magnetic fields to control texture development and grain growth kinetics in weakly magnetic materials. We also identify the conditions under which magnetic-field-driven orientation selection produces a distinct bimodal grain-size distribution. The bicrystal studies establish that boundary migration is governed by the magnetic free-energy difference between differently oriented grains, while polycrystalline field-sweep simulations reveal a transition from capillary-dominated coarsening to magnetically biased texture selection. For unbiased orientation distributions, magnetic selection remains distributed; however, when a small population of grains is strongly favored, the driving force localizes and exhibits bimodal coarsening characterized by enlarged favored grains embedded within a fine-grained matrix, even without grain boundary energy anisotropy, particle pinning, or heterogeneity. The field removal and field reorientation simulations further show that magnetic field history can redirect the coarsening pathway.",
+      "tldr": "Using phase-field simulations of diamagnetic Bi, this study shows that directional magnetic fields can control texture and grain growth in non-magnetic polycrystals through susceptibility-anisotropy-driven orientation selection, with initial texture and field history determining whether coarsening remains biased-normal or becomes localized and bimodal.",
+      "affiliations": [
+        "Indian Institute of Technology, Kanpur",
+        "University of Florida"
+      ],
+      "score": 8.1021,
+      "relevance_percentile": 96.18,
+      "score_components": {
+        "top_k": 0.8129,
+        "cluster": 0.8583,
+        "recent": 0.7313
+      },
+      "topics": [
+        "Materials",
+        "AI & Computation"
+      ],
+      "seen_date": "2026-10-19",
+      "recommendation_status": "new",
+      "previous_recommended_at": null,
+      "key": "arxiv:2610.23473",
+      "first_seen": "2026-10-19",
+      "last_seen": "2026-10-19",
+      "seen_dates": [
+        "2026-10-19"
+      ],
+      "recommendations_by_date": {
+        "2026-10-19": {
+          "recommendation_status": "new",
+          "previous_recommended_at": null
+        }
+      }
+    },
+    {
+      "title": "From quantum emitters to technological platforms: a perspective on semiconductor quantum dots",
+      "authors": [
+        "Klaus D. J\\\"ons, Dorian A. Gangloff, Doris E. Reiter"
+      ],
+      "journal": "arXiv",
+      "source": "arXiv",
+      "doi": null,
+      "arxiv_id": "2610.23106",
+      "published_at": null,
+      "article_url": "https://arxiv.org/abs/2610.23106",
+      "pdf_url": "https://arxiv.org/pdf/2610.23106.pdf",
+      "code_url": null,
+      "abstract": "Photonic quantum technologies are based on controlled photon states. To generate these, quantum dots have emerged as excellent sources of single and entangled photons. In this Perspective, we briefly review the chronological development of quantum dots as photon sources, from their beginnings as quantum emitters in the early 2000s to the advanced photonic devices being developed today. We highlight the interplay between fundamental research and industrial aspects before discussing the photonic quantum technologies we expect to emerge in the near future.",
+      "tldr": "This Perspective traces the development of semiconductor quantum dots from early single- and entangled-photon emitters to mature platforms for photonic quantum technologies, emphasizing advances in optics, growth, spin, and theory, the interplay between fundamental and industrial research, and future directions in applications, scaling, and optimization.",
+      "affiliations": [
+        "TU Dortmund University",
+        "Paderborn University",
+        "Cavendish Laboratory"
+      ],
+      "score": 8.101,
+      "relevance_percentile": 96.02,
+      "score_components": {
+        "top_k": 0.8216,
+        "cluster": 0.8343,
+        "recent": 0.7451
+      },
+      "topics": [
+        "Semiconductors"
+      ],
+      "seen_date": "2026-10-19",
+      "recommendation_status": "new",
+      "previous_recommended_at": null,
+      "key": "arxiv:2610.23106",
+      "first_seen": "2026-10-19",
+      "last_seen": "2026-10-19",
+      "seen_dates": [
+        "2026-10-19"
+      ],
+      "recommendations_by_date": {
+        "2026-10-19": {
+          "recommendation_status": "new",
+          "previous_recommended_at": null
+        }
+      }
+    },
+    {
+      "title": "Anti-synchronized collective rotation in magnetic colloidal particles under rotating magnetic fields",
+      "authors": [
+        "Adithya Bharath, A. V. Anil Kumar"
+      ],
+      "journal": "arXiv",
+      "source": "arXiv",
+      "doi": null,
+      "arxiv_id": "2610.23784",
+      "published_at": null,
+      "article_url": "https://arxiv.org/abs/2610.23784",
+      "pdf_url": "https://arxiv.org/pdf/2610.23784.pdf",
+      "code_url": null,
+      "abstract": "Collective synchronization is a common response of interacting magnetic particles subjected to rotating external fields. Here we demonstrate a distinct nonequilibrium state in a two-dimensional cluster of magnetic colloidal particles in which the ordered crystalline core rotates, on average, opposite to the direction of the applied rotating magnetic field, while the defect-rich outer region continues to rotate with the drive. We term this state anti-synchronized collective rotation. By combining structural, spectral, bond-resolved, and layer-resolved torque analyses, we show that anti-synchronization is associated with a broader defect-rich interface, enhanced and dynamically heterogeneous bond deformation, and a reorganization of torque transmission between the surface and the crystalline interior. In the synchronized state, steric torques compensate the opposing dipolar contribution in the outer core, maintaining a positive net interaction torque. In the anti-synchronized state this compensation becomes insufficient, producing a negative net torque in theouter core and enabling core-surface rotational decoupling. Increasing the driving frequency restores coherent rotation through a transition characterized by competing positive- and negative-angular-velocity populations and hysteresis, consistent with a discontinuous, first-order-like dynamical transition. These results demonstrate how deformation and spatial redistribution of interaction torques can generate counter-rotating collective states in driven colloidal matter.",
+      "tldr": "The paper identifies and explains an “anti-synchronized” collective rotation state in a two-dimensional magnetic colloidal cluster under a rotating field, where a defect-rich outer region follows the drive while the crystalline core counter-rotates due to defect-enhanced bond deformation and reorganized dipolar/steric torque transmission, with a hysteretic transition to synchronized rotation at higher driving frequency.",
+      "affiliations": [
+        "Homi Bhabha National Institute",
+        "National Institute of Science Education and Research"
+      ],
+      "score": 8.0908,
+      "relevance_percentile": 95.87,
+      "score_components": {
+        "top_k": 0.8061,
+        "cluster": 0.8481,
+        "recent": 0.7579
+      },
+      "topics": [
+        "Semiconductors",
+        "Materials"
+      ],
+      "seen_date": "2026-10-19",
+      "recommendation_status": "new",
+      "previous_recommended_at": null,
+      "key": "arxiv:2610.23784",
+      "first_seen": "2026-10-19",
+      "last_seen": "2026-10-19",
+      "seen_dates": [
+        "2026-10-19"
+      ],
+      "recommendations_by_date": {
+        "2026-10-19": {
+          "recommendation_status": "new",
+          "previous_recommended_at": null
+        }
+      }
+    },
+    {
+      "title": "Development of a fabrication-to-benchtop process for SiN-based quantum devices",
+      "authors": [
+        "Connor Kupchak, Abubaker Tareki, Tara Moradi, Patrick Laferriere, Niall Tait, Khaled Mnaymneh"
+      ],
+      "journal": "arXiv",
+      "source": "arXiv",
+      "doi": null,
+      "arxiv_id": "2610.22776",
+      "published_at": null,
+      "article_url": "https://arxiv.org/abs/2610.22776",
+      "pdf_url": "https://arxiv.org/pdf/2610.22776.pdf",
+      "code_url": null,
+      "abstract": "Silicon nitride has emerged as a key material for the advancement of future quantum communication and computational devices. However, challenges persist in establishing a comprehensive development process, spanning from fabrication to optical characterization, essential for advancing these devices to their next stage of potential. Maintaining control over the entire process, from start to finish, alongside device modeling, enables more efficient and timely iteration and optimization. Here we introduce a fabrication-to-benchtop process. We employ an in-house stoichiometric recipe for device fabrication and conduct comprehensive characterization of optical losses and material properties. Understanding and controlling the refractive index of the device are vital for predicting device geometries and group indices. Implementing the refractive indices of our fabricated devices, we simulate microring resonators and demonstrate their application in generating optical solitons.",
+      "tldr": "The paper presents an end-to-end fabrication-to-benchtop workflow for stoichiometric SiN quantum photonic devices, combining stress-controlled LPCVD deposition, optical loss and refractive-index characterization, and microring modeling to optimize geometries for optical soliton generation.",
+      "affiliations": [
+        "Carleton University",
+        "National Research Council of Canada"
+      ],
+      "score": 8.0798,
+      "relevance_percentile": 95.72,
+      "score_components": {
+        "top_k": 0.8053,
+        "cluster": 0.8553,
+        "recent": 0.7437
+      },
+      "topics": [
+        "Other"
+      ],
+      "seen_date": "2026-10-19",
+      "recommendation_status": "new",
+      "previous_recommended_at": null,
+      "key": "arxiv:2610.22776",
+      "first_seen": "2026-10-19",
+      "last_seen": "2026-10-19",
+      "seen_dates": [
+        "2026-10-19"
+      ],
+      "recommendations_by_date": {
+        "2026-10-19": {
+          "recommendation_status": "new",
+          "previous_recommended_at": null
+        }
+      }
+    },
+    {
+      "title": "Physics-Informed Machine Learning for Response Tensors in Crystalline Magnets: Application to Kagome Metals",
+      "authors": [
+        "Yu-Hsuan Lin, Joel E. Moore"
+      ],
+      "journal": "arXiv",
+      "source": "arXiv",
+      "doi": null,
+      "arxiv_id": "2610.22642",
+      "published_at": null,
+      "article_url": "https://arxiv.org/abs/2610.22642",
+      "pdf_url": "https://arxiv.org/pdf/2610.22642.pdf",
+      "code_url": null,
+      "abstract": "The prediction of response tensors from magnetic textures is a crucial challenge in the study of noncollinear magnets. Existing methods for constructing descriptors of a given response tensor are limited to first-order multipole expansions or restricted to simple magnetic structures. In this work, we construct a complete symmetry-invariant descriptor basis for arbitrary crystal structures and magnetic textures, providing interpretable features for machine learning modeling of response tensors. We modify the standard principal component analysis framework and derive uncorrelated order parameters that are hierarchically stable: extending the order parameter space to include higher-degree spin order introduces additional order parameters that are uncorrelated to the previous ones. We apply this framework to regression and classification of the anomalous Hall conductivity (AHC) in a magnetic kagome lattice. In particular, in the regime where AHC is well modeled by linear regression of the symmetry-invariant order parameters, we find that the squared regression coefficients, ranked by their magnitude, obey a Zipf-like power law: $\\beta_{r}^2 \\propto r^{-\\alpha}$. Our method provides a systematic route to construct interpretable order parameters of all spin orders that connect the symmetry of a magnetic crystal to its response tensors.",
+      "tldr": "The paper constructs a complete symmetry-invariant, hierarchically stable order-parameter basis for arbitrary crystal structures and magnetic textures and applies it to machine-learn the anomalous Hall conductivity of a magnetic kagome lattice, revealing a Zipf-like power law in the ranked squared regression coefficients.",
+      "affiliations": [
+        "University of California, Berkeley",
+        "Lawrence Berkeley National Laboratory"
+      ],
+      "score": 8.0754,
+      "relevance_percentile": 95.57,
+      "score_components": {
+        "top_k": 0.815,
+        "cluster": 0.8619,
+        "recent": 0.7073
+      },
+      "topics": [
+        "Materials",
+        "AI & Computation"
+      ],
+      "seen_date": "2026-10-19",
+      "recommendation_status": "new",
+      "previous_recommended_at": null,
+      "key": "arxiv:2610.22642",
+      "first_seen": "2026-10-19",
+      "last_seen": "2026-10-19",
+      "seen_dates": [
+        "2026-10-19"
+      ],
+      "recommendations_by_date": {
+        "2026-10-19": {
+          "recommendation_status": "new",
+          "previous_recommended_at": null
+        }
+      }
+    },
     {
       "title": "Spatially Decoupled Charge Compensation Enables Versatile Cation–Anion Co‐Intercalation in Layered Metal Oxide Cathodes",
       "authors": [
