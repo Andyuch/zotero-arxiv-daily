@@ -1,7 +1,11 @@
 {
-  "generated_at": "2026-10-25T22:44:00.437406+00:00",
-  "paper_count": 764,
+  "generated_at": "2026-10-27T00:07:39.740638+00:00",
+  "paper_count": 794,
   "days": [
+    {
+      "date": "2026-10-27",
+      "count": 30
+    },
     {
       "date": "2026-10-25",
       "count": 30
@@ -148,6 +152,1419 @@
     "Spectroscopy"
   ],
   "papers": [
+    {
+      "title": "Electron Wavefronts Capture Nanoscale Movies of Hypersound at Surfaces",
+      "authors": [
+        "Johannes Otto, Leon Brauns, Benjamin Schroeder, Claus Ropers"
+      ],
+      "journal": "arXiv",
+      "source": "arXiv",
+      "doi": null,
+      "arxiv_id": "2610.32419",
+      "published_at": null,
+      "article_url": "https://arxiv.org/abs/2610.32419",
+      "pdf_url": "https://arxiv.org/pdf/2610.32419.pdf",
+      "code_url": null,
+      "abstract": "Acoustic waves transport mechanical energy and elastic strain through solids, with material composition and shape governing their propagation. In the gigahertz hypersound regime, acoustic wavelengths reach tens to hundreds of nanometres, comparable to nanoscale device dimensions. Harnessing these waves underpins high-frequency signal processing, sensing, electromagnetic coupling and quantum control. Acoustic metrology probes elastic modes and internal interfaces. Yet directly imaging how nanoscale acoustic waves interact with local structure remains challenging, requiring picometre displacement sensitivity combined with high spatiotemporal resolution. Here we demonstrate full-field imaging of laser-induced hypersound at surfaces using reflected electron wavefronts. We introduce ultrafast low-energy electron microscopy (ULEEM), exploiting the intrinsic surface sensitivity of few-electronvolt electrons. Coherent electron pulses down to femtosecond durations reflect from the topmost atomic layers, imprinting the evolving surface profile onto their wavefronts. Defocus converts phase variations into image contrast. In a thin van der Waals material, we image the thermoelastic generation and propagation of picometre-amplitude acoustic waves. Measured dispersion relations, interpreted through elastodynamic modelling, distinguish substrate-supported and locally detached regions, revealing how interfacial contact shapes propagation. Delayed wave emission reveals scattering at buried mechanical defects. Our results establish electron-wavefront imaging of nanoscale surface dynamics, enabling the exploration of ultrafast energy transport, structural transformations and coupled mechanical, electronic and magnetic phenomena.",
+      "tldr": "The paper introduces ultrafast low-energy electron microscopy that uses reflected coherent electron wavefronts to full-field image picometre-amplitude gigahertz hypersound at surfaces, resolving nanoscale acoustic generation, propagation, and scattering as well as how interfacial contact shapes dispersion.",
+      "affiliations": [
+        "Max Planck Institute for Multidisciplinary Sciences",
+        "Georg-August-Universität Göttingen",
+        "Max Planck School of Photonics"
+      ],
+      "score": 8.7956,
+      "relevance_percentile": 100.0,
+      "score_components": {
+        "top_k": 0.885,
+        "cluster": 0.9209,
+        "recent": 0.8038
+      },
+      "topics": [
+        "Microscopy"
+      ],
+      "seen_date": "2026-10-27",
+      "recommendation_status": "new",
+      "previous_recommended_at": null,
+      "key": "arxiv:2610.32419",
+      "first_seen": "2026-10-27",
+      "last_seen": "2026-10-27",
+      "seen_dates": [
+        "2026-10-27"
+      ],
+      "recommendations_by_date": {
+        "2026-10-27": {
+          "recommendation_status": "new",
+          "previous_recommended_at": null
+        }
+      }
+    },
+    {
+      "title": "Bridging Spectroscopy and Reactivity: Identifying the True Reactive CO Species in Electrocatalytic CO Oxidation",
+      "authors": [
+        "Tian-Yi Yang",
+        "Ya-Jun Huang",
+        "Hao-Fei Geng",
+        "Hai-Sheng Su",
+        "Jing-Xin Huang",
+        "Can Shao",
+        "Jin-Rui Liao",
+        "Guo-Kun Liu",
+        "Xiang Wang",
+        "Bin Ren"
+      ],
+      "journal": "Journal of the American Chemical Society",
+      "source": "Crossref",
+      "doi": "10.1021/jacs.6c13006",
+      "arxiv_id": null,
+      "published_at": "2026-10-25",
+      "article_url": "https://doi.org/10.1021/jacs.6c13006",
+      "pdf_url": "https://pubs.acs.org/doi/pdf/10.1021/jacs.6c13006",
+      "code_url": null,
+      "abstract": "Abstract In situ electrochemical vibrational spectroscopy has revolutionized our understanding of electrocatalysis. However, establishing a rigorous correlation between spectroscopic signatures and reaction kinetics is still very challenging because high-coverage surface species may dominate the signal, whereas the truly reactive participants may be short-lived or spectroscopically silent. To disentangle spectators from true reaction participants, we developed a high-sensitivity spectroelectrochemical platform that integrates the rotating disk electrode with surface-enhanced Raman spectroscopy (RDE-SERS). This approach enables the simultaneous acquisition of reaction kinetics and interfacial molecular information under well-defined mass transport conditions. Using this versatile approach, we investigated the benchmark carbon monoxide oxidation reaction (COOR) on the Pt surface, which enabled decoupling between the spectroscopically observable species and the catalytically active species. Despite persistent and intense Raman signatures of adsorbed CO (COad) in the diffusion-limited region, COad predominantly acts as a spectator that blocks surface sites without effectively participating in the reaction, as confirmed by the isotope substitution experiments. Conversely, the oxidation current is sustained by the continuous flux of solution-phase CO (COsol), which is identified as the kinetically relevant reactant. These findings offer a new perspective on the roles of adsorbed species versus solution-phase species during dynamic electrochemical reactions. Collectively, the RDE-SERS methodology is established as a reliable strategy for identifying true reaction pathways, bridging molecular-level spectroscopic identification with macroscopic reactivity in complex electrocatalytic systems.",
+      "tldr": "A new RDE-SERS platform combining kinetics with in situ Raman spectroscopy shows that in electrocatalytic CO oxidation on Pt, intensely observed adsorbed CO is mainly a spectator, while solution-phase CO is the true kinetically relevant reactant.",
+      "affiliations": [
+        "Xiamen University , , ,",
+        "Innovation Laboratory for Sciences and Technologies of Energy Materials of Fujian Province , ,"
+      ],
+      "score": 8.6051,
+      "relevance_percentile": 99.84,
+      "score_components": {
+        "top_k": 0.8539,
+        "cluster": 0.8749,
+        "recent": 0.8554
+      },
+      "topics": [
+        "Battery",
+        "Electrochemistry",
+        "Spectroscopy",
+        "Materials"
+      ],
+      "seen_date": "2026-10-27",
+      "recommendation_status": "new",
+      "previous_recommended_at": null,
+      "key": "doi:10.1021/jacs.6c13006",
+      "first_seen": "2026-10-27",
+      "last_seen": "2026-10-27",
+      "seen_dates": [
+        "2026-10-27"
+      ],
+      "recommendations_by_date": {
+        "2026-10-27": {
+          "recommendation_status": "new",
+          "previous_recommended_at": null
+        }
+      }
+    },
+    {
+      "title": "Electronic structure of a persistent excitonic fluid far beyond the Mott limit",
+      "authors": [
+        "Weiyan Qi, Stefano Ponzoni, Ashim Pramanik, Vitaly Gorelov, Yannis Laplace, Gianluca Stefanucci, Enrico Perfetto, Esteban Morcos, Marino Marsi, Steven Francis Udaundo, Sebastian Maherlein, Amina Taleb-Ibrahimi, Kaibo Zheng, Tonu Pullerits, Luca Perfetti"
+      ],
+      "journal": "arXiv",
+      "source": "arXiv",
+      "doi": null,
+      "arxiv_id": "2610.32437",
+      "published_at": null,
+      "article_url": "https://arxiv.org/abs/2610.32437",
+      "pdf_url": "https://arxiv.org/pdf/2610.32437.pdf",
+      "code_url": null,
+      "abstract": "Excitons are conventionally expected to destabilize at high photoexcitation densities, as screening weakens the electron-hole attraction. Recent studies, however, challenge this paradigm, suggesting that excitons generated by strong optical pumping can remain stable even beyond the onset of population inversion. Here, using time- and angle-resolved photoelectron spectroscopy on 2D hybrid perovskites, we provide direct evidence for such a high-density excitonic state, characterized by a distinctive Mexican-hat dispersion. Remarkably, this excitonic band reconstruction endures for orders of magnitude longer than the optical coherence time, revealing a population-sustained electronic structure that survives well into the incoherent regime. The excitonic resonance also persists far beyond optical saturation, at densities where exciton wavefunctions strongly overlap. Our findings reveal a long-lived, high-density quantum fluid of excitons with characteristics reminiscent of a BCS condensate, an electronic structure markedly different from that of the dilute limit.",
+      "tldr": "Using time- and angle-resolved photoelectron spectroscopy, the authors show that 2D hybrid perovskites host a long-lived, high-density excitonic fluid that persists far beyond the Mott limit and exhibits a Mexican-hat band reconstruction reminiscent of a BCS condensate.",
+      "affiliations": [
+        "Institut Polytechnique de Paris",
+        "Fritz Haber Institute of the Max Planck Society",
+        "Université Paris-Saclay",
+        "Lund University",
+        "Dresden University of Technology",
+        "SR University",
+        "Synchrotron SOLEIL",
+        "University of Rome Tor Vergata",
+        "Technical University of Denmark",
+        "INFN",
+        "Helmholtz-Zentrum Dresden-Rossendorf"
+      ],
+      "score": 8.5573,
+      "relevance_percentile": 99.67,
+      "score_components": {
+        "top_k": 0.8565,
+        "cluster": 0.895,
+        "recent": 0.7949
+      },
+      "topics": [
+        "Spectroscopy",
+        "Semiconductors"
+      ],
+      "seen_date": "2026-10-27",
+      "recommendation_status": "new",
+      "previous_recommended_at": null,
+      "key": "arxiv:2610.32437",
+      "first_seen": "2026-10-27",
+      "last_seen": "2026-10-27",
+      "seen_dates": [
+        "2026-10-27"
+      ],
+      "recommendations_by_date": {
+        "2026-10-27": {
+          "recommendation_status": "new",
+          "previous_recommended_at": null
+        }
+      }
+    },
+    {
+      "title": "Excitonic Stark Response Induced by Quantum Capacitance in van der Waals Heterostructures",
+      "authors": [
+        "Xiangzhi Hong, Yongkang Jian, Yang Chen, Rukai Cang, Yuanlong Guo, Takashi Taniguchi, Kenji Watanabe, Baigeng Wang, Erfu Liu"
+      ],
+      "journal": "arXiv",
+      "source": "arXiv",
+      "doi": null,
+      "arxiv_id": "2610.32532",
+      "published_at": null,
+      "article_url": "https://arxiv.org/abs/2610.32532",
+      "pdf_url": "https://arxiv.org/pdf/2610.32532.pdf",
+      "code_url": null,
+      "abstract": "Precise electrostatic control in van der Waals heterostructures is commonly described by a geometric capacitor model, which assumes that the internal electric field is fully determined by external gate voltages. Here, we show that this description breaks down in the presence of interfacial charge transfer, where quantum capacitance modifies the internal electrostatics. Using interlayer excitons as local probes, we observe a dipole-dependent energy splitting that persists even when the gate-induced geometric field is nominally canceled. This splitting reflects incomplete cancellation between gate- and carrier-induced fields set by quantum capacitance, while many-body renormalization is largely symmetric with respect to the two opposite dipole orientations, allowing the splitting to provide a direct optical measure of the local chemical potential. Our results reveal the central role of quantum capacitance in interface electrostatics and provide a route to probe it in operando.",
+      "tldr": "Interlayer excitons reveal that quantum capacitance from interfacial charge transfer breaks the geometric capacitor model in van der Waals heterostructures, producing a dipole-dependent Stark splitting that directly measures the local chemical potential in operando.",
+      "affiliations": [],
+      "score": 8.5001,
+      "relevance_percentile": 99.51,
+      "score_components": {
+        "top_k": 0.8538,
+        "cluster": 0.8978,
+        "recent": 0.7688
+      },
+      "topics": [
+        "Semiconductors"
+      ],
+      "seen_date": "2026-10-27",
+      "recommendation_status": "revisit",
+      "previous_recommended_at": "2026-10-02",
+      "key": "arxiv:2610.32532",
+      "first_seen": "2026-10-27",
+      "last_seen": "2026-10-27",
+      "seen_dates": [
+        "2026-10-27"
+      ],
+      "recommendations_by_date": {
+        "2026-10-27": {
+          "recommendation_status": "revisit",
+          "previous_recommended_at": "2026-10-02"
+        }
+      }
+    },
+    {
+      "title": "Combining Simulations and Spectroscopy to Design Protective Coatings on Sulfide Solid Electrolytes",
+      "authors": [
+        "Zhiyi Wang, Leonie Braks, Michele Ceriotti, Ali Coskun, Hanna T\\\"urk, Davide Tisi"
+      ],
+      "journal": "arXiv",
+      "source": "arXiv",
+      "doi": null,
+      "arxiv_id": "2610.32905",
+      "published_at": null,
+      "article_url": "https://arxiv.org/abs/2610.32905",
+      "pdf_url": "https://arxiv.org/pdf/2610.32905.pdf",
+      "code_url": null,
+      "abstract": "Sulfide solid electrolytes are attractive for all-solid-state batteries because of their high Li-ion conductivity and favorable processability, but their practical use is limited by electrochemical instability and moisture-induced degradation. Molecular surface coatings offer a scalable strategy to improve humidity tolerance and interfacial stability, yet there is limited understanding of the molecular-level factors governing surface interactions. By combining large-scale atomistic simulations enabled by a machine-learning potential with targeted experiments, we present a comprehensive framework for designing molecular coatings on Li$_6$PS$_5$Cl (LPSCl). Using a PET-MAD interatomic potential fine-tuned on an r$^2$SCAN reference dataset covering LPSCl surfaces, molecular adsorbates, and their interactions, we model surface adsorption of carboxylic (CA), sulfonic (SA), and phosphonic (PA) acids with alkyl chains of varying lengths and the interaction of these coated surfaces with water at finite temperature. The simulations show that lithiated head groups generally exhibit more favorable adsorption energies. Impedance spectroscopy shows that the lithiated coatings maintain 40--55\\% of the initial ionic conductivity after powder processing. While adsorption strength is largely controlled by head-group chemistry and lithiation state, coating morphology depends primarily on alkyl-chain length and surface coverage. In particular, long-chain lithiated carboxylates form dense, brush-like hydrophobic layers that reduce water access to reactive Li surface sites, with protection setting in at a coating thickness of approximately 0.8 nm. Consistent with these predictions, longer carboxylate chains suppress H$_2$S evolution more effectively. Because thicker coatings also hinder Li-ion transport, intermediate chain lengths offer the best balance between moisture protection and ionic conductivity.",
+      "tldr": "Combining machine-learning-potential atomistic simulations with experiments, this study shows that head-group chemistry and lithiation govern molecular adsorption on Li₆PS₅Cl while alkyl-chain length and coverage control coating morphology, with intermediate-length lithiated carboxylate coatings best balancing hydrophobic H₂S-suppressing protection against Li-ion conductivity loss.",
+      "affiliations": [
+        "Technical University of Denmark",
+        "Federal Institute for Materials Research and Testing",
+        "École Polytechnique Fédérale de Lausanne",
+        "University of Fribourg"
+      ],
+      "score": 8.4813,
+      "relevance_percentile": 99.35,
+      "score_components": {
+        "top_k": 0.8388,
+        "cluster": 0.8791,
+        "recent": 0.8249
+      },
+      "topics": [
+        "Battery",
+        "Electrochemistry",
+        "Spectroscopy",
+        "Materials"
+      ],
+      "seen_date": "2026-10-27",
+      "recommendation_status": "new",
+      "previous_recommended_at": null,
+      "key": "arxiv:2610.32905",
+      "first_seen": "2026-10-27",
+      "last_seen": "2026-10-27",
+      "seen_dates": [
+        "2026-10-27"
+      ],
+      "recommendations_by_date": {
+        "2026-10-27": {
+          "recommendation_status": "new",
+          "previous_recommended_at": null
+        }
+      }
+    },
+    {
+      "title": "Vacancy-enhanced Li solid-solution anodes for solid-state batteries: computational screening enabling high critical current density",
+      "authors": [
+        "Arseniy S. Burov, Nadezhda A. Ashikhmina, Nurlan Zhanabayev, Anton O. Boev, Aleksandra D. Radina, Ilya V. Chepkasov, Alexander G. Kvashnin, Dmitry A. Aksyonov"
+      ],
+      "journal": "arXiv",
+      "source": "arXiv",
+      "doi": null,
+      "arxiv_id": "2610.32938",
+      "published_at": null,
+      "article_url": "https://arxiv.org/abs/2610.32938",
+      "pdf_url": "https://arxiv.org/pdf/2610.32938.pdf",
+      "code_url": null,
+      "abstract": "Sluggish vacancy-mediated self-diffusion in lithium metal limits the critical current density (CCD) of Li anodes in solid-state batteries by promoting interfacial void formation during stripping. To enhance the effective vacancy concentration while preserving the bcc Li host, we screen 50 substitutional solutes using density functional theory (DFT) within a funnel based on automatic phase diagram construction, solution energies, solute-vacancy binding energies, and experimental solubility limits. Using an adaptation of the Lomer model for the dilute limit, we show that only Ag, Ge, and Cd solid solutions are predicted to reach $1~\\mathrm{mA~cm^{-2}}$ within their solubility limits. The thermodynamically estimated CCD of Ag at $\\sim 9$ at.% reaches $\\sim 4~\\mathrm{mA~cm^{-2}}$ at a theoretical capacity of $1522~\\mathrm{mAh~g^{-1}}$. Migration barrier calculations indicate that the enhancement may be partially offset by vacancy trapping, necessitating further validation via molecular dynamics simulations. Notably, Hume-Rothery rules alone prove insufficient as prefilters, whereas machine-learning models trained on the DFT data can eliminate most unsuitable solutes early in the funnel and extend the workflow to related solid-solution searches.",
+      "tldr": "A DFT-based screening of 50 substitutional solutes identifies dilute Li–Ag (and potentially Ge/Cd) solid solutions as vacancy-enhanced anodes predicted to raise the critical current density of solid-state Li batteries to ~4 mA cm⁻², though vacancy trapping requires further validation.",
+      "affiliations": [
+        "Skolkovo Institute of Science and Technology",
+        "Moscow Institute of Physics and Technology"
+      ],
+      "score": 8.4604,
+      "relevance_percentile": 99.18,
+      "score_components": {
+        "top_k": 0.8416,
+        "cluster": 0.8593,
+        "recent": 0.8371
+      },
+      "topics": [
+        "Battery",
+        "AI & Computation"
+      ],
+      "seen_date": "2026-10-27",
+      "recommendation_status": "new",
+      "previous_recommended_at": null,
+      "key": "arxiv:2610.32938",
+      "first_seen": "2026-10-27",
+      "last_seen": "2026-10-27",
+      "seen_dates": [
+        "2026-10-27"
+      ],
+      "recommendations_by_date": {
+        "2026-10-27": {
+          "recommendation_status": "new",
+          "previous_recommended_at": null
+        }
+      }
+    },
+    {
+      "title": "On the Spontaneous Structural Reconstructions of Chalcogen-Depleted MoS$_2$, MoSe$_2$, and Janus MoSSe Monolayers",
+      "authors": [
+        "Bruno Ipaves, Guilherme S. L. Fabris, Raphael B. Oliveira, Pulickel M. Ajayan, Marcelo L. Pereira Junior, Douglas S. Galv\\~ao"
+      ],
+      "journal": "arXiv",
+      "source": "arXiv",
+      "doi": null,
+      "arxiv_id": "2610.32712",
+      "published_at": null,
+      "article_url": "https://arxiv.org/abs/2610.32712",
+      "pdf_url": "https://arxiv.org/pdf/2610.32712.pdf",
+      "code_url": null,
+      "abstract": "Removing one chalcogen layer from a transition-metal dichalcogenide monolayer leaves an undercoordinated sheet that reconstructs as the remaining chalcogen atoms cross the metal plane. Here, we combine \\textit{ab initio} and reactive molecular dynamics (MD) simulations of depleted MoS$_2$, MoSe$_2$, and Janus MoSSe, examining each remaining chalcogen on two parent lattices, to show that the remaining chalcogen type determines the structural reconstruction, with only a minor influence from the parent lattice. In \\textit{ab initio} trajectories of the Janus-derived sheets, Se crosses the Mo plane already at 300~K, whereas S stays in place at 300~K and the sheet reconstructs only at 900~K. With a free in-plane cell, the crossings precede an anisotropic lattice contraction, which therefore results from the structural reconstruction. Reactive MD simulations of 50~nm sheets show that, when S remains, the Mo lattice stays crystalline in nanometric domains that disappear with time and temperature, with pores/holes at 900~K. In contrast, when Se remains, the Mo lattice loses crystalline order within the first picosecond, and 36--39\\% of the Se atoms cross at every temperature. In a depleted lateral MoS$_2$/MoSe$_2$ heterostructure, both modes coexist in one sheet, each half reconstructing like its single-chalcogen counterpart, suggesting chalcogen patterning as a route to define crystalline and disordered regions in a single monolayer.",
+      "tldr": "Using ab initio and reactive molecular dynamics, the authors show that the spontaneous reconstruction of chalcogen-depleted MoS₂, MoSe₂, and Janus MoSSe monolayers is determined mainly by the remaining chalcogen—S yields thermally activated crossings and crystalline nanodomains, whereas Se crosses the Mo plane already at room temperature and destroys crystalline order—allowing chalcogen patterning to define crystalline and disordered regions within a single sheet.",
+      "affiliations": [],
+      "score": 8.3961,
+      "relevance_percentile": 99.02,
+      "score_components": {
+        "top_k": 0.8461,
+        "cluster": 0.8686,
+        "recent": 0.7798
+      },
+      "topics": [
+        "Materials",
+        "AI & Computation"
+      ],
+      "seen_date": "2026-10-27",
+      "recommendation_status": "new",
+      "previous_recommended_at": null,
+      "key": "arxiv:2610.32712",
+      "first_seen": "2026-10-27",
+      "last_seen": "2026-10-27",
+      "seen_dates": [
+        "2026-10-27"
+      ],
+      "recommendations_by_date": {
+        "2026-10-27": {
+          "recommendation_status": "new",
+          "previous_recommended_at": null
+        }
+      }
+    },
+    {
+      "title": "Low-energy collective electronic excitations in a gold monolayer",
+      "authors": [
+        "Vyacheslav M. Silkin, Maxim Yu. Kagan"
+      ],
+      "journal": "arXiv",
+      "source": "arXiv",
+      "doi": null,
+      "arxiv_id": "2610.31805",
+      "published_at": null,
+      "article_url": "https://arxiv.org/abs/2610.31805",
+      "pdf_url": "https://arxiv.org/pdf/2610.31805.pdf",
+      "code_url": null,
+      "abstract": "The low-energy plasmonic properties of a free-standing Au(111) monolayer, frequently referred to as goldene, are investigated by time-dependent density functional theory in the random phase approximation. In the evaluation of dielectric and loss functions the first-principle band structure characterized by a single $s-p$ energy band at the Fermi level is taken into account. In this system with apparently simple band structure around the Fermi surface the calculations show the presence, besides the standard two-dimensional (2D) plasmon mode, at even lower energies of three anomalous branches in the momentum-energy region usually assigned to incoherent electron-hole pairs. This is an unexpected result since the electronic system of the gold monolayer is characterized by a single energy band crossing the Fermi level. The dispersion of these anomalous plasmonic branches is strongly anisotropic in-plane and gapless. A general feature is that at small in-plane momentum transfers the modes have a sound-like dispersion in certain momentum directions. We rely the appearance of these anomalous modes to a notable deviation of the Fermi surface of a gold monolayer from a circular shape. As a result of its almost perfect hexagon shape, there is possibility to realize in a {\\it single} electronic energy band a scenario of a multi-component electron system with the carrier groups moving with different Fermi velocities in certain momentum directions. The found modes correspond to the out-of-phase charge oscillations of the carriers at different sides of the hexagonal Fermi surface. Hence our work presents evidence how in a metal system with apparently simple band structure around the Fermi level its shape can result in conversion of single-particle charge excitations into collective charge excitations.",
+      "tldr": "First-principles TDDFT-RPA calculations show that the hexagonal Fermi surface of a free-standing Au(111) monolayer (goldene), despite having only a single band at the Fermi level, gives rise to strongly anisotropic, gapless anomalous collective charge excitations below the conventional 2D plasmon, arising from out-of-phase carrier oscillations across the hexagonal Fermi surface.",
+      "affiliations": [
+        "National Research University Higher School of Economics",
+        "Donostia International Physics Center",
+        "Universidad del País Vasco UPV/EHU",
+        "Russian Academy of Sciences",
+        "IKERBASQUE"
+      ],
+      "score": 8.3858,
+      "relevance_percentile": 98.85,
+      "score_components": {
+        "top_k": 0.8399,
+        "cluster": 0.8808,
+        "recent": 0.7719
+      },
+      "topics": [
+        "Microscopy",
+        "Semiconductors",
+        "AI & Computation"
+      ],
+      "seen_date": "2026-10-27",
+      "recommendation_status": "new",
+      "previous_recommended_at": null,
+      "key": "arxiv:2610.31805",
+      "first_seen": "2026-10-27",
+      "last_seen": "2026-10-27",
+      "seen_dates": [
+        "2026-10-27"
+      ],
+      "recommendations_by_date": {
+        "2026-10-27": {
+          "recommendation_status": "new",
+          "previous_recommended_at": null
+        }
+      }
+    },
+    {
+      "title": "Cross-coupled photon avalanche drives room-temperature intrinsic optical bistability",
+      "authors": [
+        "Eva Conour, Jacob Wojcik, Jory Sanders, Abigale Puccini, Trey Stephens-Cherry, Artiom Skripka"
+      ],
+      "journal": "arXiv",
+      "source": "arXiv",
+      "doi": null,
+      "arxiv_id": "2610.32032",
+      "published_at": null,
+      "article_url": "https://arxiv.org/abs/2610.32032",
+      "pdf_url": "https://arxiv.org/pdf/2610.32032.pdf",
+      "code_url": null,
+      "abstract": "Optically bistable materials promise technological advances in optical information processing, memristive devices, and multiparametric sensing. However, optical bistability is predominantly observed under cryogenic conditions or is governed by subtle thermo-optical nonlinearities. Here, we report on Ho3+-activated nanocrystals that exhibit cavity-free intrinsic optical bistability (IOB) at ambient conditions. Non-thermal IOB stems from a cross-coupled photon avalanche (XPA) mechanism enabled by a low-phonon-energy double-perovskite host, which reduces nonradiative losses and facilitates excited-state population via XPA, even when the pump intensity is below threshold. Time-resolved luminescence measurements support the proposed XPA, as evidenced by a double-rise profile consistent with two reservoir states interlocked in energy looping. IOB with high-contrast photoswitching (up to 46 dB) is observed at room temperature across multiple visible emission lines, enabling wavelength-division multiplexing and compatibility with common detectors. IOB is preserved across nano- to microscale crystals and different double-perovskite compositions, broadly enabling information photonics and advanced sensing.",
+      "tldr": "Ho3+-activated double-perovskite nanocrystals achieve cavity-free, room-temperature intrinsic optical bistability through a cross-coupled photon avalanche mechanism, enabling high-contrast visible photoswitching for optical information processing and sensing.",
+      "affiliations": [],
+      "score": 8.3855,
+      "relevance_percentile": 98.69,
+      "score_components": {
+        "top_k": 0.8352,
+        "cluster": 0.8773,
+        "recent": 0.7887
+      },
+      "topics": [
+        "Semiconductors",
+        "Materials"
+      ],
+      "seen_date": "2026-10-27",
+      "recommendation_status": "new",
+      "previous_recommended_at": null,
+      "key": "arxiv:2610.32032",
+      "first_seen": "2026-10-27",
+      "last_seen": "2026-10-27",
+      "seen_dates": [
+        "2026-10-27"
+      ],
+      "recommendations_by_date": {
+        "2026-10-27": {
+          "recommendation_status": "new",
+          "previous_recommended_at": null
+        }
+      }
+    },
+    {
+      "title": "Visualization of Single Spin-chain Propagation using Bragg Coherent Diffraction Imaging",
+      "authors": [
+        "Xiaoqian M. Chen, Justin S. Woods, Ulrich Welp, Wai-kwong Kwok, Ralu Divan, David A. Czaplewski, Scott Dhuey, Sujoy Roy, Rajesh V. Chopdekar, Lance E. De Long, Andi Barbour, Claudio Mazzoli, Ian Robinson, J. Todd Hastings"
+      ],
+      "journal": "arXiv",
+      "source": "arXiv",
+      "doi": null,
+      "arxiv_id": "2610.31919",
+      "published_at": null,
+      "article_url": "https://arxiv.org/abs/2610.31919",
+      "pdf_url": "https://arxiv.org/pdf/2610.31919.pdf",
+      "code_url": null,
+      "abstract": "Domain wall dynamics and their manipulation in finite-size systems serve as a promising platform for beyond Moore's law applications. Yet, the imaging techniques to track their motion in real-space and time are limited. Here, we use magnetic domain walls formed in permalloy artificial square lattice to demonstrate that single-shot Bragg coherent diffraction imaging (BCDI) is a powerful approach for this purpose. Our BCDI reconstructed images revealed milliseconds time-scale dynamics of the antiphase magnetic domain walls traveling through an antiferromagnetically ordered sample.",
+      "tldr": "Single-shot Bragg coherent diffraction imaging enables real-space visualization of millisecond-scale propagation of individual antiphase magnetic domain walls through an antiferromagnetically ordered permalloy artificial square lattice.",
+      "affiliations": [
+        "University of Kentucky",
+        "Argonne National Laboratory",
+        "University College London",
+        "Brookhaven National Laboratory",
+        "Lawrence Berkeley National Laboratory"
+      ],
+      "score": 8.3387,
+      "relevance_percentile": 98.53,
+      "score_components": {
+        "top_k": 0.8393,
+        "cluster": 0.873,
+        "recent": 0.7616
+      },
+      "topics": [
+        "Microscopy"
+      ],
+      "seen_date": "2026-10-27",
+      "recommendation_status": "new",
+      "previous_recommended_at": null,
+      "key": "arxiv:2610.31919",
+      "first_seen": "2026-10-27",
+      "last_seen": "2026-10-27",
+      "seen_dates": [
+        "2026-10-27"
+      ],
+      "recommendations_by_date": {
+        "2026-10-27": {
+          "recommendation_status": "new",
+          "previous_recommended_at": null
+        }
+      }
+    },
+    {
+      "title": "Synergistic Tuning of Diffusion Enables Surface-Passivation-Directed Electrodeposition of Shaped Bimetallic Nanoparticles",
+      "authors": [
+        "Gabriel C. Halford",
+        "Abigail M. Sublett",
+        "Adam J. Buratowski",
+        "Kaelyn M. Harmon",
+        "Harikrishnan N. Nambiar",
+        "Michelle L. Personick"
+      ],
+      "journal": "ACS Nano",
+      "source": "Crossref",
+      "doi": "10.1021/acsnano.6c13712",
+      "arxiv_id": null,
+      "published_at": "2026-10-25",
+      "article_url": "https://doi.org/10.1021/acsnano.6c13712",
+      "pdf_url": "https://pubs.acs.org/doi/pdf/10.1021/acsnano.6c13712",
+      "code_url": null,
+      "abstract": "Abstract Many applications for shape-controlled metal nanoparticles require their immobilization on a surface, creating a need for development of direct substrate-based synthesis routes for increasingly complex materials. Colloidal chemical syntheses for shape-controlled nanoparticles are common, but transferring insight from synthesis in solution to growth on a substrate requires accounting for significant differences in reagent diffusion between these two growth environments─a nontrivial challenge. In the present work, we establish fundamental principles for rationally adapting reaction parameters from colloidal syntheses to electrodeposition such that the growth of nanoparticles on the electrode proceeds under comparable reagent diffusion conditions to those that drive shape direction during colloidal growth. To demonstrate these principles, we successfully translate reaction conditions from colloidal synthesis to electrodeposition for a series of dilute bimetallic (silver) gold nanoparticles whose shapes are controlled by surface deposition of silver: concave cubes, octahedra, rhombic dodecahedra, truncated ditetragonal prisms, and tetrahexahedra. By comparing open-circuit potential measurements of the colloidal syntheses with chronopotentiometry measurements from galvanostatic electrodeposition, we determine the adjustments required to establish ideal growth kinetics for each electrodeposition. We identify specific synthetic handles─mode of mass transport, surfactant concentration, applied current density, and secondary metal concentration─required to modulate reagent transport to the electrode surface, as well as the direction they must be modified so that the relative rates of silver and gold ion reduction mimic colloidal growth. These generalizable synthetic parameters for controlling reagent diffusion and concentrations near the electrode surface open possibilities for the electrodeposition of complex multimetallic and shaped nanomaterials.",
+      "tldr": "By tuning reagent diffusion, surfactant concentration, current density, and secondary metal concentration to mimic colloidal growth conditions, the authors enable surface-passivation-directed electrodeposition of shaped bimetallic Au–Ag nanoparticles on electrodes.",
+      "affiliations": [
+        "University of Virginia , , , ,"
+      ],
+      "score": 8.3362,
+      "relevance_percentile": 98.36,
+      "score_components": {
+        "top_k": 0.8205,
+        "cluster": 0.8713,
+        "recent": 0.8099
+      },
+      "topics": [
+        "Battery",
+        "Materials"
+      ],
+      "seen_date": "2026-10-27",
+      "recommendation_status": "new",
+      "previous_recommended_at": null,
+      "key": "doi:10.1021/acsnano.6c13712",
+      "first_seen": "2026-10-27",
+      "last_seen": "2026-10-27",
+      "seen_dates": [
+        "2026-10-27"
+      ],
+      "recommendations_by_date": {
+        "2026-10-27": {
+          "recommendation_status": "new",
+          "previous_recommended_at": null
+        }
+      }
+    },
+    {
+      "title": "Nonadiabatic vibrational dynamics of CO on Pt(111) studied with first-principles many-body perturbation theory",
+      "authors": [
+        "Ra\\'ul Bomb\\'in, I\\~naki Fern\\'andez Tena, J. I\\~naki Juaristi, Maite Alducin"
+      ],
+      "journal": "arXiv",
+      "source": "arXiv",
+      "doi": null,
+      "arxiv_id": "2610.31727",
+      "published_at": null,
+      "article_url": "https://arxiv.org/abs/2610.31727",
+      "pdf_url": "https://arxiv.org/pdf/2610.31727.pdf",
+      "code_url": null,
+      "abstract": "We investigate the nonequilibrium vibrational dynamics of CO adsorbed on Pt(111), a prototypical adsorbate-surface system for ultrafast vibrational spectroscopy, using a first-principles framework that combines many-body perturbation theory with density functional theory. Within this methodology we explicitly account for electron-hole pair excitations and electron-mediated phonon-phonon coupling. For the latter mechanism, we evaluate the vertex-correction screening, what constitutes a methodological novelty. Our calculations qualitatively reproduce the transient evolution of the internal stretch vibrational mode observed in femtosecond pump-probe experiments, allowing us to identify in the experimental measurements a small transient blueshift after excitation with a femtosecond laser pulse. As predicted in a previous work, the reduction in the number of electronic states available for electron-phonon coupling when the electronic temperature raises at a group 10 transition metal surface, effectively screens the electron-phonon interaction giving rise to an anomalous transient blue-shift.",
+      "tldr": "Using first-principles many-body perturbation theory combined with density functional theory—including electron-hole pair excitations and vertex-corrected electron-mediated phonon-phonon coupling—the authors reproduce the ultrafast vibrational dynamics of CO on Pt(111) and show that femtosecond laser excitation causes a small transient blueshift of the CO internal stretch mode due to hot-electron-induced screening of electron-phonon coupling.",
+      "affiliations": [
+        "Centro de Física de Materiales",
+        "Donostia International Physics Center",
+        "Universidad del País Vasco UPV/EHU"
+      ],
+      "score": 8.3175,
+      "relevance_percentile": 98.2,
+      "score_components": {
+        "top_k": 0.8355,
+        "cluster": 0.8506,
+        "recent": 0.7941
+      },
+      "topics": [
+        "Spectroscopy",
+        "Materials",
+        "AI & Computation"
+      ],
+      "seen_date": "2026-10-27",
+      "recommendation_status": "new",
+      "previous_recommended_at": null,
+      "key": "arxiv:2610.31727",
+      "first_seen": "2026-10-27",
+      "last_seen": "2026-10-27",
+      "seen_dates": [
+        "2026-10-27"
+      ],
+      "recommendations_by_date": {
+        "2026-10-27": {
+          "recommendation_status": "new",
+          "previous_recommended_at": null
+        }
+      }
+    },
+    {
+      "title": "Sub-monolayer tracking of molecular states at buried interfaces",
+      "authors": [
+        "Harlan Heilman, Em Biegler, Sushil Adhikari, Victor Murcia, Tanner Melody, Fred Woodall, Lars Thomsen, Obaid Alqahtani, Brian A. Collins"
+      ],
+      "journal": "arXiv",
+      "source": "arXiv",
+      "doi": null,
+      "arxiv_id": "2610.31924",
+      "published_at": null,
+      "article_url": "https://arxiv.org/abs/2610.31924",
+      "pdf_url": "https://arxiv.org/pdf/2610.31924.pdf",
+      "code_url": null,
+      "abstract": "Phenomena responsible for emerging technologies originate from novel molecular states at buried interfaces. Yet quantitatively resolving these features is out of reach in most cases. Resonant scattering has demonstrated sensitivity to these local states but is limited due to a lack of accurate interpretive models. We leverage a machine learning (ML)-optimized optical model to analyze polarized resonant soft X-ray scattering (RSoXS) from molecular thin films. This new analysis establishes the direct and quantitative interpretation of molecular orientation, chemical identity and packing states as a function of depth with sub-monolayer resolution - reaching beyond the diffraction limit via locking energy and polarization through the optical model. From our analysis, we discover a gradient evolution of molecular orientation and packing emerging from the interface, indicative of competing surface versus bulk growth dynamics and contradicting hypotheses of substrate patterning. This nondestructive insight into buried interfacial formation and final state opens possibilities in controlling interfacial states and phenomena in next-generation technologies.",
+      "tldr": "A machine-learning-optimized optical model enables sub-monolayer, depth-resolved interpretation of polarized resonant soft X-ray scattering, revealing interfacial gradients in molecular orientation and packing that reflect competing surface-versus-bulk growth dynamics at buried interfaces.",
+      "affiliations": [],
+      "score": 8.3086,
+      "relevance_percentile": 98.04,
+      "score_components": {
+        "top_k": 0.8335,
+        "cluster": 0.8451,
+        "recent": 0.803
+      },
+      "topics": [
+        "Materials",
+        "AI & Computation"
+      ],
+      "seen_date": "2026-10-27",
+      "recommendation_status": "new",
+      "previous_recommended_at": null,
+      "key": "arxiv:2610.31924",
+      "first_seen": "2026-10-27",
+      "last_seen": "2026-10-27",
+      "seen_dates": [
+        "2026-10-27"
+      ],
+      "recommendations_by_date": {
+        "2026-10-27": {
+          "recommendation_status": "new",
+          "previous_recommended_at": null
+        }
+      }
+    },
+    {
+      "title": "Rationalizing charge transfer: a single-molecule case study across three distinct surfaces",
+      "authors": [
+        "Benjamin Lowe, Jan Berger, Martin Ondr\\'a\\v{c}ek, Oleksandr Stetsovych, Shayan Louie, Marco Lozano, Diego Soler-Polo, Shiladitya Karmarkar, Andr\\'es Pinar Sol\\'e, Iva Plutnarov\\'a, Pingo Mutombo, Manish Kumar, Michael P\\'iro, Ali Cem Demirok, Michael L. Steigerwald, Zden\\v{e}k Sofer, Colin Nuckolls, Pavel Jel\\'inek"
+      ],
+      "journal": "arXiv",
+      "source": "arXiv",
+      "doi": null,
+      "arxiv_id": "2610.32903",
+      "published_at": null,
+      "article_url": "https://arxiv.org/abs/2610.32903",
+      "pdf_url": "https://arxiv.org/pdf/2610.32903.pdf",
+      "code_url": null,
+      "abstract": "Organic molecules are versatile building blocks for the formation of complex low-dimensional nanostructures on surfaces. Recently, interest has grown in translating on-surface synthetic protocols from noble metal surfaces to insulating surfaces, which offer technological relevance, and to magnetic or superconducting surfaces, which offer new routes to correlated phases. It is important, therefore, to understand how these alternative surfaces may alter the properties of adsorbates through processes like charge transfer and screening. Evidence for charge transfer is often obtained experimentally via scanning tunneling microscopy (STM) and spectroscopy (STS), and theoretically via density functional theory (DFT). In this work, we systematically compare the properties of isolated macrocyclic emeraldine (Me$_6$) molecules on three different surfaces: metallic Au(111), a semiconducting ferromagnetic monolayer of FeCl$_2$, and a cleaved superconducting surface of bulk 2H-NbSe$_2$. We show that STS and DFT alone are insufficient to quantify charge transfer for these cases. Instead, we complement these methods with Kelvin probe force microscopy (KPFM) measurements and model Hamiltonian calculations to demonstrate that on Au(111) and FeCl$_2$, Me$_6$ molecules donate a single electron to the substrate, whereas on NbSe$_2$ two electrons are transferred from molecule to substrate. Our work provides insight into the interplay of charge transfer, screening, and molecule-substrate coupling, and develops experimental and theoretical methods for comparing the properties of adsorbates across different surfaces for future studies.",
+      "tldr": "By combining STM/STS, DFT, KPFM, and model Hamiltonian calculations, this study shows that a single macrocyclic emeraldine molecule transfers one electron to Au(111) and FeCl₂ but two electrons to NbSe₂, revealing how substrate work function and image-charge screening control molecular charge states across metallic, insulating ferromagnetic, and superconducting surfaces.",
+      "affiliations": [],
+      "score": 8.2908,
+      "relevance_percentile": 97.87,
+      "score_components": {
+        "top_k": 0.8271,
+        "cluster": 0.8492,
+        "recent": 0.8038
+      },
+      "topics": [
+        "Microscopy",
+        "Spectroscopy",
+        "Semiconductors",
+        "AI & Computation"
+      ],
+      "seen_date": "2026-10-27",
+      "recommendation_status": "new",
+      "previous_recommended_at": null,
+      "key": "arxiv:2610.32903",
+      "first_seen": "2026-10-27",
+      "last_seen": "2026-10-27",
+      "seen_dates": [
+        "2026-10-27"
+      ],
+      "recommendations_by_date": {
+        "2026-10-27": {
+          "recommendation_status": "new",
+          "previous_recommended_at": null
+        }
+      }
+    },
+    {
+      "title": "Video-rate quantitative phase and polarimetric imaging (QP2I) for label-free imaging of contracting muscle cells",
+      "authors": [
+        "Lucas Kreiss Roohian, Nachiket Pathak, David Ripp, Mitchell Harling, Nils Kronenberg, Marcel Schubert, Malte C. Gather"
+      ],
+      "journal": "arXiv",
+      "source": "arXiv",
+      "doi": null,
+      "arxiv_id": "2610.32756",
+      "published_at": null,
+      "article_url": "https://arxiv.org/abs/2610.32756",
+      "pdf_url": "https://arxiv.org/pdf/2610.32756.pdf",
+      "code_url": null,
+      "abstract": "Quantitative phase imaging (QPI) has become a standard approach for label-free microscopy of transparent specimens, mapping the optical path length. However, the isotropic phase is blind to the molecular order underlying optical anisotropy. Implementations that also add quantitative contrast to birefringence, rely on multi-frame illumination or polarization-state scanning, or on dedicated interferometric hardware, that trade away acquisition speed or the simplicity of a standard microscope. We present Quantitative Phase and Polarimetric Imaging (QP2I), a computational imaging framework that converts a standard differential interference contrast (DIC) microscope with a polarization camera into a single-shot, video-rate, dual-contrast imaging system. We developed a new globally regularized phase reconstruction that eliminates artifacts of prior DIC-to-QPI approaches, providing quantitative phase information and used per-pixel Stokes-based reconstruction to obtain quantitative anisotropic retardance. We validate the approach across simulations, static reference targets, fixed muscle tissue and living dynamically moving cells. Thereby, QP2I enables to study contractile dynamics in live cardiomyocytes all-optically and label-free. It provides both structural and functional readouts at frame rates that are sufficient to temporally resolve fast cardiomyocyte contractions. While conventional fluorescent labels bleach out over time, perturb physiology, and preclude long-term monitoring, QP2I provides similar established structural readouts, such as frame-by-frame sarcomere length, as well as previously inaccessible measurements, like quantitative analysis of retardance changes during muscle contraction, as a direct optical signature of muscle photoelasticity. QP2I thus enables long-term, label-free interrogation of dynamic cellular processes at quantitative contrast.",
+      "tldr": "QP2I is a computational imaging framework that turns a standard DIC microscope with a polarization camera into a single-shot, video-rate, label-free system for simultaneous quantitative phase and polarimetric imaging, enabling long-term monitoring of live cardiomyocyte contraction dynamics such as sarcomere length and retardance changes.",
+      "affiliations": [
+        "University of Cologne",
+        "University of St Andrews"
+      ],
+      "score": 8.2886,
+      "relevance_percentile": 97.71,
+      "score_components": {
+        "top_k": 0.8258,
+        "cluster": 0.8605,
+        "recent": 0.7892
+      },
+      "topics": [
+        "Microscopy",
+        "Materials",
+        "AI & Computation"
+      ],
+      "seen_date": "2026-10-27",
+      "recommendation_status": "new",
+      "previous_recommended_at": null,
+      "key": "arxiv:2610.32756",
+      "first_seen": "2026-10-27",
+      "last_seen": "2026-10-27",
+      "seen_dates": [
+        "2026-10-27"
+      ],
+      "recommendations_by_date": {
+        "2026-10-27": {
+          "recommendation_status": "new",
+          "previous_recommended_at": null
+        }
+      }
+    },
+    {
+      "title": "Dipole chains of Bloch point singularities revealed by X-ray magnetic tomography",
+      "authors": [
+        "Jeffrey Neethirajan, Rikako Yamamoto, Marisel Di Pietro Mart\\'inez, Luke A. Turnbull, Praveen Vir, Chandra Shekar, Claudia Felser, Luis Carlos Colocho Hurtarte, Benedikt J. Daurer, Majid Kazemian, Burkhard Kaulich, Claire Donnelly"
+      ],
+      "journal": "arXiv",
+      "source": "arXiv",
+      "doi": null,
+      "arxiv_id": "2610.31952",
+      "published_at": null,
+      "article_url": "https://arxiv.org/abs/2610.31952",
+      "pdf_url": "https://arxiv.org/pdf/2610.31952.pdf",
+      "code_url": null,
+      "abstract": "Bloch point singularities play an important role in magnetic systems, mediating changes in topology in three dimensional configurations. However, until now they have only been observed as isolated objects or as part of individual topological textures. Here we present the experimental observation of a 1D dipole chain of Bloch points in an anisotropic chiral magnet using soft X-ray magnetic vector tomography. We identify that the chain of Bloch point singularities lies along a boundary between regions of opposite chirality and that neighbouring Bloch and anti-Bloch points are stable at separations down to 60 nm. The stability of the Bloch points is determined to be closely related to the surrounding topology of the magnetisation configuration and a threshold separation for the spontaneous annihilation of Bloch point-anti-Bloch point pairs within chiral domain walls is identified to be approximately 90 nm in distance. This observation of a chain of Bloch points and the insight into their stability, offers a route to explore the correlative behaviour of such topological point defects. The behaviour and control of such point defects is of relevance for the control of 3D magnetisation configurations, and provides a new route towards the creation of correlated configurations of singularities in a magnetic system.",
+      "tldr": "Using soft X-ray magnetic vector tomography, researchers experimentally observed a one-dimensional dipole chain of Bloch and anti-Bloch points along a chirality boundary in an anisotropic chiral magnet, finding stable separations down to 60 nm and a spontaneous pair-annihilation threshold of about 90 nm, with stability governed by the surrounding magnetization topology.",
+      "affiliations": [
+        "Max Planck Institute for Chemical Physics of Solids",
+        "Paul Scherrer Institute",
+        "Hiroshima University",
+        "Diamond Light Source",
+        "ETH Zurich"
+      ],
+      "score": 8.2806,
+      "relevance_percentile": 97.55,
+      "score_components": {
+        "top_k": 0.8416,
+        "cluster": 0.8752,
+        "recent": 0.7236
+      },
+      "topics": [
+        "Other"
+      ],
+      "seen_date": "2026-10-27",
+      "recommendation_status": "new",
+      "previous_recommended_at": null,
+      "key": "arxiv:2610.31952",
+      "first_seen": "2026-10-27",
+      "last_seen": "2026-10-27",
+      "seen_dates": [
+        "2026-10-27"
+      ],
+      "recommendations_by_date": {
+        "2026-10-27": {
+          "recommendation_status": "new",
+          "previous_recommended_at": null
+        }
+      }
+    },
+    {
+      "title": "Making 1000 Wh/kg LiNiO2 Cathode Nearly Strain-Free by Complex-Concentrated Doping",
+      "authors": [
+        "Yaqi Jing",
+        "Zhen Wang",
+        "Rui Zhang",
+        "Lei Wang",
+        "Zhennan Chen",
+        "Lu Ma",
+        "Dali Yang",
+        "Mingyuan Ge",
+        "Iradwikanari Waluyo",
+        "Adrian Hunt",
+        "Hui Zhong",
+        "Stephen E. Trask",
+        "Mingyuan Xue",
+        "Huolin L. Xin"
+      ],
+      "journal": "ACS Energy Letters",
+      "source": "Crossref",
+      "doi": "10.1021/acsenergylett.6c01681",
+      "arxiv_id": null,
+      "published_at": "2026-10-25",
+      "article_url": "https://doi.org/10.1021/acsenergylett.6c01681",
+      "pdf_url": "https://pubs.acs.org/doi/pdf/10.1021/acsenergylett.6c01681",
+      "code_url": null,
+      "abstract": "Abstract High-energy batteries require cathodes with greater capacity and specific energy. Ni-rich-layered oxides approach the performance limit of LiNiO2 (LNO), yet its practical use is hindered by severe chemomechanical degradation. Near 4.2 V, the H2-H3/H4 transition drives substantial c-axis contraction, volume shrinkage, O1 formation, oxygen loss, and rapid capacity decay. Here, we show that only 5% cobalt-free complex concentrated doping stabilizes LNO without sacrificing energy density. The modified LNO reduces c-axis strain from 7.4 to 2.1%, exhibits near-zero-strain behavior, and delivers 258 mAh•g–1 and 973 Wh•kg–1. In pouch cells, it retains 80% capacity after 1800 cycles and shows markedly improved thermal stability. These results demonstrate that complex-concentrated doping at low dopant loading can suppress strain and phase transformations at the full-Ni limit, providing a broadly applicable strategy for stabilizing high-energy intercalation electrodes while preserving their intrinsic capacity and specific energy during prolonged electrochemical cycling.",
+      "tldr": "A 5% cobalt-free complex-concentrated doping strategy makes LiNiO₂ cathodes nearly strain-free, suppressing phase transformations and enabling ~973 Wh/kg with 80% capacity retention after 1800 cycles in pouch cells.",
+      "affiliations": [
+        "University of California , , , ,",
+        "Brookhaven National Laboratory , , , ,",
+        "Argonne National Laboratory , , , ,"
+      ],
+      "score": 8.2768,
+      "relevance_percentile": 97.38,
+      "score_components": {
+        "top_k": 0.8207,
+        "cluster": 0.8469,
+        "recent": 0.8165
+      },
+      "topics": [
+        "Battery",
+        "Electrochemistry",
+        "Materials"
+      ],
+      "seen_date": "2026-10-27",
+      "recommendation_status": "new",
+      "previous_recommended_at": null,
+      "key": "doi:10.1021/acsenergylett.6c01681",
+      "first_seen": "2026-10-27",
+      "last_seen": "2026-10-27",
+      "seen_dates": [
+        "2026-10-27"
+      ],
+      "recommendations_by_date": {
+        "2026-10-27": {
+          "recommendation_status": "new",
+          "previous_recommended_at": null
+        }
+      }
+    },
+    {
+      "title": "Optical signatures of Rashba--Dresselhaus coupling across Franz--Keldysh and Landau regimes in two-dimensional semiconductors",
+      "authors": [
+        "Bahruz Suleymanli, Samir Tariverdiev, B. Tanatar"
+      ],
+      "journal": "arXiv",
+      "source": "arXiv",
+      "doi": null,
+      "arxiv_id": "2610.31843",
+      "published_at": null,
+      "article_url": "https://arxiv.org/abs/2610.31843",
+      "pdf_url": "https://arxiv.org/pdf/2610.31843.pdf",
+      "code_url": null,
+      "abstract": "We develop a unified theory of the interband optical response of a two-dimensional semiconductor with simultaneous Rashba and Dresselhaus spin-orbit couplings in electric and magnetic fields. In crossed fields, the in-plane electric field generates an effective spin-orbit drift field that modifies the Landau spectrum and spinor states, while at zero magnetic field the problem maps onto Landau--Zener spin dynamics.At zero external fields, the total joint density of states above the band gap remains unchanged, while characteristic subgap structures appear. Pure Rashba coupling produces an inverse square root singularity, whereas a finite Dresselhaus term gives a step and a logarithmic peak, allowing the two couplings to be distinguished optically. At zero magnetic field, the Franz--Keldysh response shows a crossover from diabatic to adiabatic spin dynamics as the electric field is reduced. In the weak-field Rashba regime, the field-free singularity becomes a finite peak whose height scales as $\\mathcal E^{-1/3}$ and whose position approaches $E_g-E_{\\rm SO}$, providing a direct measure of the Rashba energy. In a perpendicular magnetic field, spin-orbit coupling shifts and splits the Landau absorption lines and produces anticrossings without changing their total weights. The Rashba splitting changes from a $\\sqrt{B}$ dependence at weak fields to a linear dependence at strong fields. Finally, in crossed electric and magnetic fields, the electric field broadens the Landau lines and drives a continuous crossover toward the Franz--Keldysh regime, while spin-orbit coupling produces opposite shifts and different widths for the two members of each doublet.",
+      "tldr": "A unified theory shows that interband optical spectra of two-dimensional semiconductors with Rashba–Dresselhaus spin-orbit coupling exhibit distinct signatures across Franz–Keldysh and Landau regimes, enabling optical identification of the two couplings and measurement of spin-orbit energies and field-dependent splittings.",
+      "affiliations": [
+        "Bilkent University",
+        "Sivas Cumhuriyet University",
+        "Yıldız Technical University"
+      ],
+      "score": 8.2762,
+      "relevance_percentile": 97.22,
+      "score_components": {
+        "top_k": 0.8385,
+        "cluster": 0.8669,
+        "recent": 0.7415
+      },
+      "topics": [
+        "Semiconductors"
+      ],
+      "seen_date": "2026-10-27",
+      "recommendation_status": "new",
+      "previous_recommended_at": null,
+      "key": "arxiv:2610.31843",
+      "first_seen": "2026-10-27",
+      "last_seen": "2026-10-27",
+      "seen_dates": [
+        "2026-10-27"
+      ],
+      "recommendations_by_date": {
+        "2026-10-27": {
+          "recommendation_status": "new",
+          "previous_recommended_at": null
+        }
+      }
+    },
+    {
+      "title": "rGO-MXene 2D Interfacial Engineering for Enhanced Efficiency and Stability of Perovskite Solar Cells and Modules",
+      "authors": [
+        "Zixun Wang",
+        "Yuxin Shi",
+        "Xuean Liu",
+        "Boyan Liu",
+        "Yudong Zuo",
+        "Bing Zhou",
+        "Shaozu Zhang",
+        "Yang Jiang",
+        "Guoqing Tong"
+      ],
+      "journal": "ACS Energy Letters",
+      "source": "Crossref",
+      "doi": "10.1021/acsenergylett.6c02638",
+      "arxiv_id": null,
+      "published_at": "2026-10-25",
+      "article_url": "https://doi.org/10.1021/acsenergylett.6c02638",
+      "pdf_url": "https://pubs.acs.org/doi/pdf/10.1021/acsenergylett.6c02638",
+      "code_url": null,
+      "abstract": "Abstract In this work, we report an innovative interface engineering strategy combining bidirectional chemical anchoring and electronic bridging via a 2D reduced graphene oxide (rGO) and MXene conductive network. This hierarchical 2D structure suppresses the aggregation and stacking of single-layer MXene nanosheets while mutually compensating for individual charge transport limitations. Specifically, the abundant functional groups passivate interfacial defects (Pb2+ and I–) and bond with the PCBM layer via coordination, hydrogen bonding and π–π interactions. This synergistic architecture lowers the electron energy offset. Consequently, PSCs incorporating the rGO-MXene interlayer achieve a champion power conversion efficiency (PCE) of 25.96% (certified 25.05%) and retain 96.43% of initial efficiency after 1000 h in ambient air. Furthermore, 10 × 10 cm2 large-area PSM yields a high PCE of 20.25%, maintaining 96.05% of initial efficiency under maximum power point tracking for 963 h.",
+      "tldr": "A 2D rGO-MXene interfacial engineering strategy passivates defects and improves charge transport, enabling perovskite solar cells with 25.96% efficiency and 10×10 cm² modules with 20.25% efficiency while maintaining high stability.",
+      "affiliations": [
+        "Hefei University of Technology , , ,"
+      ],
+      "score": 8.2736,
+      "relevance_percentile": 97.05,
+      "score_components": {
+        "top_k": 0.8317,
+        "cluster": 0.8391,
+        "recent": 0.7987
+      },
+      "topics": [
+        "Semiconductors",
+        "Materials"
+      ],
+      "seen_date": "2026-10-27",
+      "recommendation_status": "new",
+      "previous_recommended_at": null,
+      "key": "doi:10.1021/acsenergylett.6c02638",
+      "first_seen": "2026-10-27",
+      "last_seen": "2026-10-27",
+      "seen_dates": [
+        "2026-10-27"
+      ],
+      "recommendations_by_date": {
+        "2026-10-27": {
+          "recommendation_status": "new",
+          "previous_recommended_at": null
+        }
+      }
+    },
+    {
+      "title": "Interface Control of Second-Harmonic Generation in Layered CuInP2S6 via PbZr0.2Ti0.8O3 Domain Wall",
+      "authors": [
+        "Dawei Li, Juhe Liu, Yifei Hao, Qiuchen Wu, Xi Huang, Jesse Stebbing, Xinyi Hou, Gaolei Zhao, Kun Wang, Yongfeng Lu, Xia Hong"
+      ],
+      "journal": "arXiv",
+      "source": "arXiv",
+      "doi": null,
+      "arxiv_id": "2610.32228",
+      "published_at": null,
+      "article_url": "https://arxiv.org/abs/2610.32228",
+      "pdf_url": "https://arxiv.org/pdf/2610.32228.pdf",
+      "code_url": null,
+      "abstract": "The control of nonlinear optical responses in van der Waals ferroelectrics at the nanoscale offers opportunities for developing two-dimensional integrated nanophotonics with programmable functionalities. In this work, we report the first realization of nanoscale nonvolatile control of the amplitude and polarization of second-harmonic generation (SHG) response in layered CuInP2S6 (CIPS) via the domain structure in an interfacial PbZr0.2Ti0.8O3 (PZT) thin film. The SHG intensity at CIPS/PZT heterointerface is continuously modulated, either substantially enhanced or almost entirely quenched, by the circular domain walls in underlying ferroelectric oxide. The interfacial coupling of CIPS polar axis with in-plane polarization of PZT domain walls tailors the SHG light polarization into two-fold (C2V) symmetry, which is well modeled by nonlinear electromagnetic theory. Overall, this study enables nonvolatile programmable design of nonlinear light intensity and polarization in van der Waals ferroelectrics at the nanoscale.",
+      "tldr": "This paper demonstrates nanoscale, nonvolatile control of second-harmonic generation intensity and polarization in layered CuInP₂S₆ by coupling it to ferroelectric domain walls in an interfacial PbZr₀.₂Ti₀.₈O₃ thin film, enabling programmable nonlinear optical functionalities in van der Waals ferroelectrics.",
+      "affiliations": [],
+      "score": 8.2605,
+      "relevance_percentile": 96.89,
+      "score_components": {
+        "top_k": 0.823,
+        "cluster": 0.8632,
+        "recent": 0.778
+      },
+      "topics": [
+        "Materials"
+      ],
+      "seen_date": "2026-10-27",
+      "recommendation_status": "new",
+      "previous_recommended_at": null,
+      "key": "arxiv:2610.32228",
+      "first_seen": "2026-10-27",
+      "last_seen": "2026-10-27",
+      "seen_dates": [
+        "2026-10-27"
+      ],
+      "recommendations_by_date": {
+        "2026-10-27": {
+          "recommendation_status": "new",
+          "previous_recommended_at": null
+        }
+      }
+    },
+    {
+      "title": "Quantum Landau Lifshitz Gilbert equation in ferromagnetic conductors and magnetic insulators",
+      "authors": [
+        "Ji Yang Zhu, Zheng Chuan Wang"
+      ],
+      "journal": "arXiv",
+      "source": "arXiv",
+      "doi": null,
+      "arxiv_id": "2610.32405",
+      "published_at": null,
+      "article_url": "https://arxiv.org/abs/2610.32405",
+      "pdf_url": "https://arxiv.org/pdf/2610.32405.pdf",
+      "code_url": null,
+      "abstract": "Understanding the microscopic origin of magnetic damping is essential for describing magnetization dynamics in nanoscale magnetic systems. In this work, we develop a microscopic framework to derive Gilbert damping terms from specific interactions in ferromagnetic conductors and magnetic insulators. In ferromagnetic conductors, magnetic damping is dominated by the s d exchange interaction between the localized magnetic moments and the itinerant electrons, which is effectively equivalent to an electronmagnon interaction. From the spin diffusion equation and the spin transfer torque therein, we obtain the corresponding quantum LLG equation. In magnetic insulators, where free electrons are absent, spin phonon interactions become the primary source of the damping.Starting from an effective spin phonon interaction and using linear response theory, we derive a quantum LLG equation with a Gilbert damping tensor analytically. Our results demonstrate that different microscopic interactions lead to qualitatively different structures of magnetic damping. Instead of being described by a universal scalar parameter, Gilbert damping can exhibit spatial dependence and tensorial characteristics determined by the underlying microscopic interactions.",
+      "tldr": "This paper microscopically derives quantum Landau–Lifshitz–Gilbert equations for ferromagnetic conductors and magnetic insulators, showing that Gilbert damping arises from \\(s\\)-\\(d\\) exchange/electron-magnon interactions or spin-phonon interactions and is generally a spatially dependent tensor rather than a universal scalar.",
+      "affiliations": [],
+      "score": 8.2497,
+      "relevance_percentile": 96.73,
+      "score_components": {
+        "top_k": 0.8287,
+        "cluster": 0.8835,
+        "recent": 0.7278
+      },
+      "topics": [
+        "Materials"
+      ],
+      "seen_date": "2026-10-27",
+      "recommendation_status": "new",
+      "previous_recommended_at": null,
+      "key": "arxiv:2610.32405",
+      "first_seen": "2026-10-27",
+      "last_seen": "2026-10-27",
+      "seen_dates": [
+        "2026-10-27"
+      ],
+      "recommendations_by_date": {
+        "2026-10-27": {
+          "recommendation_status": "new",
+          "previous_recommended_at": null
+        }
+      }
+    },
+    {
+      "title": "Supercontinuum-driven broadband Fourier-transform photothermal microspectroscopy",
+      "authors": [
+        "Senyu Wang, Zicong Xu, Kazuki Hashimoto, Jianfeng Li, Takuro Ideguchi"
+      ],
+      "journal": "arXiv",
+      "source": "arXiv",
+      "doi": null,
+      "arxiv_id": "2610.32718",
+      "published_at": null,
+      "article_url": "https://arxiv.org/abs/2610.32718",
+      "pdf_url": "https://arxiv.org/pdf/2610.32718.pdf",
+      "code_url": null,
+      "abstract": "Chemical characterization of microscopic samples often requires resolving multiple, widely separated vibrational absorption bands, including their positions and spectral shapes. Photothermal microspectroscopy provides a route to localized vibrational measurements by detecting absorption-induced thermal responses with a separate optical probe. However, rapid acquisition of broadband photothermal spectra remains challenging when spectral information is collected through sequential wavelength tuning. Here, we develop a supercontinuum (SC)-driven Fourier-transform photothermal (FT-PT) microspectroscopy platform that combines broadband near-infrared excitation with rapid-scan interferometric acquisition for localized vibrational measurements. In this approach, an interferometrically modulated SC pump induces wavelength-dependent photothermal responses in the sample, which are detected through a co-propagating visible probe beam and reconstructed by Fourier transformation. Using a 1.65-2.35 um spectral window, we demonstrate broadband photothermal spectra of aqueous samples with acquisition rates of approximately one spectrum per second. The system simultaneously resolves multiple molecular absorption features in a water-dimethyl sulfoxide mixture and reproduces the near-infrared absorption characteristics of liquid water with high spectral fidelity. Extending beyond homogeneous liquids, a dark-field detection configuration enables broadband photothermal spectroscopy of an individual 6 um polystyrene particle in an aqueous environment. This SC-based FT-PT microspectroscopy approach provides a rapid and broadband platform for localized vibrational characterization of liquid and microscopic samples, enabling chemical analysis with microscale spatial selectivity.",
+      "tldr": "The paper presents a supercontinuum-driven Fourier-transform photothermal microspectroscopy platform that enables rapid (~1 spectrum/s), broadband near-infrared vibrational characterization of liquid and microscopic samples with microscale spatial selectivity.",
+      "affiliations": [],
+      "score": 8.2489,
+      "relevance_percentile": 96.56,
+      "score_components": {
+        "top_k": 0.8203,
+        "cluster": 0.8527,
+        "recent": 0.7947
+      },
+      "topics": [
+        "Spectroscopy",
+        "Materials"
+      ],
+      "seen_date": "2026-10-27",
+      "recommendation_status": "new",
+      "previous_recommended_at": null,
+      "key": "arxiv:2610.32718",
+      "first_seen": "2026-10-27",
+      "last_seen": "2026-10-27",
+      "seen_dates": [
+        "2026-10-27"
+      ],
+      "recommendations_by_date": {
+        "2026-10-27": {
+          "recommendation_status": "new",
+          "previous_recommended_at": null
+        }
+      }
+    },
+    {
+      "title": "Unifying Low-Frequency Raman and Infrared Signatures across Perovskites",
+      "authors": [
+        "Ethan Berger, Erik Fransson, Apinya Ngoipala, Lucas Svensson, Priyanka Deswal, Mehmet Baskurt, Paul Erhart, Julia Wiktor"
+      ],
+      "journal": "arXiv",
+      "source": "arXiv",
+      "doi": null,
+      "arxiv_id": "2610.31830",
+      "published_at": null,
+      "article_url": "https://arxiv.org/abs/2610.31830",
+      "pdf_url": "https://arxiv.org/pdf/2610.31830.pdf",
+      "code_url": null,
+      "abstract": "Perovskites have been studied for a wide range of applications, from oxide-based ferroelectrics to halide-perovskite photovoltaics. Despite their diverse functionalities, these materials share strong lattice anharmonicity arising from structural instabilities such as polar off-centering and octahedral tilting. These anharmonic distortions strongly influence the low-frequency vibrational response and can be observed in infrared (IR) and Raman spectra. However, low-frequency IR and Raman signatures are typically investigated separately, hindering the development of a unified understanding of vibrational spectroscopy across perovskite classes. In this work, we use machine-learning-based molecular dynamics to simulate the IR and Raman spectra of oxide perovskites (SrTiO$_3$ and BaTiO$_3$), halide perovskites (CsPbBr$_3$, CsSnBr$_3$, and CsGeBr$_3$) and double halide perovskites (Cs$_2$AgAlBr$_6$ and Cs$_2$AgBiBr$_6$). By comparing materials exhibiting polar, tilt-driven and mixed instabilities, we find that polar off-centering leads to enhanced low-frequency IR and dielectric responses, whereas nonpolar modes, particularly octahedral tilting, are associated with Raman central peaks. The strength of the low-frequency features also depends on how strongly the underlying modes couple to polarization or dielectric susceptibility. Finally, we show that the dynamics of these instabilities play an important role, with slow polar reorientations shifting the dielectric response to very low frequencies and overdamped tilting modes producing persistent Raman central peaks. These results establish a unified framework connecting low-frequency IR and Raman spectra to the symmetry, coupling and dynamics of their underlying anharmonic lattice instabilities.",
+      "tldr": "Using machine-learning molecular dynamics across oxide, halide, and double halide perovskites, this work unifies low-frequency IR and Raman signatures by showing that polar off-centering drives enhanced IR/dielectric response while octahedral tilting and its overdamped dynamics produce Raman central peaks, with mode coupling and dynamics governing the spectroscopic features.",
+      "affiliations": [
+        "Chalmers University of Technology"
+      ],
+      "score": 8.2482,
+      "relevance_percentile": 96.4,
+      "score_components": {
+        "top_k": 0.828,
+        "cluster": 0.8378,
+        "recent": 0.7973
+      },
+      "topics": [
+        "Spectroscopy",
+        "Semiconductors",
+        "Materials",
+        "AI & Computation"
+      ],
+      "seen_date": "2026-10-27",
+      "recommendation_status": "new",
+      "previous_recommended_at": null,
+      "key": "arxiv:2610.31830",
+      "first_seen": "2026-10-27",
+      "last_seen": "2026-10-27",
+      "seen_dates": [
+        "2026-10-27"
+      ],
+      "recommendations_by_date": {
+        "2026-10-27": {
+          "recommendation_status": "new",
+          "previous_recommended_at": null
+        }
+      }
+    },
+    {
+      "title": "Scaling the Wavelength to Optimize Ultrafast Laser Processing of Bandgap Materials",
+      "authors": [
+        "Maxime Chambonneau, Mario Garcia-Lechuga, David Grojo, Stefan Nolte"
+      ],
+      "journal": "arXiv",
+      "source": "arXiv",
+      "doi": null,
+      "arxiv_id": "2610.32924",
+      "published_at": null,
+      "article_url": "https://arxiv.org/abs/2610.32924",
+      "pdf_url": "https://arxiv.org/pdf/2610.32924.pdf",
+      "code_url": null,
+      "abstract": "The spectral characteristics of ultrashort laser pulses offer unique possibilities to control interactions in space and time as well as the subsequent material responses. In particular, selecting the wavelength predefines the fundamental mechanisms governing laser-matter interaction, and thus, how energy is deposited. This Chapter provides an overview on how the essential physical effects in ultrafast laser-matter interaction scale with the wavelength, and the consequences for bandgap material processing applications. First, we recall the main spectral properties of bandgap materials and discuss the important question of the expected processing resolutions depending on wavelength. Then, recent studies on the impact of the wavelength in ultrafast laser-dielectric interaction are presented. Finally, we present how the latest developments in infrared ultrafast laser sources can be advantageously utilized to internally process narrow-gap materials despite challenges related to increased nonlinearities.",
+      "tldr": "This chapter reviews how wavelength-dependent linear and nonlinear laser–matter interactions govern energy deposition, resolution, and nanostructuring in ultrafast laser processing of bandgap materials, highlighting wavelength as a key control parameter and emerging infrared sources for 3D processing of narrow-gap semiconductors despite enhanced nonlinearities.",
+      "affiliations": [
+        "Aix Marseille Université",
+        "Friedrich Schiller University Jena",
+        "Fraunhofer Institute for Applied Optics and Precision Engineering IOF",
+        "Consejo Superior de Investigaciones Científicas (CSIC)"
+      ],
+      "score": 8.2267,
+      "relevance_percentile": 96.24,
+      "score_components": {
+        "top_k": 0.8306,
+        "cluster": 0.848,
+        "recent": 0.7649
+      },
+      "topics": [
+        "Spectroscopy",
+        "Materials"
+      ],
+      "seen_date": "2026-10-27",
+      "recommendation_status": "new",
+      "previous_recommended_at": null,
+      "key": "arxiv:2610.32924",
+      "first_seen": "2026-10-27",
+      "last_seen": "2026-10-27",
+      "seen_dates": [
+        "2026-10-27"
+      ],
+      "recommendations_by_date": {
+        "2026-10-27": {
+          "recommendation_status": "new",
+          "previous_recommended_at": null
+        }
+      }
+    },
+    {
+      "title": "Machine Learning Accelerated Simulation of Charge Regulation Effects",
+      "authors": [
+        "Vijay Yadav, Sunita Kumari, Prabhat K. Jaiswal"
+      ],
+      "journal": "arXiv",
+      "source": "arXiv",
+      "doi": null,
+      "arxiv_id": "2610.32713",
+      "published_at": null,
+      "article_url": "https://arxiv.org/abs/2610.32713",
+      "pdf_url": "https://arxiv.org/pdf/2610.32713.pdf",
+      "code_url": null,
+      "abstract": "Many solvated materials, from nanoparticles to polyelectrolytes, acquire charge through the dissociation or association of surface groups, a phenomenon known as charge regulation (CR). Recent methods use hybrid charge regulation Monte Carlo (CR-MC)/molecular dynamics (MD) to evolve the system while dynamically adjusting charges on the surface groups. However, this approach is computationally expensive, as Monte Carlo sampling can be as costly as the accompanying MD. In this work, we introduce charge regulation machine learning (CR-ML), a graph attention network that predicts the ionization probability of every surface site from the instantaneous configuration, the dissociation constant of surface groups, and the solution conditions. We show that CR-ML reproduces the equilibrium conformations and degree of ionization obtained with CR-MC for a hydrophobic polyanion. We further test CR-ML on the more complex system of two nanoparticles mediated by a polyelectrolyte, where it accurately predicts the charge asymmetry that develops between the two particles. Across these systems, CR-ML updates charges an order of magnitude faster than CR-MC while accurately reproducing its equilibrium properties. This framework opens a path toward large-scale simulations of charge-regulating materials for understanding and designing their responsive behavior.",
+      "tldr": "CR-ML, a graph attention network that predicts surface-site ionization probabilities from instantaneous configurations and solution conditions, accelerates charge-regulation simulations by an order of magnitude while reproducing the equilibrium conformations and ionization behavior of CR-MC for polyanions and nanoparticle–polyelectrolyte systems.",
+      "affiliations": [
+        "Indian Institute of Technology Jodhpur"
+      ],
+      "score": 8.2225,
+      "relevance_percentile": 96.07,
+      "score_components": {
+        "top_k": 0.8183,
+        "cluster": 0.8513,
+        "recent": 0.7887
+      },
+      "topics": [
+        "Battery",
+        "Materials",
+        "AI & Computation"
+      ],
+      "seen_date": "2026-10-27",
+      "recommendation_status": "new",
+      "previous_recommended_at": null,
+      "key": "arxiv:2610.32713",
+      "first_seen": "2026-10-27",
+      "last_seen": "2026-10-27",
+      "seen_dates": [
+        "2026-10-27"
+      ],
+      "recommendations_by_date": {
+        "2026-10-27": {
+          "recommendation_status": "new",
+          "previous_recommended_at": null
+        }
+      }
+    },
+    {
+      "title": "Nano-ARPES observation of a flat band at the \\bar{M} point in 2.4{\\deg} twisted bilayer graphene",
+      "authors": [
+        "Giovanna Feraco, Przemys{\\l}aw Przybysz, Oreste De Luca, Ying Wang, Pavel Dudin, Jos\\'e Avila, Jianting Ye, Pawe{\\l} D\\k{a}browski, Pawe{\\l} J. Kowalczyk, Jagoda S{\\l}awi\\'nska, Petra Rudolf, Antonija Grubi\\v{s}i\\'c-\\v{C}abo"
+      ],
+      "journal": "arXiv",
+      "source": "arXiv",
+      "doi": null,
+      "arxiv_id": "2610.32714",
+      "published_at": null,
+      "article_url": "https://arxiv.org/abs/2610.32714",
+      "pdf_url": "https://arxiv.org/pdf/2610.32714.pdf",
+      "code_url": null,
+      "abstract": "The emergence of flat bands in twisted bilayer graphene at the so-called magic angle reveals a range of intriguing phases, such as superconductivity and Mott insulating states, resulting from electrons entering a correlated state. This establishes twisted bilayer graphene as an excellent platform for exploring correlation effects in many-body phases and across various twist angles. However, in most cases, the twist angle is not an easy parameter to control because it exhibits structural instabilities such as relaxation and reconstruction that reduce the correlation effects. Here, we report the unexpected appearance of a flat band at the \\bar{M} point far from the Fermi level in a 2.4{\\deg} twisted bilayer graphene, directly visualized by angle-resolved photoemission spectroscopy. Our work is the first observation of flat bands away from the \\bar{K} point in twisted bilayer graphene and highlights the need to probe the entire Brillouin zone to fully capture electronic states in twisted structures.",
+      "tldr": "Nano-ARPES directly observes an unexpected flat band at the \\(\\bar{M}\\) point far from the Fermi level in 2.4° twisted bilayer graphene—the first flat band found away from \\(\\bar{K}\\) in such systems—highlighting the need to probe the full Brillouin zone.",
+      "affiliations": [],
+      "score": 8.2197,
+      "relevance_percentile": 95.91,
+      "score_components": {
+        "top_k": 0.83,
+        "cluster": 0.8487,
+        "recent": 0.7618
+      },
+      "topics": [
+        "Spectroscopy",
+        "Materials"
+      ],
+      "seen_date": "2026-10-27",
+      "recommendation_status": "new",
+      "previous_recommended_at": null,
+      "key": "arxiv:2610.32714",
+      "first_seen": "2026-10-27",
+      "last_seen": "2026-10-27",
+      "seen_dates": [
+        "2026-10-27"
+      ],
+      "recommendations_by_date": {
+        "2026-10-27": {
+          "recommendation_status": "new",
+          "previous_recommended_at": null
+        }
+      }
+    },
+    {
+      "title": "Flexo-Photoresponses from First Principles",
+      "authors": [
+        "Zhichao Guo, Hua Wang, Haowei Xu"
+      ],
+      "journal": "arXiv",
+      "source": "arXiv",
+      "doi": null,
+      "arxiv_id": "2610.32341",
+      "published_at": null,
+      "article_url": "https://arxiv.org/abs/2610.32341",
+      "pdf_url": "https://arxiv.org/pdf/2610.32341.pdf",
+      "code_url": null,
+      "abstract": "Many functionally important materials, such as silicon, possess high-symmetry crystal structures that forbid even-order nonlinear optical responses, thereby limiting their application in e.g., photonics and optoelectronics. Strain gradients can effectively break symmetries, activating otherwise forbidden optical responses. Although such flexo-photoresponses have attracted considerable interest recently, a comprehensive microscopic theoretical framework is still lacking. Here, we develop a first-principles approach that can systematically evaluate a wide range of flexo-photoresponses in realistic materials. By mapping strain gradients to long-wavelength phonons within the established theory of electron-phonon coupling, our approach captures the nonlocal quantum-mechanical effects of lattice deformations on nonlinear optical responses. Applying the framework to prototypical centrosymmetric materials, including Si, cubic $\\rm SrTiO_3$, and monolayer black phosphorus, we demonstrate that a strain gradients of $10^5\\sim10^6~\\rm m^{-1}$ can induce flexo-second-harmonic generation and flexo-bulk photovoltaic effects comparable to the intrinsic responses of non-centrosymmetric crystals. Our work establishes a rigorous foundation for strain gradient engineering of light-matter interactions, opening new avenues for nanoscale optomechanics, optoelectronics, and beyond.",
+      "tldr": "The paper develops a first-principles framework mapping strain gradients to long-wavelength phonons to compute flexo-photoresponses, showing that moderate strain gradients can induce second-harmonic generation and bulk photovoltaic effects in centrosymmetric materials comparable to intrinsic responses in non-centrosymmetric crystals.",
+      "affiliations": [
+        "City University of Hong Kong",
+        "Zhejiang University"
+      ],
+      "score": 8.2017,
+      "relevance_percentile": 95.74,
+      "score_components": {
+        "top_k": 0.815,
+        "cluster": 0.8655,
+        "recent": 0.7652
+      },
+      "topics": [
+        "Materials",
+        "AI & Computation"
+      ],
+      "seen_date": "2026-10-27",
+      "recommendation_status": "new",
+      "previous_recommended_at": null,
+      "key": "arxiv:2610.32341",
+      "first_seen": "2026-10-27",
+      "last_seen": "2026-10-27",
+      "seen_dates": [
+        "2026-10-27"
+      ],
+      "recommendations_by_date": {
+        "2026-10-27": {
+          "recommendation_status": "new",
+          "previous_recommended_at": null
+        }
+      }
+    },
+    {
+      "title": "Magnons and excitons from Bethe-Salpeter equation and its application to graphene-based magnets",
+      "authors": [
+        "Simran Chourasia, Maur\\'icio F. C. Martins Quintela, J. J. Palacios"
+      ],
+      "journal": "arXiv",
+      "source": "arXiv",
+      "doi": null,
+      "arxiv_id": "2610.32847",
+      "published_at": null,
+      "article_url": "https://arxiv.org/abs/2610.32847",
+      "pdf_url": "https://arxiv.org/pdf/2610.32847.pdf",
+      "code_url": null,
+      "abstract": "With the recent isolation of two-dimensional semiconducting magnetic materials, the theoretical study of spin-flip collective excitations (magnons) along with spin-conserving electron-hole bound pairs (excitons) has become particularly relevant. Describing both types of quasiparticles within the same theoretical framework is possible, in principle, but the well-established many-body formalism for the calculation of excitons, based on the intertwined Bethe-Salpeter and Hedin's equations, is not satisfactory for magnons, since the usual approximations produce a spurious gapped Goldstone mode. Here, we show that excitons and magnons can be computed on the same footing under the same Bethe-Salpeter formalism, while respecting the gapless Goldstone mode for magnons. We demonstrate how this can be achieved through the evaluation of the full Bethe-Salpeter equation, beyond the Tamm-Dancoff approximation in model Hamiltonians. As an example, we apply it to ferromagnetic and antiferromagnetic graphene, faithfully represented by the extended Hubbard model. Our results clarify the roles of on-site and non-local interactions in exciton and magnon appearance and identify consistency requirements relevant to extending the approach to first-principles calculations.",
+      "tldr": "The paper shows that excitons and magnons can be described within the same full Bethe-Salpeter equation framework—beyond the Tamm-Dancoff approximation—while preserving the gapless Goldstone magnon mode, and applies this to ferromagnetic and antiferromagnetic graphene-based magnets modeled by the extended Hubbard model.",
+      "affiliations": [
+        "Universidad Autónoma de Madrid"
+      ],
+      "score": 8.1926,
+      "relevance_percentile": 95.58,
+      "score_components": {
+        "top_k": 0.8341,
+        "cluster": 0.858,
+        "recent": 0.7241
+      },
+      "topics": [
+        "Materials",
+        "AI & Computation"
+      ],
+      "seen_date": "2026-10-27",
+      "recommendation_status": "new",
+      "previous_recommended_at": null,
+      "key": "arxiv:2610.32847",
+      "first_seen": "2026-10-27",
+      "last_seen": "2026-10-27",
+      "seen_dates": [
+        "2026-10-27"
+      ],
+      "recommendations_by_date": {
+        "2026-10-27": {
+          "recommendation_status": "new",
+          "previous_recommended_at": null
+        }
+      }
+    },
+    {
+      "title": "Multifractal Magnons Around Localized Defects",
+      "authors": [
+        "Adarsh Hullahalli, Yusuf Khand, Christos Panagopoulos, Christina Psaroudaki"
+      ],
+      "journal": "arXiv",
+      "source": "arXiv",
+      "doi": null,
+      "arxiv_id": "2610.32457",
+      "published_at": null,
+      "article_url": "https://arxiv.org/abs/2610.32457",
+      "pdf_url": "https://arxiv.org/pdf/2610.32457.pdf",
+      "code_url": null,
+      "abstract": "Multifractal wavefunctions fluctuate over a hierarchy of spatial scales, remaining spatially extended while exhibiting strongly nonuniform structure. We show that magnons in otherwise crystalline two-dimensional magnets can exhibit such behavior on mesoscopic scales, without disorder or quasiperiodicity. A localized defect can mix discrete groups of nearly degenerate magnon states in a finite sample, generating multiscale interference patterns and multifractal wavefunctions. We demonstrate this mechanism for both a simple spin defect and topological magnetic skyrmions. Large-scale spin-wave calculations for skyrmions in chiral and frustrated magnets reveal clear multifractal diagnostics over the full accessible range of system sizes of above-gap modes. Crucially, skyrmions make these states experimentally observable by hybridizing them with magnetically active internal deformation modes, which gives a subset of the multifractal states a nonzero magnetic dipole moment. These states can therefore be excited by uniform ac fields and remain distinguishable at realistic frequency resolution, providing a direct route to observing mesoscopic magnon multifractality.",
+      "tldr": "Localized defects in crystalline 2D magnets can mix nearly degenerate magnon states to create disorder-free multifractal spin-wave interference, and skyrmions make a subset of these multifractal magnons experimentally observable by giving them a nonzero magnetic dipole moment excitable with uniform ac fields.",
+      "affiliations": [
+        "Nanyang Technological University",
+        "École Normale Supérieure",
+        "Trinity College"
+      ],
+      "score": 8.1917,
+      "relevance_percentile": 95.42,
+      "score_components": {
+        "top_k": 0.8262,
+        "cluster": 0.8654,
+        "recent": 0.7323
+      },
+      "topics": [
+        "Materials"
+      ],
+      "seen_date": "2026-10-27",
+      "recommendation_status": "new",
+      "previous_recommended_at": null,
+      "key": "arxiv:2610.32457",
+      "first_seen": "2026-10-27",
+      "last_seen": "2026-10-27",
+      "seen_dates": [
+        "2026-10-27"
+      ],
+      "recommendations_by_date": {
+        "2026-10-27": {
+          "recommendation_status": "new",
+          "previous_recommended_at": null
+        }
+      }
+    },
+    {
+      "title": "Extended Hydrodynamics of Planar Heisenberg Ferromagnetic Systems",
+      "authors": [
+        "Dwigbijoy Paul, Sreedhar B. Dutta"
+      ],
+      "journal": "arXiv",
+      "source": "arXiv",
+      "doi": null,
+      "arxiv_id": "2610.32929",
+      "published_at": null,
+      "article_url": "https://arxiv.org/abs/2610.32929",
+      "pdf_url": "https://arxiv.org/pdf/2610.32929.pdf",
+      "code_url": null,
+      "abstract": "Access to hydro and quasi-hydro regimes in magnetic systems is steadily increasing with the advances in fabrication of clean materials, and motivates study of hydrodynamics beyond conventional regimes and probe non-equilibrium transport. We employ the framework of extended irreversible thermodynamics which includes dynamical dissipative currents as quasi-hydro variables, and effect the modified hydrodynamic equations suitable to describe planar Heisenberg ferromagnetic systems in both paramagnetic and ferromagnetic phases. We show that the new transport coefficients and relaxation time scales introduced by quasi-hydro variables can engineer diverse combination of dispersion relations and provide control over the nature of hydrodynamic modes. For instance, we can change the diffusive energy mode into propagating one in multiple ways, including by tuning the relaxation time of magnetization current.",
+      "tldr": "Using extended irreversible thermodynamics with dissipative currents as quasi-hydrodynamic variables, this paper derives extended hydrodynamic equations for planar Heisenberg ferromagnets in both paramagnetic and ferromagnetic phases and shows that new transport coefficients and relaxation times can be tuned to control hydrodynamic mode dispersion and even convert diffusive modes into propagating ones.",
+      "affiliations": [
+        "Indian Institute of Science Education and Research Thiruvananthapuram"
+      ],
+      "score": 8.182,
+      "relevance_percentile": 95.25,
+      "score_components": {
+        "top_k": 0.8215,
+        "cluster": 0.8742,
+        "recent": 0.726
+      },
+      "topics": [
+        "Materials"
+      ],
+      "seen_date": "2026-10-27",
+      "recommendation_status": "new",
+      "previous_recommended_at": null,
+      "key": "arxiv:2610.32929",
+      "first_seen": "2026-10-27",
+      "last_seen": "2026-10-27",
+      "seen_dates": [
+        "2026-10-27"
+      ],
+      "recommendations_by_date": {
+        "2026-10-27": {
+          "recommendation_status": "new",
+          "previous_recommended_at": null
+        }
+      }
+    },
     {
       "title": "Watching Electrochemical Interfaces in Motion with High-Speed Atomic Force Microscopy",
       "authors": [
