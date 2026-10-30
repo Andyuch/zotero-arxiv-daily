@@ -1,7 +1,11 @@
 {
-  "generated_at": "2026-10-29T00:13:30.007111+00:00",
-  "paper_count": 854,
+  "generated_at": "2026-10-30T00:00:56.884498+00:00",
+  "paper_count": 855,
   "days": [
+    {
+      "date": "2026-10-30",
+      "count": 1
+    },
     {
       "date": "2026-10-29",
       "count": 30
@@ -160,6 +164,54 @@
     "Spectroscopy"
   ],
   "papers": [
+    {
+      "title": "Establishing Oxime as a Bioresponsive Group on Naphthalene Diimide: Visual Bacterial Classification and NIR-II Photothermal Antibacterial",
+      "authors": [
+        "He Ma",
+        "Yushen Kang",
+        "Weiquan Xu",
+        "Jiang-Fei Xu",
+        "Xi Zhang"
+      ],
+      "journal": "Journal of the American Chemical Society",
+      "source": "Crossref",
+      "doi": "10.1021/jacs.6c18889",
+      "arxiv_id": null,
+      "published_at": "2026-10-29",
+      "article_url": "https://doi.org/10.1021/jacs.6c18889",
+      "pdf_url": "https://pubs.acs.org/doi/pdf/10.1021/jacs.6c18889",
+      "code_url": null,
+      "abstract": "Abstract Bioresponsive groups are fundamental tools in engineering activatable constructs. Herein, we first demonstrated that the oxime group was a bioresponsive group by designing oxime-naphthalene diimide (NONDI). The oxime group could be reduced to an iminyl group by bacteria, and NONDI was completely converted into iminyl-naphthalene diimide (NHNDI). Mechanistically, that reduction triggered homolytic cleavage of the N–O bond in the oxime group and released a hydroxyl radical. NONDI could be reduced stepwise to NHNDI, NHNDI•–, and NHNDI2–, yielding four distinct colors which depended on the bacteria with reducibility from weak to strong. In other words, NONDI enables visual classification of bacteria by their reducing ability. In addition, the intense NIR-II absorption of NHNDI•– endows it with photothermal antibacterial properties. This work uncovers fundamental principles of oxime bioresponsiveness under reducing conditions for the first time, providing a new platform for designing new activatable materials.",
+      "tldr": "The oxime group on naphthalene diimide acts as a bacterial-reducible bioresponsive trigger, enabling colorimetric classification of bacteria by reducing ability and NIR-II photothermal antibacterial activity.",
+      "affiliations": [
+        "Tsinghua University , , ,"
+      ],
+      "score": 7.218,
+      "relevance_percentile": 100.0,
+      "score_components": {
+        "top_k": 0.7236,
+        "cluster": 0.7245,
+        "recent": 0.7133
+      },
+      "topics": [
+        "Materials"
+      ],
+      "seen_date": "2026-10-30",
+      "recommendation_status": "new",
+      "previous_recommended_at": null,
+      "key": "doi:10.1021/jacs.6c18889",
+      "first_seen": "2026-10-30",
+      "last_seen": "2026-10-30",
+      "seen_dates": [
+        "2026-10-30"
+      ],
+      "recommendations_by_date": {
+        "2026-10-30": {
+          "recommendation_status": "new",
+          "previous_recommended_at": null
+        }
+      }
+    },
     {
       "title": "Exciton-driven coherent dressing in transient absorption",
       "authors": [
