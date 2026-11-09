@@ -2,11 +2,16 @@ name: Send emails daily
 
 on:
   workflow_dispatch:
+  # Primary 04:17, backups 06:43 and 08:21 Asia/Shanghai.
+  # GitHub scheduled events may be delayed or dropped; backups provide retries.
   schedule:
     - cron: '17 20 * * *'
+    - cron: '43 22 * * *'
+    - cron: '21 0 * * *'
 
 permissions:
   contents: write
+  actions: read
 
 concurrency:
   group: v3-daily-recommendations
@@ -16,7 +21,53 @@ jobs:
   calculate-and-send:
     runs-on: ubuntu-latest
     steps:
+      - name: Check for an existing successful daily digest
+        if: github.event_name == 'schedule'
+        id: daily_guard
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: |
+          python - <<'PY'
+          import json
+          import os
+          from datetime import datetime
+          from urllib.request import Request, urlopen
+          from zoneinfo import ZoneInfo
+
+          tz = ZoneInfo('Asia/Shanghai')
+          today = datetime.now(tz).date()
+          current_run = int(os.environ['GITHUB_RUN_ID'])
+          repository = os.environ['GITHUB_REPOSITORY']
+          url = (
+              f'https://api.github.com/repos/{repository}/actions/workflows/'
+              'main.yml/runs?per_page=100&status=success'
+          )
+          request = Request(url, headers={
+              'Authorization': f'Bearer {os.environ["GITHUB_TOKEN"]}',
+              'Accept': 'application/vnd.github+json',
+              'User-Agent': 'zotero-arxiv-daily-guard',
+          })
+          with urlopen(request, timeout=30) as response:
+              runs = json.load(response)['workflow_runs']
+
+          successful_today = []
+          for run in runs:
+              if (run['id'] == current_run
+                      or run.get('event') not in ('schedule', 'workflow_dispatch')
+                      or run.get('conclusion') != 'success'):
+                  continue
+              started = run.get('run_started_at')
+              if started and datetime.fromisoformat(
+                      started.replace('Z', '+00:00')).astimezone(tz).date() == today:
+                  successful_today.append(run['id'])
+
+          skip = bool(successful_today)
+          with open(os.environ['GITHUB_OUTPUT'], 'a', encoding='utf-8') as output:
+              output.write(f"skip={'true' if skip else 'false'}\n")
+          print(f'Asia/Shanghai date: {today}; existing successful runs: {successful_today}')
+          PY
       - name: Checkout V3 Pages engine
+        if: steps.daily_guard.outputs.skip != 'true'
         uses: actions/checkout@v4
         with:
           repository: ${{ github.repository }}
@@ -24,9 +75,11 @@ jobs:
           fetch-depth: 0
 
       - name: Setup uv
+        if: steps.daily_guard.outputs.skip != 'true'
         uses: astral-sh/setup-uv@v7
 
       - name: Run recommender, email and archive build
+        if: steps.daily_guard.outputs.skip != 'true'
         env:
           ZOTERO_ID: ${{ secrets.ZOTERO_ID }}
           ZOTERO_KEY: ${{ secrets.ZOTERO_KEY }}
@@ -55,6 +108,7 @@ jobs:
         run: uv run main.py
 
       - name: Commit updated research archive
+        if: steps.daily_guard.outputs.skip != 'true'
         run: |
           git add site/data
           if git diff --cached --quiet -- site/data; then
