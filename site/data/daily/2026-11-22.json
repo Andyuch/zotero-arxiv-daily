@@ -1,0 +1,90 @@
+{
+  "date": "2026-11-22",
+  "generated_at": "2026-11-22T00:27:13.517840+00:00",
+  "count": 2,
+  "papers": [
+    {
+      "title": "Photoaffinity Capture of Unit-Resolved Ubiquitin–Decoder Contacts Underlying Topology-Selective Recognition of Heterotypic Chains",
+      "authors": [
+        "Takafumi Furuhata",
+        "Taiki Uno",
+        "Ryota Shinohara",
+        "Takuya Tomita",
+        "Usano Toyoda",
+        "Tokiha Masuda-Ozawa",
+        "Yasushi Saeki",
+        "Akimitsu Okamoto"
+      ],
+      "journal": "Journal of the American Chemical Society",
+      "source": "Crossref",
+      "doi": "10.1021/jacs.6c13215",
+      "arxiv_id": null,
+      "published_at": "2026-11-21",
+      "article_url": "https://doi.org/10.1021/jacs.6c13215",
+      "pdf_url": "https://pubs.acs.org/doi/pdf/10.1021/jacs.6c13215",
+      "code_url": null,
+      "abstract": "Abstract Heterotypic K63/K48 polyubiquitin chains encode diverse cellular outcomes, ranging from proteasomal degradation to nonproteolytic signaling. Although chain topology is increasingly recognized as a critical determinant of these functions, how architectures composed of the same linkage types are decoded into distinct outputs remains poorly understood. This gap has persisted because molecular technologies capable of both chemically capturing topology-selective decoders and defining the unit-resolved contacts underlying selective recognition remain undeveloped. Here we report diazirine-functionalized K63/K48 triubiquitin probes that resolve the unit-specific ubiquitin–decoder contacts essential for topology-selective decoding of the K63/K48 chains with distinct branch architectures. Site-specific installation of a single diazirine moiety into defined ubiquitin units enabled systematic interrogation of the contributions of individual ubiquitin units to topology-selective recognition by quantifying their engagement with decoders through photo-cross-linking efficiency. Specifically, the mixed K63/K48 tribuiquitin (Ub3) probes with diazirine on the K63-linked segment captured a previously unrecognized preference of OTUB1 and RAD23B for mixed K63/K48 chains through more efficient photo-cross-linking than the corresponding branched K63/K48 Ub3 probes. In addition, liquid chromatography–tandem mass spectrometry (LC–MS/MS) analysis of the cross-linked products identified auxiliary contacts of the K63-linked segment in mixed K63/K48 Ub3 as the molecular basis for the topology-selective recognition by OTUB1 and RAD23B. Thus, these chemically defined photoaffinity K63/K48 chains provide a versatile platform for dissecting the molecular logic by which heterotypic ubiquitin-chain topologies are decoded into distinct intracellular outputs.",
+      "tldr": "Diazirine-functionalized K63/K48 triubiquitin probes enable unit-resolved photoaffinity mapping of ubiquitin–decoder contacts, revealing the molecular basis for topology-selective recognition of mixed versus branched heterotypic chains (e.g., OTUB1 and RAD23B via K63-segment auxiliary contacts).",
+      "affiliations": [
+        "The University of Tokyo , , 7-3-1 Hongo , Bunkyo-ku, ,",
+        "The University of Tokyo , , 4-6-1 Shirokanedai , Minato-ku, ,"
+      ],
+      "score": 7.3265,
+      "relevance_percentile": 100.0,
+      "score_components": {
+        "top_k": 0.7288,
+        "cluster": 0.7518,
+        "recent": 0.7135
+      },
+      "topics": [
+        "Other"
+      ],
+      "seen_date": "2026-11-22",
+      "recommendation_status": "new",
+      "previous_recommended_at": null,
+      "key": "doi:10.1021/jacs.6c13215"
+    },
+    {
+      "title": "Biosynthesis of iboga alkaloids",
+      "authors": [
+        "Moonyoung Kang",
+        "Mohamed Omar Kamileen",
+        "Yoko Nakamura",
+        "John P. Hamilton",
+        "Gyumin Kang",
+        "Bruno Huettel",
+        "Jens Wurlitzer",
+        "Sarah Heinicke",
+        "Maritta Kunert",
+        "C. Robin Buell",
+        "Lorenzo Caputi",
+        "Sarah E. O’Connor"
+      ],
+      "journal": "Nature Communications",
+      "source": "Crossref",
+      "doi": "10.1038/s41467-026-79750-9",
+      "arxiv_id": null,
+      "published_at": "2026-11-21",
+      "article_url": "https://doi.org/10.1038/s41467-026-79750-9",
+      "pdf_url": "https://www.nature.com/articles/s41467-026-79750-9.pdf",
+      "code_url": null,
+      "abstract": "Abstract Tabernanthe iboga (iboga) is the source of voacangine, which is widely used as a semi-synthetic starting material for the anti-addiction agent ibogaine. Despite extensive investigation of voacangine biosynthesis, production of this compound cannot be reconstituted in a heterologous host, suggesting that one or more enzymes required for biosynthesis are missing. Additionally, T. iboga produces ibophyllidine, a pyrroloindole alkaloid that utilizes the same upstream precursor as voacangine, but is a member of a structurally distinct alkaloid class. Here we use bulk and single cell gene expression from leaf and root tissue to identify the unknown enzymes from these two pathways. We identify two additional enzymes that enable biosynthesis of voacangine in a heterologous host. The missing enzymes includes a pathogenesis-related (PR)10 family protein that likely catalyzes cyclization of a transient intermediate. Careful analysis of gene expression profiles in leaf and root also enabled the discovery of four additional enzymes that convert an upstream intermediate to ibophyllidine. This work reveals the chemical logic that generates two distinct alkaloid scaffolds in this important medicinal plant.",
+      "tldr": "By profiling gene expression in iboga leaf and root tissues, this study identifies the missing enzymes—including a PR10-family cyclase—that enable heterologous voacangine biosynthesis and four additional enzymes that convert a shared precursor into ibophyllidine, revealing the chemical logic underlying two distinct alkaloid scaffolds.",
+      "affiliations": [],
+      "score": 6.3776,
+      "relevance_percentile": 0.0,
+      "score_components": {
+        "top_k": 0.6421,
+        "cluster": 0.6479,
+        "recent": 0.6116
+      },
+      "topics": [
+        "Spectroscopy"
+      ],
+      "seen_date": "2026-11-22",
+      "recommendation_status": "new",
+      "previous_recommended_at": null,
+      "key": "doi:10.1038/s41467-026-79750-9"
+    }
+  ]
+}
