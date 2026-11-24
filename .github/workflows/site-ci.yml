@@ -10,6 +10,8 @@ on:
       - 'site/**'
       - '.github/workflows/site-ci.yml'
       - '.github/workflows/main.yml'
+      - '.github/workflows/pages.yml'
+      - 'scripts/**'
   pull_request:
     branches:
       - main
@@ -30,7 +32,10 @@ jobs:
 
       - name: Check Python syntax
         run: |
-          python -m py_compile             main.py recommendation_history.py crossref_ingestion.py site_builder.py recommender.py construct_email.py paper.py sources.py
+          python -m py_compile             main.py daily_digest.py pages_guard.py recommendation_history.py crossref_ingestion.py site_builder.py recommender.py construct_email.py paper.py sources.py
+
+      - name: Check digest commit shell syntax
+        run: bash -n scripts/commit-digest.sh
 
       - name: Check browser JavaScript syntax
         run: node --check site/assets/app.js

@@ -4,6 +4,7 @@ Compile only its __main__ guard to avoid importing model/native dependencies.
 No rewritten copy of the pipeline and no live external services are involved.
 """
 import ast
+from datetime import date
 import sys
 import unittest
 from pathlib import Path
@@ -32,7 +33,7 @@ class MainDeliveryTests(unittest.TestCase):
             crossref_mailto=None, send_empty=False, language='English',
             sender=None, receiver=None,
             sender_password=None, smtp_server=None, smtp_port=None,
-            publish_site=publish_site)
+            publish_site=publish_site, prepare_dir=None, digest_date=None)
         first = SimpleNamespace(title='Chosen')
         second = SimpleNamespace(title='Not chosen')
         journal_fresh = SimpleNamespace(
@@ -55,7 +56,7 @@ class MainDeliveryTests(unittest.TestCase):
                     raise archive_error
                 return result
             return method
-        namespace = dict(add_argument=MagicMock(), parser=parser, sys=sys,
+        namespace = dict(add_argument=MagicMock(), parser=parser, sys=sys, date=date,
             logger=MagicMock(), load_history=MagicMock(return_value={}),
             get_zotero_corpus=MagicMock(return_value=[]),
             get_arxiv_paper=MagicMock(return_value=[first, second]),

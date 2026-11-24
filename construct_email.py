@@ -264,7 +264,7 @@ def parse_receivers(receiver: str) -> list[str]:
     return recipients
 
 
-def send_email(sender:str, receiver:str, password:str,smtp_server:str,smtp_port:int, html:str,):
+def send_email(sender:str, receiver:str, password:str,smtp_server:str,smtp_port:int, html:str, *, digest_date: datetime.date | None = None):
     def _format_addr(s):
         name, addr = parseaddr(s)
         return formataddr((Header(name, 'utf-8').encode(), addr))
@@ -276,7 +276,7 @@ def send_email(sender:str, receiver:str, password:str,smtp_server:str,smtp_port:
     # Do not expose the mailing list to recipients. Envelope recipients are
     # supplied separately to SMTP, equivalent to BCC delivery.
     msg['To'] = 'undisclosed-recipients:;'
-    today = datetime.datetime.now().strftime('%Y/%m/%d')
+    today = (digest_date or datetime.datetime.now().date()).strftime('%Y/%m/%d')
     msg['Subject'] = Header(f'Daily Research Papers {today}', 'utf-8').encode()
 
     try:

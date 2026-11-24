@@ -2,16 +2,16 @@ name: Send emails daily
 
 on:
   workflow_dispatch:
-  # Primary 04:17, backups 06:43 and 08:21 Asia/Shanghai.
-  # GitHub scheduled events may be delayed or dropped; backups provide retries.
+  # Taipei: prepare 04:17 / 06:43; wake 07:17; recovery 08:21.
+  # Actual local time (not cron identity) decides whether publication is due.
   schedule:
     - cron: '17 20 * * *'
     - cron: '43 22 * * *'
+    - cron: '17 23 * * *'
     - cron: '21 0 * * *'
 
 permissions:
   contents: write
-  actions: read
 
 concurrency:
   group: v3-daily-recommendations
@@ -19,68 +19,35 @@ concurrency:
 
 jobs:
   calculate-and-send:
+    if: github.ref == 'refs/heads/main'
     runs-on: ubuntu-latest
+    timeout-minutes: 150
     steps:
-      - name: Check for an existing successful daily digest
-        if: github.event_name == 'schedule'
-        id: daily_guard
-        env:
-          GITHUB_TOKEN: ${{ github.token }}
-        run: |
-          python - <<'PY'
-          import json
-          import os
-          from datetime import datetime
-          from urllib.request import Request, urlopen
-          from zoneinfo import ZoneInfo
-
-          tz = ZoneInfo('Asia/Shanghai')
-          today = datetime.now(tz).date()
-          current_run = int(os.environ['GITHUB_RUN_ID'])
-          repository = os.environ['GITHUB_REPOSITORY']
-          url = (
-              f'https://api.github.com/repos/{repository}/actions/workflows/'
-              'main.yml/runs?per_page=100&status=success'
-          )
-          request = Request(url, headers={
-              'Authorization': f'Bearer {os.environ["GITHUB_TOKEN"]}',
-              'Accept': 'application/vnd.github+json',
-              'User-Agent': 'zotero-arxiv-daily-guard',
-          })
-          with urlopen(request, timeout=30) as response:
-              runs = json.load(response)['workflow_runs']
-
-          successful_today = []
-          for run in runs:
-              if (run['id'] == current_run
-                      or run.get('event') not in ('schedule', 'workflow_dispatch')
-                      or run.get('conclusion') != 'success'):
-                  continue
-              started = run.get('run_started_at')
-              if started and datetime.fromisoformat(
-                      started.replace('Z', '+00:00')).astimezone(tz).date() == today:
-                  successful_today.append(run['id'])
-
-          skip = bool(successful_today)
-          with open(os.environ['GITHUB_OUTPUT'], 'a', encoding='utf-8') as output:
-              output.write(f"skip={'true' if skip else 'false'}\n")
-          print(f'Asia/Shanghai date: {today}; existing successful runs: {successful_today}')
-          PY
-      - name: Checkout V3 Pages engine
-        if: steps.daily_guard.outputs.skip != 'true'
-        uses: actions/checkout@v4
+      - name: Checkout latest main
+        uses: actions/checkout@v6
         with:
-          repository: ${{ github.repository }}
           ref: main
           fetch-depth: 0
 
+      - name: Recover SMTP-accepted archives without resending
+        run: |
+          if [ -d .daily-digest ]; then
+            python daily_digest.py recover
+            bash scripts/commit-digest.sh "Recover accepted research archives" .daily-digest site/data
+          fi
+
+      - name: Determine Taipei digest day and status
+        id: plan
+        run: python daily_digest.py plan
+
       - name: Setup uv
-        if: steps.daily_guard.outputs.skip != 'true'
+        if: steps.plan.outputs.phase == 'new' || steps.plan.outputs.phase == 'prepared'
         uses: astral-sh/setup-uv@v7
 
-      - name: Run recommender, email and archive build
-        if: steps.daily_guard.outputs.skip != 'true'
+      - name: Prepare digest (no email or site publication)
+        if: steps.plan.outputs.phase == 'new'
         env:
+          DIGEST_DATE: ${{ steps.plan.outputs.day }}
           ZOTERO_ID: ${{ secrets.ZOTERO_ID }}
           ZOTERO_KEY: ${{ secrets.ZOTERO_KEY }}
           ZOTERO_IGNORE: ${{ vars.ZOTERO_IGNORE }}
@@ -92,11 +59,6 @@ jobs:
           CROSSREF_ROWS_PER_JOURNAL: ${{ vars.CROSSREF_ROWS_PER_JOURNAL }}
           CROSSREF_MAILTO: ${{ vars.CROSSREF_MAILTO }}
           EXTRA_JOURNALS_JSON: ${{ vars.EXTRA_JOURNALS_JSON }}
-          SMTP_SERVER: ${{ secrets.SMTP_SERVER }}
-          SMTP_PORT: ${{ secrets.SMTP_PORT }}
-          SENDER: ${{ secrets.SENDER }}
-          RECEIVER: ${{ secrets.RECEIVER }}
-          SENDER_PASSWORD: ${{ secrets.SENDER_PASSWORD }}
           MAX_PAPER_NUM: ${{ secrets.MAX_PAPER_NUM }}
           USE_LLM_API: ${{ secrets.USE_LLM_API }}
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
@@ -105,17 +67,44 @@ jobs:
           LANGUAGE: ${{ vars.LANGUAGE }}
           PUBLISH_SITE: "true"
           SITE_OUTPUT_DIR: site
-        run: uv run main.py
+        run: uv run main.py --prepare-dir ".daily-digest/$DIGEST_DATE" --digest-date "$DIGEST_DATE"
 
-      - name: Commit updated research archive
-        if: steps.daily_guard.outputs.skip != 'true'
+      - name: Persist prepared digest
+        if: steps.plan.outputs.phase == 'new'
+        env:
+          DIGEST_DATE: ${{ steps.plan.outputs.day }}
+        run: bash scripts/commit-digest.sh "Prepare research digest $DIGEST_DATE" ".daily-digest/$DIGEST_DATE"
+
+      - name: Warm the email runtime before publication
+        if: steps.plan.outputs.phase == 'prepared'
+        run: uv sync
+
+      - name: Wait until 08:00 Taipei if publication is near
+        id: due
+        env:
+          DIGEST_DATE: ${{ steps.plan.outputs.day }}
+        run: python daily_digest.py ready "$DIGEST_DATE"
+
+      - name: Claim and deliver today's email
+        if: steps.due.outputs.send == 'true'
+        env:
+          DIGEST_DATE: ${{ steps.plan.outputs.day }}
+          SMTP_SERVER: ${{ secrets.SMTP_SERVER }}
+          SMTP_PORT: ${{ secrets.SMTP_PORT }}
+          SENDER: ${{ secrets.SENDER }}
+          RECEIVER: ${{ secrets.RECEIVER }}
+          SENDER_PASSWORD: ${{ secrets.SENDER_PASSWORD }}
         run: |
-          git add site/data
-          if git diff --cached --quiet -- site/data; then
-            echo "No archive changes to commit."
-            exit 0
-          fi
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git commit -m "Update research archive $(date -u +%F)"
-          git push origin HEAD:main
+          uv run python daily_digest.py validate "$DIGEST_DATE"
+          python daily_digest.py claim "$DIGEST_DATE"
+          bash scripts/commit-digest.sh "Claim research email $DIGEST_DATE" ".daily-digest/$DIGEST_DATE"
+          uv run python daily_digest.py send "$DIGEST_DATE"
+          bash scripts/commit-digest.sh "SMTP accepted research email $DIGEST_DATE" ".daily-digest/$DIGEST_DATE"
+
+      - name: Finalize accepted archive
+        if: steps.due.outputs.send == 'true'
+        env:
+          DIGEST_DATE: ${{ steps.plan.outputs.day }}
+        run: |
+          python daily_digest.py finalize "$DIGEST_DATE"
+          bash scripts/commit-digest.sh "Publish research archive $DIGEST_DATE" ".daily-digest/$DIGEST_DATE" site/data

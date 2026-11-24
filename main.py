@@ -1,4 +1,5 @@
 import argparse
+from datetime import date
 import os
 import random
 import re
@@ -19,6 +20,7 @@ from tempfile import mkstemp
 from tqdm import tqdm
 
 from construct_email import render_email, send_email
+from daily_digest import prepare_digest, prepare_empty
 from llm import set_global_llm
 from paper import ArxivPaper
 from recommender import rerank_paper
@@ -413,8 +415,13 @@ if __name__ == "__main__":
         help="Static research archive output directory",
         default="site",
     )
+    parser.add_argument("--prepare-dir", help="Stage a digest without sending or publishing")
+    parser.add_argument("--digest-date", help="Explicit Asia/Taipei digest date (YYYY-MM-DD)")
     parser.add_argument("--debug", action="store_true", help="Debug mode")
     args = parser.parse_args()
+    digest_day = date.fromisoformat(args.digest_date) if args.digest_date else None
+    if args.prepare_dir and (not digest_day or not args.publish_site or args.debug):
+        parser.error("--prepare-dir requires --digest-date and production site publishing")
 
     if args.recommendation_cooldown_days < 0 or args.max_paper_num < -1:
         parser.error("cooldown must be nonnegative; max_paper_num must be -1 or nonnegative")
@@ -441,6 +448,7 @@ if __name__ == "__main__":
     logger.info("arXiv candidates: {}", len(papers))
 
     observed_journal_papers = []
+    crossref_failed = False
     crossref_ingestion_history = (
         load_ingestion_history(args.site_output_dir)
         if args.enable_crossref
@@ -470,6 +478,7 @@ if __name__ == "__main__":
             )
             papers.extend(journal_papers)
         except Exception as exc:
+            crossref_failed = True
             logger.warning(
                 "Crossref retrieval failed; continuing with arXiv candidates only: {}",
                 exc,
@@ -488,13 +497,18 @@ if __name__ == "__main__":
             "No new papers found from the configured sources. "
             "Check ARXIV_QUERY and journal source configuration."
         )
+        if args.prepare_dir and crossref_failed:
+            raise RuntimeError("Cannot establish an empty digest while Crossref is unavailable")
         if not args.send_empty:
+            if args.prepare_dir:
+                prepare_empty(args.prepare_dir, digest_day)
             exit(0)
     else:
         logger.info("Reranking unified paper pool...")
         papers = rerank_paper(papers, corpus)
         papers = select_recommendations(
-            papers, history, args.max_paper_num, args.recommendation_cooldown_days
+            papers, history, args.max_paper_num, args.recommendation_cooldown_days,
+            today=digest_day,
         )
         logger.info("Selected {} papers ({} repeat highlights).", len(papers),
                     sum(p.recommendation_status == "repeat_highlight" for p in papers))
@@ -511,6 +525,10 @@ if __name__ == "__main__":
             set_global_llm(lang=args.language)
 
     html = render_email(papers)
+    if args.prepare_dir:
+        prepare_digest(args.prepare_dir, digest_day, papers, observed_journal_papers, html)
+        logger.success("Prepared digest for {}; no SMTP or live archive changes.", digest_day)
+        sys.exit(0)
 
     logger.info("Sending email...")
     send_email(

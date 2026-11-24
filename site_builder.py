@@ -2,7 +2,7 @@ from __future__ import annotations
 
 import json
 import re
-from datetime import datetime, timezone
+from datetime import date, datetime, timezone
 from pathlib import Path
 
 
@@ -169,23 +169,29 @@ def _rebuild_index(data_dir: Path) -> dict:
     }
 
 
-def update_site_archive(papers: list, output_dir: str = "site") -> Path:
-    """Persist today's selected recommendations and rebuild the site index."""
-    root = Path(output_dir)
-    data_dir = root / "data"
-    daily_dir = data_dir / "daily"
-    daily_dir.mkdir(parents=True, exist_ok=True)
-
-    today = datetime.now(timezone.utc).date().isoformat()
+def build_daily_payload(papers: list, day: date | None = None) -> dict:
+    """Create a serializable digest without writing the published archive."""
+    today = (day or datetime.now(timezone.utc).date()).isoformat()
     records = [_record_from_paper(paper, today) for paper in papers]
-
-    daily_payload = {
+    return {
         "date": today,
         "generated_at": datetime.now(timezone.utc).isoformat(),
         "count": len(records),
         "papers": records,
     }
 
+
+def publish_daily_payload(daily_payload: dict, output_dir: str = "site") -> Path:
+    """Install a previously prepared digest and rebuild the current index."""
+    today = daily_payload["date"]
+    if date.fromisoformat(today).isoformat() != today:
+        raise ValueError("Invalid daily archive date")
+    if daily_payload["count"] != len(daily_payload["papers"]):
+        raise ValueError("Invalid daily archive count")
+    root = Path(output_dir)
+    data_dir = root / "data"
+    daily_dir = data_dir / "daily"
+    daily_dir.mkdir(parents=True, exist_ok=True)
     daily_path = daily_dir / f"{today}.json"
     daily_path.write_text(
         json.dumps(daily_payload, ensure_ascii=False, indent=2),
@@ -199,3 +205,8 @@ def update_site_archive(papers: list, output_dir: str = "site") -> Path:
         encoding="utf-8",
     )
     return index_path
+
+
+def update_site_archive(papers: list, output_dir: str = "site") -> Path:
+    """Persist today's selected recommendations and rebuild the site index."""
+    return publish_daily_payload(build_daily_payload(papers), output_dir)
