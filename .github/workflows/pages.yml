@@ -9,31 +9,65 @@ on:
   workflow_run:
     workflows:
       - Send emails daily
+    branches:
+      - main
     types:
       - completed
   workflow_dispatch:
+    inputs:
+      force:
+        description: Redeploy even if the site tree is unchanged
+        type: boolean
+        default: false
 
 permissions:
   contents: read
-  pages: write
-  id-token: write
+  actions: read
 
 concurrency:
   group: github-pages
-  cancel-in-progress: true
+  cancel-in-progress: false
 
 jobs:
-  deploy:
-    if: ${{ github.event_name == 'workflow_dispatch' || github.event_name == 'push' || github.event.workflow_run.conclusion == 'success' }}
+  plan:
+    if: github.ref == 'refs/heads/main'
     runs-on: ubuntu-latest
+    outputs:
+      sha: ${{ steps.guard.outputs.sha }}
+      tree: ${{ steps.guard.outputs.tree }}
+      deploy: ${{ steps.guard.outputs.deploy }}
+    steps:
+      - name: Checkout latest archive
+        uses: actions/checkout@v6
+        with:
+          ref: main
+          fetch-depth: 0
+
+      - name: Check last actual successful Pages deployment
+        id: guard
+        env:
+          GH_TOKEN: ${{ github.token }}
+          FORCE_DEPLOY: ${{ github.event_name == 'workflow_dispatch' && inputs.force }}
+        run: python pages_guard.py
+
+  deploy:
+    needs: plan
+    if: needs.plan.outputs.deploy == 'true'
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    permissions:
+      contents: read
+      actions: read
+      pages: write
+      id-token: write
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
-      - name: Checkout latest V3 Pages archive
+      - name: Checkout planned site revision
         uses: actions/checkout@v6
         with:
-          ref: main
+          ref: ${{ needs.plan.outputs.sha }}
 
       - name: Configure GitHub Pages
         uses: actions/configure-pages@v5
@@ -43,6 +77,27 @@ jobs:
         with:
           path: site
 
+      - name: Wait for artifact metadata to become visible
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          for attempt in {1..15}; do
+            if gh api "repos/$GITHUB_REPOSITORY/actions/runs/$GITHUB_RUN_ID/artifacts?name=github-pages" \
+              --jq '[.artifacts[] | select(.name == "github-pages" and .expired == false)] | length' \
+              | grep -qx 1; then
+              # Give the deployment endpoint's replica a brief settling interval.
+              sleep 5
+              exit 0
+            fi
+            echo "Pages artifact is not visible yet (attempt $attempt/15)"
+            sleep 5
+          done
+          echo "::error::Pages artifact metadata did not become visible; retry on the next digest or manual Pages dispatch."
+          exit 1
+
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+
+      - name: Record deployed site tree ${{ needs.plan.outputs.tree }}
+        run: echo "Successfully deployed the planned site tree."

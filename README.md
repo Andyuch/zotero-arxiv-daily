@@ -92,7 +92,7 @@ Then check the log and the receiver email after it finishes.
 
 To share the digest, keep `RECEIVER` as a GitHub Actions secret and append additional addresses there, for example `you@example.com, colleague@example.com`. Do not commit recipient addresses into the public repository.
 
-By default, the main workflow is scheduled for 20:17 UTC every day. The non-zero minute avoids GitHub's busiest top-of-hour scheduling boundary. You can change this time by editing `.github/workflows/main.yml`.
+The production workflow prepares the digest before 08:00 Asia/Taipei and publishes no earlier than 08:00, with best-effort GitHub Actions scheduling and automatic recovery. See **Daily delivery and Pages recovery** below.
 
 ### Local Running
 Supported by [uv](https://github.com/astral-sh/uv), this workflow can easily run on your local device if uv is installed:
@@ -164,9 +164,7 @@ The separate `recommendation-history.json` still controls the 7-day delivered
 recommendation cooldown; ingestion history and recommendation history serve
 different purposes.
 
-The production job is scheduled at 20:17 UTC. That remains before the next
-20:00 Eastern arXiv announcement, so the visible arXiv feed and the completed
-Crossref literature day stay aligned. The ±2 h overlap catches ordinary
+The primary preparation job is scheduled at 20:17 UTC (04:17 Asia/Taipei). Normally this remains before the next 20:00 Eastern arXiv announcement, so the visible arXiv feed and the completed Crossref literature day stay aligned. If all preparation triggers are delayed past that boundary, the fallback uses the then-current source feed; the live Atom endpoint cannot recover the previous announcement. The ±2 h overlap catches ordinary
 boundary/visibility jitter near 20:00 ET without reverting to a multi-day journal
 candidate pool. It is a practical safety margin rather than a guarantee against
 arbitrarily long Crossref indexing delays. The per-journal result cap remains
@@ -236,3 +234,13 @@ move only `upstream`; review and test selected changes before applying to `main`
 Keep `v2-backup`, `own_branch`, and `upstream` non-default. Their historical or
 upstream workflows are retained faithfully but should not be manually dispatched
 for production. No extra email run is required for branch housekeeping.
+
+
+## Daily delivery and Pages recovery (Asia/Taipei)
+
+- GitHub schedules wake-ups at 04:17, 06:43, 07:17, and 08:21 local time (UTC+8). The first available run prepares one digest; a run reaching the 07:15–08:00 window waits until 08:00, and a delayed run after 08:00 publishes as soon as prepared. **GitHub schedules are best-effort; exact delivery is not guaranteed.** For a stronger time guarantee, configure an independent trusted scheduler to dispatch main.yml around 08:00 Taipei using a minimally scoped credential (not stored in this public repository).
+- Publication uses an explicit Taipei calendar date for subject, archive and cooldown. The existing source window, ranking, recipients, and recommendation format are retained.
+- The state machine in `.daily-digest/YYYY-MM-DD/` persists only archive-bound public paper information, rendered digest HTML (without recipients), and status. Preparation commits do not modify the live site. Staged payloads are removed from the working tree after finalization (public Git history remains public). Empty digests respect SEND_EMPTY.
+- A durable **sending** claim is pushed before SMTP. **accepted** is pushed after SMTP accepts at least one recipient; history and the website archive are then committed together with **sent**. A backup recovers accepted digests without resending. If SMTP outcome is ambiguous (e.g. network loss after DATA), the workflow stops and does not automatically resend. An operator must verify SMTP logs/mail delivery; only then reconcile the state's phase to accepted (known delivered) or prepared (known not delivered), retaining the staged files, and dispatch the production workflow. Do not reset an ambiguous claim merely because a workflow failed.
+- Legacy daily archives count as already processed during migration. Manual production dispatch obeys the same date/time/state checks and is restricted to main. The old separate Test workflow remains an explicitly invoked debug-email workflow; use offline smoke tests for no-email validation.
+- Pages checks the last **actual** successful deployment's site tree, ignoring successful skipped workflows, and deploys only changed content or an unfinished deployment. Artifact metadata is polled before deployment. If deployment fails, the next digest completion or a manual Pages dispatch retries without sending email. A manual Pages dispatch can opt into forcing a deployment.

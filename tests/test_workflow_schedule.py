@@ -1,38 +1,32 @@
-"""Regression checks for the production daily GitHub Actions schedule."""
+"""Production schedule is a best-effort wake-up, not the publication clock."""
 import re
 import unittest
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-WORKFLOW = ROOT / ".github" / "workflows" / "main.yml"
 
 
 class ProductionScheduleTests(unittest.TestCase):
-    def test_daily_schedule_exists_and_avoids_top_of_hour(self):
-        text = WORKFLOW.read_text(encoding="utf-8")
-        self.assertIn("schedule:", text)
-
-        match = re.search(
-            r"-\s*cron:\s*['\"](\d{1,2})\s+(\d{1,2})\s+\*\s+\*\s+\*['\"]",
-            text,
-        )
-        self.assertIsNotNone(match, "Daily cron schedule is missing from main.yml")
-
-        minute, hour = map(int, match.groups())
-        self.assertNotEqual(
-            minute,
-            0,
-            "Avoid minute 0 because GitHub scheduled workflows are most congested at the top of the hour.",
-        )
-        self.assertEqual(
-            (minute, hour),
-            (17, 20),
-            "Production schedule should target 20:17 UTC (about 07:00 UTC+8 after observed GitHub delay).",
-        )
-
-    def test_manual_dispatch_remains_available(self):
-        text = WORKFLOW.read_text(encoding="utf-8")
+    def test_prepare_wake_and_recovery_schedule(self):
+        text = (ROOT / ".github/workflows/main.yml").read_text()
+        times = [(int(h), int(m)) for m, h in
+                 re.findall(r"-\s*cron:\s*'(\d+) (\d+) \* \* \*'", text)]
+        self.assertEqual(times, [(20, 17), (22, 43), (23, 17), (0, 21)])
+        self.assertTrue(all(minute != 0 for _, minute in times))
         self.assertIn("workflow_dispatch:", text)
+        self.assertIn("if: github.ref == 'refs/heads/main'", text)
+        self.assertIn("cancel-in-progress: false", text)
+        self.assertLess(text.index('daily_digest.py claim'), text.index('daily_digest.py send'))
+        self.assertLess(text.index('Claim research email'), text.index('daily_digest.py send'))
+        self.assertLess(text.index('SMTP accepted research email'), text.index('daily_digest.py finalize'))
+
+    def test_pages_waits_for_artifact_and_skips_unchanged_tree(self):
+        text = (ROOT / ".github/workflows/pages.yml").read_text()
+        self.assertIn("needs.plan.outputs.deploy == 'true'", text)
+        self.assertIn("python pages_guard.py", text)
+        self.assertIn("actions: read", text)
+        self.assertLess(text.index("Upload site artifact"), text.index("Wait for artifact metadata"))
+        self.assertLess(text.index("Wait for artifact metadata"), text.index("Deploy to GitHub Pages"))
 
 
 if __name__ == "__main__":
